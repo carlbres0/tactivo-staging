@@ -1,0 +1,34 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 70, "y": 60, "w": 180, "h": 80},
+  "cones": [[70, 60], [250, 60], [70, 140], [250, 140]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 100}, {"t": 1, "x": 100, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 220, "y": 100}, {"t": 0.45, "x": 220, "y": 100},
+      {"t": 0.55, "x": 222, "y": 102}, {"t": 1, "x": 222, "y": 102}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 100, "y": 100}, {"t": 0.15, "x": 100, "y": 100},
+    {"t": 0.45, "x": 220, "y": 96}, {"t": 0.55, "x": 222, "y": 102},
+    {"t": 0.7, "x": 222, "y": 102}, {"t": 0.85, "x": 100, "y": 100},
+    {"t": 1, "x": 100, "y": 100}
+  ], "air": [[0.15, 0.45]]},
+  "routes": [
+    {"kind": "pass", "pts": [[100, 100], [220, 96]]},
+    {"kind": "dribble", "pts": [[220, 96], [222, 102]]},
+    {"kind": "pass", "pts": [[222, 102], [100, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server and receiver stand twelve metres apart — a high serve is coming."},
+    {"t": 0.45, "label": "Thigh height, then chest, then over the shoulder — cushion the flight dead."},
+    {"t": 0.55, "label": "The receiving surface gives on contact; meeting it firmly bounces it away."},
+    {"t": 0.85, "label": "Return it along the floor and reset. Ten serves each, then swap."}
+  ],
+  "events": []
+}

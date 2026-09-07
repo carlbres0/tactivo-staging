@@ -1,0 +1,323 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    8.92,
+    42
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    18.15,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.54,
+    41.08
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    6.62,
+    35.85
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    11.23,
+    33.54
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    15.85,
+    33.54
+   ]
+  },
+  {
+   "id": "d5",
+   "team": "blue",
+   "number": 5,
+   "start": [
+    20.46,
+    35.85
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8.92,
+    23.54
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    13.54,
+    21.23
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    18.15,
+    23.54
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.44,
+   40.75
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "d3",
+   "flight": 0.79
+  },
+  {
+   "t": 3.61,
+   "type": "pass",
+   "from": "d3",
+   "to": "d4",
+   "flight": 0.46
+  },
+  {
+   "t": 4.11,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    5.85,
+    36.77
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.98,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    16,
+    30
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.35,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.23,
+    28.46
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.68,
+   "type": "dribble",
+   "player": "d4",
+   "to": [
+    16.31,
+    31.23
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.22,
+   "type": "move",
+   "player": "d5",
+   "to": [
+    19.38,
+    34.62
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.22,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    19.69,
+    26.31
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.82,
+   "type": "tackle",
+   "player": "a2",
+   "from": "d4"
+  },
+  {
+   "t": 14.48,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.77,
+    40.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 15.48,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.52
+  },
+  {
+   "t": 16.33,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    18.15,
+    28.92
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 17.62,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    21.23,
+    31.54
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 20.29,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    18.15,
+    42
+   ]
+  },
+  {
+   "t": 22.04,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    20.92,
+    32.77
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 24.77,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three forwards pressing as a mob win nothing. This gives them a shape.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A back four and keeper build out, with three pressers holding a triangle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 8.42,
+   "text": "The trigger is a heavy touch, a bouncing ball, or someone facing their own goal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 16.35,
+   "text": "Nearest presser springs, the other two cut the return, and they finish in eight seconds.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 24.77,
+   "text": "Rotate the trio every three minutes, then add a fourth and trap the touchline.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 27.27,
+   "text": "Press in relays, not in a mob. First sets the trap, second makes the tackle.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

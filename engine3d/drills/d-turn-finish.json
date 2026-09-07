@@ -1,0 +1,177 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 44.3,
+  "length": 44.66
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    7.72
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    44.66
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    7.72
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    44.66
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    22.15,
+    44.66
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    23.83,
+    1
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    23.83,
+    21.15
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   23.83,
+   1.35
+  ]
+ },
+ "events": [
+  {
+   "t": 1.7,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    23.83,
+    19.47
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.95,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.85
+  },
+  {
+   "t": 2.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    22.82,
+    3.02
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.42,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    26.52,
+    22.16
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.9,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    27.19,
+    23.84
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.79,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    22.15,
+    44.66
+   ]
+  }
+ ],
+ "duration": 13.55,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Want a finishing drill that starts with your striker's back to goal?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Striker on the penalty spot, a server behind, and a keeper in goal.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.71,
+   "text": "The serve rolls in. Glance over each shoulder while the ball's still travelling.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.4,
+   "text": "Spin away from the marker onto the stronger foot and finish inside two touches.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.55,
+   "text": "Once they're turning cleanly, put a defender on the striker's back from the serve.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.05,
+   "text": "Low corners are worth two points, so they aim rather than just hit it.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

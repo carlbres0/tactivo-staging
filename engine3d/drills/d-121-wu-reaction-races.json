@@ -1,0 +1,118 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14.69,
+    8.35
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.5,
+    5.42
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    5.5,
+    10.67
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.83,
+   5.53
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    13.67,
+    8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    13,
+    9.33
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9.11,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A whistle wakes the ears. Something has to wake the eyes.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Your player over their ball, you five metres away holding yours.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.37,
+   "text": "Your signal starts a race to the far cone, dribbling there and back.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.29,
+   "text": "The signal changes every rep. A clap, a dropped ball, a nod, a word.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.11,
+   "text": "False starts give you the point. Best of nine, then hide the signal among decoys.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.61,
+   "text": "Watching for any signal wakes the eyes better than a whistle ever will.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.7,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    25.7,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.7,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.85,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.85,
+    11.63
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    21.26,
+    8.67
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    6.44,
+    8.67
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    13.85,
+    17.56
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    18.3,
+    30.89
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    12.37,
+    32.37
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    6.44,
+    30.15
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.18,
+   11.5
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.7,
+    31.63
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    15.33,
+    24.22
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    19.04,
+    27.93
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    14.59,
+    33.11
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    9.41,
+    32.07
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    20.52,
+    20.52
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.36,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.11
+  },
+  {
+   "t": 4.64,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    13.56,
+    12.37
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.09,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    19.78,
+    28.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.64,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    19.78,
+    28.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.32,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    14.59,
+    32.37
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.15,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    20.52,
+    30.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.4,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    19.04,
+    30.15
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.73,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    15.33,
+    33.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.19,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    13.85,
+    42
+   ]
+  },
+  {
+   "t": 12.7,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    14.89,
+    33.11
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 15.09,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Ever watched a counter die on the second pass? Here's the fix.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A forty by thirty pitch with one goal. Four break against three recovering defenders.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.72,
+   "text": "You serve into the deepest attacker and the first pass goes forward immediately.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.05,
+   "text": "The winger's first touch attacks the outside shoulder, past the defender getting back.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.09,
+   "text": "Shot away within twelve seconds or the defenders win it. Add a sweeper goal side.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.59,
+   "text": "The first pass is instinct. The second is the decision that makes the goal.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

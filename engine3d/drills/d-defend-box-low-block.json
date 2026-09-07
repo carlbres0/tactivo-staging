@@ -1,0 +1,396 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    15.08,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    15.38,
+    40.92
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    19.38,
+    36.15
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    15.38,
+    36.15
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    11.69,
+    36.15
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    7.69,
+    36.15
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    16.62,
+    31.54
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    10.46,
+    31.54
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    18.15,
+    26.62
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    13.54,
+    22
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    8.92,
+    26.62
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    19.69,
+    18.92
+   ]
+  },
+  {
+   "id": "d5",
+   "team": "blue",
+   "number": 5,
+   "start": [
+    7.38,
+    18.92
+   ]
+  },
+  {
+   "id": "d6",
+   "team": "blue",
+   "number": 6,
+   "start": [
+    20.92,
+    30.46
+   ]
+  },
+  {
+   "id": "d7",
+   "team": "blue",
+   "number": 7,
+   "start": [
+    6.15,
+    30.46
+   ]
+  },
+  {
+   "id": "d8",
+   "team": "blue",
+   "number": 8,
+   "start": [
+    13.54,
+    15.54
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   17.9,
+   26.37
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    18.77,
+    35.85
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    8.31,
+    35.85
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    14.77,
+    30.92
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    9.54,
+    31.23
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    19.23,
+    19.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d5",
+   "to": [
+    7.85,
+    19.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d6",
+   "to": [
+    20.46,
+    30
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d7",
+   "to": [
+    6.62,
+    30
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "d2",
+   "flight": 0.65
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    17.85,
+    27.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.47,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    12.31,
+    31.54
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.47,
+   "type": "pass",
+   "from": "d2",
+   "to": "d3",
+   "flight": 0.65
+  },
+  {
+   "t": 5.73,
+   "type": "shoot",
+   "player": "d3",
+   "at": [
+    15.08,
+    39.69
+   ],
+   "flight": 1.44,
+   "flightStyle": "ground"
+  },
+  {
+   "t": 6.54,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    14.92,
+    40
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9.1,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     13.54,
+     22
+    ],
+    "w": 23.08,
+    "h": 40,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Some weeks you'll be camped in your own box. This rehearses that honestly.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Six defenders sit deep against eight attackers circulating around the box.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.37,
+   "text": "The attackers probe, and nobody presses out. The shape just holds.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 5.01,
+   "text": "The block refuses to be dragged apart, and forces a shot from distance.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.1,
+   "text": "Once they hold it, drop to five defenders and make it harder.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.6,
+   "text": "Every team spends some Saturdays doing this. Pretending otherwise doesn't make it go away.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

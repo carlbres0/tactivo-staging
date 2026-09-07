@@ -1,0 +1,221 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 34.77,
+  "length": 52
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    32.77,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    32.77,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    31.81,
+    44.31
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.96,
+    44.31
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    17.38,
+    52
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    31.23,
+    30.85
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    19.31,
+    36.62
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    16.42,
+    33.73
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    11.62,
+    33.73
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   31.25,
+   31.2
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    31.81,
+    43.31
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.33,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    21.62,
+    45.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.33,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    15.85,
+    45.27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.33,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    18.92,
+    43.35
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.62,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    31.23,
+    45.27
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.7,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 11.88,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    17.38,
+    52
+   ]
+  }
+ ],
+ "duration": 14.93,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Fancy a crossing drill that actually tires them out? Alternate the wings with no pause.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Half a pitch with a goal and a station on each wing, three runners central.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.23,
+   "text": "Left wing delivers with the left foot, right with the right. Inswing and outswing both.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.15,
+   "text": "Near, central and back post runs go every single time, and they reset in between.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.93,
+   "text": "Twelve deliveries in total. Send the second ball three seconds after the first.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.43,
+   "text": "The tiring part is the runs, not the crosses, and that's what makes it match-realistic.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

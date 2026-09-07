@@ -1,0 +1,265 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.17,
+  "length": 24.5
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.17,
+    2.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.17,
+    22.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.17,
+    22.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.17,
+    2.5
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    21.45,
+    3.2
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    20.67,
+    1
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    21.17,
+    22.5
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    2.87,
+    21.78
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    2.88,
+    3.21
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   21.44,
+   3.55
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 1.93
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    23.17,
+    22.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 2.46,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    23.17,
+    2.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.75,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 1.83
+  },
+  {
+   "t": 5.6,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    3.17,
+    22.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 8.19,
+   "type": "pass",
+   "from": "a4",
+   "to": "a5",
+   "flight": 1.86
+  },
+  {
+   "t": 9.04,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    3.17,
+    3.17
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 11.67,
+   "type": "pass",
+   "from": "a5",
+   "to": "a3",
+   "flight": 1.93
+  },
+  {
+   "t": 12.52,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    1.17,
+    22.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 15.22,
+   "type": "pass",
+   "from": "a3",
+   "to": "a1",
+   "flight": 2
+  },
+  {
+   "t": 16.07,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    23.17,
+    22.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 18.83,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 2
+  },
+  {
+   "t": 19.68,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    21.5,
+    10.83
+   ],
+   "gait": "sprint"
+  }
+ ],
+ "duration": 24.69,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     12.17,
+     12.5
+    ],
+    "w": 20,
+    "h": 20,
+    "label": "square",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "One touch across the body, and the whole square keeps flowing.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A cone at each corner of a square, two players on one of them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.93,
+   "text": "Pass along the outside of the square, then follow your pass to that corner.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 18.76,
+   "text": "The receiver opens their body and plays round the corner in one movement.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 24.69,
+   "text": "Switch direction on your call, then add a second ball going the other way.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 27.19,
+   "text": "The receiving touch decides everything. Take it across the body, not backwards.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.4,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.4,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.6,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.6,
+    17
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    2.6
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5,
+    9.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   9.45
+  ]
+ },
+ "events": [
+  {
+   "t": 1.08,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5,
+    5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.28,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 0.48
+  },
+  {
+   "t": 3.13,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5,
+    8.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.38,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5,
+    7.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.25,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.6,
+    8.48
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.45,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    3.92,
+    9.68
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.7,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.28,
+    9.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.25,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5,
+    16.4
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 13.75,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two players, one ball, one channel each pair. Simplest one v one there is.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A twelve by ten channel per pair, with an end line to attack.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.03,
+   "text": "The defender serves to the attacker and closes straight away. First touch forward, head on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.35,
+   "text": "Feint one way to commit them, take the touch past, then stop it dead on the line.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.75,
+   "text": "Three attacks each, then swap. Add a recovery defender five metres behind when they're ready.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.25,
+   "text": "Slow to approach, fast to leave. The change of pace beats the defender, not the trick.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

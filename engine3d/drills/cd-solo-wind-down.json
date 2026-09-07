@@ -1,0 +1,135 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.17,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    11.17,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.17,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    4.92,
+    3.67
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.02,
+   4
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.83,
+    9.92
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.1,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.17,
+    13
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.12,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7,
+    16.17
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 9.68,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Solo session, no group to gather in. This is how you finish it properly.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Ball in hand, in the space you've just used. Walking juggle and catch.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.87,
+   "text": "Two minutes of that, breathing slowing with the pace. Then hold the big stretches.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.71,
+   "text": "Quads, hamstrings, hips and calves, thirty seconds each. No rush.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.68,
+   "text": "Name tonight's one win and one thing to fix, out loud, even alone.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.18,
+   "text": "The player who names their own fix improves faster than one who waits to be told.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

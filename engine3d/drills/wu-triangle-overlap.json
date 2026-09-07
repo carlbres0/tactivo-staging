@@ -1,0 +1,180 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14,
+    10
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4,
+    5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4,
+    15
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13,
+    9.9
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    4.74,
+    5.67
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.67,
+    14.26
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.69,
+   9.74
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.93
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.13,
+    3.75
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.45,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    2.5,
+    3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.8,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.4
+  },
+  {
+   "t": 8.65,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    5,
+    6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.81,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5,
+    15
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 13.88,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    13.29,
+    10.71
+   ],
+   "gait": "sprint"
+  }
+ ],
+ "duration": 18.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Threes, a triangle of cones, and a run that starts on the pass.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Three players, one on each cone of a triangle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.85,
+   "text": "Pass, then overlap the receiver on the outside, and take their cone.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.95,
+   "text": "The run goes at pace, outside them, not a jog round the back.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 18.5,
+   "text": "Change direction every two minutes. Then underlap instead, running inside them.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 21,
+   "text": "The run should start as the pass is struck, not after it arrives.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

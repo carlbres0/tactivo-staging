@@ -1,0 +1,56 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 120, "y": 60, "w": 80, "h": 80},
+  "cones": [[120, 60], [200, 60], [120, 140], [200, 140]],
+  "goals": [
+    {"x": 118, "y": 100.0, "w": 20, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 100},
+      {"t": 0.2, "x": 155, "y": 100},
+      {"t": 0.35, "x": 160, "y": 99},
+      {"t": 0.55, "x": 158, "y": 101},
+      {"t": 1, "x": 158, "y": 101}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 190, "y": 100},
+      {"t": 0.2, "x": 190, "y": 100},
+      {"t": 0.5, "x": 185, "y": 102},
+      {"t": 1, "x": 185, "y": 102}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 100},
+      {"t": 0.2, "x": 170, "y": 100},
+      {"t": 0.35, "x": 165, "y": 98},
+      {"t": 0.55, "x": 168, "y": 102},
+      {"t": 1, "x": 168, "y": 102}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 190, "y": 100},
+      {"t": 0.1, "x": 190, "y": 100},
+      {"t": 0.2, "x": 170, "y": 100},
+      {"t": 0.35, "x": 165, "y": 98},
+      {"t": 0.55, "x": 168, "y": 102},
+      {"t": 1, "x": 168, "y": 102}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[190, 100], [170, 100]]},
+    {"kind": "opp", "pts": [[170, 100], [165, 98]]},
+    {"kind": "run", "pts": [[150, 100], [160, 99]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Striker receives with their back to goal; the defender presses tight from behind."},
+    {"t": 0.2, "label": "Touch-tight while the ball is in front, half a yard off when it arrives."},
+    {"t": 0.35, "label": "Front foot in, body strong \u2014 deny the turn without fouling."},
+    {"t": 0.55, "label": "Held up: a defender who won't be split can't be spun away from."}
+  ],
+  "events": [
+    {"t": 0.55, "x": 158, "y": 101, "label": "DENIED"}
+  ]
+}

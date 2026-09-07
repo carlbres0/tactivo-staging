@@ -1,0 +1,72 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 40, "w": 110, "h": 120},
+  "cones": [[30, 40], [140, 40], [30, 160], [140, 160]],
+  "goals": [
+    {"x": 26, "y": 100.0, "w": 40, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "k", "kf": [
+      {"t": 0, "x": 40, "y": 105},
+      {"t": 1, "x": 41, "y": 105}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 110},
+      {"t": 0.35, "x": 95, "y": 105},
+      {"t": 0.47, "x": 90, "y": 100},
+      {"t": 1, "x": 110, "y": 90}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 75, "y": 75},
+      {"t": 1, "x": 76, "y": 74}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 75, "y": 135},
+      {"t": 1, "x": 76, "y": 134}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 130, "y": 150},
+      {"t": 0.35, "x": 45, "y": 155},
+      {"t": 1, "x": 48, "y": 153}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 115, "y": 95},
+      {"t": 0.47, "x": 100, "y": 97},
+      {"t": 1, "x": 102, "y": 98}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 70, "y": 70},
+      {"t": 1, "x": 71, "y": 71}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 70, "y": 140},
+      {"t": 1, "x": 71, "y": 139}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 130, "y": 150},
+      {"t": 0.35, "x": 45, "y": 155},
+      {"t": 0.47, "x": 90, "y": 100},
+      {"t": 1, "x": 110, "y": 90}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[130, 150], [45, 155]]},
+    {"kind": "pass", "pts": [[45, 155], [90, 100]]},
+    {"kind": "run", "pts": [[100, 110], [95, 105], [90, 100]]},
+    {"kind": "opp", "pts": [[115, 95], [100, 97]]},
+    {"kind": "pass", "pts": [[90, 100], [110, 90]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Wide attacker heads for the byline; the zone in front of goal must be owned."},
+    {"t": 0.35, "label": "One defender drops off their man to cover the cut-back \u2014 nobody follows the ball there."},
+    {"t": 0.47, "label": "Cut-back arrives \u2014 the defender gets there a stride before the runner."},
+    {"t": 0.6, "label": "Blocked at the highest-value spot in the box \u2014 the pass that costs the goals."}
+  ],
+  "events": [
+    {"t": 0.47, "x": 90, "y": 100, "label": "TURNOVER"}
+  ]
+}

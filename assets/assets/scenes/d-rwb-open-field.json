@@ -1,0 +1,45 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [
+    [285, 45], [285, 65],
+    [285, 90], [285, 110],
+    [285, 135], [285, 155]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 50, "y": 100},
+      {"t": 0.15, "x": 50, "y": 100},
+      {"t": 0.55, "x": 230, "y": 100},
+      {"t": 0.7, "x": 250, "y": 115, "cx": 245, "cy": 105},
+      {"t": 0.9, "x": 285, "y": 145},
+      {"t": 1, "x": 300, "y": 150}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 50, "y": 100},
+      {"t": 0.15, "x": 50, "y": 100},
+      {"t": 0.55, "x": 230, "y": 100},
+      {"t": 0.7, "x": 250, "y": 115, "cx": 245, "cy": 105},
+      {"t": 0.9, "x": 285, "y": 145},
+      {"t": 1, "x": 300, "y": 150}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[50, 100], [230, 100]]},
+    {"kind": "dribble", "curve": true, "pts": [[230, 100], [248, 110], [300, 150]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Runner starts with the ball at the near line — three gates open across the far line."},
+    {"t": 0.55, "label": "Driving hard with the ball out in front — big touches while the gate stays clear."},
+    {"t": 0.7, "label": "Coach steps into the middle gate at the last second — cut away to another."},
+    {"t": 0.9, "label": "Small touches through the contested gate, under control at the exit."}
+  ],
+  "events": [
+    {"t": 0.7, "x": 250, "y": 112, "label": "SWITCH"}
+  ]
+}

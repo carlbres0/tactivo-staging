@@ -1,0 +1,118 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 29
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    5.89,
+    14.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.11,
+    14.5
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    3.79
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5,
+    25.21
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   4.14
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.79,
+   "flightStyle": "clipped",
+   "loft": 3.93
+  },
+  {
+   "t": 4.61,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 1.79,
+   "flightStyle": "clipped",
+   "loft": 3.93
+  }
+ ],
+ "duration": 8.51,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Need a long passing drill that fits in a corner of the pitch? Here you go.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Pairs stand twenty five metres apart, with a five metre gate marked midway.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.28,
+   "text": "Clip it up and over the gate. Under the ball, not through it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 3.83,
+   "text": "One touch to kill it, second touch to send it back. Alternate feet each round.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.51,
+   "text": "Once both feet work, make them control on the half turn into a third target.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.01,
+   "text": "A point per clean pass and control, and the loft comes from the ankle.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

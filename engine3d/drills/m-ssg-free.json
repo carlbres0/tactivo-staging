@@ -1,0 +1,290 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 40
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    40
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    40
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.54,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.54,
+    40
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.54,
+    9.23
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    19.69,
+    16.92
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.38,
+    16.92
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    13.54,
+    24.62
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.54,
+    12.62
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    18.15,
+    20
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    8.92,
+    20
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    13.85,
+    31.08
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.76,
+   9.5
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.62,
+    18.15
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.23,
+    13.23
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    18.77,
+    19.69
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    14.62,
+    30.15
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    14.31,
+    26.92
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.98
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.92,
+    10
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.8,
+   "type": "pass",
+   "from": "a2",
+   "to": "a4",
+   "flight": 1.14
+  },
+  {
+   "t": 4.65,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    20,
+    18.77
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.55,
+   "type": "dribble",
+   "player": "a4",
+   "to": [
+    15.85,
+    34.62
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.84,
+   "type": "shoot",
+   "player": "a4",
+   "at": [
+    13.54,
+    40
+   ]
+  }
+ ],
+ "duration": 13.74,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Even teams, free play, and a coach who mostly keeps quiet.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A pitch with small goals, and no conditions on the game at all.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.57,
+   "text": "Referee it loosely and let the game breathe.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.31,
+   "text": "Praise your session theme when it appears, rather than stopping play to point it out.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.74,
+   "text": "Last two minutes, next goal wins. Add a two touch rule for the stronger team.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.24,
+   "text": "The match is where they show you what actually stuck.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18,
+  "length": 12.5
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14.25,
+    6.38
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.63,
+    4.63
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9,
+    3.75
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.38,
+    4.63
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.75,
+    6.38
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    9,
+    12.5
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    4.63,
+    10.58
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.38,
+    6.88
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   4.95,
+   10.44
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.95
+  },
+  {
+   "t": 3.77,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    12.73,
+    7.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.94,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    9,
+    12.5
+   ]
+  },
+  {
+   "t": 6.69,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    10,
+    3.75
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 10.99,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Should a finish from wide look the same as one from the middle?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Five cones fan around the box. Two wide, two half-angles, one central.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.08,
+   "text": "You serve to each cone in a fixed tour, and the finish matches the angle.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.91,
+   "text": "Far post from wide, low corners from the middle.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.99,
+   "text": "Two full atlases, counting matched goals. Then chase each finish as a recovering defender.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.49,
+   "text": "Every match angle now has a rehearsed answer, not a hundred random shots.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

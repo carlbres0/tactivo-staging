@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 40, "y": 40, "w": 240, "h": 120},
+  "cones": [[40, 40], [280, 40], [40, 160], [280, 160]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 120, "y": 80}, {"t": 0.5, "x": 140, "y": 60},
+      {"t": 1, "x": 150, "y": 55}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 200, "y": 70}, {"t": 0.5, "x": 200, "y": 70},
+      {"t": 1, "x": 220, "y": 50}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 200, "y": 130}, {"t": 1, "x": 200, "y": 130}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 150, "y": 100}, {"t": 0.2, "x": 150, "y": 100},
+      {"t": 0.4, "x": 135, "y": 85}, {"t": 1, "x": 140, "y": 70}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 120}, {"t": 0.5, "x": 170, "y": 120},
+      {"t": 0.7, "x": 185, "y": 125}, {"t": 1, "x": 190, "y": 120}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 120, "y": 80}, {"t": 0.2, "x": 120, "y": 80},
+    {"t": 0.35, "x": 200, "y": 70}, {"t": 0.5, "x": 200, "y": 70},
+    {"t": 0.65, "x": 200, "y": 130}, {"t": 1, "x": 200, "y": 130}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[120, 80], [200, 70]]},
+    {"kind": "pass", "pts": [[200, 70], [200, 130]]},
+    {"kind": "opp", "pts": [[150, 100], [135, 85]]},
+    {"kind": "opp", "pts": [[170, 120], [185, 125]]},
+    {"kind": "run", "pts": [[120, 80], [150, 55]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two teams, ball in hands, thrown and caught only — no running with it."},
+    {"t": 0.2, "label": "Ten completed passes scores; a dropped ball turns it over."},
+    {"t": 0.4, "label": "Because nobody watches the ball at their feet, support angles appear instantly."},
+    {"t": 0.7, "label": "Finish the last three minutes with the ball on the floor, same rules."}
+  ],
+  "events": []
+}

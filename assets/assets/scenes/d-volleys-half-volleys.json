@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "durationMs": 7500,
+  "area": {"x": 170, "y": 40, "w": 110, "h": 120},
+  "cones": [[170, 40], [280, 40], [170, 160], [280, 160]],
+  "goals": [
+    {"x": 290, "y": 90, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 185, "y": 90}, {"t": 0.3, "x": 185, "y": 90},
+      {"t": 0.45, "x": 188, "y": 92}, {"t": 1, "x": 188, "y": 92}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 210, "y": 90}, {"t": 0.3, "x": 210, "y": 90},
+      {"t": 0.55, "x": 212, "y": 88}, {"t": 1, "x": 212, "y": 88}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 185, "y": 90}, {"t": 0.3, "x": 185, "y": 90},
+    {"t": 0.42, "x": 212, "y": 88}, {"t": 0.55, "x": 286, "y": 85},
+    {"t": 1, "x": 286, "y": 85}
+  ], "air": [[0.3, 0.42]]},
+  "routes": [
+    {"kind": "pass", "pts": [[185, 90], [212, 88]]},
+    {"kind": "shot", "pts": [[212, 88], [286, 85]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server holds the ball; striker sets up side-on on the arc."},
+    {"t": 0.3, "label": "Underarm toss drops to knee height."},
+    {"t": 0.42, "label": "Side-foot volley — clean contact matters more than power."},
+    {"t": 0.55, "label": "Progress to the half-volley: toe down, ankle locked, body over the ball."}
+  ],
+  "events": [
+    {"t": 0.55, "x": 286, "y": 85, "label": "GOAL"}
+  ]
+}

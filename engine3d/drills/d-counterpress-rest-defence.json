@@ -1,0 +1,491 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 29.96,
+  "length": 47
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    27.96,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    27.96,
+    47
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    47
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.77,
+    3.04
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.31,
+    3.04
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.65,
+    3.04
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.19,
+    3.04
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    14.98,
+    47
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.98,
+    26.23
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    19.31,
+    35.75
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    10.65,
+    35.75
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    24.5,
+    37.48
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    18.44,
+    17.58
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    11.52,
+    17.58
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    14.98,
+    38.35
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    20.17,
+    40.08
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    9.79,
+    40.08
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    23.63,
+    34.88
+   ]
+  },
+  {
+   "id": "d5",
+   "team": "blue",
+   "number": 5,
+   "start": [
+    13.25,
+    40.94
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    14.98,
+    46.13
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   15.12,
+   26.55
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    11.52,
+    36.27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    22.94,
+    36.79
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    19.48,
+    38.52
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    9.62,
+    38.87
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    22.42,
+    33.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d5",
+   "to": [
+    12.9,
+    39.56
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.12,
+    36.62
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.05
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    15.85,
+    30.56
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.87,
+   "type": "pass",
+   "from": "a2",
+   "to": "d1",
+   "flight": 0.53
+  },
+  {
+   "t": 4.72,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    15.85,
+    36.96
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.01,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    10.65,
+    23.81
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14.12,
+    28.83
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    10.13,
+    24.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    20.17,
+    34.02
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    9.79,
+    15.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    16.71,
+    32.29
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    8.92,
+    33.15
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    20.52,
+    31.42
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "d5",
+   "to": [
+    12.21,
+    34.54
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    16.37,
+    14.98
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.81,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.21,
+    22.42
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.9,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.9,
+    25.37
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.68,
+   "type": "pass",
+   "from": "d1",
+   "to": "a5",
+   "flight": 1.05
+  },
+  {
+   "t": 11.14,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.9,
+    24.5
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 14.12,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A counter-press gets played through when nobody stayed home. This decides who stays.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A forty five by thirty five area with a full goal and two counter gates.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.94,
+   "text": "While you attack, two nominated players are rest defence and stay behind the ball.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.01,
+   "text": "When it's lost, they delay and screen the gates while the press engages ahead.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.12,
+   "text": "Freeze play three times to check who was where. Then nominate only one.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.62,
+   "text": "Counter-pressing only works if somebody stayed home, and the attacking shape decides that.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

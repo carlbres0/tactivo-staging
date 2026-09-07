@@ -1,0 +1,171 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.01,
+  "length": 11
+ },
+ "equipment": [],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    6.48,
+    2.99
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.48,
+    8.01
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    3.53,
+    2.99
+   ]
+  },
+  {
+   "id": "gk2",
+   "team": "gold",
+   "number": 2,
+   "start": [
+    3.53,
+    8.01
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   6.48,
+   7.66
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "gk",
+   "flight": 0.66,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 5.83,
+   "type": "pass",
+   "from": "gk",
+   "to": "a1",
+   "flight": 0.5
+  }
+ ],
+ "duration": 9.78,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     6.48,
+     2.5
+    ],
+    "w": 0.99,
+    "h": 0.99,
+    "color": "technical",
+    "label": "castle"
+   },
+   {
+    "at": [
+     6.48,
+     8.5
+    ],
+    "w": 0.99,
+    "h": 0.99,
+    "color": "tactical",
+    "label": "castle"
+   },
+   {
+    "at": [
+     3.53,
+     2.5
+    ],
+    "w": 1,
+    "h": 0.99,
+    "color": "physical",
+    "label": "castle"
+   },
+   {
+    "at": [
+     3.53,
+     8.5
+    ],
+    "w": 1,
+    "h": 0.99,
+    "color": "social",
+    "label": "castle"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Pairs, a cone castle each, five metres apart, everybody keeping goal at once.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "No queue and no big goal. Just two players, one ball, two castles.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.96,
+   "text": "Serve by throw or kick at your partner's castle. They save with their hands.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.82,
+   "text": "Every save scores the keeper, every hit the server. Five serves, then swap.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.78,
+   "text": "Later serves may bounce once, arriving low and awkward, the save keepers hate.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.28,
+   "text": "Everybody keeps for a minute, so every outfielder learns why keepers dive.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

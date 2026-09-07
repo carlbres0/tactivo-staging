@@ -1,0 +1,48 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 30, "y": 40, "w": 260, "h": 120},
+  "cones": [[30, 40], [30, 160]],
+  "goals": [
+    {"x": 294, "y": 70, "w": 20, "side": "e"},
+    {"x": 294, "y": 130, "w": 20, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 70, "y": 100}, {"t": 0.12, "x": 70, "y": 100},
+      {"t": 0.25, "x": 110, "y": 85},
+      {"t": 0.45, "x": 160, "y": 75, "cx": 130, "cy": 70},
+      {"t": 0.65, "x": 210, "y": 70}, {"t": 0.85, "x": 270, "y": 72},
+      {"t": 1, "x": 290, "y": 70}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 30, "y": 100}, {"t": 0.12, "x": 55, "y": 100},
+      {"t": 0.23, "x": 55, "y": 100}, {"t": 0.4, "x": 110, "y": 90},
+      {"t": 0.6, "x": 170, "y": 80}, {"t": 0.8, "x": 230, "y": 75},
+      {"t": 1, "x": 260, "y": 73}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 30, "y": 100}, {"t": 0.12, "x": 70, "y": 100},
+    {"t": 0.25, "x": 110, "y": 85}, {"t": 0.45, "x": 160, "y": 75},
+    {"t": 0.65, "x": 210, "y": 70}, {"t": 0.85, "x": 270, "y": 72},
+    {"t": 1, "x": 290, "y": 70}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[30, 100], [70, 100]]},
+    {"kind": "dribble", "curve": true, "pts": [[70, 100], [130, 70], [210, 70]]},
+    {"kind": "dribble", "pts": [[210, 70], [290, 70]]},
+    {"kind": "run", "pts": [[30, 100], [55, 100]]},
+    {"kind": "opp", "pts": [[55, 100], [110, 90]]},
+    {"kind": "opp", "pts": [[110, 90], [230, 75]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Receive the coach's serve — first touch must be out of the feet."},
+    {"t": 0.12, "label": "Drive at full speed toward either end gate — the choice is yours."},
+    {"t": 0.23, "label": "The chaser leaves one second after your first touch — keep the gap."},
+    {"t": 0.85, "label": "Break through the gate at full speed to win the run."}
+  ],
+  "events": [
+    {"t": 0.23, "x": 55, "y": 100, "label": "CHASER"}
+  ]
+}

@@ -1,0 +1,164 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.57,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    17.43,
+    14
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14,
+    14
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.57,
+    14
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.14,
+    14
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.29,
+    26
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    16.45,
+    13.81
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.29,
+    5.43
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.45,
+   5.74
+  ]
+ },
+ "events": [
+  {
+   "t": 0.96,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    15,
+    14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.16,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    11.57,
+    14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.68,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.14,
+    14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.48,
+   "type": "pass",
+   "from": "d1",
+   "to": "gk",
+   "flight": 1
+  }
+ ],
+ "duration": 14.95,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Shuffle, set, save. Three words your keeper needs in their head.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Four cones across the six yard line, keeper working between them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.68,
+   "text": "They shuffle across, setting balanced at every cone before moving on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.46,
+   "text": "Once they're set, the server rolls to a random cone. Collect, and reset.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.95,
+   "text": "Eight reps, then rest and go again. Later, the server strikes low and firm.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.45,
+   "text": "Set means still. A keeper still moving as the ball's struck is beaten.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,307 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 15.2,
+  "length": 14.92
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    11.6,
+    4.52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.6,
+    4.52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.6,
+    4.52
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    7.6,
+    14.92
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    7.6,
+    1.16
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    11.92,
+    5.47
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.6,
+    5.52
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    4.41,
+    5.11
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    7.6,
+    14.44
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   7.85,
+   1.41
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.4,
+    14.36
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.61
+  },
+  {
+   "t": 3.43,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    12.08,
+    5.96
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.44,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    7.6,
+    14.92
+   ]
+  },
+  {
+   "t": 4.55,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    7.76,
+    14.44
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.19,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.44,
+    6.6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.43,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.23,
+    5.45
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.85,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    6.8,
+    14.36
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.37,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.44,
+    6.76
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.92,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.89,
+    5.23
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.41,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    7.44,
+    14.44
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 10.19,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.6,
+    5.52
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.79,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    4.08,
+    5.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.79,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.4,
+    14.36
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 13.93,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    3.92,
+    6.76
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 14.06,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    7.76,
+    14.44
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 15.2,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    3.76,
+    5.51
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 17.94,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Do your wide finishers always go far post? Give them both corners.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Three cone stations around one goal, wide left, central and wide right, twelve metres out.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.74,
+   "text": "One striker at a time. Receive, take a touch to open the angle, and finish.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.94,
+   "text": "Once they're scoring, add a defender jockeying from goal side, closing the near post.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 20.44,
+   "text": "From wide, near post and far corner are both on. Ask them which one it is.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

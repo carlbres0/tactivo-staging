@@ -1,0 +1,130 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 16
+ },
+ "equipment": [],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    8.53,
+    6.4
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8.53,
+    10.2
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   8.21,
+   10.07
+  ]
+ },
+ "events": [
+  {
+   "t": 1.98,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    6.4,
+    5.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.98,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.87,
+    9.13
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.72,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    4.67,
+    6.93
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.72,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.13,
+    10.73
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9.44,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Little ones will copy anything, so make yourself the drill.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two balls, two of you, three metres apart in a small area.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.08,
+   "text": "Whatever you do, they mirror. Stops, turns, taps, tricks, all of it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.93,
+   "text": "Thirty seconds, then swap. They lead, and you copy badly on purpose.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.44,
+   "text": "Points for leading well and for spotting your mistakes. Later, mirror through scattered cones.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.94,
+   "text": "Copying your mistakes back is where the giggles live, and giggles buy the hard drills.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

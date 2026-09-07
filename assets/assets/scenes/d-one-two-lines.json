@@ -1,0 +1,44 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 40, "y": 70, "w": 240, "h": 60},
+  "cones": [[40, 70], [280, 70], [40, 130], [280, 130], [180, 100]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 100}, {"t": 0.2, "x": 170, "y": 100},
+      {"t": 0.32, "x": 170, "y": 100},
+      {"t": 0.42, "x": 215, "y": 90, "cx": 195, "cy": 78},
+      {"t": 0.55, "x": 250, "y": 100}, {"t": 0.7, "x": 250, "y": 100},
+      {"t": 0.8, "x": 250, "y": 100}, {"t": 1, "x": 255, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 180, "y": 80}, {"t": 1, "x": 180, "y": 80}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 280, "y": 100}, {"t": 0.8, "x": 280, "y": 100},
+      {"t": 1, "x": 280, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 60, "y": 100}, {"t": 0.2, "x": 170, "y": 100},
+    {"t": 0.32, "x": 180, "y": 80}, {"t": 0.42, "x": 215, "y": 90},
+    {"t": 0.55, "x": 250, "y": 100}, {"t": 0.7, "x": 250, "y": 100},
+    {"t": 0.8, "x": 280, "y": 100}, {"t": 1, "x": 280, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[60, 100], [170, 100]]},
+    {"kind": "pass", "pts": [[170, 100], [180, 80]]},
+    {"kind": "run", "curve": true, "pts": [[170, 100], [195, 78], [215, 90]]},
+    {"kind": "pass", "pts": [[180, 80], [215, 90]]},
+    {"kind": "dribble", "pts": [[215, 90], [250, 100]]},
+    {"kind": "pass", "pts": [[250, 100], [280, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Player A drives at the obstacle with the ball; the wall player waits beside it."},
+    {"t": 0.32, "label": "Lay it off first time — never a stop that invites a defender onto the pass."},
+    {"t": 0.42, "label": "The wall pass is weighted into A's path, not to feet — A runs onto it."},
+    {"t": 0.7, "label": "Accelerate away and finish into the end player, then rotate A to B to end."}
+  ],
+  "events": []
+}

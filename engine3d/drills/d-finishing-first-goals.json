@@ -1,0 +1,197 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14.5,
+  "length": 20
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    10.78,
+    10.25
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.98,
+    10.25
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.53,
+    10.25
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.72,
+    10.25
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12.5,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12.5,
+    20
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    20
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    9.88,
+    20
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    4.63,
+    20
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.88,
+    3.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    9.88,
+    2.45
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.63,
+    3.5
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    4.63,
+    2.45
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.87,
+   3.85
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.65,
+    14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.64,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    9.88,
+    20
+   ]
+  },
+  {
+   "t": 6.92,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    4.4,
+    14.45
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 13.75,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two short lines, a ball each, and a mini goal in front of every one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A small grid with two mini goals and a cone gate in the middle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.13,
+   "text": "Dribble through the gate, one big touch, then shoot. Collect your ball and swap lines.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.75,
+   "text": "Once the goals are flying in, a finish with the weaker foot counts double.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.25,
+   "text": "Count them out loud, first to ten. Celebrate every one like it's Wembley.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

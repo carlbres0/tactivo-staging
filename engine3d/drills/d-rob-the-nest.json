@@ -1,0 +1,314 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 34,
+  "length": 34
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    24,
+    8.67
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    29.33,
+    5.67
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5,
+    29
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    29.33,
+    30
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    5,
+    5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   27.33,
+   28
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    24.67,
+    9.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    28.67,
+    6.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    5.67,
+    28.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    28,
+    30.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    5.67,
+    5.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.02,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    26.33,
+    26.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.6,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    25,
+    29.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.74,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 10.31,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    26,
+    27.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.48,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    29.67,
+    5.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.48,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    5,
+    29
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.48,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    5,
+    5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.73,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    24,
+    20.33
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.63,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    23,
+    25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 14.81,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    27.33,
+    6.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 15.53,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    22,
+    16.67
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 21.26,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     29,
+     5
+    ],
+    "w": 4.5,
+    "h": 4.5,
+    "color": "technical",
+    "label": "nest"
+   },
+   {
+    "at": [
+     29,
+     29
+    ],
+    "w": 4.5,
+    "h": 4.5,
+    "color": "tactical",
+    "label": "nest"
+   },
+   {
+    "at": [
+     5,
+     5
+    ],
+    "w": 4.5,
+    "h": 4.5,
+    "color": "physical",
+    "label": "nest"
+   },
+   {
+    "at": [
+     5,
+     29
+    ],
+    "w": 4.5,
+    "h": 4.5,
+    "color": "social",
+    "label": "nest"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Some games run themselves once you have set them up. This is one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Four corner nests, four teams, and every ball piled in the middle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.1,
+   "text": "Dribble one ball at a time back to your own nest. Never carry it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.86,
+   "text": "Once the middle is empty, start stealing from anybody else's nest.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 21.26,
+   "text": "Let one player per team guard the nest, so a robber has to beat somebody.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 23.76,
+   "text": "Ninety seconds a round, counted out, and nobody stops moving for a second.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

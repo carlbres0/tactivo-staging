@@ -1,0 +1,147 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14,
+  "length": 12
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    7,
+    12
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    7,
+    4.33
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.24,
+   6.26
+  ]
+ },
+ "events": [
+  {
+   "t": 4.8,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7.33,
+    4.78
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.8,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.44,
+    7.56
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.8,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7.67,
+    5.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.9,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    7,
+    12
+   ]
+  },
+  {
+   "t": 8.17,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7.78,
+    6.22
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 10.42,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Five honest seconds with a defender on your back is a long time.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Your player holding the ball back to goal, you pressing into their back.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.29,
+   "text": "They shield while you count to five. Arms wide, ball on the far foot.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.34,
+   "text": "On five they spin either way and finish in the mini goal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.42,
+   "text": "Eight rounds, spin sides alternating. Later, count silently and turn to tackle.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.92,
+   "text": "The count is the contract. Survive it, and the spin has earned its goal.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

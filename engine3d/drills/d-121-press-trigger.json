@@ -1,0 +1,144 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18,
+  "length": 18
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    4.02,
+    4.33
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    10.87,
+    8.22
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.27,
+    5.19
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.57,
+   8.4
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    9,
+    9.31
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.89,
+    5.73
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.36,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.34,
+    8.56
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.56,
+   "type": "tackle",
+   "player": "a1",
+   "from": "n1"
+  },
+  {
+   "t": 11.22,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.42,
+    10.71
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 15.79,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A press without a trigger is just running. Here the trigger gets found.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "You dribbling casually around a box, your player watching from a cone.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.74,
+   "text": "A heavy touch, or your head dropping, means go. Sprint and win it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.68,
+   "text": "Pressing on a good touch loses the point. Six presses a set.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.79,
+   "text": "Disguise the bad touches better. Later, escape once and they must re-press within three seconds.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 18.29,
+   "text": "They're learning to read a body, not chase a ball. Praise the wait.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

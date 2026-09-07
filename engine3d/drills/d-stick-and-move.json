@@ -1,0 +1,267 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 16
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8,
+    8
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    11.6,
+    4
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    11.2,
+    12
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    4.4,
+    4.4
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6.4,
+    9.6
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    6.8,
+    6.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   8.22,
+   8.27
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8.53,
+    10.53
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    7.07,
+    7.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.87,
+    11.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.81,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 0.4
+  },
+  {
+   "t": 2.27,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    6.27,
+    7.47
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.27,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    5.33,
+    5.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.27,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.27,
+    5.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.66,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.33,
+    7.87
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.83,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 0.71
+  },
+  {
+   "t": 4.4,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7.2,
+    9.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.62,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.67,
+    7.47
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.62,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    4.53,
+    7.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.68,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.53,
+    9.87
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.16,
+   "type": "pass",
+   "from": "a4",
+   "to": "a2",
+   "flight": 0.5
+  },
+  {
+   "t": 7.01,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    6.13,
+    6.13
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9.53,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Want them making angles instead of watching? Take dribbling away from the carrier.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Four against two in a fifteen metre square.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.29,
+   "text": "No dribbling at all, so everybody else has to move or there is no pass.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.81,
+   "text": "Six passes in a row scores. Defenders who win it dribble out over any side.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.53,
+   "text": "Later the player on the ball must release it within three seconds of receiving.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.03,
+   "text": "If the ball cannot travel by carrying, the team has to make the angles.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

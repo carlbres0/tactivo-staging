@@ -1,0 +1,63 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 40, "y": 75, "w": 240, "h": 55},
+  "cones": [[40, 75], [280, 75], [40, 130], [280, 130], [272, 90], [272, 115]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 55, "y": 104},
+      {"t": 0.1, "x": 55, "y": 104},
+      {"t": 0.3, "x": 95, "y": 105},
+      {"t": 0.5, "x": 140, "y": 104},
+      {"t": 0.64, "x": 176, "y": 104},
+      {"t": 0.72, "x": 187, "y": 101},
+      {"t": 0.8, "x": 190, "y": 99},
+      {"t": 1, "x": 190, "y": 99}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 55, "y": 84},
+      {"t": 0.1, "x": 55, "y": 84},
+      {"t": 0.3, "x": 92, "y": 88},
+      {"t": 0.5, "x": 138, "y": 91},
+      {"t": 0.62, "x": 172, "y": 93},
+      {"t": 0.66, "x": 179, "y": 96},
+      {"t": 0.78, "x": 200, "y": 112},
+      {"t": 1, "x": 208, "y": 116}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 44, "y": 122},
+      {"t": 1, "x": 44, "y": 122}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 44, "y": 68},
+      {"t": 1, "x": 44, "y": 68}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 57, "y": 106},
+      {"t": 0.1, "x": 57, "y": 106},
+      {"t": 0.3, "x": 97, "y": 107},
+      {"t": 0.5, "x": 142, "y": 106},
+      {"t": 0.64, "x": 178, "y": 105},
+      {"t": 0.74, "x": 203, "y": 114},
+      {"t": 1, "x": 205, "y": 115}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[55, 104], [140, 104], [190, 105]]},
+    {"kind": "run", "pts": [[55, 84], [138, 93], [178, 99], [200, 112]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Dribbler attacks the channel; defender starts level on the outside line."},
+    {"t": 0.24, "label": "Run alongside side-on — match strides and watch the ball, not the feet."},
+    {"t": 0.56, "label": "Level now — poke the near foot through the ball. Never from behind."},
+    {"t": 0.76, "label": "Clean win. The dribbler only scores if the touch never gets loose."}
+  ],
+  "events": [
+    {"t": 0.65, "x": 177, "y": 88, "label": "POKE!"},
+    {"t": 0.8, "x": 210, "y": 124, "label": "WON CLEAN"}
+  ]
+}

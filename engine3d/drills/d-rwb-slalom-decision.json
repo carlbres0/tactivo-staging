@@ -1,0 +1,142 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 11.69,
+  "length": 29
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    5.85,
+    20.27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.21,
+    27.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.29,
+    27.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.4,
+    27.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.48,
+    27.77
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.85,
+    2.96
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.85,
+   3.31
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.85,
+    19.27
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.6,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.92,
+    21.23
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.61,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.15,
+    25.08
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 12.64,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got players who dribble with their head down? This makes them look up.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A twenty five metre channel that splits into two lanes at the end.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 6.32,
+   "text": "They carry straight down it while you wait at the split, saying nothing.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.38,
+   "text": "Point left or right at the last second, and they commit, then finish through the gate.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.64,
+   "text": "Eight runs each. Once they're reading it, hold up fingers instead of pointing.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.14,
+   "text": "Head up every third touch. That's the rhythm worth naming out loud.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

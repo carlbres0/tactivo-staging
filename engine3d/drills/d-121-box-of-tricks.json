@@ -1,0 +1,161 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.89,
+    4.11
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    6.33,
+    7
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.87,
+   4.46
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.8,
+    5.89
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.02,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.11,
+    5.84
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.79,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.16,
+    4.11
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.58,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.84,
+    4.2
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.33,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.2,
+    5.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 10.5,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5,
+    5
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 13.39,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5,
+     5
+    ],
+    "w": 2,
+    "h": 2,
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "How many touches fit inside a box two metres wide, in thirty seconds?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One tiny square, one ball, and your watch. That's the whole thing.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.21,
+   "text": "Soles, insides, both feet, as many touches as they can without leaving the box.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.44,
+   "text": "Count out loud in tens. Three rounds of free touches, toe-taps, then sole rolls.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.39,
+   "text": "Once that is easy, drop a hand into the box as a pesky foot to dodge.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.89,
+   "text": "The record is the opponent, so count generously and loudly.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

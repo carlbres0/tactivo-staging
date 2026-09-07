@@ -1,0 +1,183 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 16
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12,
+    8
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    9,
+    12
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.4,
+    10.6
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    4.4,
+    5.4
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    9,
+    4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   11.67,
+   8.11
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    8.4,
+    12.4
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    5.33,
+    6.4
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 0.8
+  },
+  {
+   "t": 2.17,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.07,
+    6.93
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.62,
+   "type": "pass",
+   "from": "a3",
+   "to": "a5",
+   "flight": 0.8
+  },
+  {
+   "t": 6.02,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    9,
+    12
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.27,
+   "type": "pass",
+   "from": "a5",
+   "to": "a2",
+   "flight": 0.8
+  },
+  {
+   "t": 7.12,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    7.73,
+    3.33
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 9.82,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Groups of five in a loose circle, one ball ticking between them.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A ten metre circle each, and a hidden timer only you can see.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.36,
+   "text": "Pass and move a step. The bomb never sits still, never goes to your neighbour.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.25,
+   "text": "When the whistle blows, whoever holds it does three toe taps.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.82,
+   "text": "Later put two bombs in the same circle, and keep both of them alive.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.32,
+   "text": "Nobody can be safe, so everybody moves the ball early.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

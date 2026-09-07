@@ -1,0 +1,186 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.67,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8.11,
+    2.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.11,
+    7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.56,
+    2.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.56,
+    7
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5.33,
+    5.06
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.28,
+    3.39
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5.22,
+    5.89
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    3.22,
+    3.39
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.06,
+   3.66
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.61,
+    5.61
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.4
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    3.94,
+    4.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.22,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    5.89,
+    16.44
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 10.14,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5.34,
+     4.78
+    ],
+    "w": 5.55,
+    "h": 4.44,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one drills the moment nobody drills, going from tight space to open grass.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A fifteen metre box, with twenty metres of open channel beyond it.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.04,
+   "text": "Three against one keeps the ball inside the box, all short, tight touches.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.91,
+   "text": "On your call, whoever has it breaks out and stretches into long strides.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.14,
+   "text": "Eight goes, rotating the defender. Then two inside, and one chases the carry.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.64,
+   "text": "That change of gear is where carries are won, and nobody ever works on it.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,285 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.19,
+  "length": 35
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.19,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.19,
+    35
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    35
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.1,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.1,
+    35
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.1,
+    8.08
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.79,
+    14.81
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    9.4,
+    14.81
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    12.1,
+    21.54
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.1,
+    17.5
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    13.44,
+    10.77
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    10.75,
+    10.77
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.23,
+   8.41
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    12.77,
+    12.12
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    11.42,
+    12.12
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.72
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.83,
+    8.75
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.54,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.54
+  },
+  {
+   "t": 5.69,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 0.73
+  },
+  {
+   "t": 6.54,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.13,
+    15.48
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.04,
+   "type": "dribble",
+   "player": "a4",
+   "to": [
+    10.75,
+    24.9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.52,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11.02,
+    24.9
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 12.5,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.44,
+    6.73
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 15.51,
+   "type": "pass",
+   "from": "a4",
+   "to": "d1",
+   "flight": 1.84
+  },
+  {
+   "t": 18.97,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    12.1,
+    0
+   ]
+  }
+ ],
+ "duration": 21.91,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Thinking before the ball arrives. That's what this one buys you.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A normal game with small goals, and a two touch limit everywhere.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 9.2,
+   "text": "Quick one twos, because there's no time to think once it's at your feet.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.24,
+   "text": "A heavy third touch turns the ball straight over, and the counter's already on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 21.91,
+   "text": "One touch in the attacking third only, once they can handle it.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 24.41,
+   "text": "Expect it ragged for five minutes. It looks worse before it looks better.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

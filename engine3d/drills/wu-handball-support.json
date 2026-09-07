@@ -1,0 +1,230 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 34
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    17,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12,
+    12
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    13.25,
+    22
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5.75,
+    22
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    9.5,
+    15.75
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    7,
+    18.25
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.04,
+   12.35
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.01
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11.38,
+    13.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14.5,
+    14.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.18,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.25,
+    14.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.83,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.75
+  },
+  {
+   "t": 3.83,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    6.38,
+    20.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.41,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    15.13,
+    15.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.68,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    15.75,
+    24.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.51,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    7,
+    20.75
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 8.94,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Struggling to get them supporting the ball? Take their feet out of it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two teams in an area, the ball in their hands, nobody running with it.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.79,
+   "text": "Thrown and caught only. Ten completed passes scores a point.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.26,
+   "text": "A dropped ball turns it over, so the angles have to be there already.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.94,
+   "text": "Last three minutes, put the ball back on the floor with the same rules.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.44,
+   "text": "Show them the shape they made with their hands, then ask for it with their feet.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

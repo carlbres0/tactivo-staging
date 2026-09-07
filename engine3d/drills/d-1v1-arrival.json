@@ -1,0 +1,200 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 22
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    11,
+    22
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    5,
+    22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8,
+    7
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10,
+    3
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.84,
+   3.31
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 0.45
+  },
+  {
+   "t": 3.27,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.5,
+    10
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.53,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.4,
+    8.7
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.49,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    11.2,
+    13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.22,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.7,
+    10.9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.16,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.9,
+    20
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.16,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.9,
+    21.5
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 13.06,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Most one v ones are lost before the dribble even starts. This one fixes that.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A twenty by fifteen area with two small goals, a server, an attacker and a defender.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.27,
+   "text": "The server plays in while the defender arrives fast from behind.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.45,
+   "text": "First touch away from the defender, drive at the space, score within eight seconds.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.06,
+   "text": "Six attacks each, then swap. Once it's easy, start the defender level instead.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.56,
+   "text": "It's a first touch drill dressed up as a one v one, and they'll never notice.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

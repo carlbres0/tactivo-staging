@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 33.17,
+  "length": 39
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    26.5,
+    7.83
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    26.5,
+    10.17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.33,
+    27.67
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.33,
+    30
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17.17,
+    17.17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17.17,
+    19.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9,
+    9
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9,
+    11.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.17,
+    28.83
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.17,
+    31.17
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    3.86,
+    19.5
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    20.67,
+    12.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12.5,
+    21.83
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    20.67,
+    26.5
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    10.17,
+    16
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    22.42,
+    16
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    16,
+    24.17
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    9,
+    19.5
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    19.5,
+    30
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   20.67,
+   12.85
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    18.33,
+    24.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    16,
+    21.61
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    21.14,
+    23.7
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    23.47,
+    28.14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    15.3,
+    23
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    20.67,
+    29.3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    21.14,
+    26.03
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 1.35
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    19.03,
+    19.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.72,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    24.64,
+    31.17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.17,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    21.61,
+    26.86
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.43,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    24.86,
+    29.06
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.7,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    27.2,
+    29.77
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 12.48,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Wondering which of your players actually scan? This game finds them for you.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Five cone gates scattered across the area, with four v four between them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.5,
+   "text": "Only one gate is alive at a time, and you point at it silently.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.24,
+   "text": "Spot the pointing, play to the live gate, and it moves once somebody scores.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.48,
+   "text": "Switch the gate every fifteen seconds even without a goal, then let players point.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.98,
+   "text": "Whoever glances at the touchline mid dribble is your scanner.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.33,
+  "length": 52
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    15.33,
+    52
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    11.33,
+    8.67
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    13
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   11.04,
+   8.87
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    15.49,
+    31.47
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.86,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 2.32
+  },
+  {
+   "t": 4.71,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    8,
+    29
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.8,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    16.33,
+    34
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.73,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    15.33,
+    52
+   ]
+  },
+  {
+   "t": 11.5,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    17.33,
+    40.33
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 20.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A rolled through-ball from halfway, a chase, and one sidefooted finish.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Half a pitch, a goal at the end, and you on the halfway line.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.87,
+   "text": "Roll it goalwards. They must reach it before the second bounce.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.53,
+   "text": "Low and sidefooted, never a thrash at a rolling ball. Eight chases, shoulders alternating.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 20.5,
+   "text": "Make the chase real, and shout MAN ON when the finish must come first time.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 23,
+   "text": "The rolling finish looks easy and misses constantly, so treat every one as a decider.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,247 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 28.3,
+  "length": 28.3
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.79,
+    11.18
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    15.23,
+    16.85
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.16,
+    19.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.7,
+    23.33
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    14.42,
+    25.22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    22.52,
+    10.1
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    23.6,
+    8.21
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    13.47,
+    17.44
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    13.88,
+    10.37
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    5.92,
+    18.69
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    7.4,
+    13.34
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    14.42,
+    24.41
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   21.44,
+   11.99
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    15.77,
+    24.28
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    21.71,
+    12.26
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.39,
+   "type": "collect",
+   "player": "gk"
+  },
+  {
+   "t": 4.59,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    12.53,
+    14.42
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.79,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    13.88,
+    16.85
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.79,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    5.66,
+    23.06
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.91,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    12.53,
+    15.23
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.59,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    7.94,
+    17.93
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 11.67,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Nobody learns much standing in a queue, so this splits them across three stations.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Three groups round one goal. A dead ball spot, a lay off, and a cut back lane.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.27,
+   "text": "Station one strikes a dead ball. Station two runs onto a lay off and finishes.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.97,
+   "text": "Station three reaches the byline and rolls the cut back across for the finish.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.67,
+   "text": "Once they're rotating well, stand a passive defender on the lay off shooting line.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.17,
+   "text": "Everyone hits all three finishes, and nobody queues more than two deep.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

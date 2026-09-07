@@ -1,0 +1,61 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 20, "w": 260, "h": 160},
+  "cones": [[30, 20], [290, 20], [30, 180], [290, 180]],
+  "goals": [
+    {"x": 298, "y": 100.0, "w": 40, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 25},
+      {"t": 0.15, "x": 150, "y": 25},
+      {"t": 0.4, "x": 230, "y": 28},
+      {"t": 0.6, "x": 258, "y": 30},
+      {"t": 1, "x": 258, "y": 30}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 200, "y": 110},
+      {"t": 0.25, "x": 200, "y": 110},
+      {"t": 0.55, "x": 240, "y": 90, "cx": 215, "cy": 100},
+      {"t": 0.72, "x": 268, "y": 80},
+      {"t": 1, "x": 268, "y": 80}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 200, "y": 135},
+      {"t": 0.25, "x": 200, "y": 135},
+      {"t": 0.6, "x": 245, "y": 120, "cx": 220, "cy": 128},
+      {"t": 0.78, "x": 285, "y": 112},
+      {"t": 1, "x": 285, "y": 112}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 150, "y": 25},
+      {"t": 0.15, "x": 150, "y": 25},
+      {"t": 0.4, "x": 230, "y": 28},
+      {"t": 0.6, "x": 258, "y": 30},
+      {"t": 0.72, "x": 268, "y": 80},
+      {"t": 0.82, "x": 293, "y": 85},
+      {"t": 1, "x": 293, "y": 85}
+    ],
+    "air": [[0.6, 0.72]]
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[150, 25], [230, 28], [258, 30]]},
+    {"kind": "run", "curve": true, "pts": [[200, 110], [220, 95], [268, 80]]},
+    {"kind": "run", "curve": true, "pts": [[200, 135], [225, 125], [285, 112]]},
+    {"kind": "pass", "pts": [[258, 30], [268, 80]]},
+    {"kind": "shot", "pts": [[268, 80], [293, 85]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Winger carries wide as two runners hold central, ready to split."},
+    {"t": 0.4, "label": "Drive into the channel toward the byline \u2014 the runs stay patient."},
+    {"t": 0.6, "label": "Whipped cross floats in as the front-post run goes first."},
+    {"t": 0.72, "label": "Front post arrives to finish; back post covers the far-side spill."}
+  ],
+  "events": [
+    {"t": 0.6, "x": 258, "y": 30, "label": "CROSS"},
+    {"t": 0.82, "x": 293, "y": 85, "label": "GOAL"}
+  ]
+}

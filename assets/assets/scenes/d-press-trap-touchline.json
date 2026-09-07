@@ -1,0 +1,54 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [[30, 25], [290, 25], [30, 175], [290, 175], [150, 25], [250, 25]],
+  "goals": [],
+  "players": [
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 160, "y": 90}, {"t": 0.05, "x": 160, "y": 90},
+      {"t": 0.3, "x": 155, "y": 95}, {"t": 1, "x": 150, "y": 100}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 213, "y": 46}, {"t": 0.15, "x": 213, "y": 46},
+      {"t": 0.4, "x": 218, "y": 50}, {"t": 1, "x": 225, "y": 55}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 140, "y": 75}, {"t": 0.3, "x": 170, "y": 70},
+      {"t": 0.6, "x": 170, "y": 70}, {"t": 1, "x": 160, "y": 95}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 185, "y": 60}, {"t": 0.25, "x": 197, "y": 55},
+      {"t": 0.4, "x": 218, "y": 50}, {"t": 0.7, "x": 172, "y": 88},
+      {"t": 0.8, "x": 172, "y": 88}, {"t": 1, "x": 178, "y": 92}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 150, "y": 110}, {"t": 0.5, "x": 180, "y": 106},
+      {"t": 0.9, "x": 200, "y": 110}, {"t": 1, "x": 200, "y": 110}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 90}, {"t": 0.05, "x": 160, "y": 90},
+    {"t": 0.15, "x": 213, "y": 46}, {"t": 0.4, "x": 218, "y": 50},
+    {"t": 0.41, "x": 218, "y": 50}, {"t": 0.7, "x": 172, "y": 88},
+    {"t": 0.8, "x": 172, "y": 88}, {"t": 0.9, "x": 200, "y": 110},
+    {"t": 1, "x": 200, "y": 110}
+  ], "air": []},
+  "routes": [
+    {"kind": "opp", "pts": [[160, 90], [213, 46]]},
+    {"kind": "run", "pts": [[140, 75], [170, 70]]},
+    {"kind": "run", "pts": [[185, 60], [197, 55], [218, 50]]},
+    {"kind": "dribble", "pts": [[218, 50], [172, 88]]},
+    {"kind": "pass", "pts": [[172, 88], [200, 110]]},
+    {"kind": "run", "pts": [[150, 110], [180, 106]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Build-up team shows the ball out toward the touchline — the trap is being set."},
+    {"t": 0.3, "label": "Pressers show inside, cutting the return ball; nobody presses from outside in."},
+    {"t": 0.4, "label": "Trap springs — win it against the line as a team, not alone."},
+    {"t": 0.7, "label": "Keep it away from the line; that's two points banked inside the trap zone."}
+  ],
+  "events": [
+    {"t": 0.4, "x": 218, "y": 50, "label": "TURNOVER"}
+  ]
+}

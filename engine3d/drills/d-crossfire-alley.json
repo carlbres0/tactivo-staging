@@ -1,0 +1,318 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 52.3,
+  "length": 34.2
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    26.15,
+    34.2
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    23.57,
+    31.3
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    46.28,
+    11.66
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    30.17,
+    25.18
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    20.35,
+    22.93
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    34.2,
+    19.71
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    6.03,
+    14.88
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    27.76,
+    23.9
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    23.9,
+    26.15
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   46.26,
+   12.01
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    19.07,
+    29.69
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    34.2,
+    25.51
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    6.19,
+    19.71
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    26.79,
+    29.69
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    23.25,
+    28.4
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    31.3,
+    26.79
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    45.47,
+    24.38
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.73,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.61,
+   "flightStyle": "lofted",
+   "loft": 3.16
+  },
+  {
+   "t": 6.58,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    43.22,
+    21.96
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.51,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    25.18,
+    31.95
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.96,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    26.15,
+    34.2
+   ]
+  },
+  {
+   "t": 10.23,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    18.74,
+    30.34
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.23,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    34.52,
+    26.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.71,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    29.37,
+    29.69
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 14.93,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     46.28,
+     18.1
+    ],
+    "w": 8.05,
+    "h": 32.2,
+    "color": "technical",
+    "label": "alley"
+   },
+   {
+    "at": [
+     6.03,
+     18.1
+    ],
+    "w": 8.05,
+    "h": 32.2,
+    "color": "tactical",
+    "label": "alley"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one makes the cross a decision, not a panicked clearance.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The penalty box with a five metre alley down each side, defenders barred.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.49,
+   "text": "Wingers drive down the alley while attackers time near post, far post and pull-back runs.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.75,
+   "text": "Two defenders mark and clear, and a goal from a cross counts double.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.93,
+   "text": "Later one defender may press the alley, so wingers beat them or cross early.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.43,
+   "text": "Time to look up turns a hopeful ball into a chosen one.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

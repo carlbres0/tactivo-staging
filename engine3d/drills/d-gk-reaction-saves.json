@@ -1,0 +1,185 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18.4,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    26
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.4,
+    26
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.4,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    9.2,
+    26
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    9.2,
+    21.8
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    9.2,
+    5.6
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.2,
+   5.95
+  ]
+ },
+ "events": [
+  {
+   "t": 1.35,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    9.2,
+    21.2
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.35,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    9.2,
+    26
+   ]
+  },
+  {
+   "t": 7.35,
+   "type": "pass",
+   "from": "gk",
+   "to": "d1",
+   "flight": 1.56
+  },
+  {
+   "t": 11.5,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    7.52,
+    24.56
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 15.16,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    9.2,
+    21.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 15.16,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    9.2,
+    26
+   ]
+  }
+ ],
+ "duration": 22.36,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one teaches your keeper to be still before the ball moves.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Keeper faces the net, and a striker waits on the shooting arc behind them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.59,
+   "text": "On the call, they turn and set on the shooter's planted foot, hands ready.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 16.77,
+   "text": "Save to the corner, then reset dead centre. Eight shots a set, three sets.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 22.36,
+   "text": "Once they're comfortable, add a second shooter so the keeper reads who's striking.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 24.86,
+   "text": "A good set beats a good dive, and this builds the set every time.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

@@ -1,0 +1,66 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 60, "y": 60, "w": 200, "h": 80},
+  "cones": [[60, 60], [260, 60], [60, 140], [260, 140]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 80}, {"t": 1, "x": 250, "y": 80, "cx": 160, "cy": 65}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 60, "y": 100}, {"t": 0.5, "x": 150, "y": 105},
+      {"t": 0.55, "x": 150, "y": 103}, {"t": 0.68, "x": 158, "y": 112},
+      {"t": 1, "x": 158, "y": 112}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 60, "y": 120}, {"t": 1, "x": 250, "y": 120, "cx": 160, "cy": 135}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 60, "y": 68}, {"t": 1, "x": 250, "y": 68}
+    ]},
+    {"team": "a", "label": "5", "kf": [
+      {"t": 0, "x": 60, "y": 133}, {"t": 1, "x": 250, "y": 133}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 160, "y": 100}, {"t": 0.4, "x": 160, "y": 100},
+      {"t": 0.55, "x": 146, "y": 100}, {"t": 1, "x": 146, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 66, "y": 100}, {"t": 0.5, "x": 156, "y": 105},
+    {"t": 0.55, "x": 156, "y": 103}, {"t": 0.65, "x": 150, "y": 38},
+    {"t": 1, "x": 150, "y": 38}
+  ], "air": []},
+  "balls": [
+    {"kf": [
+      {"t": 0, "x": 66, "y": 80}, {"t": 1, "x": 256, "y": 80, "cx": 166, "cy": 65}
+    ], "air": []},
+    {"kf": [
+      {"t": 0, "x": 66, "y": 120}, {"t": 1, "x": 256, "y": 120, "cx": 166, "cy": 135}
+    ], "air": []},
+    {"kf": [
+      {"t": 0, "x": 66, "y": 68}, {"t": 1, "x": 256, "y": 68}
+    ], "air": []},
+    {"kf": [
+      {"t": 0, "x": 66, "y": 133}, {"t": 1, "x": 256, "y": 133}
+    ], "air": []}
+  ],
+  "routes": [
+    {"kind": "dribble", "curve": true, "pts": [[60, 80], [160, 65], [250, 80]]},
+    {"kind": "dribble", "curve": true, "pts": [[60, 120], [160, 135], [250, 120]]},
+    {"kind": "dribble", "pts": [[60, 68], [250, 68]]},
+    {"kind": "dribble", "pts": [[60, 133], [250, 133]]},
+    {"kind": "dribble", "pts": [[60, 100], [150, 105]]},
+    {"kind": "opp", "pts": [[160, 100], [147, 101]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Everyone but the shark has a ball on the end line; the shark waits in the middle."},
+    {"t": 0.1, "label": "On the call, dribble to the far line without losing your ball."},
+    {"t": 0.5, "label": "A player whose ball is kicked out becomes a shark for the next round."},
+    {"t": 0.7, "label": "Last player with a ball wins the round."}
+  ],
+  "events": [
+    {"t": 0.55, "x": 118, "y": 92, "label": "TURNOVER"}
+  ]
+}

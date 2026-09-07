@@ -1,0 +1,400 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 26,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    24,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24,
+    24
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    24
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    18.5,
+    7.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    19.42,
+    18.5
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    6.58,
+    6.58
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    5.67,
+    19.42
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    13,
+    3.83
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    13,
+    22.17
+   ]
+  },
+  {
+   "id": "a7",
+   "team": "white",
+   "number": 7,
+   "start": [
+    23.08,
+    13
+   ]
+  },
+  {
+   "id": "a8",
+   "team": "white",
+   "number": 8,
+   "start": [
+    2.92,
+    13
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   18.22,
+   7.71
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13.92,
+    12.08
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.33,
+    13.92
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    6.58,
+    11.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    17.13,
+    5.71
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    4.2,
+    17.58
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    21.48,
+    17.13
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    7.13,
+    5.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.43,
+    13.55
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.41,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    18.5,
+    20.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.49,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    20.33,
+    8.42
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.41,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.93,
+    9.88
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.72,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    17.58,
+    11.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.03,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    6.81,
+    13.92
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.13,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7.5,
+    17.58
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.13,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    13.83,
+    3.83
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.94,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    21.89,
+    12.08
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.99,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    13.69,
+    21.48
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.13,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    3.83,
+    11.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.51,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    13,
+    7.5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 10.96,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    8.42,
+    21.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.98,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    20.33,
+    3.83
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.25,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    22.17,
+    15.75
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 15.88,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     13,
+     13
+    ],
+    "w": 22,
+    "h": 22,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Crowding gets their heads up better than anything you can shout from the side.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everyone dribbles at once in a square that's far too small for the group.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.76,
+   "text": "Two rules only. No bumping into anybody, and no balls out of the area.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.7,
+   "text": "On your call they all turn together, and the box shrinks by two metres.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.88,
+   "text": "Once they're managing, send two players in without a ball to be obstacles.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 18.38,
+   "text": "The tight space punishes anyone who doesn't look up, and they work it out themselves.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

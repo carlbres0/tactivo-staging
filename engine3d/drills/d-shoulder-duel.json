@@ -1,0 +1,189 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 11.5,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    9.5,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.5,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.03,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.47,
+    17
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.43,
+    3.35
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.43,
+    5
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5.07,
+    5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.21,
+   3.62
+  ]
+ },
+ "events": [
+  {
+   "t": 1.26,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.38,
+    11.6
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.13,
+   "type": "pass",
+   "from": "a1",
+   "to": "d1",
+   "flight": 0.83
+  },
+  {
+   "t": 3.13,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.5,
+    15.05
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.98,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.28,
+    3.95
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.58,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    5.45,
+    15.65
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 11.79,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two players hip to hip, and a ball rolled past them into the grid.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A server at one end, four players working, and a ladder of wins.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.95,
+   "text": "Both chase, because the race to the ball is the first duel.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.43,
+   "text": "Shoulder to shoulder, arms in, same height, ball in reach. Legal contact only.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.79,
+   "text": "Once they've got it, serve bouncing balls so the duel starts even earlier.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.29,
+   "text": "Say what legal looks like before every round, and they'll police it themselves.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

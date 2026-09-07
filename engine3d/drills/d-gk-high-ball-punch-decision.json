@@ -1,0 +1,159 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 44.3,
+  "length": 35.58
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    35.58
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    35.58
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    22.15,
+    35.58
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    22.15,
+    25.51
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    38.94,
+    2
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   38.74,
+   2.28
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    23.83,
+    23.83
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "gk",
+   "flight": 2.18,
+   "flightStyle": "lofted",
+   "loft": 5.84
+  },
+  {
+   "t": 3.55,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    38.27,
+    2.67
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 7.85,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Judge the decision, not the result. A right call that goes wrong is still right.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The penalty area, a full goal, and twelve deliveries mixed on purpose.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.18,
+   "text": "Some are catchable, some are not, and some are best left alone.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 3.93,
+   "text": "The keeper says the decision out loud before moving. The call comes first.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.85,
+   "text": "Once they're calling well, add two attackers so the picture is contested.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.35,
+   "text": "Review every one afterwards. Was the call right, whatever happened to the ball?",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 32,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    27,
+    10
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18,
+    6
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9,
+    10
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    16,
+    24
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.45,
+    10.89
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    20,
+    13
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    18,
+    20
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   19.66,
+   12.93
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    17,
+    7
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.18,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.67
+  },
+  {
+   "t": 4.03,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    19,
+    12
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.47,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    16,
+    24
+   ]
+  },
+  {
+   "t": 5.47,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    20,
+    21.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.22,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    16,
+    8
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 9.91,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Warm the technique, not the ego. Nobody needs to burst the net yet.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "An arc of cones around one goal, with a server on the side.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.78,
+   "text": "Players work round the arc, finishing the served ball first time.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 5.95,
+   "text": "Start at half power into the corners, and build to a full strike.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.91,
+   "text": "Alternate feet each rotation. Later, allow a settling touch under a short clock.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.41,
+   "text": "The keeper gets warmed up too, and nobody pulls anything in the first ten minutes.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

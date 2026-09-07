@@ -1,0 +1,50 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 110, "y": 70, "w": 100, "h": 60},
+  "cones": [
+    [110, 70], [210, 70], [110, 130], [210, 130]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 130, "y": 100},
+      {"t": 0.5, "x": 130, "y": 100},
+      {"t": 1, "x": 130, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 190, "y": 100},
+      {"t": 0.35, "x": 190, "y": 100},
+      {"t": 0.42, "x": 188, "y": 100},
+      {"t": 0.85, "x": 172, "y": 90},
+      {"t": 1, "x": 190, "y": 100}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 130, "y": 100},
+      {"t": 0.2, "x": 130, "y": 100},
+      {"t": 0.35, "x": 172, "y": 97},
+      {"t": 0.42, "x": 172, "y": 97},
+      {"t": 0.5, "x": 145, "y": 102},
+      {"t": 0.6, "x": 145, "y": 102},
+      {"t": 0.75, "x": 172, "y": 90},
+      {"t": 0.85, "x": 172, "y": 90},
+      {"t": 1, "x": 140, "y": 100}
+    ],
+    "air": [[0.6, 0.75]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[130, 100], [172, 97]]},
+    {"kind": "pass", "pts": [[172, 97], [145, 102]]},
+    {"kind": "pass", "pts": [[145, 102], [172, 90]]},
+    {"kind": "pass", "pts": [[172, 90], [140, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server holds the ball out; header meets it from a standing position — no jump."},
+    {"t": 0.35, "label": "Forehead, eyes open, neck firm, arms out for balance."},
+    {"t": 0.6, "label": "Progress to a gentle underarm serve from three metres."},
+    {"t": 0.85, "label": "Same technique on the move — maximum five headers each, then swap."}
+  ],
+  "events": []
+}

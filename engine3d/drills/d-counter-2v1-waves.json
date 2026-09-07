@@ -1,0 +1,243 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 21.5,
+  "length": 33.63
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    19.5,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.5,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.75,
+    17
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.75,
+    32
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.5,
+    17
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12,
+    17
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.75,
+    25.75
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    10.75,
+    32.63
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   9.53,
+   17.35
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.5,
+    25.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    11.13,
+    32
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13.25,
+    27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.13,
+    25.75
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.42,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11.75,
+    27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.25,
+    28.88
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.4
+  },
+  {
+   "t": 8.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.75,
+    26.38
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.22,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    10.75,
+    32
+   ]
+  }
+ ],
+ "duration": 11.98,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two against one sounds easy until they drift wide and turn it into one against one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A twenty five by twenty area, one goal and keeper, and a halfway cone to start from.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.19,
+   "text": "Two attackers break at the defender directly. No sideways pass until the defender commits.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.15,
+   "text": "Once they've committed, release it late, right before the tackle, and finish.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.98,
+   "text": "Eight seconds or the defender wins it. Add a recovering defender eight metres behind.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.48,
+   "text": "Run at the defender, not away from them, and the overload stays an overload.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

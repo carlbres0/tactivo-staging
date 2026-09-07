@@ -1,0 +1,39 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [[100, 164]],
+  "goals": [],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 150, "y": 76}, {"t": 0.18, "x": 156, "y": 84},
+      {"t": 0.36, "x": 162, "y": 100}, {"t": 0.55, "x": 162, "y": 100},
+      {"t": 0.72, "x": 162, "y": 100}, {"t": 1, "x": 162, "y": 100}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 111, "y": 148}, {"t": 0.18, "x": 111, "y": 148},
+      {"t": 0.36, "x": 118, "y": 140}, {"t": 0.55, "x": 140, "y": 130},
+      {"t": 0.72, "x": 166, "y": 124}, {"t": 1, "x": 176, "y": 152}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 150, "y": 84}, {"t": 0.18, "x": 158, "y": 92},
+    {"t": 0.36, "x": 164, "y": 100}, {"t": 0.55, "x": 172, "y": 116},
+    {"t": 0.72, "x": 172, "y": 118}, {"t": 1, "x": 182, "y": 146}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[150, 84], [164, 100], [172, 116]]},
+    {"kind": "run", "pts": [[111, 148], [140, 130], [166, 124]]},
+    {"kind": "dribble", "pts": [[172, 118], [182, 146]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Coach dribbles casually in the box; the player watches from a cone."},
+    {"t": 0.3, "label": "Pressing on a good touch loses the point — the trigger is everything."},
+    {"t": 0.5, "label": "A heavy touch, and the head drops. Go."},
+    {"t": 0.74, "label": "Win it and go. Six presses, then the bad touches get better disguised."}
+  ],
+  "events": [
+    {"t": 0.56, "x": 184, "y": 104, "label": "HEAVY TOUCH"},
+    {"t": 0.8, "x": 190, "y": 130, "label": "WON"}
+  ]
+}

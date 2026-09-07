@@ -1,0 +1,287 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 21.5,
+  "length": 32
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    19.5,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.5,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.75,
+    32
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    10.75,
+    5.75
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    15.75,
+    5.75
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5.75,
+    5.75
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.75,
+    20.75
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    17.63,
+    17
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    3.25,
+    17
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    10.75,
+    30.75
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   10.74,
+   6.1
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13.25,
+    26.38
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    3.5,
+    23.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.5,
+    17.63
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    10.13,
+    30.75
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.38,
+    15
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.78,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.75,
+    27.63
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.78,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    4.75,
+    23
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.54,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5,
+    27
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.79,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.5,
+    20.63
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.3,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    8.75,
+    27.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.54,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.38,
+    26.25
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 13.75,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "What should a lone defender do against a three man break? Almost never tackle.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One goal, a keeper, and two more defenders waiting on halfway.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.13,
+   "text": "The attack breaks three against one, and the others release a second later.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11,
+   "text": "The lone defender jockeys and shows them sideways, buying every second they can.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.75,
+   "text": "Six goes each. Once they've got it, hold the recovery back by two seconds.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.25,
+   "text": "That delay turns three against one into three against three, so name it out loud.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

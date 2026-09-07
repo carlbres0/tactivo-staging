@@ -1,0 +1,230 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 11.33,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8.67,
+    3.47
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.67,
+    3.47
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.67,
+    4.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.67,
+    4.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.67,
+    16.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.67,
+    16.33
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.67,
+    4.93
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5.67,
+    4.93
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    3.67,
+    4.93
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    7.67,
+    3.47
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    5.67,
+    3.47
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    3.67,
+    3.47
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.67,
+   1.73
+  ],
+  "static": true
+ },
+ "events": [
+  {
+   "t": 1,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    5.8,
+    16.4
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    5.27,
+    16
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.6,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.67,
+    16.41
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 5.6,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    3.53,
+    15.2
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.75,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    3.8,
+    14.8
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7.27,
+    15.87
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 11.44,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Nothing wakes a group up like a race they might lose.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Pairs facing each other on two lines, two metres apart.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.14,
+   "text": "On your cue the runner breaks for the finish, ten metres away.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.29,
+   "text": "The chaser hunts the tag. Reach the line untagged and the race is yours.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.44,
+   "text": "Swap roles every rep. Later, make the cue visual only, a dropped bib.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.94,
+   "text": "The first three steps decide every race, so praise the reaction, not the pace.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

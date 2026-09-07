@@ -1,0 +1,40 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 110, "y": 60, "w": 100, "h": 80},
+  "cones": [[110, 90], [110, 110], [210, 90], [210, 110]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 140, "y": 100}, {"t": 0.15, "x": 150, "y": 95},
+      {"t": 0.3, "x": 140, "y": 100}, {"t": 0.45, "x": 150, "y": 105},
+      {"t": 0.6, "x": 140, "y": 100}, {"t": 0.85, "x": 115, "y": 100},
+      {"t": 1, "x": 115, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 180, "y": 100}, {"t": 0.15, "x": 170, "y": 95},
+      {"t": 0.3, "x": 180, "y": 100}, {"t": 0.45, "x": 170, "y": 105},
+      {"t": 0.6, "x": 180, "y": 100}, {"t": 0.85, "x": 205, "y": 100},
+      {"t": 1, "x": 205, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 140, "y": 100}, {"t": 0.15, "x": 150, "y": 95},
+    {"t": 0.3, "x": 140, "y": 100}, {"t": 0.45, "x": 150, "y": 105},
+    {"t": 0.6, "x": 140, "y": 100}, {"t": 0.85, "x": 115, "y": 100},
+    {"t": 1, "x": 115, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[140, 100], [150, 95]]},
+    {"kind": "run", "pts": [[180, 100], [170, 95]]},
+    {"kind": "dribble", "pts": [[140, 100], [115, 100]]},
+    {"kind": "run", "pts": [[180, 100], [205, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Pairs face each other with a ball each, three metres apart."},
+    {"t": 0.15, "label": "One leads with a move — step-over, drag-back, feint — the partner copies."},
+    {"t": 0.6, "label": "On the call, both drop the mirror and race to dribble through their own end gate."},
+    {"t": 0.85, "label": "Swap the leader every minute."}
+  ],
+  "events": []
+}

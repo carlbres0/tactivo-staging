@@ -1,0 +1,232 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16.5,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14.5,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.5,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12,
+    4.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    3.25,
+    7
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    2,
+    17
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    12,
+    19.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   11.91,
+   4.84
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.75,
+    11.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    4.63,
+    12.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    9.75,
+    16.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.31,
+    10.75
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.08,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.25,
+    15.13
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.84,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.5,
+    16.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.84,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13.25,
+    19.5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.84,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.5,
+    3.25
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.84,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    4.75,
+    8.25
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.65,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10,
+    21.38
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 12.81,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Ball each, heads up, and a coach shouting body parts.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everyone dribbling freely inside the area, no cones to follow.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.48,
+   "text": "On a call, they stop the ball dead with that body part. Sole, knee, head.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.25,
+   "text": "Between calls, ask for a surface. Inside, outside, laces.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.81,
+   "text": "Call two body parts at once, and make the last few calls silly on purpose.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.31,
+   "text": "Keep it under ten minutes. The moment it stops being a game, they drift.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

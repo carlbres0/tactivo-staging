@@ -1,0 +1,45 @@
+{
+  "v": 1,
+  "durationMs": 12000,
+  "area": {"x": 45.5, "y": 10, "w": 229.1, "h": 180},
+  "cones": [],
+  "goals": [{"x": 160, "y": 18.2, "w": 16, "side": "n"}],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 168, "y": 36}, {"t": 1, "x": 168, "y": 36}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 95, "y": 116}, {"t": 0.16, "x": 95, "y": 116},
+      {"t": 0.34, "x": 84, "y": 112}, {"t": 0.5, "x": 82, "y": 110},
+      {"t": 0.68, "x": 108, "y": 128}, {"t": 0.84, "x": 130, "y": 140},
+      {"t": 1, "x": 152, "y": 150}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 78, "y": 108}, {"t": 0.34, "x": 78, "y": 108},
+    {"t": 0.5, "x": 78, "y": 108}, {"t": 0.66, "x": 154, "y": 24},
+    {"t": 0.78, "x": 152, "y": 18.5}, {"t": 1, "x": 152, "y": 18.5}
+  ], "air": []},
+  "balls": [
+    {"kf": [{"t": 0, "x": 117.5, "y": 141}, {"t": 1, "x": 117.5, "y": 141}], "air": []},
+    {"kf": [{"t": 0, "x": 160, "y": 157}, {"t": 1, "x": 160, "y": 157}], "air": []},
+    {"kf": [{"t": 0, "x": 202.5, "y": 141}, {"t": 1, "x": 202.5, "y": 141}], "air": []},
+    {"kf": [{"t": 0, "x": 241.8, "y": 108}, {"t": 1, "x": 241.8, "y": 108}], "air": []},
+    {"kf": [{"t": 0, "x": 127.3, "y": 92}, {"t": 1, "x": 127.3, "y": 92}], "air": []}
+  ],
+  "routes": [
+    {"kind": "run", "pts": [[95, 116], [84, 112]]},
+    {"kind": "shot", "pts": [[78, 108], [154, 24]]},
+    {"kind": "run", "pts": [[82, 110], [130, 140], [152, 150]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Six balls round the edge of the box, coach in goal, the clock already running."},
+    {"t": 0.28, "label": "Finish all six in any order, sprinting between them."},
+    {"t": 0.62, "label": "The coach saves what they can and calls the time at the last shot."},
+    {"t": 0.82, "label": "Rest while restocking together, then race the time just set."}
+  ],
+  "events": [
+    {"t": 0.72, "x": 196, "y": 44, "label": "GOAL"},
+    {"t": 0.92, "x": 178, "y": 172, "label": "FIVE TO GO"}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 20, "y": 40, "w": 200, "h": 120},
+  "cones": [[20, 40], [220, 40], [20, 160], [220, 160]],
+  "goals": [
+    {"x": 20, "y": 100.0, "w": 36, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 55, "y": 100},
+      {"t": 0.15, "x": 55, "y": 100},
+      {"t": 0.25, "x": 60, "y": 100},
+      {"t": 0.4, "x": 32, "y": 86},
+      {"t": 0.5, "x": 32, "y": 86},
+      {"t": 0.6, "x": 55, "y": 100},
+      {"t": 0.75, "x": 55, "y": 100},
+      {"t": 0.9, "x": 32, "y": 114},
+      {"t": 1, "x": 32, "y": 114}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 190, "y": 100},
+      {"t": 1, "x": 190, "y": 100}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 190, "y": 100},
+      {"t": 0.25, "x": 190, "y": 100},
+      {"t": 0.4, "x": 32, "y": 86},
+      {"t": 0.5, "x": 32, "y": 86},
+      {"t": 0.6, "x": 190, "y": 100},
+      {"t": 0.75, "x": 190, "y": 100},
+      {"t": 0.9, "x": 32, "y": 114},
+      {"t": 1, "x": 32, "y": 114}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "shot", "pts": [[190, 100], [32, 86]]},
+    {"kind": "pass", "pts": [[32, 86], [190, 100]]},
+    {"kind": "shot", "pts": [[190, 100], [32, 114]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Keeper faces the net \u2014 on the call, turns and sets before the shot."},
+    {"t": 0.25, "label": "Set on the shooter's planted foot, weight forward, hands ready."},
+    {"t": 0.4, "label": "Save to the corner, then reset dead centre straight after."},
+    {"t": 0.75, "label": "Alternate corners \u2014 eight shots per set, three sets."}
+  ],
+  "events": [
+    {"t": 0.4, "x": 32, "y": 86, "label": "SAVE"},
+    {"t": 0.9, "x": 32, "y": 114, "label": "SAVE"}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 50, "y": 70, "w": 220, "h": 60},
+  "cones": [[50, 70], [270, 70], [50, 130], [270, 130]],
+  "goals": [
+    {"x": 270, "y": 100, "w": 16, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 70, "y": 100}, {"t": 0.12, "x": 70, "y": 100},
+      {"t": 0.22, "x": 96, "y": 100}, {"t": 0.5, "x": 148, "y": 92},
+      {"t": 0.75, "x": 188, "y": 103}, {"t": 0.88, "x": 204, "y": 107},
+      {"t": 1, "x": 215, "y": 100}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 102, "y": 100}, {"t": 0.22, "x": 102, "y": 100},
+      {"t": 0.5, "x": 155, "y": 88}, {"t": 0.75, "x": 195, "y": 108},
+      {"t": 0.88, "x": 204, "y": 107}, {"t": 1, "x": 212, "y": 122}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 70, "y": 100}, {"t": 0.12, "x": 70, "y": 100},
+    {"t": 0.22, "x": 102, "y": 100}, {"t": 0.5, "x": 155, "y": 88},
+    {"t": 0.75, "x": 195, "y": 108}, {"t": 0.88, "x": 204, "y": 107},
+    {"t": 1, "x": 215, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[70, 100], [102, 100]]},
+    {"kind": "dribble", "pts": [[102, 100], [155, 88], [195, 108], [204, 107]]},
+    {"kind": "run", "pts": [[70, 100], [148, 92], [188, 103], [204, 107]]},
+    {"kind": "dribble", "pts": [[204, 107], [215, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Defender plays the ball to the attacker and steps up as it travels."},
+    {"t": 0.22, "label": "Arrival: low and side-on, showing the attacker down the line."},
+    {"t": 0.5, "label": "Jockey and delay — patience until the touch is loose."},
+    {"t": 0.88, "label": "Tackle wins it clean; defender clears down the channel."}
+  ],
+  "events": [
+    {"t": 0.88, "x": 204, "y": 107, "label": "TACKLE"}
+  ]
+}

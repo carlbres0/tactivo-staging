@@ -1,0 +1,190 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 16
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.07,
+    7.33
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    3.47,
+    4.27
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   8.83,
+   7.59
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7.6,
+    3.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.27,
+    10.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.83,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.53,
+    12
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.32,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    11.2,
+    9.2
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.09,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    10.53,
+    4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.56,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.6,
+    6.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 10.19,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    12.4,
+    6.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.53,
+    5.2
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 13.77,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    12.67,
+    7.73
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 15.12,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.67,
+    6
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 18.61,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one builds the shoulder check that lives between touches, without ever naming it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A ten metre box, one ball, and you wandering silently behind your player.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.58,
+   "text": "Your player dribbles freely. On the whistle they shout where you are.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.52,
+   "text": "Left, right or behind. One glance then checks it, and a right call scores.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 18.61,
+   "text": "Once that lands, hold up fingers and ask for the number in one glance.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 21.11,
+   "text": "The shout only proves the check. The glances between touches are the score.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

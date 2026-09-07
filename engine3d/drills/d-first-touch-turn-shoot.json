@@ -1,0 +1,172 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 25
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    8,
+    25
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    8,
+    14
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    8,
+    24
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   4.14,
+   5.32
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.98
+  },
+  {
+   "t": 3.8,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    8.8,
+    15.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.62,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    8,
+    25
+   ]
+  },
+  {
+   "t": 5.62,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.5,
+    23.5
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 8.71,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Strikers with their back to goal live or die on the first touch.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The striker receives twenty metres out, back to goal, keeper behind them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.05,
+   "text": "The server calls the turning side while the pass is still travelling.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 5.23,
+   "text": "One touch to turn, second touch is the finish. Two touches maximum.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.71,
+   "text": "Once they're comfortable, add a defender who follows the striker in.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.21,
+   "text": "The drill looks like a turn and a shot. It's really about that first touch.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

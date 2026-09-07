@@ -1,0 +1,118 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.01,
+  "length": 8
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    5,
+    8
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    5,
+    6.94
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    5,
+    2.78
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   3.13
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "n1",
+   "at": [
+    5,
+    8
+   ]
+  },
+  {
+   "t": 6.36,
+   "type": "pass",
+   "from": "gk",
+   "to": "n1",
+   "flight": 0.42
+  }
+ ],
+ "duration": 10.23,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Falling on hard ground is what young keepers meet last. Start on the knees.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Your keeper kneeling in the goal, you five metres out with a ball.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.86,
+   "text": "Roll firm serves a body's width either side. They collapse, save, and recover kneeling.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.98,
+   "text": "The next serve is already coming. Six saves, then the same set standing.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.23,
+   "text": "Later, serve bouncing balls and ask for the recovery onto the feet.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.73,
+   "text": "Every ball comes back as a throw into your hands, so distribution counts too.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

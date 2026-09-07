@@ -1,0 +1,391 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 22,
+  "length": 22
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    20,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    20,
+    20
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    20
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    18.36,
+    11
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    11,
+    18.36
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    3.64,
+    11
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    11,
+    3.64
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.64,
+    9.36
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    9.36,
+    13.45
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    15.91,
+    7.73
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    5.27,
+    15.09
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   18.11,
+   11.25
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.82,
+    15.91
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    14.6,
+    13.45
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    3.8,
+    12.96
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.91,
+    10.18
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "d2",
+   "flight": 1.04
+  },
+  {
+   "t": 3.86,
+   "type": "pass",
+   "from": "d2",
+   "to": "d3",
+   "flight": 1.04
+  },
+  {
+   "t": 4.18,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    11.82,
+    12.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.5,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.73,
+    13.95
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.06,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    3.15,
+    10.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.01,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.42,
+    7.73
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.3,
+   "type": "pass",
+   "from": "d3",
+   "to": "a2",
+   "flight": 0.43
+  },
+  {
+   "t": 7.89,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.24,
+    11.98
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.89,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.27,
+    11.98
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.89,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.18,
+    15.91
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.89,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    8.38,
+    6.91
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.89,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    12.31,
+    12.31
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.89,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    4.45,
+    8.71
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.15,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    5.6,
+    9.04
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.34,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.51
+  },
+  {
+   "t": 10.19,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    8.05,
+    11
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.64,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    7.73,
+    12.96
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.06,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.51,
+    14.27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.47,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.04,
+    12.31
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 14.66,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Nobody gets a rest in this one, and they'll feel it within a minute.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "An eighteen by eighteen grid, two teams of four, one keeping and one pressing.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1,
+   "text": "Four consecutive passes scores, and the press is trying to stop the first one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.5,
+   "text": "When it turns over the roles swap instantly. No reset, no restart, keep moving.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.66,
+   "text": "Two minute rounds, a minute walking between. Shrink the grid so the press arrives faster.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.16,
+   "text": "If a player is standing after a turnover, they're the reason the pass got through.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

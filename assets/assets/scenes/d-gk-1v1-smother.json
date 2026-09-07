@@ -1,0 +1,222 @@
+{
+  "v": 1,
+  "durationMs": 12000,
+  "area": {
+    "x": 20,
+    "y": 30,
+    "w": 220,
+    "h": 140
+  },
+  "cones": [
+    [
+      20,
+      30
+    ],
+    [
+      240,
+      30
+    ],
+    [
+      20,
+      170
+    ],
+    [
+      240,
+      170
+    ]
+  ],
+  "goals": [
+    {
+      "x": 20,
+      "y": 100.0,
+      "w": 30,
+      "side": "w"
+    }
+  ],
+  "players": [
+    {
+      "team": "a",
+      "label": "GK",
+      "kf": [
+        {
+          "t": 0,
+          "x": 32,
+          "y": 100
+        },
+        {
+          "t": 0.14,
+          "x": 32,
+          "y": 100
+        },
+        {
+          "t": 0.24,
+          "x": 98,
+          "y": 100
+        },
+        {
+          "t": 1,
+          "x": 98,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "2",
+      "kf": [
+        {
+          "t": 0,
+          "x": 168,
+          "y": 140
+        },
+        {
+          "t": 1,
+          "x": 168,
+          "y": 140
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "x",
+      "kf": [
+        {
+          "t": 0,
+          "x": 230,
+          "y": 100
+        },
+        {
+          "t": 0.12,
+          "x": 230,
+          "y": 100
+        },
+        {
+          "t": 0.52,
+          "x": 118,
+          "y": 100
+        },
+        {
+          "t": 0.6,
+          "x": 120,
+          "y": 100
+        },
+        {
+          "t": 1,
+          "x": 120,
+          "y": 100
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 230,
+        "y": 100
+      },
+      {
+        "t": 0.12,
+        "x": 230,
+        "y": 100
+      },
+      {
+        "t": 0.52,
+        "x": 118,
+        "y": 100
+      },
+      {
+        "t": 0.6,
+        "x": 108,
+        "y": 100
+      },
+      {
+        "t": 0.74,
+        "x": 108,
+        "y": 100
+      },
+      {
+        "t": 0.88,
+        "x": 168,
+        "y": 140
+      },
+      {
+        "t": 1,
+        "x": 168,
+        "y": 140
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          230,
+          100
+        ],
+        [
+          118,
+          100
+        ]
+      ]
+    },
+    {
+      "kind": "run",
+      "pts": [
+        [
+          32,
+          100
+        ],
+        [
+          98,
+          100
+        ]
+      ]
+    },
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          108,
+          100
+        ],
+        [
+          168,
+          140
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Striker breaks through from 25 metres — close, hold, or spread?"
+    },
+    {
+      "t": 0.14,
+      "label": "Close fast while the ball is still travelling ahead of them."
+    },
+    {
+      "t": 0.52,
+      "label": "Slow and set as the striker gets their head up to finish."
+    },
+    {
+      "t": 0.6,
+      "label": "Spread big and low: hands and body behind the ball at their feet."
+    },
+    {
+      "t": 0.8,
+      "label": "Get up, roll it out to the next server, then reset the line."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.6,
+      "x": 108,
+      "y": 100,
+      "label": "SMOTHER"
+    }
+  ]
+}

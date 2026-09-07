@@ -1,0 +1,225 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 19
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13,
+    4
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    15.42,
+    9.5
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    13,
+    15
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    7.5,
+    15.58
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    3.58,
+    9.5
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    7.5,
+    3.58
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10,
+    8.5
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    7.67,
+    11.83
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.34,
+   8.56
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    7,
+    12.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "a2",
+   "flight": 0.55
+  },
+  {
+   "t": 1.93,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    6.5,
+    11.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.64,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.5,
+    8.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.37,
+   "type": "pass",
+   "from": "a2",
+   "to": "d1",
+   "flight": 0.5
+  },
+  {
+   "t": 5.11,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    7,
+    11
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.48,
+   "type": "pass",
+   "from": "d1",
+   "to": "a4",
+   "flight": 0.75
+  },
+  {
+   "t": 6.3,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    7.67,
+    10.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.33,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8.67,
+    11.5
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 9.87,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got players who receive with their back to everything? This spins them.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A ring of servers around a circle, two wizards inside with a ball each.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.57,
+   "text": "A wizard passes out and spins to take the return on the half turn.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.7,
+   "text": "The first touch must go away from that server, towards a new one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.87,
+   "text": "Add a tagger wandering the middle, so a heavy touch gets pinched.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.37,
+   "text": "A first touch that faces the next pass is the whole of midfield play.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

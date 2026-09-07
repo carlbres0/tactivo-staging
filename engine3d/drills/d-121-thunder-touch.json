@@ -1,0 +1,139 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.6,
+  "length": 16
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8,
+    12.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.6,
+    12.8
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    6.8,
+    3.79
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.59,
+    10.13
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.79,
+   4.14
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.53,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 3.35,
+   "type": "pass",
+   "from": "a1",
+   "to": "n1",
+   "flight": 0.63
+  },
+  {
+   "t": 5.59,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.63
+  },
+  {
+   "t": 7.84,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    6.8,
+    13.12
+   ],
+   "flight": 0.4,
+   "flightStyle": "ground"
+  }
+ ],
+ "duration": 9.91,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Rollers, bouncers, knee-high and looping, all from your hands and feet.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A cushion gate five metres away, and your player waiting between you and it.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.19,
+   "text": "Kill each ball dead, then play it through the gate within two touches.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.14,
+   "text": "Ten serves a set. The serves get louder as the touches get softer.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.91,
+   "text": "Later, they start facing away and turn on your shout.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.41,
+   "text": "The serve decides the surface, so never name laces or thigh. Let the ball teach.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

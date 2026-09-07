@@ -1,0 +1,249 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.03,
+  "length": 18
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    4.66,
+    3.59
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.66,
+    5.04
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.66,
+    6.49
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.66,
+    7.94
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.17,
+    10.59
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.78,
+    10.59
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.39,
+    10.59
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.01,
+    10.59
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    4.9,
+    16
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.48,
+    4.16
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.34,
+   3.84
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.66,
+    3.59
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.24,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.66,
+    5.04
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.87,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.66,
+    6.49
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.5,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.66,
+    7.94
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.13,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.1,
+    9.43
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.96,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.01,
+    9.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.26,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.34,
+    9.43
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.58,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.58,
+    9.61
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.9,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.96,
+    9.39
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 14.25,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.9,
+    12.28
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 16.3,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    4.9,
+    16
+   ]
+  }
+ ],
+ "duration": 19.07,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Training alone, with nobody to play against. This is your match.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Three stations in a line. A cone slalom, a wall, and a target goal.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 7.25,
+   "text": "Slalom the cones at pace, then five exchanges off the wall.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.16,
+   "text": "Carry to the shooting spot, pick your corner, and stop the clock.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 19.07,
+   "text": "A missed corner or a skipped cone adds three seconds. Three rounds, full rest.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 21.57,
+   "text": "The total time is the score to beat, and that's the whole point.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

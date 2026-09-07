@@ -1,0 +1,177 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 30,
+  "length": 30
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    30,
+    15
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    15,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    15,
+    30
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    0,
+    15
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    22.8,
+    7.2
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    21.6,
+    21.6
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.2,
+    8.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.88,
+   14.63
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    26.17,
+    18
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    13.92,
+    3.12
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.3,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    15.37,
+    13.92
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.14,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 7.16,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    25.92,
+    15.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.78,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    30,
+    15
+   ]
+  }
+ ],
+ "duration": 15.57,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Little ones will shoot all day, as long as nobody queues.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A pile of gold on the halfway line and four mini goals facing outwards.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.56,
+   "text": "Sprint, take one ball, dribble away and finish into any goal you fancy.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.08,
+   "text": "A goal closes for you once you have scored in it twice.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.57,
+   "text": "Add one robber who may tackle carriers but never stands in front of a goal.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 18.07,
+   "text": "Choosing a new goal teaches shooting off both sides, without a word about feet.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

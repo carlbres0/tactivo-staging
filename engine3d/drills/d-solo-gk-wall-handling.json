@@ -1,0 +1,278 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.67,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.67,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.33,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.67,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.33,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.67,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3,
+    2.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.56,
+    5.06
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.56,
+    7.28
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.56,
+    10.06
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    5.91,
+    4.58
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   5.81,
+   4.24
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.72,
+    3.28
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.88,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.56,
+    5.06
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.7,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.72,
+    3.28
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.51,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.56,
+    7.28
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.93,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.72,
+    3.28
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 11.35,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.56,
+    7.28
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 13.76,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.18,
+    3.26
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 16.17,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.56,
+    7.28
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 18.58,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    5.49,
+    3.26
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 21.02,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    6,
+    7.28
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 23.43,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    6.88,
+    3.27
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 25.85,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    7.33,
+    6.06
+   ],
+   "gait": "sprint"
+  }
+ ],
+ "duration": 29.23,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Keeper wants to train alone, with nobody to serve? A wall does it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Gloves on, a rebound board, and marks at four and six metres to ladder back.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 10.52,
+   "text": "Throw against the wall and catch the return, thumbs together behind the ball, up at the chest.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 23.97,
+   "text": "Then kick-serve rounds, gathering the rebound at the feet, and reaction catches at full stretch.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 29.23,
+   "text": "Once that's easy, face away, turn on your own call, and find the ball.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 31.73,
+   "text": "A keeper with a wall never has to wait for a server again.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

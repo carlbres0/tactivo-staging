@@ -1,0 +1,298 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.25,
+  "length": 29
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    16.54,
+    5.75
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    3.72,
+    14.5
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    16.54,
+    23.26
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    3.72,
+    21.37
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.13,
+    10.76
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    10.13,
+    18.25
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   16.2,
+   5.83
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    16.08,
+    13.06
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    16.08,
+    22.81
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    4.17,
+    21.73
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.85,
+    10.17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.85,
+    18.84
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11.21,
+    9.45
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.8,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.08,
+    9
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.93,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.49,
+    19.56
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.85,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.31,
+    8.91
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.13,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    16.45,
+    22.45
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.13,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    3.72,
+    21.37
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.13,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    9.4,
+    19.02
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.41,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.04,
+    9.27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.33,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    8.86,
+    18.12
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.97,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8.32,
+    9.99
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 14.28,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     16.69,
+     14.5
+    ],
+    "w": 3.12,
+    "h": 25,
+    "color": "technical",
+    "label": "bank"
+   },
+   {
+    "at": [
+     3.56,
+     14.5
+    ],
+    "w": 3.12,
+    "h": 25,
+    "color": "tactical",
+    "label": "bank"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Need a quick dribbling game for your next session? Try this one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two banks with a river between them, and two crocodiles living in the water.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.14,
+   "text": "Everyone dribbles bank to bank, one crossing at a time, any gap they like.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.71,
+   "text": "The crocodiles can only tackle inside the river, so pick your moment and go.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.28,
+   "text": "Widen the river so crossings take longer and crocodiles get more time.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.78,
+   "text": "It's simple to set up, and gets players choosing under pressure.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,293 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 34,
+  "length": 34
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    21,
+    15.33
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    17.67,
+    4.33
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    15.33,
+    19.67
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    24.33,
+    6.67
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    24,
+    27.33
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    8.33,
+    16.33
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   26.67,
+   9
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    26,
+    9.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10,
+    14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    22.67,
+    26.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    25.33,
+    7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    23,
+    26.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    10,
+    15
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.6,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    23.33,
+    25.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.72,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    24.67,
+    8.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.72,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 8.66,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    25.33,
+    9.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.81,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    23.67,
+    9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.06,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    18.67,
+    18
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.72,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    24.33,
+    26.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.72,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    9,
+    15.67
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 17.02,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     26,
+     8
+    ],
+    "w": 4.8,
+    "h": 4.8,
+    "color": "technical",
+    "label": "den"
+   },
+   {
+    "at": [
+     23.6,
+     26
+    ],
+    "w": 4.8,
+    "h": 4.8,
+    "color": "tactical",
+    "label": "den"
+   },
+   {
+    "at": [
+     9.2,
+     15.2
+    ],
+    "w": 4.8,
+    "h": 4.8,
+    "color": "physical",
+    "label": "den"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three dens, three balls in each, and a wolf guarding every one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everybody else is a raider, waiting outside with nothing in front of them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.74,
+   "text": "Raiders run in empty handed and dribble a ball out of any den.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.28,
+   "text": "The wolf defends inside the den only. Win it back, replace it, guard on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.02,
+   "text": "Escaped balls go to a scoring nest, which wolves may raid back when empty.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 19.52,
+   "text": "Three raiders from three sides teaches a defender patience instead of diving in.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

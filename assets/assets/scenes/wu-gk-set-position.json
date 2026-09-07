@@ -1,0 +1,35 @@
+{
+  "v": 1,
+  "durationMs": 16000,
+  "area": {"x": 180, "y": 40, "w": 140, "h": 120},
+  "cones": [[250, 70], [250, 90], [250, 110], [250, 130]],
+  "goals": [
+    {"x": 318, "y": 100, "w": 50, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "GK", "kf": [
+      {"t": 0, "x": 250, "y": 70}, {"t": 0.06, "x": 250, "y": 70},
+      {"t": 0.16, "x": 250, "y": 90}, {"t": 0.26, "x": 250, "y": 90},
+      {"t": 0.38, "x": 250, "y": 110}, {"t": 0.48, "x": 250, "y": 110},
+      {"t": 0.6, "x": 250, "y": 130}, {"t": 1, "x": 250, "y": 130}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 200, "y": 100}, {"t": 1, "x": 200, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 200, "y": 100}, {"t": 0.7, "x": 200, "y": 100},
+    {"t": 0.85, "x": 250, "y": 130}, {"t": 1, "x": 250, "y": 130}
+  ], "air": []},
+  "routes": [
+    {"kind": "run", "pts": [[250, 70], [250, 130]]},
+    {"kind": "pass", "pts": [[200, 100], [250, 130]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Keeper shuffles between the cones, setting balanced at each one before moving on."},
+    {"t": 0.38, "label": "Never cross the feet: shuffle, set, save."},
+    {"t": 0.7, "label": "Server rolls to a random cone once the keeper is set — collect and reset."},
+    {"t": 0.9, "label": "Eight repetitions, then rest and repeat."}
+  ],
+  "events": []
+}

@@ -1,0 +1,290 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12,
+    21
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    19.8,
+    16.4
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    19.8,
+    7.6
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    12,
+    3
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    4.2,
+    7.6
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    4.2,
+    16.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.33,
+   21.12
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    22,
+    14.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    19.25,
+    4.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    9.3,
+    2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    2,
+    9.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    4.75,
+    19.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    14.7,
+    22
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.52,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    21,
+    12
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.52,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    16.4,
+    4.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.52,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    7.6,
+    4.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.52,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    3,
+    12
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.52,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    7.6,
+    19.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.77,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    16.4,
+    19.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.26,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    14,
+    18
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.91,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    16.4,
+    19.8
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 13.06,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "One slow lap, then a full stretch circuit. Nothing complicated, and it needs no kit.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everyone in the centre circle, in from the lap, spread out with room to move.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.57,
+   "text": "Calves, hamstrings, quads, hip flexors, glutes and groin, twenty to thirty seconds a side.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.75,
+   "text": "No bouncing, and a different player leads each stretch in turn.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.06,
+   "text": "Finish with three deep breaths and your summary of the session.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.56,
+   "text": "Letting them lead the stretches gets you a quieter circle than asking for quiet ever will.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

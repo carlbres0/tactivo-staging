@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 188, "y": 132}, {"t": 0.15, "x": 188, "y": 132},
+      {"t": 0.3, "x": 180, "y": 136}, {"t": 0.5, "x": 158, "y": 120},
+      {"t": 0.72, "x": 136, "y": 98}, {"t": 1, "x": 122, "y": 84}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 224, "y": 156}, {"t": 0.15, "x": 210, "y": 148},
+      {"t": 0.3, "x": 198, "y": 142}, {"t": 0.5, "x": 176, "y": 130},
+      {"t": 0.72, "x": 154, "y": 114}, {"t": 1, "x": 140, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 182, "y": 128}, {"t": 0.15, "x": 182, "y": 128},
+    {"t": 0.3, "x": 174, "y": 132}, {"t": 0.5, "x": 152, "y": 116},
+    {"t": 0.72, "x": 130, "y": 94}, {"t": 1, "x": 116, "y": 80}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[182, 128], [152, 116], [116, 80]]},
+    {"kind": "opp", "pts": [[224, 156], [176, 130], [140, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "One box, one ball, and the coach hunting it for real."},
+    {"t": 0.2, "label": "The player keeps it alive any way they can: shields, turns, escapes."},
+    {"t": 0.5, "label": "Body between coach and ball, the far foot doing all the work."},
+    {"t": 0.78, "label": "Every full ten seconds survived is a point — three rounds, hunger rising."}
+  ],
+  "events": [
+    {"t": 0.92, "x": 100, "y": 66, "label": "SAFE — 1 POINT"}
+  ]
+}

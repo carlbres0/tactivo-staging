@@ -1,0 +1,150 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    4.44,
+    5
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    6.11,
+    5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   4.67,
+   5.26
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.56,
+    6.28
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.97,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.78,
+    6.22
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.41,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.33,
+    4.83
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.04,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.28,
+    3.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.72,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.06,
+    3.72
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.17,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.28,
+    4.89
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 12.24,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Want toe-taps that a nine year old will actually ask to do again?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A small square, one ball, and three floors to climb.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.67,
+   "text": "Ten toe-taps, then twenty, then thirty, with you counting every one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.02,
+   "text": "Between floors, a lap around you, dribbling on the weak foot only.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.24,
+   "text": "A fumble still finishes the floor. Later, climb against the watch and add a summit.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.74,
+   "text": "Top floor is king of the pyramid, and the lap hides recovery inside the game.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

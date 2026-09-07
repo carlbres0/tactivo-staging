@@ -1,0 +1,332 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.25,
+  "length": 35.1
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.25,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.25,
+    35.1
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    35.1
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.13,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.8,
+    35.1
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.13,
+    5.4
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    16.99,
+    15.93
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5.38,
+    18.23
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    17.52,
+    16.88
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    12.8,
+    20.25
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    6.73,
+    21.6
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.11,
+   5.75
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    17.52,
+    16.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    13.48,
+    18.9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.4,
+    22.28
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    11.86,
+    10.13
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.69,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.77
+  },
+  {
+   "t": 4.01,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    8.07,
+    22.95
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.63,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.1,
+    20.93
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.08,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 1.15
+  },
+  {
+   "t": 6.08,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.15,
+    20.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.93,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13.75,
+    19.98
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.39,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    8.35,
+    26.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.84,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    6.73,
+    24.3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.59,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    9.43,
+    29.03
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.65,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.4,
+    12.42
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.65,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    8.75,
+    24.3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 13.26,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    12.8,
+    35.1
+   ]
+  },
+  {
+   "t": 13.69,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13.21,
+    21.87
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 16.62,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Reward the combination, and the hopeful ball forward disappears on its own.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A conditioned match on a reduced pitch, with both goals live throughout.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.49,
+   "text": "A goal only counts after a one against one or a two against two.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.14,
+   "text": "Play out from the back and keep the build-up on the ground.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 16.62,
+   "text": "Once they're combining, ask them to slip the runner in behind the line.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 19.12,
+   "text": "The rule does the coaching, so you can watch instead of shouting.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

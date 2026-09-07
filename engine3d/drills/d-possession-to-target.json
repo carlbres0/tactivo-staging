@@ -1,0 +1,283 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 21.14,
+  "length": 34
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    19.14,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.14,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.14,
+    5.21
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    5.21
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.14,
+    28.79
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    28.79
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    10.57,
+    10.57
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12.71,
+    15.93
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    9.5,
+    21.29
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    10.57,
+    28.79
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    11.64,
+    14.86
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    10.57,
+    20.21
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.7,
+   10.9
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    12.18,
+    17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.58
+  },
+  {
+   "t": 2.58,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11.11,
+    19.14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.4,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.62
+  },
+  {
+   "t": 4.18,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.04,
+    26.64
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.45,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.57,
+    23.43
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.63,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 0.76
+  },
+  {
+   "t": 7.06,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    11.11,
+    21.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.01,
+   "type": "pass",
+   "from": "a4",
+   "to": "a1",
+   "flight": 1.82
+  }
+ ],
+ "duration": 11.95,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     10.57,
+     3.61
+    ],
+    "w": 17.14,
+    "h": 3.21,
+    "label": "zone",
+    "color": "technical"
+   },
+   {
+    "at": [
+     10.57,
+     30.4
+    ],
+    "w": 17.14,
+    "h": 3.21,
+    "label": "zone",
+    "color": "tactical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one stops keep ball becoming a game of nothing in particular.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two teams, a thirty by twenty five area, and a target player at each end.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.11,
+   "text": "Six passes have to go in before a target can be found.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.89,
+   "text": "Find them, one touch to control, one to lay it back, and play turns round.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.95,
+   "text": "Once they're finding it, the pass into the target must come forward through the middle.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.45,
+   "text": "Keeping the ball is only useful if it ends somewhere, and here it has to.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 60, "y": 70, "w": 200, "h": 60},
+  "cones": [[60, 70], [60, 130], [260, 70], [260, 130]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 85}, {"t": 0.05, "x": 60, "y": 85},
+      {"t": 0.7, "x": 60, "y": 85}, {"t": 0.75, "x": 60, "y": 85},
+      {"t": 1, "x": 260, "y": 85}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 60, "y": 115}, {"t": 0.35, "x": 260, "y": 115},
+      {"t": 0.4, "x": 260, "y": 115}, {"t": 0.75, "x": 60, "y": 115},
+      {"t": 0.8, "x": 60, "y": 115}, {"t": 1, "x": 260, "y": 115}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 60, "y": 85}, {"t": 0.05, "x": 60, "y": 85},
+    {"t": 0.7, "x": 60, "y": 85}, {"t": 0.75, "x": 60, "y": 85},
+    {"t": 1, "x": 260, "y": 85}
+  ], "air": []},
+  "routes": [
+    {"kind": "run", "pts": [[60, 85], [260, 85]]},
+    {"kind": "dribble", "pts": [[260, 85], [60, 85]]},
+    {"kind": "run", "pts": [[60, 85], [260, 85]]},
+    {"kind": "run", "pts": [[60, 115], [260, 115]]},
+    {"kind": "run", "pts": [[260, 115], [60, 115]]},
+    {"kind": "run", "pts": [[60, 115], [260, 115]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Pairs jog between the lines — high knees, heel flicks, side shuffles, open-the-gate."},
+    {"t": 0.35, "label": "Add a ball each: sole rolls travelling forward, inside-outside touches, drag-backs."},
+    {"t": 0.75, "label": "Finish with three rising-tempo runs building to eighty per cent pace."}
+  ],
+  "events": []
+}

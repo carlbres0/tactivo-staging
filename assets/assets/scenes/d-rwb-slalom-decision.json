@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 30, "y": 60, "w": 260, "h": 80},
+  "cones": [
+    [220, 100],
+    [298, 65], [298, 85],
+    [298, 115], [298, 135]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 40, "y": 100},
+      {"t": 0.15, "x": 40, "y": 100},
+      {"t": 0.5, "x": 210, "y": 100},
+      {"t": 0.62, "x": 230, "y": 120, "cx": 225, "cy": 112},
+      {"t": 0.85, "x": 270, "y": 128},
+      {"t": 1, "x": 280, "y": 130}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 40, "y": 100},
+      {"t": 0.15, "x": 40, "y": 100},
+      {"t": 0.5, "x": 210, "y": 100},
+      {"t": 0.62, "x": 230, "y": 120, "cx": 225, "cy": 112},
+      {"t": 0.85, "x": 270, "y": 128},
+      {"t": 0.9, "x": 270, "y": 128},
+      {"t": 1, "x": 298, "y": 125}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[40, 100], [210, 100]]},
+    {"kind": "dribble", "curve": true, "pts": [[210, 100], [230, 118], [270, 128]]},
+    {"kind": "pass", "pts": [[270, 130], [298, 125]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Carrying the ball straight down the channel toward the split."},
+    {"t": 0.5, "label": "Head up — the coach points late and the lane is chosen only now."},
+    {"t": 0.62, "label": "Committing into the chosen lane at speed."},
+    {"t": 0.9, "label": "Finish with a pass through the gate at the end of that lane."}
+  ],
+  "events": [
+    {"t": 0.62, "x": 225, "y": 112, "label": "CALL"}
+  ]
+}

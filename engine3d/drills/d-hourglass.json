@@ -1,0 +1,229 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.23,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.61,
+    12
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.61,
+    12
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.96,
+    3.56
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    3.07,
+    4
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.73,
+    9.33
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5.29,
+    6.44
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.83,
+   3.89
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.29,
+    11.11
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.4,
+    4.89
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 0.62
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.29,
+    4.44
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.71,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    4.84,
+    10.89
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.42,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.51,
+    8.22
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.02,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.96,
+    16
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 6.7,
+   "type": "pass",
+   "from": "a3",
+   "to": "a2",
+   "flight": 0.67
+  },
+  {
+   "t": 7.55,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.07,
+    11.11
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 10.71,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     6.62,
+     17.22
+    ],
+    "w": 9.22,
+    "h": 9.56,
+    "color": "technical",
+    "label": "top square"
+   },
+   {
+    "at": [
+     6.62,
+     6.78
+    ],
+    "w": 9.22,
+    "h": 9.56,
+    "color": "tactical",
+    "label": "3v1 here"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "How do you practise playing out under a shout? Squeeze it into an hourglass.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two twelve metre squares joined by a narrow neck, like an hourglass.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.78,
+   "text": "Three against one keeps the ball in the bottom square, the top one empty.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.71,
+   "text": "On your call of turn, they play through the neck and flood up.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.71,
+   "text": "Then let the defender chase through, and add a second up top.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.21,
+   "text": "Calm first, then burst. That's playing out from the back in miniature.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

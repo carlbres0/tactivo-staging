@@ -1,0 +1,145 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 22.64,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8.49,
+    13.29
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.73,
+    26
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    13.86,
+    20.35
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    16.68,
+    4.26
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   16.62,
+   4.6
+  ]
+ },
+ "events": [
+  {
+   "t": 3,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    9.06,
+    14.99
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 4.96,
+   "type": "pass",
+   "from": "n1",
+   "to": "gk",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 10.48,
+   "type": "pass",
+   "from": "gk",
+   "to": "n1",
+   "flight": 1.32
+  },
+  {
+   "t": 14.63,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    11.04,
+    16.96
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 17.92,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A serve dropping between your keeper and a cone attacker. Go and claim it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The goal area, a cone as the attacker, and you serving from twelve metres.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.3,
+   "text": "Attack the drop at its highest point. Knee up, arms long, a loud KEEPER'S.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.54,
+   "text": "A catch above the head scores two. A punch, safely away, scores one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.92,
+   "text": "Eight claims, drifting wider. Later, stand underneath as a gentle nuisance.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 20.42,
+   "text": "The shout is technique. A keeper who claims it out loud has already won.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

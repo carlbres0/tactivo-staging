@@ -1,0 +1,236 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 15.75,
+  "length": 29
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    12,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12,
+    27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    27
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.5,
+    2
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    7,
+    2
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.5,
+    2
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    11,
+    2
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    3.88,
+    2
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    7,
+    14.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.98,
+   2.35
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.5,
+    25.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    4.5,
+    25.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    11,
+    25.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    2.88,
+    25.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    6.38,
+    14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.6,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7,
+    12.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.3,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    14.75,
+    13.25
+   ],
+   "flight": 0.84,
+   "flightStyle": "ground"
+  },
+  {
+   "t": 8.15,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    5.5,
+    14.25
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 13.21,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Need a warm-up the kids will actually run for? Try this one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everyone's got a ball on the end line, except the shark, who's waiting in the middle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.32,
+   "text": "On the call, they dribble across without losing their ball.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.25,
+   "text": "If the shark kicks it out, you're a shark too.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.21,
+   "text": "Last one standing wins the round, then you go again.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.71,
+   "text": "Great for close control, and they don't even notice they're working.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

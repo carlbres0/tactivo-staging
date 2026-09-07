@@ -1,0 +1,51 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [[30, 25], [290, 25], [30, 175], [290, 175]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 50, "y": 40},
+      {"t": 0.4, "x": 270, "y": 40},
+      {"t": 0.7, "x": 150, "y": 90},
+      {"t": 1, "x": 150, "y": 90}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 50, "y": 55},
+      {"t": 0.4, "x": 270, "y": 55},
+      {"t": 0.7, "x": 170, "y": 90},
+      {"t": 1, "x": 170, "y": 90}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 50, "y": 145},
+      {"t": 0.4, "x": 270, "y": 145},
+      {"t": 0.7, "x": 150, "y": 110},
+      {"t": 1, "x": 150, "y": 110}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 50, "y": 160},
+      {"t": 0.4, "x": 270, "y": 160},
+      {"t": 0.7, "x": 170, "y": 110},
+      {"t": 1, "x": 170, "y": 110}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 50, "y": 40},
+    {"t": 0.4, "x": 270, "y": 40},
+    {"t": 0.7, "x": 150, "y": 90},
+    {"t": 1, "x": 150, "y": 90}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[50, 40], [270, 40]]},
+    {"kind": "run", "pts": [[50, 55], [270, 55]]},
+    {"kind": "run", "pts": [[50, 145], [270, 145]]},
+    {"kind": "run", "pts": [[50, 160], [270, 160]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Pairs walk a slow lap together while the heart rate drops."},
+    {"t": 0.4, "label": "Each pair agrees one thing that went well and one to work on."},
+    {"t": 0.7, "label": "Back in the circle, each pair shares their two points — quick, no lectures."},
+    {"t": 0.85, "label": "Finish with hamstring and calf stretches."}
+  ]
+}

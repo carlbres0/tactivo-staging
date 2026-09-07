@@ -1,0 +1,273 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 26.86,
+  "length": 44
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    15.29
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    15.29
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    28.71
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    28.71
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    17.71,
+    6.29
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    9.14,
+    6.29
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    13.43,
+    22
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    13.43,
+    36.29
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.43,
+    13.43
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    13.43,
+    32
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   17.36,
+   6.29
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.57,
+    10.57
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.86
+  },
+  {
+   "t": 3.38,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.43,
+    20.57
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.68,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 1.63
+  },
+  {
+   "t": 5.47,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    14.86,
+    34.14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.92,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 1.43
+  },
+  {
+   "t": 8.52,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    13.43,
+    32
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.97,
+   "type": "pass",
+   "from": "a4",
+   "to": "a3",
+   "flight": 1.43
+  }
+ ],
+ "duration": 13.52,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     13.43,
+     8.65
+    ],
+    "w": 22.86,
+    "h": 13.29,
+    "label": "zon",
+    "color": "technical"
+   },
+   {
+    "at": [
+     13.43,
+     35.36
+    ],
+    "w": 22.86,
+    "h": 13.29,
+    "label": "zon",
+    "color": "tactical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got a team that all runs to the ball? Lock them into zones.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A forty by twenty five area, split into three, with players fixed in each.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.79,
+   "text": "Four in each end zone, two in the middle, and the middle is the only way through.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.28,
+   "text": "So the link has to show for every ball, then again for the return.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.52,
+   "text": "Unlock one player each halfway through, then take the zones away completely.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.02,
+   "text": "The shape should survive without the cones, and that's what you're checking for.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

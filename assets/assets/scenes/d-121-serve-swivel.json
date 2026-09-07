@@ -1,0 +1,41 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 52, "y": 10, "w": 216, "h": 180},
+  "cones": [],
+  "goals": [{"x": 160, "y": 19, "w": 16, "side": "n"}],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 160, "y": 180}, {"t": 0.22, "x": 160, "y": 180},
+      {"t": 0.42, "x": 180, "y": 130}, {"t": 0.62, "x": 186, "y": 72},
+      {"t": 0.8, "x": 190, "y": 36}, {"t": 1, "x": 190, "y": 34}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 104}, {"t": 0.22, "x": 160, "y": 104},
+      {"t": 0.4, "x": 160, "y": 104}, {"t": 0.56, "x": 152, "y": 92},
+      {"t": 0.72, "x": 144, "y": 78}, {"t": 0.88, "x": 142, "y": 74},
+      {"t": 1, "x": 142, "y": 72}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 172}, {"t": 0.22, "x": 160, "y": 172},
+    {"t": 0.4, "x": 160, "y": 112}, {"t": 0.56, "x": 152, "y": 98},
+    {"t": 0.72, "x": 144, "y": 84}, {"t": 0.86, "x": 150, "y": 26},
+    {"t": 1, "x": 149, "y": 20}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[160, 172], [160, 112]]},
+    {"kind": "dribble", "pts": [[160, 112], [144, 84]]},
+    {"kind": "shot", "pts": [[144, 84], [150, 26]]},
+    {"kind": "run", "pts": [[160, 180], [186, 72], [190, 34]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Player at the penalty spot, back to goal; the coach serves from the arc."},
+    {"t": 0.24, "label": "Receive, swivel either way, finish — three touches, no more."},
+    {"t": 0.58, "label": "The coach calls KEEPER and sprints for the line to make the save."},
+    {"t": 0.82, "label": "Ten serves, count the goals, then swap the swivel side."}
+  ],
+  "events": [
+    {"t": 0.9, "x": 166, "y": 30, "label": "GOAL"}
+  ]
+}

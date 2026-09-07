@@ -1,0 +1,200 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 28.18,
+  "length": 42.3
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42.3
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    26.18,
+    42.3
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    26.18,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.67,
+    26.18
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.09,
+    26.18
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.51,
+    26.18
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    14.09,
+    42.3
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.09,
+    14.09
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    6.03,
+    20.13
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    22.15,
+    20.13
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.09,
+   14.44
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.07,
+    28.19
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    14.09,
+    42.3
+   ]
+  },
+  {
+   "t": 2.37,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    17.11,
+    28.19
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.95,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14.49,
+    13.69
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.76,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.67,
+    27.19
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 8.34,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two well rehearsed routines beat six half known ones every single time.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Free kicks from three spots, wide right, central and wide left, twenty two metres out.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.92,
+   "text": "The runners hold their starting points, then go early and arrive late.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 5.42,
+   "text": "Three outcomes. A direct strike, a ball to the back post, or a short routine.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.34,
+   "text": "Once they know them, set a defending unit up live against every free kick.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.84,
+   "text": "Everybody knows which one it is before the whistle. Pick a small number and drill them.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

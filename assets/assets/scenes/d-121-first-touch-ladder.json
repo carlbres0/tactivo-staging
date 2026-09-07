@@ -1,0 +1,196 @@
+{
+  "v": 1,
+  "durationMs": 13000,
+  "area": {
+    "x": 118,
+    "y": 10,
+    "w": 110,
+    "h": 130
+  },
+  "cones": [],
+  "goals": [
+    {
+      "x": 160,
+      "y": 19,
+      "w": 16,
+      "side": "n"
+    }
+  ],
+  "players": [
+    {
+      "team": "n",
+      "label": "C",
+      "kf": [
+        {
+          "t": 0,
+          "x": 205,
+          "y": 39
+        },
+        {
+          "t": 0.14,
+          "x": 209,
+          "y": 43
+        },
+        {
+          "t": 1,
+          "x": 209,
+          "y": 43
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 160,
+          "y": 118
+        },
+        {
+          "t": 0.4,
+          "x": 160,
+          "y": 118
+        },
+        {
+          "t": 0.5,
+          "x": 154,
+          "y": 94
+        },
+        {
+          "t": 0.6,
+          "x": 154,
+          "y": 94
+        },
+        {
+          "t": 0.7,
+          "x": 152,
+          "y": 90
+        },
+        {
+          "t": 1,
+          "x": 150,
+          "y": 84
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 205,
+        "y": 39
+      },
+      {
+        "t": 0.1,
+        "x": 205,
+        "y": 39
+      },
+      {
+        "t": 0.3,
+        "x": 160,
+        "y": 118
+      },
+      {
+        "t": 0.4,
+        "x": 160,
+        "y": 118
+      },
+      {
+        "t": 0.5,
+        "x": 152,
+        "y": 92
+      },
+      {
+        "t": 0.6,
+        "x": 152,
+        "y": 92
+      },
+      {
+        "t": 0.72,
+        "x": 150,
+        "y": 16
+      },
+      {
+        "t": 1,
+        "x": 150,
+        "y": 16
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          205,
+          39
+        ],
+        [
+          160,
+          118
+        ]
+      ]
+    },
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          160,
+          118
+        ],
+        [
+          152,
+          92
+        ]
+      ]
+    },
+    {
+      "kind": "shot",
+      "pts": [
+        [
+          152,
+          92
+        ],
+        [
+          150,
+          16
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "The coach serves from beside the goal; the player receives at the arc."
+    },
+    {
+      "t": 0.28,
+      "label": "Rung one is three touches, rung two is two, the top rung is first time."
+    },
+    {
+      "t": 0.5,
+      "label": "Two touches today: set it away from the feet, then strike it."
+    },
+    {
+      "t": 0.74,
+      "label": "Two goals on a rung climbs the ladder; two misses drops one."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.54,
+      "x": 116,
+      "y": 108,
+      "label": "TWO TOUCHES"
+    },
+    {
+      "t": 0.76,
+      "x": 194,
+      "y": 30,
+      "label": "GOAL"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    3.05,
+    5
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    3.25,
+    7.19
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   3.4,
+   4.99
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    6.65,
+    4.9
+   ],
+   "flight": 0.4,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     3.08,
+     4.8
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 2.5,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 3.95,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    6.65,
+    5.29
+   ],
+   "flight": 0.4,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     3.08,
+     5.58
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 5.25,
+   "type": "collect",
+   "player": "a1"
+  }
+ ],
+ "duration": 7.56,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     6.94,
+     5
+    ],
+    "w": 0.51,
+    "h": 5,
+    "color": "technical",
+    "label": "WALL"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Ever played squash with your feet? That's the whole drill.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A wall or rebounder, your player facing it, you beside them keeping score.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.51,
+   "text": "Strike, control the return, strike again. The rally runs until it dies.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.05,
+   "text": "Call the surface for each control. Laces, sole, thigh, whatever you fancy.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.56,
+   "text": "Longest rally goes on the whiteboard. Later, alternate feet on every strike.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.06,
+   "text": "The wall never gives a bad serve on purpose, so a bad return is information.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 38.09,
+  "length": 52
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    36.09,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    36.09,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    19.05,
+    52
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    19.05,
+    47.45
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12.23,
+    36.09
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 3,
+   "start": [
+    25.86,
+    36.09
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 4,
+   "start": [
+    7.68,
+    24.73
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    16.77,
+    31.55
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    23.59,
+    31.55
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   18.87,
+   47.15
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    25.41,
+    34.95
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.36,
+    34.95
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    22.45,
+    32
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "gk",
+   "to": "a1",
+   "flight": 1.32,
+   "fromFeet": true
+  },
+  {
+   "t": 2.69,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    19.5,
+    46.32
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.14,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 1.22
+  },
+  {
+   "t": 4.14,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.05,
+    33.82
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.52,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.68,
+    35.64
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 7.82,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three goal kick routines, named and rehearsed, so nobody has to think under pressure.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The defensive third with a goal and marked receiving zones for each option.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.56,
+   "text": "Short to a split centre back, wide to a full back, or long to a target.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 3.52,
+   "text": "Everyone knows the routine before the whistle, and it gets called out loud.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.82,
+   "text": "Once they're comfortable, add a third presser so the short routine is properly tested.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.32,
+   "text": "A named routine turns a panicked goal kick into a decision made ten seconds earlier.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

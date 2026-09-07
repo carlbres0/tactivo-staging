@@ -1,0 +1,234 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 29.71,
+  "length": 49
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    27.71,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    27.71,
+    47
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    47
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.86,
+    8.43
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.86,
+    14.86
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    14.86,
+    26.11
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    14.86,
+    37.36
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    19.68,
+    21.29
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    10.04,
+    21.29
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    19.68,
+    30.93
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    10.04,
+    30.93
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.86,
+   8.78
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    16.46,
+    20.48
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    13.25,
+    20.48
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    16.46,
+    30.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    13.25,
+    30.13
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.64
+  },
+  {
+   "t": 3.46,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 1.13
+  },
+  {
+   "t": 6.2,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 1.13
+  }
+ ],
+ "duration": 9.45,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Want your midfield receiving between the lines instead of behind them? Start here.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The defending team sets in two banks, four and then three, across the area.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.83,
+   "text": "Attackers build from the back, looking for a pass into the gap between banks.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 5.2,
+   "text": "The receiver has to be facing forward for the point. If it's not on, go round and reset.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.45,
+   "text": "Once they find it, they've got four seconds to score after playing through.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.95,
+   "text": "They have to be seen before they're found, so half turn early, every time.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

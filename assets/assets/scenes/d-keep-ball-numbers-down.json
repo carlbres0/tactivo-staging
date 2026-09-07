@@ -1,0 +1,44 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 85, "y": 40, "w": 150, "h": 150},
+  "cones": [[85, 40], [235, 40], [235, 190], [85, 190]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 110, "y": 70}, {"t": 0.22, "x": 110, "y": 70},
+      {"t": 0.3, "x": 90, "y": 110, "cx": 95, "cy": 85}, {"t": 1, "x": 90, "y": 110}
+    ]},
+    {"team": "a", "label": "2", "kf": [{"t": 0, "x": 210, "y": 70}, {"t": 1, "x": 210, "y": 70}]},
+    {"team": "a", "label": "3", "kf": [{"t": 0, "x": 110, "y": 160}, {"t": 1, "x": 110, "y": 160}]},
+    {"team": "a", "label": "4", "kf": [{"t": 0, "x": 210, "y": 160}, {"t": 1, "x": 210, "y": 160}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 160, "y": 60}, {"t": 0.22, "x": 190, "y": 75}, {"t": 0.6, "x": 170, "y": 90}, {"t": 1, "x": 170, "y": 90}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 140, "y": 100}, {"t": 0.3, "x": 110, "y": 105}, {"t": 0.6, "x": 150, "y": 120}, {"t": 1, "x": 150, "y": 120}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 180, "y": 100}, {"t": 0.22, "x": 200, "y": 85}, {"t": 0.6, "x": 190, "y": 130}, {"t": 1, "x": 190, "y": 130}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 150, "y": 140}, {"t": 0.12, "x": 140, "y": 150}, {"t": 0.6, "x": 180, "y": 150}, {"t": 1, "x": 180, "y": 150}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 190, "y": 140}, {"t": 0.6, "x": 200, "y": 145}, {"t": 1, "x": 200, "y": 145}]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 110, "y": 160}, {"t": 0.12, "x": 110, "y": 160},
+    {"t": 0.22, "x": 210, "y": 70}, {"t": 0.3, "x": 90, "y": 110},
+    {"t": 0.48, "x": 90, "y": 110}, {"t": 0.6, "x": 210, "y": 160},
+    {"t": 1, "x": 210, "y": 160}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[110, 160], [210, 70]]},
+    {"kind": "pass", "pts": [[210, 70], [90, 110]]},
+    {"kind": "run", "curve": true, "pts": [[110, 70], [95, 85], [90, 110]]},
+    {"kind": "pass", "pts": [[90, 110], [210, 160]]},
+    {"kind": "opp", "pts": [[140, 100], [150, 120]]},
+    {"kind": "opp", "pts": [[180, 100], [190, 130]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "The possession team is deliberately a player short — four against five."},
+    {"t": 0.22, "label": "Numbers down forces movement; players must shift before the ball arrives."},
+    {"t": 0.3, "label": "Support has already moved into space — the pass is on before it's played."},
+    {"t": 0.48, "label": "Keep it for twenty seconds to score; defenders score by winning it back."}
+  ],
+  "events": [
+    {"t": 0.3, "x": 90, "y": 110, "label": "MOVED EARLY"}
+  ]
+}

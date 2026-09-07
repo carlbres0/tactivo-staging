@@ -1,0 +1,203 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.25,
+  "length": 32
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.25,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.25,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.13,
+    32
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8.88,
+    18.25
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12.63,
+    18.25
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.13,
+    9.5
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    5.13,
+    12
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    16.38,
+    12
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.13,
+   9.85
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.5,
+    18.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.38,
+    18.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    10.13,
+    14.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.95,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14.5,
+    18.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    16.38,
+    18.25
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 12.24,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Being outnumbered isn't a lost cause. This teaches them to buy time.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two defenders against three or four attackers, over and over, with one goal behind them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.9,
+   "text": "The aim isn't the ball. It's delay, funnel them inside, and buy time.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.4,
+   "text": "Show the attacker away from goal. Every second bought brings help closer.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.24,
+   "text": "Once they're patient, go two against four and hold out for fifteen seconds.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.74,
+   "text": "Diving in is the quickest way to lose it, so praise patience out loud.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

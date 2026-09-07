@@ -1,0 +1,230 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 15.88,
+  "length": 40.72
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.94,
+    12.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.1,
+    29.27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.78,
+    29.27
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.94,
+    5.51
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    6.32,
+    3.89
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.97,
+    2.27
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    7.94,
+    21.98
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.94,
+   5.86
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.94,
+    11.18
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.88,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.56,
+    11.99
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.47,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.94,
+    18.47
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.41,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.75,
+    20.63
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.23,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.1,
+    21.71
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.8,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.21,
+    25.76
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.17,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.94,
+    28.19
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 15.98,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.4,
+    27.11
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 17.33,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.94,
+    36.56
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 20.12,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7.4,
+    4.97
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 23.02,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one gets your youngest players trying the moves they've seen on telly.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Three stations. A step-over at the cone, a Cruyff at the mannequin, a drag-back at the gate.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 8.29,
+   "text": "Dribble in at pace, sell the move with the shoulders, then burst away.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 21.18,
+   "text": "Both feet at every station, then rotate. Finish with a free run, any move.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 23.02,
+   "text": "Once they're flying, swap one mannequin for a defender who only walks.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 25.52,
+   "text": "The acceleration after the trick is the point. A move at walking pace fools nobody.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

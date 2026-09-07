@@ -1,0 +1,62 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 40, "y": 30, "w": 240, "h": 140},
+  "cones": [[40, 30], [280, 30], [40, 170], [280, 170], [160, 28]],
+  "goals": [
+    {"x": 283, "y": 100.0, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 110},
+      {"t": 0.35, "x": 230, "y": 105},
+      {"t": 0.55, "x": 230, "y": 105},
+      {"t": 1, "x": 235, "y": 108}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 160, "y": 90},
+      {"t": 0.45, "x": 240, "y": 80},
+      {"t": 0.55, "x": 250, "y": 85},
+      {"t": 1, "x": 255, "y": 88}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 230, "y": 100},
+      {"t": 0.35, "x": 225, "y": 102},
+      {"t": 0.55, "x": 235, "y": 95},
+      {"t": 1, "x": 240, "y": 92}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 285, "y": 100},
+      {"t": 0.8, "x": 280, "y": 97},
+      {"t": 1, "x": 280, "y": 97}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 160, "y": 110},
+      {"t": 0.35, "x": 230, "y": 105},
+      {"t": 0.45, "x": 230, "y": 105},
+      {"t": 0.55, "x": 250, "y": 85},
+      {"t": 0.68, "x": 250, "y": 85},
+      {"t": 0.8, "x": 278, "y": 95},
+      {"t": 1, "x": 278, "y": 95}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[160, 110], [230, 105]]},
+    {"kind": "run", "pts": [[160, 90], [240, 80]]},
+    {"kind": "pass", "pts": [[230, 105], [250, 85]]},
+    {"kind": "opp", "pts": [[230, 100], [235, 95]]},
+    {"kind": "shot", "pts": [[250, 85], [278, 95]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two attack one from the halfway cone \u2014 go straight at the defender."},
+    {"t": 0.35, "label": "Attack the defender directly; don't drift wide until they commit."},
+    {"t": 0.55, "label": "Committed \u2014 release the pass late, right before the tackle."},
+    {"t": 0.68, "label": "Finish within eight seconds or the defender has won the round."}
+  ],
+  "events": [
+    {"t": 0.8, "x": 278, "y": 95, "label": "GOAL"}
+  ]
+}

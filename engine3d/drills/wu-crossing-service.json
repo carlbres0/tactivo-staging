@@ -1,0 +1,172 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 31.62,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    17.24,
+    36.29
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.62,
+    40.1
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    26.76,
+    11.52
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.43,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    26.72,
+    12.52
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    11.52,
+    26.76
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.71,
+    24.86
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   26.71,
+   12.87
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    10.62,
+    40.1
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    16.24,
+    36.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    25.81,
+    34.38
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.06,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 8.91,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    24.86,
+    35.33
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 11.74,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Crosses get better when they have a target, not more power.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A wide channel, a full size goal, and a cone at each post.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.7,
+   "text": "Wide players cross a dead ball to the near post cone, then the back post.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.63,
+   "text": "Attackers walk their runs first, then jog them, then go live.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.74,
+   "text": "Build to a rolling ball, then one carried into the channel first.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.24,
+   "text": "Name the target cone out loud every time, and the quality follows.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

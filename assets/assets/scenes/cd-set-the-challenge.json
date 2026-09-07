@@ -1,0 +1,58 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 110, "y": 50, "w": 100, "h": 100},
+  "cones": [[110, 50], [210, 50], [110, 150], [210, 150]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 45},
+      {"t": 0.4, "x": 160, "y": 85},
+      {"t": 0.7, "x": 160, "y": 85},
+      {"t": 1, "x": 160, "y": 85}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 213, "y": 80},
+      {"t": 0.4, "x": 178, "y": 100},
+      {"t": 0.65, "x": 185, "y": 95},
+      {"t": 1, "x": 178, "y": 100}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 194, "y": 138},
+      {"t": 0.4, "x": 169, "y": 118},
+      {"t": 0.7, "x": 169, "y": 118},
+      {"t": 1, "x": 169, "y": 118}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 126, "y": 138},
+      {"t": 0.4, "x": 151, "y": 118},
+      {"t": 0.65, "x": 145, "y": 112},
+      {"t": 1, "x": 151, "y": 118}
+    ]},
+    {"team": "a", "label": "5", "kf": [
+      {"t": 0, "x": 107, "y": 80},
+      {"t": 0.4, "x": 142, "y": 100},
+      {"t": 0.7, "x": 142, "y": 100},
+      {"t": 1, "x": 142, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 45},
+    {"t": 0.4, "x": 160, "y": 85},
+    {"t": 0.7, "x": 160, "y": 85},
+    {"t": 1, "x": 160, "y": 85}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[160, 45], [160, 85]]},
+    {"kind": "run", "pts": [[213, 80], [178, 100]]},
+    {"kind": "run", "pts": [[194, 138], [169, 118]]},
+    {"kind": "run", "pts": [[126, 138], [151, 118]]},
+    {"kind": "run", "pts": [[107, 80], [142, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Jog a lap, then gather in and stretch through the main muscle groups."},
+    {"t": 0.4, "label": "Coach sets one challenge — juggles, wall passes, or a take-on to practise all week."},
+    {"t": 0.65, "label": "Two players repeat the challenge back so it's genuinely heard."},
+    {"t": 0.85, "label": "Finish by naming what the group did well tonight."}
+  ]
+}

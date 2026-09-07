@@ -1,0 +1,200 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.54,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    24.29,
+    40.81
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    17.38,
+    40.15
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    12,
+    40.15
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    16.92,
+    39.23
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    12.31,
+    39.23
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    15.08,
+    40.92
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   23.94,
+   40.78
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.58,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 3.4,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.45,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 5.46,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    13.54,
+    42
+   ]
+  },
+  {
+   "t": 7.26,
+   "type": "collect",
+   "player": "a3"
+  }
+ ],
+ "duration": 14.41,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Set pieces get worked on fresh, then defended tired. This closes that gap.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A normal game, two full goals, and a coach with a whistle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.76,
+   "text": "Every two minutes, award a corner or a free kick at random.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.8,
+   "text": "Delivery to the near post, flick on, and a far post arrival that's rehearsed.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.41,
+   "text": "Goals from set pieces count double. Later, award them with no warning at all.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.91,
+   "text": "Both the routines and the organisation get tested when legs are heavy.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

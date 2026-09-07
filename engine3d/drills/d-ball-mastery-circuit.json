@@ -1,0 +1,127 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.5,
+    2.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.5,
+    7.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.5,
+    2.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.5,
+    7.5
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    4.17
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.22,
+   4.44
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.5,
+    6
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 4.92,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5,
+     5
+    ],
+    "w": 5,
+    "h": 5,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Ball each, a small box each, and forty five seconds a move. Off you go.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A five by five box per player, so it fits anywhere you've got.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.21,
+   "text": "Toe taps, sole rolls, inside outside, V drags. Both feet on every move.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 4.43,
+   "text": "Forty five seconds on, fifteen off. Count your touches and beat your own score.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 4.92,
+   "text": "Last round is freestyle, biggest count wins. Then do each move travelling across the box.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 7.42,
+   "text": "Eyes up for the last ten seconds. Mastery only counts when they can see the game.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

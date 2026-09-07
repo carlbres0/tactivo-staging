@@ -1,0 +1,198 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.29,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.29,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.71,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.71,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.04,
+    21.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.96,
+    21.33
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    4.88,
+    3.25
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6.54,
+    3.25
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    4.28,
+    2.77
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    8.75,
+    2.82
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   4.88,
+   3.6
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.79,
+    13.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.79,
+    13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.28,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    3.88,
+    16
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 7.9,
+   "type": "pass",
+   "from": "a1",
+   "to": "d1",
+   "flight": 0.4
+  },
+  {
+   "t": 8.75,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.13,
+    14.25
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 11.15,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got a defender who dives in and gives away silly free kicks?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A narrow channel with a gate at the end, dribbler in, defender level outside.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.68,
+   "text": "The defender runs alongside, side on, waiting for the touch that gets away.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.47,
+   "text": "Poke the near foot through the ball only when level or ahead. Never from behind.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.15,
+   "text": "Once the timing comes, narrow the channel so the contact comes earlier.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.65,
+   "text": "Teach the wait. The tackle a referee punishes is the one made from behind.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

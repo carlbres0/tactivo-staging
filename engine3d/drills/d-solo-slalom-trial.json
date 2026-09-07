@@ -1,0 +1,250 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 12,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.09,
+    5.27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.09,
+    7.82
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.09,
+    10.36
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.09,
+    12.91
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.09,
+    15.45
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.09,
+    18
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.09,
+    20.4
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.55,
+    6
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.73,
+    6
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.09,
+    3.24
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.24,
+   3.56
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.09,
+    5.27
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.95,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.09,
+    7.82
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.98,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.09,
+    10.36
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.01,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.09,
+    12.91
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.04,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.09,
+    15.45
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.07,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.09,
+    18
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 13.1,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.99,
+    19.4
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.72,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.07,
+    20.44
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 16.08,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.27,
+    19.53
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 17.43,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.67,
+    14
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 20.13,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.67,
+    3.96
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 25.42,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Sometimes the best opponent for a player training alone is the last run's time.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Six cones in a line, two metres apart, with a return gate at the end.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 12.71,
+   "text": "Weave the slalom, turn sharp at the far cone, and sprint-dribble back through the gate.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 22.37,
+   "text": "Time every run, alternate the working foot, and rest a full minute between.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 25.42,
+   "text": "Once the times settle, outside of the foot touches only through the slalom.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 27.92,
+   "text": "A missed cone adds two seconds, so the clock never lies about sloppy touches.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 20, "y": 60, "w": 110, "h": 80},
+  "cones": [[55, 80], [55, 100], [55, 120]],
+  "goals": [
+    {"x": 26, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "GK", "kf": [
+      {"t": 0, "x": 45, "y": 100},
+      {"t": 0.3, "x": 45, "y": 100},
+      {"t": 0.45, "x": 55, "y": 110},
+      {"t": 0.6, "x": 55, "y": 110},
+      {"t": 0.75, "x": 45, "y": 100},
+      {"t": 0.9, "x": 30, "y": 120},
+      {"t": 1, "x": 30, "y": 120}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 95, "y": 100},
+      {"t": 1, "x": 95, "y": 100}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 95, "y": 100},
+      {"t": 0.1, "x": 95, "y": 100},
+      {"t": 0.22, "x": 45, "y": 100},
+      {"t": 0.3, "x": 45, "y": 100},
+      {"t": 0.45, "x": 55, "y": 110},
+      {"t": 0.6, "x": 55, "y": 110},
+      {"t": 0.7, "x": 95, "y": 100},
+      {"t": 0.75, "x": 95, "y": 100},
+      {"t": 0.9, "x": 30, "y": 120},
+      {"t": 1, "x": 30, "y": 120}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[95, 100], [45, 100]]},
+    {"kind": "run", "pts": [[45, 100], [55, 110]]},
+    {"kind": "pass", "pts": [[55, 110], [95, 100]]},
+    {"kind": "run", "pts": [[55, 110], [45, 100]]},
+    {"kind": "pass", "pts": [[95, 100], [30, 120]]},
+    {"kind": "run", "pts": [[45, 100], [30, 120]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server and keeper five metres apart: catches at chest, head, then rolled to each side."},
+    {"t": 0.3, "label": "Quick feet through the cones into a caught volley, five each side."},
+    {"t": 0.75, "label": "Finish with gentle dives from kneeling, both sides, served to the hands."}
+  ],
+  "events": []
+}

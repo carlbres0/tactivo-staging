@@ -1,0 +1,279 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 26.86,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    15.29
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    15.29
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    28.71
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    28.71
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.43,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.43,
+    4.86
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    19.14,
+    9.14
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.71,
+    9.14
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    13.43,
+    19.14
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    13.43,
+    34.86
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    16.29,
+    14.86
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    10.57,
+    14.86
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.71,
+   5.07
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    18.43,
+    11.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    12,
+    17.71
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.71
+  },
+  {
+   "t": 3.43,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.14,
+    16.29
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.53,
+   "type": "pass",
+   "from": "a2",
+   "to": "a4",
+   "flight": 1.15
+  },
+  {
+   "t": 4.84,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    12.71,
+    24.86
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.35,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.43,
+    22
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.35,
+   "type": "pass",
+   "from": "a4",
+   "to": "a5",
+   "flight": 1.57
+  },
+  {
+   "t": 9.54,
+   "type": "shoot",
+   "player": "a5",
+   "at": [
+    13.43,
+    42
+   ]
+  }
+ ],
+ "duration": 12.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "When a press arrives, going long is the easy answer. This one takes it away.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A forty by thirty pitch split into three thirds, keeper and defenders in the first.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.25,
+   "text": "The ball has to touch every third, and playing back to restart is always allowed.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.75,
+   "text": "Centre-backs split wide, and the midfielder drops between them the moment the press comes.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.5,
+   "text": "Defenders press in their own third only. Let one follow the ball through to make it live.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15,
+   "text": "Play the way the press shows you. Jump the centre-back and the midfielder is free.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

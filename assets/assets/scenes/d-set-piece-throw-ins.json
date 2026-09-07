@@ -1,0 +1,53 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 60, "y": 30, "w": 200, "h": 110},
+  "cones": [[60, 30], [260, 30], [60, 140], [260, 140]],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 28}, {"t": 0.35, "x": 150, "y": 28},
+      {"t": 1, "x": 152, "y": 30}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 140, "y": 50}, {"t": 0.4, "x": 142, "y": 52},
+      {"t": 1, "x": 142, "y": 52}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 170, "y": 32}, {"t": 0.35, "x": 230, "y": 32},
+      {"t": 0.45, "x": 230, "y": 32}, {"t": 0.6, "x": 232, "y": 34},
+      {"t": 1, "x": 235, "y": 36}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 150, "y": 70}, {"t": 0.2, "x": 140, "y": 90},
+      {"t": 0.5, "x": 145, "y": 85}, {"t": 1, "x": 145, "y": 85}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 180, "y": 35}, {"t": 0.45, "x": 225, "y": 34},
+      {"t": 1, "x": 222, "y": 36}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 150, "y": 55}, {"t": 0.3, "x": 148, "y": 60},
+      {"t": 1, "x": 148, "y": 60}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 150, "y": 28}, {"t": 0.35, "x": 150, "y": 28},
+    {"t": 0.45, "x": 230, "y": 32}, {"t": 0.6, "x": 232, "y": 34},
+    {"t": 1, "x": 235, "y": 36}
+  ], "air": [[0.35, 0.45]]},
+  "routes": [
+    {"kind": "run", "pts": [[170, 32], [230, 32]]},
+    {"kind": "pass", "pts": [[150, 28], [230, 32]]},
+    {"kind": "run", "pts": [[150, 70], [140, 90]]},
+    {"kind": "opp", "pts": [[180, 35], [225, 34]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Three rehearsed options: short and back, down the line, or the check-away run."},
+    {"t": 0.2, "label": "Two players move before the ball is thrown — a static throw-in is a lost ball."},
+    {"t": 0.35, "label": "Down the line is on — the runner has already beaten their marker to the spot."},
+    {"t": 0.45, "label": "Thrown in flat and fast — defenders mark live, but the movement got there first."}
+  ],
+  "events": [
+    {"t": 0.45, "x": 230, "y": 32, "label": "RECEIVED"}
+  ]
+}

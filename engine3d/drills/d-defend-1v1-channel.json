@@ -1,0 +1,212 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 9.99,
+  "length": 17
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.04,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.04,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.95,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.95,
+    17
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    5,
+    17
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    3.36
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5,
+    5.55
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   3.71
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "d1",
+   "flight": 0.4
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.54,
+    8.68
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.22,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    5.81,
+    9.16
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.09,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    4.52,
+    12.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 7.81,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 0.4
+  },
+  {
+   "t": 8.66,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    4.45,
+    11.89
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.81,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    4.52,
+    12.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.84,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    3.5,
+    13.05
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 14.5,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5,
+     9.5
+    ],
+    "w": 4.09,
+    "h": 15,
+    "label": "channel",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The touchline defends with you, and it never gets dribbled past. Show them down it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A twelve by ten channel per pair, defender and attacker, one ball between them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.19,
+   "text": "The defender passes in and closes the gap while the ball is travelling.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.76,
+   "text": "Arrive low and side-on, front foot showing them one way, then jockey and delay.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.5,
+   "text": "Three defends each, then swap. Add a second gate so there are two decisions.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17,
+   "text": "Tackle only when the touch is loose, and count a forced error as a win.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

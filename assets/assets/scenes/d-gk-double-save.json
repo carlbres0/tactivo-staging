@@ -1,0 +1,58 @@
+{
+  "v": 1,
+  "durationMs": 9200,
+  "area": {"x": 20, "y": 30, "w": 220, "h": 140},
+  "cones": [[20, 30], [240, 30], [20, 170], [240, 170]],
+  "goals": [
+    {"x": 20, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 45, "y": 100},
+      {"t": 0.15, "x": 45, "y": 100},
+      {"t": 0.3, "x": 30, "y": 72},
+      {"t": 0.4, "x": 55, "y": 55},
+      {"t": 0.55, "x": 45, "y": 100},
+      {"t": 0.65, "x": 45, "y": 100},
+      {"t": 0.8, "x": 30, "y": 128},
+      {"t": 1, "x": 30, "y": 128}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 160, "y": 60},
+      {"t": 1, "x": 160, "y": 60}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 160, "y": 140},
+      {"t": 1, "x": 160, "y": 140}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 160, "y": 60},
+      {"t": 0.15, "x": 160, "y": 60},
+      {"t": 0.3, "x": 30, "y": 72},
+      {"t": 0.4, "x": 55, "y": 55},
+      {"t": 0.55, "x": 160, "y": 140},
+      {"t": 0.65, "x": 160, "y": 140},
+      {"t": 0.8, "x": 30, "y": 128},
+      {"t": 1, "x": 30, "y": 128}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "shot", "pts": [[160, 60], [30, 72]]},
+    {"kind": "shot", "pts": [[30, 72], [55, 55]]},
+    {"kind": "run", "pts": [[55, 55], [45, 100]]},
+    {"kind": "shot", "pts": [[160, 140], [30, 128]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "First shot is saved and parried \u2014 the recovery decides what's next."},
+    {"t": 0.3, "label": "Parry wide and away from the danger area, never back into the middle."},
+    {"t": 0.55, "label": "Back to the feet, set, and across \u2014 the second ball arrives at once."},
+    {"t": 0.8, "label": "Opposite corner \u2014 six doubles per set, two sets."}
+  ],
+  "events": [
+    {"t": 0.4, "x": 55, "y": 55, "label": "PARRY"},
+    {"t": 0.8, "x": 30, "y": 128, "label": "SAVE"}
+  ]
+}

@@ -1,0 +1,310 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 25,
+  "length": 39
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    23,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    23,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    37
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    19.5,
+    5.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    21.25,
+    30
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    3.75,
+    30
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    5.5,
+    5.5
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    12.5,
+    17.75
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    19.5,
+    17.75
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    5.5,
+    17.75
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    12.5,
+    17.75
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   19.33,
+   5.8
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    16,
+    19.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    9,
+    20.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    12.5,
+    15.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a5",
+   "flight": 1.41
+  },
+  {
+   "t": 2.78,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    19.15,
+    6.2
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.23,
+   "type": "pass",
+   "from": "a5",
+   "to": "a2",
+   "flight": 1.51
+  },
+  {
+   "t": 4.9,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.25,
+    24.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.28,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    7.25,
+    14.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.35,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 1.75
+  },
+  {
+   "t": 8.5,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    9.35,
+    9.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.84,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    12.5,
+    23
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.72,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 2.46
+  },
+  {
+   "t": 12.82,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    9,
+    14.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 14.8,
+   "type": "pass",
+   "from": "a4",
+   "to": "a5",
+   "flight": 1.41
+  }
+ ],
+ "duration": 18.32,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     12.5,
+     19.5
+    ],
+    "w": 21,
+    "h": 35,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Ten passes in a row is worth exactly as much as a goal.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A normal game on a small pitch, and you count the passes out loud.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.3,
+   "text": "Quick angles round the press, and every pass builds towards the point.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.66,
+   "text": "Lose it, and you've got five seconds to win it back before defending normally.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 18.32,
+   "text": "Once they're racking them up, passes only count after a switch of sides.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 20.82,
+   "text": "When they start booting it, pause once and ask what the points actually reward.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

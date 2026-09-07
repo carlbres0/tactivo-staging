@@ -1,0 +1,60 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 45, "y": 35, "w": 230, "h": 130},
+  "cones": [
+    [45, 35], [275, 35], [45, 165], [275, 165],
+    [250, 35], [250, 165]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 90}, {"t": 0.15, "x": 100, "y": 90},
+      {"t": 1, "x": 105, "y": 92}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 160, "y": 70}, {"t": 0.35, "x": 160, "y": 70},
+      {"t": 1, "x": 172, "y": 76}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 140, "y": 130}, {"t": 0.6, "x": 160, "y": 125},
+      {"t": 1, "x": 165, "y": 122}
+    ]},
+    {"team": "a", "label": "T", "kf": [
+      {"t": 0, "x": 268, "y": 100}, {"t": 0.55, "x": 268, "y": 100},
+      {"t": 1, "x": 260, "y": 94}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 262, "y": 102}, {"t": 0.55, "x": 260, "y": 98},
+      {"t": 1, "x": 255, "y": 92}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 180, "y": 80}, {"t": 0.4, "x": 176, "y": 78},
+      {"t": 1, "x": 176, "y": 78}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 150, "y": 120}, {"t": 0.6, "x": 158, "y": 118},
+      {"t": 1, "x": 158, "y": 118}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 100, "y": 90}, {"t": 0.15, "x": 100, "y": 90},
+    {"t": 0.24, "x": 160, "y": 70}, {"t": 0.35, "x": 160, "y": 70},
+    {"t": 0.55, "x": 268, "y": 100}, {"t": 1, "x": 268, "y": 100}
+  ], "air": [[0.35, 0.55]]},
+  "routes": [
+    {"kind": "pass", "pts": [[100, 90], [160, 70]]},
+    {"kind": "pass", "pts": [[160, 70], [268, 100]]},
+    {"kind": "run", "pts": [[140, 130], [160, 125]]},
+    {"kind": "opp", "pts": [[262, 102], [255, 92]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Score by finding the target player, who receives and controls in the end zone."},
+    {"t": 0.24, "label": "Build through midfield to open the pass into the zone."},
+    {"t": 0.35, "label": "Long ball goes forward — the target is marked tight by one defender."},
+    {"t": 0.55, "label": "Target controls it; they join the game and the scorer becomes the new target."}
+  ],
+  "events": [
+    {"t": 0.55, "x": 268, "y": 100, "label": "TARGET"}
+  ]
+}

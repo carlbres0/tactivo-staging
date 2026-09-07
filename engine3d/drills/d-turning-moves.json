@@ -1,0 +1,199 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    17,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    17
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14,
+    5
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    15.5,
+    3.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.75,
+   5.25
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.5,
+    9.5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.7,
+    7.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.05,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.75,
+    6.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.8,
+    8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.02,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    3.8,
+    8.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.97,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    2.75,
+    9.5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.28,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    1.25,
+    14
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.48,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    2.3,
+    11.75
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 13.22,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A turn with no acceleration after it is just a trick. This joins them up.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A grid per group of four, with one named turn per round.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.97,
+   "text": "Cruyff, drag-back, inside hook, outside hook. Dribble in and turn on the call.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.93,
+   "text": "A shadow defender follows without tackling, so they turn away from real pressure.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.22,
+   "text": "Once they're sharp, let that defender go live for the last two minutes.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.72,
+   "text": "The turn's worthless without the acceleration. Coach the three touches, not the trick.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.36,
+  "length": 32
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    18.36,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.36,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.18,
+    32
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.64,
+    29.95
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    11.55,
+    10.18
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.23,
+    14.27
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.18,
+   14.62
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13.59,
+    17.68
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    10.18,
+    28.59
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.01,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.59,
+    27.91
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.06,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.09,
+    30.23
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.31,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    10.45,
+    30.36
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 13.09,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got defenders who give up once they're beaten? This one fixes that.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The attacker starts five metres ahead, and the defender has to get goal side.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 6.55,
+   "text": "Sprint the recovery on a curve, arriving on the inside shoulder, not straight behind.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.13,
+   "text": "Once they're goal side, slow down and jockey. No sliding in.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.09,
+   "text": "Once they're comfortable, push the head start out to eight metres.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.59,
+   "text": "Sprint the recovery, walk the arrival. Defenders who arrive flat out get turned.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

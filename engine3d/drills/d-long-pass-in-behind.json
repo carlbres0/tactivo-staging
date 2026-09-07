@@ -1,0 +1,170 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 44
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.77,
+    28.15
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    13.54,
+    28.15
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.31,
+    28.15
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.54,
+    8.15
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    13.54,
+    25.08
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.54,
+    27.15
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.54,
+   8.5
+  ]
+ },
+ "events": [
+  {
+   "t": 2.7,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    15.38,
+    32.77
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.77,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 2.06,
+   "flightStyle": "clipped",
+   "loft": 4
+  },
+  {
+   "t": 4.7,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    12.77,
+    29.69
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.12,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    12,
+    30.46
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.45,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    16.62,
+    42
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 15.86,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A run in behind dies the moment the pass is late. Train the timing.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A midfielder on the ball facing forward, with a defensive line holding its shape.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.76,
+   "text": "The moment the run starts, the ball is played into the space, not to feet.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.31,
+   "text": "Weighted so the striker never breaks stride, and the defender recovers too late.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.86,
+   "text": "Once it's clean, add a recovering defender who can pick off an overhit pass.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 18.36,
+   "text": "Eight each side fixes the habit that costs your team goals every week.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

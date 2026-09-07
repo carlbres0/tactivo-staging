@@ -1,0 +1,130 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    5
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    2.83,
+    6.89
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.35,
+   5
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.72,
+    5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.98,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.22,
+    7.06
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.32,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.17,
+    3.22
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.04,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.17,
+    4.22
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 11.12,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Young players will do sole rolls all day once the ball becomes a compass.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A small square, your player in the middle, ball under one sole.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.22,
+   "text": "Call north, east, south-west, and the ball travels there on sole rolls only.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.45,
+   "text": "Feet dance around it. The ball never leaves the reach of a sole.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.12,
+   "text": "Speed up until calls come every two seconds. Then point instead, so eyes stay up.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.62,
+   "text": "Watch the standing foot. This is a balance drill wearing a disguise.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

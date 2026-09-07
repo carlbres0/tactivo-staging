@@ -1,0 +1,45 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 110, "y": 50, "w": 100, "h": 100},
+  "cones": [[110, 50], [210, 50], [110, 150], [210, 150]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 140, "y": 70}, {"t": 0.1, "x": 140, "y": 70},
+      {"t": 0.5, "x": 140, "y": 115}, {"t": 1, "x": 140, "y": 115}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 190, "y": 70}, {"t": 0.38, "x": 190, "y": 70},
+      {"t": 0.7, "x": 165, "y": 55}, {"t": 1, "x": 165, "y": 55}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 190, "y": 130}, {"t": 0.48, "x": 190, "y": 130},
+      {"t": 0.85, "x": 150, "y": 110}, {"t": 1, "x": 150, "y": 110}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 140, "y": 130}, {"t": 1, "x": 115, "y": 95}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 140, "y": 70}, {"t": 0.1, "x": 140, "y": 70},
+    {"t": 0.2, "x": 190, "y": 70}, {"t": 0.38, "x": 190, "y": 70},
+    {"t": 0.48, "x": 190, "y": 130}, {"t": 0.6, "x": 190, "y": 130},
+    {"t": 0.85, "x": 150, "y": 110}, {"t": 1, "x": 150, "y": 110}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[140, 70], [190, 70]]},
+    {"kind": "run", "pts": [[140, 70], [140, 115]]},
+    {"kind": "pass", "pts": [[190, 70], [190, 130]]},
+    {"kind": "run", "pts": [[190, 70], [165, 55]]},
+    {"kind": "dribble", "pts": [[190, 130], [150, 110]]},
+    {"kind": "run", "pts": [[140, 130], [115, 95]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Half hold a ball, half move free — everyone circulates inside the square."},
+    {"t": 0.1, "label": "Pass to a free player, then sprint away to find new space."},
+    {"t": 0.38, "label": "Build through: pass and follow, then a one-two."},
+    {"t": 0.6, "label": "Pass and move away from the ball as tempo rises."}
+  ],
+  "events": []
+}

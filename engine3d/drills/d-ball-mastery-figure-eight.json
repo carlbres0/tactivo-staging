@@ -1,0 +1,171 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14.8,
+  "length": 14.8
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.4,
+    6.05
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.4,
+    8.75
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.4,
+    7.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.69,
+   7.21
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.43,
+    6.05
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.08,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.45,
+    4.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.64,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.35,
+    4.7
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.67,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.38,
+    6.05
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.22,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.4,
+    7.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.1,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.45,
+    8.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.67,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.37,
+    10.1
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 13.25,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.4,
+    7.4
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 16.64,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Highest touch count for the smallest space you'll find. Two cones per player, that's it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two cones three metres apart, a ball each, and a figure eight to dribble.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.99,
+   "text": "Inside of both feet first, then outside of both, then alternating inside and outside.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.14,
+   "text": "Thirty seconds a pattern, with a rest between each one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 16.64,
+   "text": "Count the loops and beat it next round. Then heads up, calling out a number you hold up.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 19.14,
+   "text": "The most efficient technique work there is when the pitch is crowded.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

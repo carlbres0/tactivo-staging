@@ -1,0 +1,200 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 29,
+  "length": 29
+ },
+ "equipment": [],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    2.75,
+    14.5
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    15.75,
+    12
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    13.25,
+    17
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    9.5,
+    14.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   15.98,
+   12.26
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    15.25,
+    17.75
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    21.5,
+    22.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    17.5,
+    14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.37,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    22.25,
+    25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.62,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    24.25,
+    23.25
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 13.47,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     24.51,
+     4.51
+    ],
+    "w": 3.75,
+    "h": 3.75,
+    "color": "technical",
+    "label": "red"
+   },
+   {
+    "at": [
+     24.51,
+     24.51
+    ],
+    "w": 3.75,
+    "h": 3.75,
+    "color": "tactical",
+    "label": "blue"
+   },
+   {
+    "at": [
+     4.51,
+     4.51
+    ],
+    "w": 3.75,
+    "h": 3.75,
+    "color": "physical",
+    "label": "green"
+   },
+   {
+    "at": [
+     4.51,
+     24.51
+    ],
+    "w": 3.75,
+    "h": 3.75,
+    "color": "social",
+    "label": "yellow"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got a group who need their heads up while they dribble?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Four different coloured corners, and everyone dribbling a ball in the middle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.69,
+   "text": "You call a colour and count down from ten, loudly and slowly.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.45,
+   "text": "They dribble to that corner before zero with the ball under control inside the box.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.47,
+   "text": "Then count from seven, or call two colours and let them pick the emptier corner.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.97,
+   "text": "It hides listening and control inside a race they want to win.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

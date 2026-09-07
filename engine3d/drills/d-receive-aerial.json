@@ -1,0 +1,130 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.22,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.22,
+    12
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.78,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.78,
+    12
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    3.67
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5,
+    10.33
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   4.02
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 4.38,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.67
+  }
+ ],
+ "duration": 7.16,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A bad first touch on a dropping ball hands it straight back. Kill it dead.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Pairs, ten metres apart, and one of them is throwing.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.22,
+   "text": "Thigh height first, then chest, then over the shoulder. Cushion it dead in one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.09,
+   "text": "The surface gives on contact. Meet it firmly and it bounces away from you.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.16,
+   "text": "Ten serves each, then swap. Later, take it down away from a passive defender.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 9.66,
+   "text": "Get the body behind the flight early, because most bad touches are footwork problems.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

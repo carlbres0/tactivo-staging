@@ -1,0 +1,159 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 44.54
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22,
+    41.23
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.92,
+    41.23
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    15.08,
+    41.23
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12,
+    41.23
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.15,
+    41.23
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.08,
+    41.23
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.54,
+    5.08
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.54,
+   5.43
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    13.54,
+    32.77
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.49,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    12.58,
+    34.69
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.21,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.62,
+    41.23
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.7,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.85,
+    43.54
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 18.08,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three gates across the far line, and you get to block one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Every player starts at the near line with a ball at their feet.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 9.94,
+   "text": "Drive at the gates with the ball out in front. Big touches while it's clear.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 16.27,
+   "text": "Step into a gate late, and they cut away, small touches through a different one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 18.08,
+   "text": "Six runs each with full recovery. Once they cope, block two of the three.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 20.58,
+   "text": "Touch length is the whole skill. Too short is slow, too long and it's gone.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

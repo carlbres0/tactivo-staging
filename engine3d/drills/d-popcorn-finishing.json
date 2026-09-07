@@ -1,0 +1,206 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 22.75,
+  "length": 25
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    10.75,
+    13.75
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    11.38,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    11.38,
+    25
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    11.38,
+    12.5
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.63,
+    8.13
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    8.25,
+    17.29
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5.13,
+    11.46
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   11.48,
+   12.16
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.96,
+    22.71
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.92,
+    12.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.82,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14.29,
+    7.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.72,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.58
+  },
+  {
+   "t": 4.25,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    11.31,
+    12.92
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.92,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    11.38,
+    0
+   ]
+  },
+  {
+   "t": 5.86,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    11.38,
+    12.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.67,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.79,
+    4.79
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 11.03,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A bucket of balls between two goals, popped out non stop.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Small area, no teams, everybody hunting whatever comes out and counting their goals.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.43,
+   "text": "They finish into either goal, first time or two touches, whichever the ball allows.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.38,
+   "text": "Fetch your ball back to the bucket and hunt the next one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.03,
+   "text": "Later call a name as you pop it, and only that player may take it.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.53,
+   "text": "Standing feet are the enemy, so pop the next while the last is still chased.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

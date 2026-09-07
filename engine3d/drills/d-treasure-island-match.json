@@ -1,0 +1,278 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 28,
+  "length": 30
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    14,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    14,
+    30
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    16.4,
+    8.33
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    9.2,
+    14.33
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    17.6,
+    20.33
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.47,
+    11.93
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    11.6,
+    17.93
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    12.67,
+    24.33
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    7.33,
+    23.27
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   16.43,
+   8.68
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.8,
+    17.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.8,
+    14.47
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    13.47,
+    20.6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    14,
+    26.47
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    5.47,
+    26.73
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 1.21
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    13.73,
+    11.53
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.33,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    4.93,
+    26.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.03,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    14,
+    30
+   ]
+  },
+  {
+   "t": 4.45,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    3.33,
+    13.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.78,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    14.8,
+    22.73
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 12.25,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     23,
+     3
+    ],
+    "w": 3.6,
+    "h": 3.6,
+    "color": "technical",
+    "label": "treasure"
+   },
+   {
+    "at": [
+     5,
+     27
+    ],
+    "w": 3.6,
+    "h": 3.6,
+    "color": "tactical",
+    "label": "treasure"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A small sided match is the best game there is. Here's a twist.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A normal match to two goals, plus a treasure ball on an island each.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.94,
+   "text": "A goal scores one. Stealing the treasure and dribbling it home scores three.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.8,
+   "text": "Only one raider on an island at a time, and play never stops.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.25,
+   "text": "Later put two treasures on each island, so raids grow with the gap.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.75,
+   "text": "The treasure splits a defence's eyes, teaching scanning without a word.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

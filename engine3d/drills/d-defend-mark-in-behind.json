@@ -1,0 +1,177 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.19,
+  "length": 37
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.19,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.19,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.1,
+    37
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    10.48,
+    20.85
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.1,
+    14.12
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    10.75,
+    20.17
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.02,
+   14.46
+  ]
+ },
+ "events": [
+  {
+   "t": 3.6,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.6,
+    29.19
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 5.11,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 1.55
+  },
+  {
+   "t": 5.11,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    8.46,
+    29.6
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.58,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 9.03,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.71,
+    26.23
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 12.65,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Nothing empties a defence quicker than a runner nobody picked up.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A central server holds the ball while attackers make runs in behind on a random trigger.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.06,
+   "text": "Defenders see ball and runner, and never turn their back on either.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.39,
+   "text": "They track the run all the way, shoulder to shoulder, without grabbing.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.65,
+   "text": "Once they've got it, send two runners at once so they have to talk.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.15,
+   "text": "Losing a runner is a head position problem, not a speed problem.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 30, "y": 70, "w": 260, "h": 60},
+  "cones": [
+    [150, 100], [210, 100], [270, 100]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 50, "y": 100},
+      {"t": 0.3, "x": 50, "y": 100},
+      {"t": 0.45, "x": 150, "y": 100},
+      {"t": 0.55, "x": 50, "y": 100},
+      {"t": 0.7, "x": 50, "y": 100},
+      {"t": 1, "x": 50, "y": 100}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 50, "y": 100},
+      {"t": 0.15, "x": 50, "y": 100},
+      {"t": 0.3, "x": 150, "y": 100},
+      {"t": 0.45, "x": 150, "y": 100},
+      {"t": 0.55, "x": 50, "y": 100},
+      {"t": 0.7, "x": 50, "y": 100},
+      {"t": 0.85, "x": 270, "y": 95},
+      {"t": 1, "x": 270, "y": 95}
+    ],
+    "air": [[0.15, 0.3], [0.7, 0.85]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[50, 100], [150, 100]]},
+    {"kind": "dribble", "pts": [[150, 100], [50, 100]]},
+    {"kind": "pass", "pts": [[50, 100], [270, 95]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Three target zones sit at increasing range; three balls are taken at each."},
+    {"t": 0.15, "label": "Strike with the instep for range — three points for landing inside the zone."},
+    {"t": 0.55, "label": "Reset and go again — laces for a driven ball at greater distance."},
+    {"t": 0.85, "label": "Same technique, further target — keep individual scores across the ladder."}
+  ],
+  "events": []
+}

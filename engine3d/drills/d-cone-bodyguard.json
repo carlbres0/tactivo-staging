@@ -1,0 +1,169 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7,
+    7
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.5,
+    3.88
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6.25,
+    8.12
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.15,
+   3.93
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.88,
+    4.56
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.05,
+    6.68
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.81,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.25,
+    5.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.06,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    2.62,
+    7.94
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.7,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    6.38,
+    7.38
+   ],
+   "flight": 0.4,
+   "flightStyle": "ground"
+  },
+  {
+   "t": 7.55,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    2.75,
+    8.75
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.72,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    3.25,
+    9.25
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 11.07,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Threes. One striker with a ball, one bodyguard, and a tall cone playing the VIP.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "An eight metre box each, cone in the middle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1,
+   "text": "The striker dribbles anywhere and shoots at the cone. The bodyguard may not tackle.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.08,
+   "text": "A knockdown scores the striker, thirty seconds survived scores the bodyguard, then rotate.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.07,
+   "text": "Later two strikers share one ball, so the pass must be defended too.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.57,
+   "text": "Defending without a tackle. Feet moving, body between ball and target, never diving in.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

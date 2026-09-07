@@ -1,0 +1,199 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 25.54,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    23.54,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    23.54,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.77,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    12.77,
+    30.46
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    6.62,
+    15.85
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 3,
+   "start": [
+    18.92,
+    15.85
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6.62,
+    5.85
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    15.08,
+    14.31
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.7,
+   6.19
+  ]
+ },
+ "events": [
+  {
+   "t": 1.44,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    13.85,
+    22
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.73,
+   "type": "pass",
+   "from": "d1",
+   "to": "gk",
+   "flight": 1.47,
+   "toFeet": true,
+   "flightStyle": "clipped",
+   "loft": 2.65
+  },
+  {
+   "t": 3.73,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    15.23,
+    19.23
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.82,
+   "type": "pass",
+   "from": "gk",
+   "to": "a1",
+   "flight": 0.95
+  }
+ ],
+ "duration": 9.88,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Play a high line and somebody will try the ball over the top.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Keeper starts on the edge of the box, with the defence squeezed up in front.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1,
+   "text": "The pass goes in behind, and the keeper decides. Come and clear, or drop and set.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.41,
+   "text": "Won the race outside the box, so clear it first time with the feet.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.88,
+   "text": "Once that's easy, start the attacker level with the line so the race is tight.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.38,
+   "text": "It makes the decision happen as the pass is struck, not two strides too late.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tactivo — welcome</title>
+  <!-- The intro clip is the first thing on the wire and the first thing on
+       screen. It is a recording of this same scene, so it is not a substitute
+       for the engine — it covers the seconds the engine spends downloading,
+       and hands over once it can render. Video streams: it paints off the
+       first chunk (measured 884 ms on Fast 4G) where the engine cannot draw
+       anything until both models have fully arrived (8.7 s). -->
+  <!-- The models are deliberately NOT preloaded here. They were, and it cost
+       the clip its head start: `as=fetch` preloads outrank media, so all
+       2.9 MB began at once and the first video frame did not paint until
+       10.0 s — worse than having no clip at all. The engine asks for them
+       itself, once the clip is playing (see main.ts). Measured on Fast 4G:
+       preloaded 10.0 s to first motion, `fetchpriority="low"` 9.9 s (the hint
+       is not enough on its own), gated behind the clip 1.4 s. -->
+<style>
+    html, body { margin: 0; height: 100%; background: #0b0f10; overflow: hidden; }
+    canvas { display: block; }
+    /* Over the canvas until the handoff fades it out. `object-fit: cover` so a
+       hero band of any aspect is filled the way the canvas fills it. */
+    #intro {
+      position: fixed; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; display: block; background: #0b0f10;
+      z-index: 1; transition: opacity 320ms linear;
+    }
+    /* The band the app gives this scene is narrower than the island, so the
+       turf reaches the frame and used to stop dead on a hard black line (Carl,
+       on a phone, 2026-09-04). Backing the camera off is not available: the
+       intro clip is a recording at exactly this framing, and engine3d/test/
+       welcome_clip_framing.test.ts holds the two together, so moving the camera
+       means re-filming the clip. This is the page's own ink laid back over the
+       picture, and it sits above BOTH the clip and the canvas - so whatever the
+       handoff is doing underneath, the edge looks the same on either side of it.
+       vmin, not px: the band is 375x398 on a phone and far wider on a desktop,
+       and the fade should stay the same fraction of the short side. */
+    #edge {
+      position: fixed; inset: 0; z-index: 2; pointer-events: none;
+      box-shadow: inset 0 0 16vmin 9vmin #0b0f10;
+    }
+  </style>
+  <script type="module" crossorigin src="./assets/welcome-DuXFRTpB.js"></script>
+</head>
+<body>
+  <!-- muted + playsinline + autoplay is the combination iOS Safari requires to
+       start without a tap; without `muted` it is blocked outright, and without
+       `playsinline` it goes fullscreen. There is no audio track to mute. -->
+  <video id="intro" autoplay muted playsinline preload="auto" src="./assets/intro.mp4"></video>
+  <div id="edge"></div>
+</body>
+</html>

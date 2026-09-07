@@ -1,0 +1,274 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 11.33,
+  "length": 16
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8.47,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.67,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.87,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.07,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.27,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.47,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.67,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.87,
+    2.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.87,
+    5.67
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.87,
+    8.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.87,
+    11.67
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.17,
+    4.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.09,
+   4.46
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.4,
+    3.32
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.91,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.87,
+    5.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.87,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.4,
+    3.32
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.84,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.87,
+    8.33
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.5,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.4,
+    3.32
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.16,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.87,
+    8.33
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.81,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.4,
+    3.32
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 17.47,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.87,
+    11.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 20.98,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.4,
+    3.32
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 24.49,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.87,
+    11.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 28,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.4,
+    3.32
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 31.52,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.87,
+    11.67
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 36.53,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A wall, a ball, and nobody else needed. That's the whole session.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Marks at three and five metres, and twenty clean exchanges at each one.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 12.79,
+   "text": "Pass into the wall, take the return with one touch, play it with the second.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 32.88,
+   "text": "Alternate feet every exchange. The wall never gives you a kind bounce to hide on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 36.53,
+   "text": "Once that's clean, receive across the body and return with the far foot only.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 39.03,
+   "text": "The wall is the most honest team-mate in football. It returns what you give.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

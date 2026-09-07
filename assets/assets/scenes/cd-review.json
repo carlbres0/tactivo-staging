@@ -1,0 +1,66 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 110, "y": 50, "w": 100, "h": 100},
+  "cones": [[110, 50], [210, 50], [110, 150], [210, 150]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 215, "y": 100},
+      {"t": 0.35, "x": 188, "y": 52, "cx": 221, "cy": 65},
+      {"t": 0.6, "x": 175, "y": 74},
+      {"t": 1, "x": 175, "y": 74}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 188, "y": 52},
+      {"t": 0.35, "x": 132, "y": 52, "cx": 160, "cy": 30},
+      {"t": 0.6, "x": 145, "y": 74},
+      {"t": 1, "x": 145, "y": 74}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 132, "y": 52},
+      {"t": 0.35, "x": 105, "y": 100, "cx": 99, "cy": 65},
+      {"t": 0.6, "x": 130, "y": 100},
+      {"t": 1, "x": 130, "y": 100}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 105, "y": 100},
+      {"t": 0.35, "x": 132, "y": 148, "cx": 99, "cy": 135},
+      {"t": 0.6, "x": 145, "y": 126},
+      {"t": 1, "x": 145, "y": 126}
+    ]},
+    {"team": "a", "label": "5", "kf": [
+      {"t": 0, "x": 132, "y": 148},
+      {"t": 0.35, "x": 188, "y": 148, "cx": 160, "cy": 170},
+      {"t": 0.6, "x": 175, "y": 126},
+      {"t": 1, "x": 175, "y": 126}
+    ]},
+    {"team": "a", "label": "6", "kf": [
+      {"t": 0, "x": 188, "y": 148},
+      {"t": 0.35, "x": 215, "y": 100, "cx": 221, "cy": 135},
+      {"t": 0.6, "x": 190, "y": 100},
+      {"t": 1, "x": 190, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 215, "y": 100},
+    {"t": 0.35, "x": 188, "y": 52, "cx": 221, "cy": 65},
+    {"t": 0.6, "x": 175, "y": 74},
+    {"t": 1, "x": 175, "y": 74}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "curve": true, "pts": [[215, 100], [221, 65], [188, 52]]},
+    {"kind": "dribble", "pts": [[188, 52], [175, 74]]},
+    {"kind": "run", "curve": true, "pts": [[188, 52], [160, 30], [132, 52]]},
+    {"kind": "run", "curve": true, "pts": [[132, 52], [99, 65], [105, 100]]},
+    {"kind": "run", "curve": true, "pts": [[105, 100], [99, 135], [132, 148]]},
+    {"kind": "run", "curve": true, "pts": [[132, 148], [160, 170], [188, 148]]},
+    {"kind": "run", "curve": true, "pts": [[188, 148], [221, 135], [215, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Group jogs a loop around the circle at an easy pace to bring the heart rate down."},
+    {"t": 0.35, "label": "Players walk in and form a tight circle."},
+    {"t": 0.6, "label": "Static stretches: quads, hamstrings, calves, hips — 20 seconds each, coach reviewing."},
+    {"t": 0.85, "label": "Coach opens the floor: what would you do differently next time?"}
+  ]
+}

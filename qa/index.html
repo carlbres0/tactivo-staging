@@ -1,0 +1,2311 @@
+<!-- THIS FILE IS THE SOURCE of the drill QA board. Never edit a built copy.
+     tool/build_review_artifact.py fills the two config/data placeholders below
+     from the live corpus; tool/deploy_staging.sh runs it into <staging>/qa/.
+     Do NOT spell those placeholder tokens anywhere else in this file: the
+     builder does a plain str.replace, so a second copy of the token would be
+     filled too — putting the Supabase key (and the whole corpus blob) into
+     whatever text surrounds it. -->
+<meta charset="utf-8">
+<title>Drill QA Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap">
+
+<style id="app-css">
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+  --bg: #0B0F10;
+  --card: #171B1F;
+  --card2: #12171A;
+  --border: #2A3036;
+  --border-soft: #21262B;
+  --lime: #C8F323;
+  --ink: #0B0F10;
+  --text: #FFFFFF;
+  --body: #D5D9DC;
+  --dim: #8D949B;
+  --muted: #6F767D;
+  --backdrop: #070B08;
+  --bad: #F2555A;
+  --warn: #E8B23D;
+  /* app tokens, matched to lib/core/theme/app_colors.dart */
+  --surface: #171B1F;
+  --card2app: #191D21;
+  --cardborder: #2A3036;
+  --chipbg: #1A1D21;
+  --pitchline: #2C3238;
+  --r: 10px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Archivo, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, p, ol, ul { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
+
+/* ---------- unlock ---------- */
+.lock { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+.lockcard {
+  width: 100%; max-width: 360px; display: grid; gap: 10px;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 26px;
+}
+.lockcard span {
+  font-size: 10px; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--lime);
+}
+.lockcard h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+.lockcard p { color: var(--dim); font-size: 13px; margin-bottom: 6px; }
+.lockcard input {
+  width: 100%; padding: 11px 13px; border-radius: 9px;
+  background: #101416; border: 1px solid var(--border);
+}
+.lockcard button {
+  padding: 11px; border-radius: 9px; font-size: 14px; font-weight: 700;
+  background: var(--lime); color: var(--ink);
+}
+.lockcard em {
+  font-style: normal; font-size: 12px; color: var(--bad); min-height: 16px;
+}
+
+/* ---------- header ---------- */
+.top {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center;
+  padding: 14px 20px;
+  background: rgba(11,15,16,.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.brand { display: flex; align-items: baseline; gap: 10px; margin-right: auto; }
+.brand b { font-size: 16px; font-weight: 800; letter-spacing: -0.01em; }
+.brand span {
+  font-size: 10px; font-weight: 700; letter-spacing: .14em;
+  color: var(--lime); text-transform: uppercase;
+}
+.meter { display: flex; align-items: center; gap: 12px; }
+.bar {
+  width: 240px; max-width: 40vw; height: 8px; border-radius: 999px;
+  background: #20262B; overflow: hidden; display: flex;
+}
+.bar i { display: block; height: 100%; }
+.bar .ok { background: var(--lime); }
+.bar .iss { background: var(--bad); }
+.tally { display: flex; gap: 14px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.tally b { font-weight: 700; }
+.tally .ok b { color: var(--lime); }
+.tally .iss b { color: var(--bad); }
+.tally .rec b { color: var(--lime); }
+.tally span { color: var(--muted); }
+.who {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--dim);
+}
+.who input {
+  width: 120px; padding: 6px 10px; border-radius: 8px;
+  background: #101416; border: 1px solid var(--border);
+}
+.save {
+  font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--muted); min-width: 92px; text-align: right;
+}
+.save[data-s="saving"] { color: var(--warn); }
+.save[data-s="saved"] { color: var(--lime); }
+.save[data-s="local"], .save[data-s="ro"] { color: var(--bad); }
+.ghost {
+  padding: 7px 12px; border-radius: 8px; font-size: 12px; font-weight: 600;
+  border: 1px solid var(--border); color: var(--body);
+}
+.ghost:hover { border-color: var(--lime); color: var(--lime); }
+
+/* ---------- shell ---------- */
+.shell { display: grid; grid-template-columns: 296px minmax(0, 1fr); gap: 0; }
+.side {
+  border-right: 1px solid var(--border);
+  height: calc(100vh - 57px); position: sticky; top: 57px;
+  display: flex; flex-direction: column; min-height: 0;
+}
+.sidetop { padding: 14px; display: grid; gap: 10px; border-bottom: 1px solid var(--border-soft); }
+.search {
+  width: 100%; padding: 9px 12px; border-radius: 9px;
+  background: #101416; border: 1px solid var(--border);
+}
+.search::placeholder { color: var(--muted); }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill {
+  padding: 5px 10px; border-radius: 999px; font-size: 11px; font-weight: 600;
+  border: 1px solid var(--border); color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+.pill[aria-pressed="true"] { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+/* The re-check pile is the one pile with someone waiting on it, so it wears
+   the accent even when it is not the pill you are standing on. */
+.pill.hot { border-color: var(--lime); color: var(--lime); }
+.pill.hot[aria-pressed="true"] { color: var(--ink); }
+.list { overflow-y: auto; padding: 8px 8px 40px; flex: 1; min-height: 0; }
+.grouphead {
+  padding: 14px 8px 6px; font-size: 10px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+}
+.row {
+  display: grid; grid-template-columns: 8px minmax(0,1fr) auto;
+  gap: 9px; align-items: center; width: 100%; text-align: left;
+  padding: 8px 10px; border-radius: 8px; color: var(--body);
+}
+.row:hover { background: #151A1D; }
+.row[aria-current="true"] { background: #1C2226; color: var(--text); }
+.row .dot { width: 8px; height: 8px; border-radius: 50%; background: #333A40; }
+.row[data-st="ok"] .dot { background: var(--lime); }
+.row[data-st="issue"] .dot { background: var(--bad); }
+.row[data-st="partial"] .dot { background: var(--warn); }
+.row .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+.row .tag { font-size: 9px; font-weight: 700; letter-spacing: .1em; color: var(--muted); }
+
+/* ---------- main ---------- */
+.main { padding: 20px; display: grid; gap: 18px; align-content: start; min-width: 0; }
+.dhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; }
+.dhead h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+.did { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+/* The drill id is what Carl quotes back in feedback, so it is a first-class
+   thing on the page and one click puts it on the clipboard. */
+.didbtn {
+  font-family: var(--mono); font-size: 13px; font-weight: 600;
+  padding: 4px 9px; border-radius: 6px; color: var(--lime);
+  background: #1A1F23; border: 1px solid var(--border);
+}
+.didbtn:hover { border-color: var(--lime); }
+.didbtn[data-copied="1"] { background: var(--lime); color: var(--ink); border-color: var(--lime); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  padding: 4px 9px; border-radius: 6px; font-size: 11px; font-weight: 600;
+  background: #1A1F23; color: var(--dim); border: 1px solid var(--border-soft);
+}
+.chip.lime { background: #273116; color: #E4F7B0; border-color: #313B17; }
+/* Loud on purpose: a candidate is not in the app, and a reviewer who misses
+   that will file "the animation is broken" against a drill that has none. */
+.chip.cand {
+  background: #3A2A08; color: #FFD37A; border-color: #5A4310;
+  letter-spacing: .1em; font-weight: 800;
+}
+
+/* ---------- the app, reproduced ----------
+   Every number below is lifted from lib/features/drill_details and
+   lib/core/theme, so what a reviewer marks is what a coach sees. */
+/* Card and 3D pane side by side: "do the two agree?" is only a fair question
+   if both are on screen at once. Collapses to one column when there is not
+   room for the app's own 480px card plus a usable 3D box. */
+.appwrap {
+  display: grid; grid-template-columns: minmax(0, 480px) minmax(0, 1fr);
+  gap: 14px; align-items: start; justify-items: center;
+}
+.appwrap .viewtabs { grid-column: 1 / -1; }
+.appwrap.flat { grid-template-columns: minmax(0, 480px); justify-content: center; }
+@media (max-width: 1320px) { .appwrap { grid-template-columns: minmax(0, 1fr); } }
+.frame {
+  width: 100%; max-width: 480px;                 /* AppSizes.authMaxContentWidth */
+  background: var(--bg);
+  border: 1px solid var(--border); border-radius: 22px;
+  padding: 18px;                                  /* drillDetailPageHorizontal/TopPad */
+  overflow: hidden;
+}
+.viewtabs { display: flex; gap: 4px; }
+.viewtab {
+  padding: 5px 11px; border-radius: 7px; font-size: 11px; font-weight: 600;
+  border: 1px solid var(--border); color: var(--muted);
+}
+.viewtab[aria-pressed="true"] { background: #1C2226; border-color: var(--lime); color: var(--lime); }
+
+.appback {
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--border); color: var(--body);
+  display: grid; place-items: center; font-size: 15px;
+  margin-bottom: 24px;                            /* drillDetailHeaderToChips */
+}
+.appchips { display: flex; flex-wrap: wrap; gap: 8px 8px; margin-bottom: 10px; }
+.appchip {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 7px; border-radius: 5px;
+  font-size: 8.5px; font-weight: 600; letter-spacing: .3px; line-height: 1.2;
+  text-transform: uppercase;
+  background: var(--chipbg); border: 1px solid #313339; color: var(--dim);
+}
+.appchip.lime { background: #313B17; border: 0; color: var(--lime); }
+.appchip svg { width: 11px; height: 11px; }
+.apptitle {
+  font-size: 21px; font-weight: 800; letter-spacing: .3px; line-height: 1.05;
+  text-transform: uppercase; margin-bottom: 14px;
+}
+/* A candidate's flat coaching diagram takes the stage box's place. It is a
+   plain SVG that sizes itself, so there is no fixed height to fight over. */
+.flatdiagram { background: var(--backdrop); border-radius: 12px; padding: 10px 10px 2px; }
+.flatdiagram svg { display: block; width: 100%; height: auto; border-radius: 8px; }
+.diagram { height: 240px; display: flex; flex-direction: column; }
+.diagram.replay { height: 400px; }
+.stagebox { flex: 1; min-height: 0; border-radius: 12px; overflow: hidden; background: var(--backdrop); }
+.stagebox canvas { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
+.stagebox canvas:active { cursor: grabbing; }
+.capline { display: flex; align-items: flex-start; gap: 8px; padding-top: 8px; }
+.capplay {
+  width: 32px; height: 32px; flex: none; color: var(--lime);
+  font-size: 15px; display: grid; place-items: center;
+}
+.captext { font-size: 12.5px; line-height: 1.3; color: var(--body); }
+.dashes { display: flex; gap: 5px; margin-top: 4px; }
+.dashes i {
+  width: 18px; height: 3px; border-radius: 2px;
+  background: var(--pitchline); overflow: hidden;
+}
+.dashes i b { display: block; height: 100%; width: 0; background: var(--lime); }
+.capnote {
+  text-align: right; font-size: 9.5px; line-height: 1.2;
+  color: var(--dim); margin-top: 6px;
+}
+.dircams { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.dircam {
+  padding: 8px 12px; border-radius: 9px; font-size: 11px; font-weight: 600;
+  background: var(--surface); border: 1px solid var(--cardborder); color: var(--dim);
+}
+.dircam[aria-pressed="true"] { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+
+/* The three stage modes the app itself offers, in the app's own words. These
+   are the point of the 2D pane; the broadcast presets above are a director's
+   toy and only appear in full-screen replay. */
+.stagetabs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.stagetab {
+  padding: 7px 11px; border-radius: 9px; font-size: 11px; font-weight: 600;
+  background: var(--surface); border: 1px solid var(--cardborder); color: var(--dim);
+}
+.stagetab i { font-style: normal; color: var(--muted); font-weight: 400; }
+.stagetab[aria-pressed="true"] { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+.stagetab[aria-pressed="true"] i { color: var(--ink); opacity: .7; }
+.stagenote { margin-top: 6px; font-size: 10px; line-height: 1.35; color: var(--dim); }
+.stagenote b { color: var(--muted); font-weight: 700; letter-spacing: .08em; }
+
+/* ---------- the 3D pane ---------- */
+/* Sticky, because the drill card is far taller than the 3D box: the whole
+   point is that both are on screen at the same time, all the way down the
+   instructions. */
+.pane3d { width: 100%; display: grid; gap: 8px; align-content: start;
+  position: sticky; top: 73px; }
+.paneh {
+  display: flex; align-items: baseline; gap: 8px;
+  font-size: 10px; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--muted);
+}
+.paneh em { font-style: normal; letter-spacing: 0; text-transform: none; font-weight: 500; }
+.paneh em[data-s="error"] { color: var(--bad); }
+.paneh em[data-s="ready"] { color: var(--lime); }
+.slot3d {
+  width: 100%; height: min(58vh, 520px); min-height: 300px;
+  border-radius: 12px; background: var(--backdrop);
+}
+@media (max-width: 1320px) { .pane3d { position: static; } .slot3d { height: 380px; } }
+/* The iframe is parked over .slot3d rather than inside it: render() replaces
+   #root wholesale and re-parenting an iframe reloads it, which would reboot
+   the 13 MB engine on every keystroke. Position is re-synced on the frame
+   loop, so it tracks scrolling and resizes for free. */
+.pane3dhost {
+  position: fixed; z-index: 5; display: none;
+  border-radius: 12px; overflow: hidden; background: var(--backdrop);
+}
+.pane3dhost iframe { display: block; width: 100%; height: 100%; border: 0; }
+.pane3dhost .msg {
+  position: absolute; inset: 0; display: grid; place-content: center;
+  justify-items: center; gap: 5px;
+  padding: 16px; text-align: center; font-size: 12px; color: var(--dim);
+  background: var(--backdrop);
+}
+.pane3dhost .msg[hidden] { display: none; }
+.pane3dhost .msg b { display: block; color: var(--bad); font-weight: 600; }
+.pane3dhost .msg i { display: block; font-style: normal; color: var(--muted); font-size: 11px; }
+.pane3dhost .msg .msgretry {
+  margin-top: 8px; padding: 6px 12px; border-radius: 8px; font-size: 11px;
+  font-weight: 600; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--cardborder); color: var(--text);
+}
+
+/* ---------- feedback tags ---------- */
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+.tagbtn {
+  padding: 4px 9px; border-radius: 999px; font-size: 11px; font-weight: 600;
+  border: 1px solid var(--border); color: var(--dim);
+}
+.tagbtn:hover { border-color: var(--lime); color: var(--lime); }
+.tagbtn[aria-pressed="true"] { background: var(--bad); border-color: var(--bad); color: #fff; }
+.applabel {
+  color: var(--lime); font-size: 10px; font-weight: 600;
+  letter-spacing: .6px; line-height: 1.2; margin: 16px 0 10px;
+}
+.appsteps { display: grid; gap: 10px; }
+.appstep { display: grid; grid-template-columns: 18px minmax(0,1fr); gap: 10px; }
+.appstep b {
+  width: 18px; height: 18px; margin-top: 1px; border-radius: 50%;
+  background: var(--lime); color: var(--ink);
+  font-size: 10px; font-weight: 700; line-height: 1.1;
+  display: grid; place-items: center;
+}
+.appstep span { font-size: 12px; line-height: 1.45; color: var(--body); font-weight: 400; }
+.skillgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.skillpill {
+  display: flex; align-items: center; gap: 11px;
+  padding: 11px 12px; border-radius: 12px;
+  background: var(--card2app); border: 1px solid var(--cardborder);
+}
+.skillpill svg { width: 30px; height: 30px; flex: none; }
+.skillpill span { font-size: 11.5px; font-weight: 600; line-height: 1.25; }
+.coachtip {
+  display: flex; align-items: flex-start; gap: 11px;
+  padding: 11px 12px; border-radius: 10px; background: #313B17; margin-top: 16px;
+}
+.coachtip svg { width: 28px; height: 28px; flex: none; color: var(--lime); }
+.coachtip b {
+  display: block; color: #E4F7B0; font-size: 11.5px; font-weight: 700;
+  letter-spacing: .4px; line-height: 1.4;
+}
+.coachtip i { color: #E4F7B0; font-size: 11.5px; line-height: 1.4; }
+.adapt { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.adapt > div {
+  padding: 10px; border-radius: 12px;
+  background: var(--card2app); border: 1px solid var(--cardborder);
+}
+.adapt b {
+  display: block; color: var(--dim); font-size: 10px; font-weight: 600;
+  letter-spacing: .6px; line-height: 1.2; margin-bottom: 4px;
+}
+.adapt p { color: var(--dim); font-size: 11px; line-height: 1.35; white-space: pre-line; }
+
+.cols { display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 18px; align-items: start; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 16px; }
+.card h2 {
+  font-size: 10px; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
+}
+
+/* ---------- review ---------- */
+.review { position: sticky; top: 73px; }
+/* Our fix line, lifted out of the note and put where the eye lands first.
+   The textarea below still holds the whole raw note — this is a reading of
+   it, not a copy, so nothing the coach wrote can be lost here. */
+.recheck {
+  margin-bottom: 14px; padding: 10px 12px; border-radius: 9px;
+  background: rgba(200, 243, 35, .07);
+  border: 1px solid rgba(200, 243, 35, .34);
+  border-left: 3px solid var(--lime);
+}
+.recheck b {
+  display: block; font-size: 11px; font-weight: 800; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--lime); line-height: 1.35;
+}
+.recheck p { margin-top: 5px; font-size: 12.5px; line-height: 1.45; color: var(--body); }
+.recheck .was {
+  margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--border-soft);
+  font-size: 11.5px; line-height: 1.45; color: var(--muted); white-space: pre-line;
+}
+.crit { display: grid; gap: 10px; margin-bottom: 14px; }
+.crit > div { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 10px; align-items: center; }
+.crit .lab { font-size: 13px; font-weight: 600; }
+.crit .lab em { display: block; font-style: normal; font-size: 11px; color: var(--muted); font-weight: 400; }
+.yn { display: flex; gap: 4px; }
+.yn button {
+  width: 34px; height: 30px; border-radius: 8px; font-size: 13px; font-weight: 700;
+  border: 1px solid var(--border); color: var(--dim);
+}
+.yn button[aria-pressed="true"][data-v="1"] { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+.yn button[aria-pressed="true"][data-v="0"] { background: var(--bad); border-color: var(--bad); color: #fff; }
+.note {
+  width: 100%; min-height: 96px; resize: vertical; padding: 10px 12px;
+  border-radius: 9px; background: #101416; border: 1px solid var(--border);
+  line-height: 1.5;
+}
+.note::placeholder { color: var(--muted); }
+.stamp { margin-top: 8px; font-size: 11px; color: var(--muted); min-height: 16px; }
+.acts { display: grid; gap: 8px; margin-top: 14px; }
+.acts button {
+  padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 700;
+  border: 1px solid var(--border); color: var(--body);
+}
+.acts .good { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+.acts .good:hover { background: #ADD51A; border-color: #ADD51A; }
+.acts .skip:hover { border-color: var(--lime); color: var(--lime); }
+.back { margin-top: 8px; font-size: 12px; color: var(--muted); }
+.back:hover { color: var(--lime); }
+.keys { margin-top: 12px; font-size: 11px; color: var(--muted); line-height: 1.7; }
+.keys kbd {
+  font-family: var(--mono); font-size: 10px; padding: 1px 5px; border-radius: 4px;
+  background: #1A1F23; border: 1px solid var(--border);
+}
+.banner {
+  padding: 10px 14px; border-radius: 9px; font-size: 13px;
+  background: #2A1416; border: 1px solid #4A2226; color: #FFD9DA;
+}
+@media (max-width: 1080px) {
+  .cols { grid-template-columns: minmax(0,1fr); }
+  .review { position: static; }
+}
+@media (max-width: 820px) {
+  .shell { grid-template-columns: minmax(0,1fr); }
+  .side { position: static; height: auto; max-height: 300px; border-right: 0; border-bottom: 1px solid var(--border); }
+  .main { padding: 14px; }
+}
+</style>
+
+<div id="root"></div>
+
+<script type="application/json" id="qa-config">{"url": "https://rfykucyuwoyrgvkwkwiy.supabase.co", "key": "sb_publishable_YCYnAaWcK0lt_SxLFYBhHA_IdDXs7gi", "board": "tactivo-drill-qa", "dataUrl": "drill-data.json?v=1788786334"}</script>
+<script type="application/json" id="drill-data"></script>
+<script type="application/json" id="review-state">{}</script>
+
+<script id="app-js">
+(function () {
+  "use strict";
+
+  // Nothing is decoded until the passphrase arrives: the payload in the page
+  // is ciphertext, so holding the link is not the same as holding the drills.
+  var RAW = null;
+  var DATA, DRILLS, SCENES, ICONS, ORDERED;
+  // Candidate ids. A candidate is a forged drill that is NOT in the app:
+  // it has a flat diagram and no scene, so the animation verdicts do not
+  // apply to it and must stay null rather than being answered.
+  var CAND = {};
+  var BW = 320, BH = 200;
+
+  // Mirrors DrillScene.playbackRate in lib/core/scene/drill_scene.dart. Keep
+  // the two in step, or a reviewer judges a pace no coach will ever see.
+  // Scales dt, never durationMs, so the phase markers and the ball's flight
+  // stay exactly where they were authored relative to one another.
+  var PLAYBACK_RATE = 1.0;
+
+  // Port of lib/core/scene/scene_pacing.dart — "read first, then play".
+  // Each phase opens with a still beat so the caption gets a head start, then
+  // the movement runs at exactly the pace it was authored. Stretching the
+  // movement to reading speed made players drift unnaturally; this keeps words
+  // and motion overlapping rather than queued.
+  var WORDS_PER_MINUTE = 160;   // the broadcast subtitle floor
+  var ORIENTATION_MS = 600;     // noticing the caption changed
+  var BEAT_SHARE = 0.6;         // the rest is read while the movement plays
+  var MAX_BEAT_MS = 2600;       // no beat outstays its welcome
+
+  function computeBeats(sc) {
+    return sc.phases.map(function (p) {
+      var words = String(p.label).trim().split(/\s+/).length;
+      var need = ORIENTATION_MS + words * 60000 / WORDS_PER_MINUTE;
+      var beat = need * BEAT_SHARE;
+      return beat > MAX_BEAT_MS ? MAX_BEAT_MS : beat;
+    });
+  }
+
+  /// Wall-clock ms of a phase's movement, at the authored pace.
+  function authoredMs(sc, i) {
+    var start = sc.phases[i].t;
+    var end = i + 1 < sc.phases.length ? sc.phases[i + 1].t : 1;
+    return (end - start) * sc.durationMs / PLAYBACK_RATE;
+  }
+
+  /// The whole phase on the wall clock: its read-beat plus its movement.
+  function phaseWallMs(sc, beats, i) { return beats[i] + authoredMs(sc, i); }
+
+  var _beatCache = {};
+  function beatsFor(id, sc) {
+    if (!_beatCache[id]) _beatCache[id] = computeBeats(sc);
+    return _beatCache[id];
+  }
+
+  function directorPresetFor(phase, count) {
+    if (phase === 0) return 0;
+    if (phase === count - 1) return 2;
+    return phase % 2 ? 1 : 3;
+  }
+
+  function enterPhase(sc, i) {
+    clock.phase = i;
+    clock.phaseWallMs = 0;
+    // Full-screen replay is the app's director mode: it cuts to a new angle on
+    // each phase. The drill card never does — it stays on one camera.
+    if (ui.view === "replay" && ui.autocut) {
+      ui.preset = directorPresetFor(i, sc.phases.length);
+    }
+  }
+
+  // Consumed piecewise rather than in one lump: a janky frame can hand this
+  // several hundred ms at once, and a single big step would blow straight
+  // through a beat that a stream of 16ms frames would have honoured.
+  function advance(sc, beats, dtMs) {
+    var remaining = dtMs, guard = 0;
+    while (remaining > 0 && guard++ < 1000) {
+      var beat = beats[clock.phase];
+      if (clock.phaseWallMs < beat) {
+        var hold = Math.min(beat - clock.phaseWallMs, remaining);
+        clock.phaseWallMs += hold;
+        remaining -= hold;
+        continue;
+      }
+      var boundaryT = clock.phase + 1 < sc.phases.length
+        ? sc.phases[clock.phase + 1].t : 1.12;
+      var msToBoundary =
+        (boundaryT * sc.durationMs - clock.elapsed) / PLAYBACK_RATE;
+      var step = Math.min(remaining, msToBoundary);
+      clock.elapsed += step * PLAYBACK_RATE;
+      clock.phaseWallMs += step;
+      remaining -= step;
+      clock.t = clock.elapsed / sc.durationMs;
+      if (remaining > 0) {
+        if (clock.phase + 1 < sc.phases.length) enterPhase(sc, clock.phase + 1);
+        else { clock.elapsed = 0; clock.t = 0; enterPhase(sc, 0); }
+      }
+    }
+    if (clock.t >= 1.12) {
+      clock.elapsed = 0;
+      clock.t = 0;
+      enterPhase(sc, 0);
+    }
+  }
+
+  // Material glyphs the coaching card uses, as inline SVG.
+  var GLYPH = {
+    schedule: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+    group: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5"/><path d="M16.5 6.2a3.2 3.2 0 0 1 0 6M17 14.2c2.4.5 4 2.2 4 4.8"/></svg>',
+    sports: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.2 15.8 10l-1.5 4.5h-4.6L8.2 10z"/><path d="M12 3.2v4M4.2 9.6 8.2 10M19.8 9.6 15.8 10M7 19.3l2.7-4.8M17 19.3l-2.7-4.8"/></svg>'
+  };
+
+  /* ============ state ============ */
+  var state = { v: 1, reviews: {} };
+  try {
+    var seed = JSON.parse(document.getElementById("review-state").textContent);
+    if (seed && seed.reviews) state = seed;
+  } catch (e) { /* first run */ }
+
+  // A viewer who can open the page but not write it still needs their work to
+  // survive a reload, so every change is mirrored into this browser. Merging
+  // by timestamp — never wholesale replacement — is what lets a local copy and
+  // a saved copy meet without one silently erasing the other.
+  var LKEY = "tactivo-qa-state:" + location.pathname;
+  function saveLocal() {
+    try { localStorage.setItem(LKEY, JSON.stringify(state)); } catch (e) {}
+  }
+  function mergeIn(other) {
+    if (!other || !other.reviews) return false;
+    var changed = false;
+    Object.keys(other.reviews).forEach(function (id) {
+      var mine = state.reviews[id], theirs = other.reviews[id];
+      if (!mine || (theirs.at || 0) > (mine.at || 0)) {
+        // A row written by the pre-3D board has no `anim3d` at all. Newest-wins
+        // must not let that absence erase a 3D verdict someone actually made:
+        // a missing field is "not judged yet", never "unjudge this".
+        // (`other` is always a freshly parsed throwaway, so mutating it is safe.)
+        if (theirs.anim3d === undefined && mine && mine.anim3d !== undefined) {
+          theirs.anim3d = mine.anim3d;
+        }
+        state.reviews[id] = theirs;
+        changed = true;
+      }
+    });
+    return changed;
+  }
+  // Restore any edit this browser made but never confirmed sent (a save that
+  // failed, or work done offline). This can only ever recover local edits —
+  // never invent new ones — so it must not be read as "push everything";
+  // what to push is tracked separately by the persisted dirty set below.
+  try {
+    mergeIn(JSON.parse(localStorage.getItem(LKEY)));
+  } catch (e) {}
+
+  var me = "";
+  try { me = localStorage.getItem("tactivo-qa-who") || ""; } catch (e) {}
+
+  var ui = {
+    sel: null,
+    filter: "all",
+    q: "",
+    view: "card",        // card = the drill screen; replay = the full-screen one
+    // The app's three stage modes, by their SceneStageMode names:
+    // tilted = the 2.5D board, flat = square-on 2D, diagram = the frozen
+    // legible frame. See lib/core/scene/drill_scene_view.dart.
+    stage: "tilted",
+    preset: 1,
+    autocut: true,
+    playing: true,
+    saveState: "idle"
+  };
+
+  function review(id) {
+    return state.reviews[id] || null;
+  }
+  function statusOf(id) {
+    var r = review(id);
+    if (!r) return "none";
+    var vals = CAND[id] ? [r.text] : [r.text, r.anim, r.anim3d, r.match];
+    if (vals.indexOf(false) >= 0) return "issue";
+    if (vals.every(function (v) { return v === true; })) return "ok";
+    if (vals.indexOf(true) >= 0 || (r.note || "").trim()) return "partial";
+    return "none";
+  }
+
+  /* ============ persistence ============ */
+  var artifact = null;
+  // supabase (hosted build) | files -> html -> local (artifact build)
+  var CFG = null;
+  try {
+    var cfg = document.getElementById("qa-config");
+    if (cfg) CFG = JSON.parse(cfg.textContent);
+  } catch (e) { CFG = null; }
+  var SUPA = (CFG && CFG.url && CFG.key && CFG.board) ? CFG : null;
+  var mode = SUPA ? "supabase" : "files";
+  var saveTimer = null;
+  var pending = false;
+  // Ids THIS browser has changed and not yet confirmed saved. Persisted
+  // alongside `state` so an edit that never made it out survives a reload —
+  // and so a reload never re-pushes ids nobody here touched, which is what
+  // let a fresher save from another reviewer be overwritten (see mergeIn).
+  var DKEY = "tactivo-qa-dirty:" + location.pathname;
+  var dirty = {};              // template ids changed since the last save
+  try {
+    JSON.parse(localStorage.getItem(DKEY) || "[]").forEach(function (id) {
+      if (state.reviews[id]) dirty[id] = true;
+    });
+  } catch (e) {}
+  function saveDirty() {
+    try { localStorage.setItem(DKEY, JSON.stringify(Object.keys(dirty))); } catch (e) {}
+  }
+  var passphrase = "";         // doubles as the board token
+
+  function setSave(s) {
+    ui.saveState = s;
+    var el = document.querySelector(".save");
+    if (!el) return;
+    el.dataset.s = s;
+    el.textContent = s === "saving" ? "Saving…"
+      : s === "saved" ? "Saved"
+      : s === "retry" ? "Reconnecting…"
+      : (s === "local" || s === "ro") ? "Kept on this device"
+      : "";
+    el.title = (s === "local" || s === "ro")
+      ? "Your notes are safe in this browser but cannot reach the owner from "
+        + "here. Finish, then press Copy issues and send the text back."
+      : "";
+  }
+
+  function esc(json) { return json.replace(/</g, "\\u003c"); }
+
+  function buildDoc() {
+    var data = document.getElementById("drill-data").textContent;
+    var css = document.getElementById("app-css").textContent;
+    var js = document.getElementById("app-js").textContent;
+    var close = "<\/" + "script>";
+    return '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+      + '<meta name="viewport" content="width=device-width, initial-scale=1">'
+      + "<title>Drill QA Board<\/title>"
+      + '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap">'
+      + '<style id="app-css">' + css + "<\/style></head><body>"
+      + '<div id="root"></div>'
+      + '<script type="application/json" id="drill-data">' + data + close
+      + '<script type="application/json" id="review-state">' + esc(JSON.stringify(state)) + close
+      + '<script id="app-js">' + js + close
+      + "</body></html>";
+  }
+
+  function queueSave() {
+    saveLocal();
+    saveDirty();
+    if (mode === "local") { setSave("local"); return; }
+    pending = true;
+    setSave("saving");
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(flush, 1400);
+  }
+
+  /* --- Supabase persistence (the hosted build) --- */
+  function rpc(fn, body) {
+    return fetch(SUPA.url + "/rest/v1/rpc/" + fn, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: SUPA.key,
+        Authorization: "Bearer " + SUPA.key
+      },
+      body: JSON.stringify(body)
+    }).then(function (r) {
+      if (r.ok) return r.status === 204 ? null : r.json();
+      return r.text().then(function (t) {
+        var err = new Error(r.status + " " + t);
+        err.status = r.status;
+        throw err;
+      });
+    });
+  }
+
+  function rowsToState(rows) {
+    var out = { reviews: {} };
+    (rows || []).forEach(function (row) {
+      out.reviews[row.template_id] = {
+        text: row.text_ok, anim: row.anim_ok,
+        // v1 rows have no anim3d_ok at all; undefined would read as "judged".
+        anim3d: row.anim3d_ok === undefined ? null : row.anim3d_ok,
+        match: row.match_ok,
+        note: row.note || "", by: row.reviewer || "",
+        at: Date.parse(row.updated_at) || 0
+      };
+    });
+    return out;
+  }
+
+  // The 3D verdict needs `anim3d_ok`, which only the _v2 functions carry. A
+  // board served against a database that has not had the additive migration
+  // yet gets a 404 from PostgREST for the missing function — fall back to v1
+  // once, permanently, and simply lose the 3D column rather than the session.
+  //
+  // Narrow on purpose. PostgREST also answers 400 for ordinary failures —
+  // a constraint violation such as `length(note) <= 4000`, a bad argument —
+  // and treating those as "the function is missing" would latch the board into
+  // v1 for the session, after which every 3D verdict is dropped on save while
+  // the UI still says "saved". Only a real missing-function answer counts:
+  // 404, or PostgREST's own PGRST202 ("could not find the function") code.
+  var v2 = true;
+  function isMissingFn(e) {
+    return !!e && (e.status === 404
+      || (e.status === 400 && String(e.message || "").indexOf("PGRST202") >= 0));
+  }
+
+  function pullRemote() {
+    var args = { p_board: SUPA.board, p_token: passphrase };
+    var go = function () {
+      return rpc(v2 ? "review_board_load_v2" : "review_board_load", args);
+    };
+    return go().catch(function (e) {
+      if (!v2 || !isMissingFn(e)) throw e;
+      v2 = false;
+      return go();
+    }).then(function (rows) {
+      if (mergeIn(rowsToState(rows))) { saveLocal(); render(); }
+    });
+  }
+
+  function saveOne(id, r) {
+    var body = {
+      p_board: SUPA.board, p_token: passphrase, p_template_id: id,
+      p_reviewer: r.by || "", p_text_ok: r.text, p_anim_ok: r.anim,
+      p_match_ok: r.match, p_note: r.note || ""
+    };
+    if (!v2) return rpc("review_board_save", body);
+    body.p_anim3d_ok = r.anim3d == null ? null : r.anim3d;
+    return rpc("review_board_save_v2", body).catch(function (e) {
+      if (!isMissingFn(e)) throw e;
+      v2 = false;
+      delete body.p_anim3d_ok;
+      return rpc("review_board_save", body);
+    });
+  }
+
+  function flushSupabase() {
+    var ids = Object.keys(dirty);
+    if (!ids.length) { setSave("saved"); return; }
+    pending = false;
+    setSave("saving");
+    Promise.all(ids.map(function (id) {
+      var r = state.reviews[id];
+      delete dirty[id];
+      return saveOne(id, r).catch(function (e) { dirty[id] = true; throw e; });
+    })).then(function () {
+      saveDirty();
+      setSave(Object.keys(dirty).length ? "saving" : "saved");
+    }).catch(function () {
+      // The marks are still in `dirty` and in this browser; try again shortly.
+      saveDirty();
+      setSave("retry");
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(flush, 5000);
+    });
+  }
+
+  function flush() {
+    if (mode === "supabase") return flushSupabase();
+    if (!pending || !artifact) return;
+    pending = false;
+    var body = mode === "files"
+      ? { "data/reviews.json": JSON.stringify(state) }
+      : buildDoc();
+    artifact.publish(body).then(function () {
+      if (!pending) setSave("saved");
+    }).catch(function (err) {
+      var code = (err && err.code) || "upstream_error";
+      if (code === "conflict") { setSave("saving"); return; }   // shell reloads us
+      if (code === "capability_disabled" || code === "read_only_path") {
+        if (mode === "files") { mode = "html"; pending = true; flush(); return; }
+        mode = "local"; setSave("local"); return;
+      }
+      if (code === "not_writer" || code === "not_granted" ||
+          code === "not_declared" || code === "consent_required") {
+        mode = "local"; setSave("ro"); return;
+      }
+      if (code === "rate_limited") { pending = true; clearTimeout(saveTimer); saveTimer = setTimeout(flush, 6000); return; }
+      pending = true; clearTimeout(saveTimer); saveTimer = setTimeout(flush, 4000);
+    });
+  }
+
+  function bootPersistence() {
+    if (mode === "supabase") {
+      pullRemote().then(function () {
+        // The rows only exist now, so this is the first moment the re-check
+        // pile can be counted at all.
+        if (landOnRecheck()) render();
+        // Only ids THIS browser actually changed and never confirmed sent —
+        // the persisted dirty set — go up now. Never the whole table: a row
+        // another reviewer saved more recently already won it in pullRemote's
+        // mergeIn above, and re-pushing everything would silently clobber it.
+        if (Object.keys(dirty).length) {
+          queueSave();
+        } else {
+          setSave("saved");
+        }
+      }).catch(function (err) {
+        // A rejected token means the passphrase does not open this board.
+        mode = err && err.status === 403 ? "local" : "supabase";
+        setSave("local");
+      });
+      // Everyone reviewing at once should see each other's marks appear.
+      setInterval(function () {
+        if (!Object.keys(dirty).length) pullRemote().catch(function () {});
+      }, 20000);
+      return;
+    }
+    if (!window.claude || !window.claude.use) { mode = "local"; setSave("local"); return; }
+    // The saved file is the truth when it exists; the embedded blob is the
+    // fallback the whole-page publish path writes.
+    fetch("data/reviews.json", { cache: "no-store" }).then(function (r) {
+      return r.ok ? r.json() : null;
+    }).then(function (saved) {
+      if (mergeIn(saved)) { saveLocal(); render(); }
+    }).catch(function () {});
+
+    window.claude.use("artifact").then(function (ns) {
+      if (!ns) { mode = "local"; setSave("local"); return; }
+      artifact = ns;
+      if (Object.keys(dirty).length) queueSave();
+    }).catch(function () { mode = "local"; setSave("local"); });
+  }
+
+  /* ============ the 3D pane ============
+     One iframe for the whole session, driven with the documented embed
+     protocol (engine3d/README.md, "M3b T4 status"). It lives on document.body
+     rather than inside #root because render() replaces #root wholesale, and
+     moving an iframe in the DOM reloads it — a full engine reboot on every
+     keystroke. `place3d` parks it over the slot the card leaves for it. */
+  var f3 = null;              // { host, frame, msg }
+  var f3hello = false;        // the runtime's listener exists; `load` is legal
+  var f3want = null;          // the drill we have asked for
+  var f3playing = null;       // last play/pause we posted
+  var f3state = "boot";       // boot | loading | ready | error | absent
+  var f3errKey = null;        // the drill the CURRENT error is actually about
+  var f3slow = false;         // taking a while — not the same as not being there
+
+  function mount3d() {
+    if (f3) return;
+    var host = document.createElement("div");
+    host.className = "pane3dhost";
+    var fr = document.createElement("iframe");
+    // Relative on purpose: the board is published at <base>/qa/ next to the
+    // engine at <base>/engine3d/, so this is same-origin wherever it is served.
+    fr.src = "../engine3d/embed.html";
+    fr.title = "3D drill animation";
+    fr.setAttribute("loading", "eager");
+    var msg = document.createElement("div");
+    msg.className = "msg";
+    // The message layer sits on document.body, outside #root and its delegated
+    // click handler, so the retry gets its own listener.
+    msg.addEventListener("click", function (ev) {
+      if (ev.target.classList.contains("msgretry") && f3hello) load3d(ui.sel);
+    });
+    host.appendChild(fr);
+    host.appendChild(msg);
+    document.body.appendChild(host);
+    f3 = { host: host, frame: fr, msg: msg };
+    window.addEventListener("message", on3d);
+    // "Not here" and "not here YET" are different claims, and the board used to
+    // make the first one after 15s. A cold engine is a 13 MB download; on a
+    // phone on hotel wifi that is easily a minute. So: 15s only softens the
+    // wording, a genuine iframe load error says it immediately, and the
+    // deployment claim waits two minutes.
+    fr.addEventListener("error", function () {
+      if (!f3hello) { f3state = "absent"; paint3d(); }
+    });
+    setTimeout(function () {
+      if (!f3hello) { f3slow = true; paint3d(); }
+    }, 15000);
+    setTimeout(function () {
+      if (!f3hello) { f3state = "absent"; paint3d(); }
+    }, 120000);
+    paint3d();
+  }
+
+  function post3d(m) {
+    if (f3 && f3.frame.contentWindow) f3.frame.contentWindow.postMessage(m, "*");
+  }
+
+  function on3d(ev) {
+    if (!f3 || ev.source !== f3.frame.contentWindow) return;
+    var m = ev.data;
+    if (!m || typeof m.type !== "string") return;
+    if (m.type === "hello") {
+      // The engine is up, so the 13 MB download is done: clear the slow-boot
+      // wording or every later per-drill load — which is near-instant on the
+      // booted iframe — would keep claiming it is downloading the engine.
+      f3hello = true; f3slow = false; f3want = null; f3playing = null;
+      sync3d();
+      return;
+    }
+    if (m.type === "ready") {
+      if (m.key && m.key !== f3want) return;           // a stale load landing late
+      f3state = "ready"; f3playing = null; paint3d(); sync3d(); return;
+    }
+    if (m.type === "error") {
+      // still_loading / not_loaded are ordering noise; a failed drill is not.
+      if (m.code !== "load_failed" && m.code !== "bad_key" && m.code !== "bad_message") return;
+      // …but only while we are actually waiting on a load. The engine's error
+      // carries no key, so an `error` that lands after we are already `ready`
+      // belongs to an earlier drill: latching on it used to paint "No 3D for
+      // this drill" over a drill that is fine, and sync3d would never reload it
+      // (f3want === ui.sel), so the lie was permanent and silent. A reviewer
+      // would have marked a good drill as having no 3D.
+      if (f3state !== "loading") return;
+      f3state = "error";
+      f3errKey = f3want;   // name the drill we asked for, never whatever is on screen now
+      paint3d();
+    }
+  }
+
+  // Every load goes through here, so the state is always reset with it and a
+  // drill that errored can be retried simply by asking for it again.
+  function load3d(key) {
+    f3want = key;
+    f3state = "loading";
+    f3errKey = null;
+    f3playing = null;
+    // NESTED: `{drill: {key}}`. A flat `{key}` is answered `bad_message`.
+    post3d({ type: "load", drill: { key: key } });
+    paint3d();
+  }
+
+  function sync3d() {
+    // Don't ask the engine for a drill it has never heard of: a candidate is
+    // not in engine3d/drills/, and the load would only paint an error behind a
+    // hidden pane and leave it there for the next real drill.
+    if (!f3 || !f3hello || CAND[ui.sel]) return;
+    if (f3want !== ui.sel) { load3d(ui.sel); return; }
+    if (f3state !== "ready") return;
+    if (f3playing !== ui.playing) {
+      f3playing = ui.playing;
+      post3d({ type: ui.playing ? "play" : "pause" });
+    }
+  }
+
+  function paint3d() {
+    if (!f3) return;
+    var txt = f3state === "ready" ? ""
+      : f3state === "error" ? "<b>No 3D for this drill</b>The engine could not load "
+        + h(String(f3errKey)) + '.<button class="msgretry" type="button">Try again</button>'
+      : f3state === "absent" ? "<b>No 3D engine here</b>Open the board on staging to see it."
+      : f3slow ? "Still loading the 3D view…<i>the engine is a 13 MB download, once per visit</i>"
+      : "Loading the 3D view…";
+    f3.msg.innerHTML = txt;
+    f3.msg.hidden = !txt;
+    var st = document.querySelector(".paneh em");
+    if (st) {
+      st.dataset.s = f3state;
+      st.textContent = f3state === "ready" ? "playing in 3D"
+        : f3state === "error" ? "not available"
+        : f3state === "absent" ? "engine not deployed"
+        : f3slow ? "still loading…"
+        : "loading…";
+    }
+  }
+
+  // Re-measured every frame so it tracks scrolling, resizes and re-renders
+  // without the iframe ever changing parent.
+  function place3d() {
+    if (!f3) return;
+    var slot = document.getElementById("slot3d");
+    if (!slot) { f3.host.style.display = "none"; return; }
+    var r = slot.getBoundingClientRect();
+    var s = f3.host.style;
+    s.display = "block";
+    s.left = r.left + "px";
+    s.top = r.top + "px";
+    s.width = r.width + "px";
+    s.height = r.height + "px";
+  }
+
+  /* ============ scene maths (ported from lib/core/scene) ============ */
+  function mul(a, b) {
+    var o = new Array(16);
+    for (var r = 0; r < 4; r++) for (var c = 0; c < 4; c++) {
+      var s = 0;
+      for (var k = 0; k < 4; k++) s += a[r * 4 + k] * b[k * 4 + c];
+      o[r * 4 + c] = s;
+    }
+    return o;
+  }
+  function translate(x, y) { return [1,0,0,x, 0,1,0,y, 0,0,1,0, 0,0,0,1]; }
+  function rotX(a) { var c = Math.cos(a), s = Math.sin(a); return [1,0,0,0, 0,c,-s,0, 0,s,c,0, 0,0,0,1]; }
+  function rotZ(a) { var c = Math.cos(a), s = Math.sin(a); return [c,-s,0,0, s,c,0,0, 0,0,1,0, 0,0,0,1]; }
+  function scaleM(s) { return [s,0,0,0, 0,s,0,0, 0,0,1,0, 0,0,0,1]; }
+
+  // SceneCamera.stageScale: the pitch pulled back to 90% so the slab floats
+  // in dark air (the app's settled look, lighting lab 2026-08-28).
+  var SS = 0.9;
+  function planeMatrix(w, h, cam, zf) {
+    var tp = translate(w / 2, h / 2);
+    tp[14] = -0.0012;                       // row 3, col 2 — the perspective term
+    var s = cam.zoom * (zf || 1) * SS * w / BW;
+    return mul(mul(mul(mul(tp, rotX(cam.tilt * Math.PI / 180)), rotZ(cam.rot * Math.PI / 180)),
+      scaleM(s)), translate(cam.panX - BW / 2, cam.panY - BH / 2));
+  }
+  // Full 3D projection for props that stand off the board (goal posts).
+  function project3(m, x, y, z) {
+    var W = m[12] * x + m[13] * y + m[14] * z + m[15];
+    return [(m[0] * x + m[1] * y + m[2] * z + m[3]) / W,
+            (m[4] * x + m[5] * y + m[6] * z + m[7]) / W];
+  }
+  // The floating board's rounded silhouette, sampled as a polygon (canvas 2D
+  // cannot clip a perspective-transformed rrect any other way). r=16 board
+  // units — kBoardCornerRadius.
+  function rrectPts(r) {
+    var out = [], seg = 7;
+    function arc(cx, cy, a0) {
+      for (var i = 0; i <= seg; i++) {
+        var a = a0 + (i / seg) * Math.PI / 2;
+        out.push([cx + Math.cos(a) * r, cy + Math.sin(a) * r]);
+      }
+    }
+    arc(BW - r, r, -Math.PI / 2);
+    arc(BW - r, BH - r, 0);
+    arc(r, BH - r, Math.PI / 2);
+    arc(r, r, Math.PI);
+    return out;
+  }
+  function project(m, x, y) {
+    var W = m[12] * x + m[13] * y + m[15];
+    return [(m[0] * x + m[1] * y + m[3]) / W, (m[4] * x + m[5] * y + m[7]) / W];
+  }
+  function smooth(u) { return u * u * (3 - 2 * u); }
+
+  function posAt(kf, t) {
+    if (t <= kf[0].t) return [kf[0].x, kf[0].y];
+    for (var i = 1; i < kf.length; i++) {
+      if (t <= kf[i].t) {
+        var a = kf[i - 1], b = kf[i];
+        var u = smooth((t - a.t) / (b.t - a.t));
+        if (b.cx != null) {
+          var m = 1 - u;
+          return [m * m * a.x + 2 * m * u * b.cx + u * u * b.x,
+                  m * m * a.y + 2 * m * u * b.cy + u * u * b.y];
+        }
+        return [a.x + (b.x - a.x) * u, a.y + (b.y - a.y) * u];
+      }
+    }
+    var l = kf[kf.length - 1];
+    return [l.x, l.y];
+  }
+  function airLift(air, t) {
+    if (!air) return 0;
+    for (var i = 0; i < air.length; i++) {
+      var w = air[i];
+      if (t >= w[0] && t <= w[1]) return Math.sin(Math.PI * (t - w[0]) / (w[1] - w[0]));
+    }
+    return 0;
+  }
+
+  // The app's three stage modes, verbatim from DrillSceneView: `flat` and
+  // `diagram` share one square-on camera (tilt 0, zoom 0.92, no ball-follow);
+  // `tilted` is the broadcast board the drill card opens on. Labels are the
+  // app's own, from StageModeIcons.labelFor.
+  var DIAGRAM_T = 0.35;                        // DrillSceneView.diagramT
+  var FLAT_CAM = { tilt: 0, rot: 0, zoom: 0.92, fx: 0, fy: 0 };
+  var STAGES = [
+    ["diagram", "Static diagram", "static"],
+    ["flat", "Flat view", "2D"],
+    ["tilted", "3D view", "2.5D"]
+  ];
+
+  var PRESETS = [
+    { name: "Tactical", tilt: 36, rot: 0, zoom: 0.92, fx: 0.15, fy: 0.10 },
+    { name: "TV", tilt: 56, rot: 0, zoom: 1.10, fx: 0.38, fy: 0.28 },
+    { name: "Corner", tilt: 62, rot: 26, zoom: 1.28, fx: 0.5, fy: 0.4 },
+    { name: "Behind", tilt: 58, rot: -90, zoom: 1.05, fx: 0.3, fy: 0.25 }
+  ];
+
+  /* ============ renderer ============ */
+  var cam = { tilt: 56, rot: 0, zoom: 1.10, panX: 0, panY: 0 };
+  var clock = { t: 0, elapsed: 0, last: 0, phase: 0, phaseWallMs: 0 };
+  var drag = null, touched = 0;
+
+  function scene() { return SCENES[ui.sel]; }
+
+  function poly(ctx, m, pts, close) {
+    ctx.beginPath();
+    for (var i = 0; i < pts.length; i++) {
+      var p = project(m, pts[i][0], pts[i][1]);
+      if (i === 0) ctx.moveTo(p[0], p[1]); else ctx.lineTo(p[0], p[1]);
+    }
+    if (close) ctx.closePath();
+  }
+  function ring(cx, cy, rx, ry, n) {
+    var out = [];
+    for (var i = 0; i < n; i++) {
+      var a = i / n * Math.PI * 2;
+      out.push([cx + Math.cos(a) * rx, cy + Math.sin(a) * ry]);
+    }
+    return out;
+  }
+  function quadPts(a, c, b, n) {
+    var out = [];
+    for (var i = 0; i <= n; i++) {
+      var u = i / n, m = 1 - u;
+      out.push([m * m * a[0] + 2 * m * u * c[0] + u * u * b[0],
+                m * m * a[1] + 2 * m * u * c[1] + u * u * b[1]]);
+    }
+    return out;
+  }
+  function wavyPts(pts) {
+    var out = [pts[0]];
+    for (var i = 0; i < pts.length - 1; i++) {
+      var a = pts[i], b = pts[i + 1];
+      var dx = b[0] - a[0], dy = b[1] - a[1];
+      var len = Math.hypot(dx, dy);
+      if (!len) continue;
+      var n = Math.max(2, Math.round(len / 14));
+      var ux = dx / len, uy = dy / len, nx = -uy, ny = ux, sign = 1;
+      for (var k = 1; k <= n; k++) {
+        var mid = [a[0] + dx * ((k - 0.5) / n) + nx * 4 * sign,
+                   a[1] + dy * ((k - 0.5) / n) + ny * 4 * sign];
+        var end = [a[0] + dx * (k / n), a[1] + dy * (k / n)];
+        var seg = quadPts(out[out.length - 1], mid, end, 6);
+        for (var j = 1; j < seg.length; j++) out.push(seg[j]);
+        sign = -sign;
+      }
+    }
+    return out;
+  }
+  function routePts(r) {
+    if (r.kind === "dribble") return wavyPts(r.pts);
+    if (r.curve && r.pts.length === 3) return quadPts(r.pts[0], r.pts[1], r.pts[2], 24);
+    return r.pts;
+  }
+
+  // snapGoalToArea: a third of the corpus authors its goal a few units off
+  // the area line; a 3D goal floating off its line reads wrong (band 16).
+  function snapGoal(g, a) {
+    var x = g.x, y = g.y, band = 16;
+    if (g.side === "e" && Math.abs(x - (a.x + a.w)) <= band) x = a.x + a.w;
+    else if (g.side === "w" && Math.abs(x - a.x) <= band) x = a.x;
+    else if (g.side === "n" && Math.abs(y - a.y) <= band) y = a.y;
+    else if (g.side === "s" && Math.abs(y - (a.y + a.h)) <= band) y = a.y + a.h;
+    return { x: x, y: y, w: g.w, side: g.side };
+  }
+
+  // BallRollTracker: one revolution per circumference of the ball's OWN
+  // travel — both positions through the same frame's camera, so camera
+  // motion never spins a resting ball.
+  var rollState = new WeakMap();
+  function ballRoll(ball, bx, by, m, radius) {
+    var st = rollState.get(ball) || { x: bx, y: by, deg: 0 };
+    if (radius > 0) {
+      var a = project(m, st.x, st.y), b = project(m, bx, by);
+      var dx = b[0] - a[0], dy = b[1] - a[1], d = Math.hypot(dx, dy);
+      if (d > 0.05) {
+        var signed = (Math.abs(dx) > 1e-6 ? Math.sign(dx) : Math.sign(dy)) * d;
+        st.deg += signed * 360 / (Math.PI * 2 * radius);
+      }
+    }
+    st.x = bx; st.y = by;
+    rollState.set(ball, st);
+    return st.deg;
+  }
+
+  function starPath(ctx, cx, cy, r) {
+    ctx.beginPath();
+    for (var i = 0; i < 10; i++) {
+      var a = -Math.PI / 2 + i * Math.PI / 5;
+      var rad = (i % 2 === 0) ? r : r * 0.42;
+      var px = cx + Math.cos(a) * rad, py = cy + Math.sin(a) * rad;
+      i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+    }
+    ctx.closePath();
+  }
+
+  // StarBallPainter: white shaded sphere, three dark star panels, spun by
+  // travel. Replaces the plain white dot.
+  function drawStarBall(ctx, x, y, r, deg) {
+    ctx.save();
+    ctx.shadowColor = "rgba(255,255,255,0.7)"; ctx.shadowBlur = 8;
+    var g = ctx.createRadialGradient(x - r * 0.35, y - r * 0.45, r * 0.1, x, y, r);
+    g.addColorStop(0, "#FFFFFF"); g.addColorStop(0.4, "#F0F3F4");
+    g.addColorStop(0.78, "#B0B8BE"); g.addColorStop(1, "#757E85");
+    ctx.fillStyle = g;
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+    ctx.shadowBlur = 0;
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.clip();
+    ctx.translate(x, y); ctx.rotate(deg * Math.PI / 180);
+    ctx.fillStyle = "#23282C";
+    starPath(ctx, 0, -r * 0.42, r * 0.42); ctx.fill();
+    starPath(ctx, -r * 0.62, r * 0.42, r * 0.4); ctx.fill();
+    starPath(ctx, r * 0.62, r * 0.46, r * 0.4); ctx.fill();
+    ctx.restore();
+  }
+
+  // Goal3d, the park-goal-to-stadium build fixed in 3D board space
+  // (scene_props_painter.dart). z is board-up; project3 carries it.
+  function drawGoal3d(ctx, m, raw, area) {
+    var g = snapGoal(raw, area);
+    var rise = Math.min(20, Math.max(8, g.w * 0.5));
+    var back = rise * 0.8, roof = back * 0.45;
+    var ox = 0, oy = 0;
+    if (g.side === "e") ox = 1; else if (g.side === "w") ox = -1;
+    else if (g.side === "n") oy = -1; else oy = 1;
+    var hx = 0, hy = 0;
+    if (g.side === "e" || g.side === "w") hy = g.w / 2; else hx = g.w / 2;
+    var ax = g.x - hx, ay = g.y - hy, bx = g.x + hx, by = g.y + hy;
+
+    function P(px, py, z) { return project3(m, px, py, z); }
+    function fill(pts, style) {
+      ctx.beginPath();
+      for (var i = 0; i < pts.length; i++) {
+        i === 0 ? ctx.moveTo(pts[i][0], pts[i][1]) : ctx.lineTo(pts[i][0], pts[i][1]);
+      }
+      ctx.closePath(); ctx.fillStyle = style; ctx.fill();
+    }
+    function line(a, b) { ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); }
+
+    var anchor = P(g.x, g.y, 0);
+    var pxu = Math.hypot(P(g.x + 1, g.y, 0)[0] - anchor[0], P(g.x + 1, g.y, 0)[1] - anchor[1])
+            + Math.hypot(P(g.x, g.y + 1, 0)[0] - anchor[0], P(g.x, g.y + 1, 0)[1] - anchor[1]);
+    var frameW = Math.min(3.0, Math.max(1.3, pxu * 0.9));
+
+    // net footprint shadow on the turf
+    fill([P(ax, ay, 0), P(bx, by, 0), P(bx + ox * back, by + oy * back, 0), P(ax + ox * back, ay + oy * back, 0)],
+      "rgba(0,0,0,0.22)");
+
+    var mA = P(ax, ay, 0), mB = P(bx, by, 0);
+    var mouthPx = Math.hypot(mB[0] - mA[0], mB[1] - mA[1]);
+    var stadium = mouthPx >= 36;
+    var white = "232,236,239"; // pitchPlayer
+
+    var faces;
+    if (stadium) {
+      function sideFace(sx, sy) {
+        return [[P(sx, sy, 0), P(sx, sy, rise), P(sx + ox * roof, sy + oy * roof, rise), P(sx + ox * back, sy + oy * back, 0)], 0.13];
+      }
+      faces = [
+        [[P(ax, ay, rise), P(bx, by, rise), P(bx + ox * roof, by + oy * roof, rise), P(ax + ox * roof, ay + oy * roof, rise)], 0.08],
+        [[P(ax + ox * roof, ay + oy * roof, rise), P(bx + ox * roof, by + oy * roof, rise), P(bx + ox * back, by + oy * back, 0), P(ax + ox * back, ay + oy * back, 0)], 0.10],
+        sideFace(ax, ay), sideFace(bx, by)
+      ];
+    } else {
+      faces = [
+        [[P(ax, ay, rise), P(bx, by, rise), P(bx + ox * back, by + oy * back, 0), P(ax + ox * back, ay + oy * back, 0)], 0.10],
+        [[P(ax, ay, 0), P(ax, ay, rise), P(ax + ox * back, ay + oy * back, 0)], 0.13],
+        [[P(bx, by, 0), P(bx, by, rise), P(bx + ox * back, by + oy * back, 0)], 0.13]
+      ];
+    }
+    faces.forEach(function (f) { fill(f[0], "rgba(" + white + "," + f[1] + ")"); });
+
+    if (mouthPx >= 24) {
+      ctx.strokeStyle = "rgba(" + white + ",0.30)";
+      ctx.lineWidth = Math.min(0.9, Math.max(0.4, frameW * 0.35));
+      var lines = stadium ? 6 : 4, i, fx, fy;
+      for (i = 1; i < lines; i++) {
+        fx = ax + (bx - ax) * (i / lines); fy = ay + (by - ay) * (i / lines);
+        if (stadium) {
+          line(P(fx, fy, rise), P(fx + ox * roof, fy + oy * roof, rise));
+          line(P(fx + ox * roof, fy + oy * roof, rise), P(fx + ox * back, fy + oy * back, 0));
+        } else {
+          line(P(fx, fy, rise), P(fx + ox * back, fy + oy * back, 0));
+        }
+      }
+      if (stadium) {
+        line(P(ax + ox * roof, ay + oy * roof, rise), P(bx + ox * roof, by + oy * roof, rise));
+        var mid = roof + (back - roof) / 2;
+        line(P(ax + ox * mid, ay + oy * mid, rise / 2), P(bx + ox * mid, by + oy * mid, rise / 2));
+      } else {
+        line(P(ax + ox * back / 2, ay + oy * back / 2, rise / 2), P(bx + ox * back / 2, by + oy * back / 2, rise / 2));
+      }
+    }
+    if (stadium) {
+      ctx.strokeStyle = "rgba(" + white + ",0.85)";
+      ctx.lineWidth = Math.min(1.8, Math.max(0.8, frameW * 0.6));
+      ctx.lineCap = "round";
+      [[ax, ay], [bx, by]].forEach(function (q) {
+        line(P(q[0], q[1], rise), P(q[0] + ox * roof, q[1] + oy * roof, rise));
+        line(P(q[0] + ox * roof, q[1] + oy * roof, rise), P(q[0] + ox * back, q[1] + oy * back, 0));
+      });
+    }
+    ctx.strokeStyle = "rgb(" + white + ")";
+    ctx.lineWidth = frameW; ctx.lineCap = "round";
+    line(P(ax, ay, 0), P(ax, ay, rise));
+    line(P(bx, by, 0), P(bx, by, rise));
+    line(P(ax, ay, rise), P(bx, by, rise));
+  }
+
+  // Standing cone: contact shadow, planted base ellipse, billboarded lime
+  // body with the side-lit gradient (scene_props_painter.dart).
+  function drawCone3d(ctx, m, c) {
+    var f = project(m, c[0], c[1]);
+    var s = 9 * SS;
+    ctx.fillStyle = "rgba(0,0,0,0.35)";
+    ctx.beginPath(); ctx.ellipse(f[0], f[1], s * 0.75, s * 0.275, 0, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = "#7FA20E";
+    ctx.beginPath(); ctx.ellipse(f[0], f[1], s * 0.65, s * 0.225, 0, 0, Math.PI * 2); ctx.fill();
+    var tipY = f[1] - s * 1.35;
+    ctx.beginPath();
+    ctx.moveTo(f[0], tipY); ctx.lineTo(f[0] + s * 0.42, f[1]); ctx.lineTo(f[0] - s * 0.42, f[1]);
+    ctx.closePath();
+    ctx.fillStyle = "#C8F323"; ctx.fill();
+    var g = ctx.createLinearGradient(f[0] - s * 0.5, 0, f[0] + s * 0.5, 0);
+    g.addColorStop(0, "rgba(214,255,76,0.9)");
+    g.addColorStop(0.55, "rgba(214,255,76,0)");
+    g.addColorStop(1, "rgba(94,122,9,0.85)");
+    ctx.fillStyle = g; ctx.fill();
+  }
+
+  function draw() {
+    var cv = document.getElementById("board");
+    if (!cv) return;
+    var sc = scene();
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // The app gives the scene a fixed-height box, so take the real box here
+    // too — the camera frames on width AND height, and guessing an aspect
+    // ratio would put the pitch somewhere the app never puts it.
+    var w = cv.clientWidth, h = cv.clientHeight;
+    if (!w || !h) return;
+    if (cv.width !== Math.round(w * dpr) || cv.height !== Math.round(h * dpr)) {
+      cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+    }
+    var ctx = cv.getContext("2d");
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = "#070B08";                 // pitchBackdrop — the dark air
+    ctx.fillRect(0, 0, w, h);
+
+    var m = planeMatrix(w, h, cam);
+    var kPx = w / BW;                          // screen px per board unit, unzoomed
+    var k = cam.zoom * SS * w / BW;            // stroke scale on the plane
+    // Diagram mode holds DrillSceneView.diagramT — the one legible frame —
+    // while the timeline underneath keeps walking (captions, pips).
+    var t = ui.stage === "diagram" ? DIAGRAM_T : Math.max(0, Math.min(1, clock.t));
+    var slabPts = rrectPts(16);
+
+    // The glow under the pitch — Carl's "light underneath" — then the slab's
+    // dark thickness, both dropped by their own screen offset (view: 26k, 8k).
+    var glowM = mul(translate(0, 26 * kPx), planeMatrix(w, h, cam, 0.94));
+    ctx.save();
+    try { ctx.filter = "blur(" + Math.min(48, 16 * k * 0.94) + "px)"; } catch (e) {}
+    ctx.fillStyle = "rgba(200,243,35,0.22)";
+    poly(ctx, glowM, slabPts, true); ctx.fill();
+    ctx.restore();
+    var slabM = mul(translate(0, 8 * kPx), m);
+    ctx.fillStyle = "#0E2013";                 // pitchSlabEdge
+    poly(ctx, slabM, slabPts, true); ctx.fill();
+
+    // The floating board: turf, stripes and fog clipped to the rounded slab.
+    ctx.save();
+    poly(ctx, m, slabPts, true); ctx.clip();
+    ctx.fillStyle = "#16321D";                 // turf
+    poly(ctx, m, slabPts, true); ctx.fill();
+    ctx.fillStyle = "#1A3822";                 // mowing stripes
+    for (var x = 0; x < BW; x += 40) {
+      poly(ctx, m, [[x,0],[x+20,0],[x+20,BH],[x,BH]], true); ctx.fill();
+    }
+    // Depth fog: warm near edge, far end hazing into the backdrop. Under the
+    // markings so lines and routes keep their brightness. The reading
+    // diagram (near-flat camera) gets a clean board instead.
+    if (cam.tilt > 20) {
+      var nearMid = project(m, BW / 2, BH), farMid = project(m, BW / 2, 0);
+      var fog = ctx.createLinearGradient(nearMid[0], nearMid[1], farMid[0], farMid[1]);
+      fog.addColorStop(0, "rgba(255,255,240,0.08)");
+      fog.addColorStop(0.4, "rgba(7,11,8,0)");
+      fog.addColorStop(0.85, "rgba(7,11,8,0.50)");
+      fog.addColorStop(1, "rgba(7,11,8,0.72)");
+      ctx.fillStyle = fog;
+      poly(ctx, m, slabPts, true); ctx.fill();
+    }
+    ctx.restore();
+
+    ctx.lineJoin = "round"; ctx.lineCap = "round";
+
+    // playing area
+    var a = sc.area;
+    ctx.strokeStyle = "rgba(255,255,255,0.30)"; ctx.lineWidth = 1.4 * k;
+    poly(ctx, m, [[a.x,a.y],[a.x+a.w,a.y],[a.x+a.w,a.y+a.h],[a.x,a.y+a.h]], true); ctx.stroke();
+
+    // routes
+    (sc.routes || []).forEach(function (r) {
+      var col = (r.kind === "pass" || r.kind === "shot") ? "#C8F323"
+        : r.kind === "opp" ? "#5B6570" : "#E8ECEF";
+      var wd = (r.kind === "pass" || r.kind === "shot") ? 2.2 : 1.6;
+      ctx.strokeStyle = col; ctx.lineWidth = wd * k;
+      ctx.setLineDash(r.kind === "run" || r.kind === "opp" ? [5 * k, 5 * k] : []);
+      poly(ctx, m, routePts(r), false); ctx.stroke();
+      ctx.setLineDash([]);
+      // arrow head
+      var pts = r.pts, end = pts[pts.length - 1], prev = pts[pts.length - 2];
+      var dx = end[0] - prev[0], dy = end[1] - prev[1], len = Math.hypot(dx, dy);
+      if (len) {
+        var ux = dx / len, uy = dy / len, nx = -uy, ny = ux;
+        ctx.fillStyle = col;
+        poly(ctx, m, [
+          [end[0] + ux * 6, end[1] + uy * 6],
+          [end[0] + nx * 3.2, end[1] + ny * 3.2],
+          [end[0] - nx * 3.2, end[1] - ny * 3.2]
+        ], true);
+        ctx.fill();
+      }
+    });
+
+    // ground shadows, on the plane so they foreshorten with the pitch
+    ctx.fillStyle = "rgba(0,0,0,0.4)";
+    sc.players.forEach(function (p) {
+      var q = posAt(p.kf, t);
+      poly(ctx, m, ring(q[0], q[1], 6.5, 2.5, 18), true); ctx.fill();
+    });
+    // The primary ball plus any extra balls (drills where several are in
+    // play at once). Only the primary one drives the camera.
+    var allBalls = [sc.ball].concat(sc.balls || []);
+    allBalls.forEach(function (bb) {
+      var q = posAt(bb.kf, t);
+      var bl = airLift(bb.air, t);
+      ctx.fillStyle = "rgba(0,0,0," + (0.4 * (1 - 0.5 * bl)).toFixed(3) + ")";
+      poly(ctx, m, ring(q[0], q[1], 3 * (1 - 0.4 * bl), 1.3, 16), true); ctx.fill();
+    });
+
+    // standing props — 3D stadium goals and lime cones, through the same
+    // camera, behind the players so chips read on top
+    (sc.goals || []).forEach(function (g) { drawGoal3d(ctx, m, g, a); });
+    (sc.cones || []).forEach(function (c) { drawCone3d(ctx, m, c); });
+
+    // players — screen-space billboards, feet on the projected point,
+    // shrunk with the pulled-back stage like every sprite
+    var side = 26 * SS, chipR = 9 * SS;
+    sc.players.forEach(function (p) {
+      var pp = posAt(p.kf, t);
+      var q = project(m, pp[0], pp[1]);
+      var att = p.team === "a";
+      var cx = q[0], cy = q[1] - side / 2;
+      ctx.beginPath();
+      if (ctx.roundRect) { ctx.roundRect(cx - side / 2, cy - side / 2, side, side, chipR); }
+      else { ctx.rect(cx - side / 2, cy - side / 2, side, side); }
+      ctx.fillStyle = att ? "#E8ECEF" : "#5B6570"; ctx.fill();
+      ctx.lineWidth = 2 * SS;
+      ctx.strokeStyle = att ? "rgba(200,243,35,0.55)" : "rgba(255,255,255,0.12)";
+      ctx.stroke();
+      ctx.fillStyle = att ? "#14181B" : "#E8ECEF";
+      ctx.font = "700 " + (12 * SS).toFixed(1) + "px Archivo, sans-serif";
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      ctx.fillText(p.label, cx, cy + 0.5);
+    });
+
+    // starballs, spun by their own travel
+    allBalls.forEach(function (bb) {
+      var q = posAt(bb.kf, t);
+      var bl = airLift(bb.air, t);
+      var b = project(m, q[0], q[1]);
+      var br = 5.5 * SS * (1 + 0.5 * bl);
+      var deg = ballRoll(bb, q[0], q[1], m, br);
+      drawStarBall(ctx, b[0], b[1] - 26 * SS * bl, br, deg);
+    });
+
+    // event flags
+    (sc.events || []).forEach(function (e) {
+      if (clock.t < e.t || clock.t > e.t + 0.12) return;
+      var q = project(m, e.x, e.y);
+      ctx.font = "700 10px Archivo, sans-serif";
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      var tw = ctx.measureText(e.label).width + 16;
+      ctx.fillStyle = "#C8F323";
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(q[0] - tw / 2, q[1] - 46, tw, 20, 6);
+      else ctx.rect(q[0] - tw / 2, q[1] - 46, tw, 20);
+      ctx.fill();
+      ctx.fillStyle = "#0B0F10";
+      ctx.fillText(e.label, q[0], q[1] - 35);
+    });
+
+    // the page-edge melt: pitch and glow dissolve into the page instead of
+    // cutting hard at the stage's top and bottom (settled look, item 9)
+    var melt = ctx.createLinearGradient(0, 0, 0, h);
+    melt.addColorStop(0, "rgba(7,11,8,1)");
+    melt.addColorStop(0.18, "rgba(7,11,8,0)");
+    melt.addColorStop(0.82, "rgba(7,11,8,0)");
+    melt.addColorStop(1, "rgba(7,11,8,1)");
+    ctx.fillStyle = melt;
+    ctx.fillRect(0, 0, w, h);
+  }
+
+  function frame(ts) {
+    var sc = scene();
+    // A candidate has no scene. Nothing below this line is meaningful, but
+    // place3d still has to run so the 3D iframe hides itself off the card.
+    if (!sc) { clock.last = ts; place3d(); requestAnimationFrame(frame); return; }
+    if (!clock.last) clock.last = ts;
+    var dt = ts - clock.last;
+    clock.last = ts;
+    var beats = beatsFor(ui.sel, sc);
+    if (ui.playing) advance(sc, beats, dt);
+    var ph = clock.phase;
+    // Flat and diagram both take the square-on camera; only tilted uses the
+    // broadcast presets. Same rule as DrillSceneView's `flat` branch.
+    var p = ui.stage === "tilted" ? PRESETS[ui.preset] : FLAT_CAM;
+    var dtc = Math.max(0, Math.min(64, dt));
+    var ck = Math.min(1, dtc * 0.004), kk = Math.min(1, dtc * 0.0028);
+    var ball = posAt(sc.ball.kf, Math.max(0, Math.min(1, clock.t)));
+    if (!drag && Date.now() - touched > 6000) {
+      cam.tilt += (p.tilt - cam.tilt) * ck;
+      cam.rot += (p.rot - cam.rot) * ck;
+      cam.zoom += (p.zoom - cam.zoom) * ck;
+    }
+    cam.panX += (-(ball[0] - 160) * p.fx - cam.panX) * kk;
+    cam.panY += (-(ball[1] - 100) * p.fy - cam.panY) * kk;
+
+    draw();
+    place3d();
+    var inBeat = clock.phaseWallMs < beats[ph];
+    var cap = document.querySelector(".captext");
+    if (cap) {
+      cap.textContent = sc.phases[ph].label;
+      // Lit lime during the read-beat: the highlight says "read this now",
+      // and fading back to body colour is the cue that the movement starts.
+      cap.style.color = inBeat ? "var(--lime)" : "var(--body)";
+      // Dimmed in diagram mode, as the app dims it: the narration keeps its
+      // place in the loop but stops describing a frame that is standing still.
+      cap.style.opacity = ui.stage === "diagram" ? "0.3" : "1";
+    }
+    // Each pip fills on its own phase's wall clock — beat and movement
+    // together — so a still read-beat visibly ticks instead of reading as a
+    // hang, which on a QA board would get logged as a bug.
+    var dashes = document.querySelectorAll(".dashes i");
+    for (var i = 0; i < dashes.length; i++) {
+      var fill = dashes[i].firstChild;
+      if (!fill) continue;
+      var frac = i < ph ? 1 : i > ph ? 0
+        : Math.max(0, Math.min(1, clock.phaseWallMs / phaseWallMs(sc, beats, i)));
+      fill.style.width = (frac * 100).toFixed(2) + "%";
+      fill.style.background = i < ph ? "var(--muted)" : "var(--lime)";
+    }
+    requestAnimationFrame(frame);
+  }
+
+  /* ============ render ============ */
+  function h(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+
+  // One-click reasons, so a batch of feedback can be counted rather than
+  // read. They live INSIDE the note as a leading `[tags: a, b]` line — no
+  // schema change, and `grep '\[tags:.*3D wrong'` over a dump is the whole
+  // query language anyone will need.
+  var TAGS = ["text wrong", "2D wrong", "3D wrong", "2D/3D disagree",
+    "too fast", "too slow", "players wrong", "pitch wrong"];
+  var CAND_TAGS = ["text wrong", "2D wrong", "players wrong", "pitch wrong"];
+  /* --- recheck predicate (mirrored by tool/qa_board_recheck.test.mjs) ---
+     Everything between these two markers is pure and self-contained: the test
+     slices it straight out of this file and runs it, so there is one copy of
+     the rule and no chance of the two drifting apart. */
+  var TAGLINE = /^\[tags:([^\]\n]*)\]\n?/;
+
+  function noteTags(note) {
+    var m = TAGLINE.exec(note || "");
+    if (!m) return [];
+    return m[1].split(",").map(function (s) { return s.trim(); })
+      .filter(function (s) { return s; });
+  }
+  function noteBody(note) { return String(note || "").replace(TAGLINE, ""); }
+  function joinNote(tags, body) {
+    return (tags.length ? "[tags: " + tags.join(", ") + "]\n" : "") + body;
+  }
+
+  // We answer the coach inside his own note, by appending a paragraph that
+  // reads `--- FIXED 4 Sep: what changed. Please re-check and re-mark.` If
+  // that line is still the LAST thing in the note, he has not replied under
+  // it yet — the fix is waiting to be looked at.
+  var FIXED_TAIL = /(^|\n)--- FIXED\b[^\n]*$/;
+  var FIXED_HEAD = /^--- FIXED[ \t]*([^:\n]*?)[ \t]*(?::[ \t]*([^\n]*))?$/;
+
+  // { date, fix, before } for the LAST fix line, or null. `before` is the
+  // coach's own note and may itself contain older fix lines; only the last
+  // one is ever the banner, the rest read as history alongside his words.
+  function fixedTail(note) {
+    var body = String(note || "").replace(TAGLINE, "").trim();
+    if (!FIXED_TAIL.test(body)) return null;
+    var cut = body.lastIndexOf("\n--- FIXED");
+    var m = FIXED_HEAD.exec(cut < 0 ? body : body.slice(cut + 1)) || [];
+    return {
+      date: (m[1] || "").trim(),
+      fix: (m[2] || "").trim(),
+      before: cut < 0 ? "" : body.slice(0, cut).trim()
+    };
+  }
+
+  // Awaiting re-check: our fix is the last word, and the row is not yet all
+  // clear. Re-marking every verdict good, or writing a reply under the fix
+  // line, is what takes a drill off the pile.
+  function awaitingRecheck(note, allClear) {
+    return !allClear && !!fixedTail(note);
+  }
+  /* --- end recheck predicate --- */
+
+  function isRecheck(id) {
+    var r = review(id);
+    // `statusOf` already knows which verdicts a row is asked for — a
+    // candidate is judged on its text alone — so "all clear" is its "ok".
+    return !!r && awaitingRecheck(r.note, statusOf(id) === "ok");
+  }
+
+  // A drill that was fully cleared before the 3D verdict existed. It is the
+  // whole remaining job — 241 rows that need one extra tick and nothing else —
+  // and `statusOf` calls it "partial", which has no pill of its own.
+  function needs3d(id) {
+    var r = review(id);
+    return !CAND[id] && !!r && r.anim3d == null;
+  }
+
+  function counts() {
+    var ok = 0, iss = 0, seen = 0, n3d = 0, cand = 0, rec = 0;
+    DRILLS.forEach(function (d) {
+      var s = statusOf(d.id);
+      if (s === "ok") ok++;
+      if (s === "issue") iss++;
+      if (s !== "none") seen++;
+      if (needs3d(d.id)) n3d++;
+      if (CAND[d.id]) cand++;
+      if (isRecheck(d.id)) rec++;
+    });
+    return { ok: ok, iss: iss, seen: seen, n3d: n3d, cand: cand, rec: rec,
+             total: DRILLS.length };
+  }
+
+  function visible() {
+    var q = ui.q.toLowerCase();
+    return ORDERED.filter(function (d) {
+      var s = statusOf(d.id);
+      if (ui.filter === "recheck" && !isRecheck(d.id)) return false;
+      if (ui.filter === "todo" && s !== "none") return false;
+      if (ui.filter === "issue" && s !== "issue") return false;
+      if (ui.filter === "ok" && s !== "ok") return false;
+      if (ui.filter === "need3d" && !needs3d(d.id)) return false;
+      if (ui.filter === "cand" && !CAND[d.id]) return false;
+      if (q && (d.title + " " + d.id + " " + d.topic).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+  }
+
+  // The pile with someone waiting on it is where the board opens — but only
+  // until the reviewer picks a pill himself, and only once the rows have
+  // actually arrived (Supabase answers a beat after the page unlocks).
+  var filterPicked = false;
+  function landOnRecheck() {
+    if (filterPicked || ui.filter !== "all" || !counts().rec) return false;
+    ui.filter = "recheck";
+    if (!isRecheck(ui.sel)) {
+      ORDERED.some(function (d) {
+        if (!isRecheck(d.id)) return false;
+        ui.sel = d.id;
+        return true;
+      });
+    }
+    return true;
+  }
+
+  function renderHeader() {
+    var c = counts();
+    var okPct = (c.ok / c.total * 100).toFixed(2);
+    var issPct = (c.iss / c.total * 100).toFixed(2);
+    return '<header class="top">'
+      + '<div class="brand"><span>Tactivo</span><b>Drill QA</b></div>'
+      + '<div class="meter"><div class="bar">'
+      + '<i class="ok" style="width:' + okPct + '%"></i>'
+      + '<i class="iss" style="width:' + issPct + '%"></i></div>'
+      + '<div class="tally">'
+      + '<span class="ok">Clear <b>' + c.ok + '</b></span>'
+      + '<span class="iss">Issues <b>' + c.iss + '</b></span>'
+      + '<span>Reviewed <b>' + c.seen + '</b> of ' + c.total + '</span>'
+      + '<span>Left <b>' + (c.total - c.seen) + '</b></span>'
+      + '<span class="' + (c.rec ? "rec" : "") + '">Re-check <b>' + c.rec + '</b></span>'
+      + "</div></div>"
+      + '<label class="who">Reviewer <input id="who" value="' + h(me) + '" placeholder="your name"></label>'
+      + '<button class="ghost" id="copy">Copy issues</button>'
+      + '<div class="save" data-s="' + ui.saveState + '"></div>'
+      + "</header>";
+  }
+
+  function renderList() {
+    var rows = visible(), out = "", group = "";
+    if (!rows.length) out = '<p style="padding:20px 10px;color:var(--muted)">Nothing matches.</p>';
+    rows.forEach(function (d) {
+      if (d.topic !== group) {
+        group = d.topic;
+        out += '<div class="grouphead">' + h(d.category) + " · " + h(d.topic) + "</div>";
+      }
+      out += '<button class="row" data-id="' + d.id + '" data-st="' + statusOf(d.id) + '"'
+        + ' aria-current="' + (d.id === ui.sel) + '">'
+        + '<span class="dot"></span>'
+        + '<span class="nm">' + h(d.title) + "</span>"
+        + '<span class="tag">' + h(d.part) + "</span></button>";
+    });
+    var c = counts();
+    return '<aside class="side"><div class="sidetop">'
+      + '<input class="search" id="q" placeholder="Search drills…" value="' + h(ui.q) + '">'
+      + '<div class="pills">'
+      + pill("recheck", "Re-check " + c.rec, c.rec > 0)
+      + pill("all", "All " + c.total) + pill("todo", "To do " + (c.total - c.seen))
+      + pill("issue", "Issues " + c.iss) + pill("ok", "Clear " + c.ok)
+      + pill("need3d", "Needs 3D " + c.n3d)
+      + pill("cand", "Candidates " + c.cand)
+      + "</div></div>"
+      + '<div class="list">' + out + "</div></aside>";
+  }
+  function pill(k, label, hot) {
+    return '<button class="pill' + (hot ? " hot" : "") + '" data-f="' + k
+      + '" aria-pressed="' + (ui.filter === k) + '">' + h(label) + "</button>";
+  }
+
+  /* The card body below the picture — identical for a corpus drill and for
+     a candidate, which is the point: Billy reads the same card either way. */
+  function steps(d) {
+    return d.instructions.map(function (s, i) {
+      return '<div class="appstep"><b>' + (i + 1) + "</b><span>" + h(s) + "</span></div>";
+    }).join("");
+  }
+  function skills(d) {
+    return d.develops.map(function (label) {
+      var ic = ICONS[label];
+      return '<div class="skillpill">' + (ic ? ic.svg : "") + "<span>" + h(label) + "</span></div>";
+    }).join("");
+  }
+  function adapt(d) {
+    if (!d.progressions.length && !d.regressions.length) return "";
+    return '<div class="adapt">'
+      + (d.progressions.length ? "<div><b>HARDER</b><p>" + h(d.progressions.join("\n")) + "</p></div>" : "")
+      + (d.regressions.length ? "<div><b>EASIER</b><p>" + h(d.regressions.join("\n")) + "</p></div>" : "")
+      + "</div>";
+  }
+
+  /* The drill exactly as DrillCoachingCard lays it out. */
+  function renderCard(d) {
+    var sc = SCENES[d.id];
+    var replay = ui.view === "replay";
+
+    var chips = '<span class="appchip lime">' + h(d.part) + "</span>"
+      + '<span class="appchip">' + GLYPH.schedule + h(d.minutes) + " MIN</span>"
+      + '<span class="appchip">' + GLYPH.group + h(d.ageLabel) + "</span>";
+
+    // A candidate has no scene: the flat diagram IS the picture, and the
+    // player, the stage-mode tabs and the 3D pane all have nothing to show.
+    var flat = !sc && d.diagram;
+    if (flat) {
+      return '<div class="appwrap flat"><div class="frame">'
+        + '<div class="appback">←</div>'
+        + '<div class="appchips">' + chips + "</div>"
+        + '<h1 class="apptitle">' + h(d.title) + "</h1>"
+        + '<div class="flatdiagram">' + d.diagram
+        + '<p class="capnote">A candidate drill — a flat coaching diagram, '
+        + "not an animation. The animation is only built if you pass it.</p></div>"
+        + '<p class="applabel">HOW IT WORKS</p><div class="appsteps">' + steps(d) + "</div>"
+        + (d.develops.length ? '<p class="applabel">KEY SKILLS</p><div class="skillgrid">'
+            + skills(d) + "</div>" : "")
+        + '<div class="coachtip">' + GLYPH.sports + "<div><b>COACH TIP</b><i>"
+        + h(d.tip) + "</i></div></div>"
+        + adapt(d) + "</div></div>";
+    }
+
+    var dashes = sc.phases.map(function (p, i) {
+      return '<i data-ph="' + i + '"><b></b></i>';
+    }).join("");
+
+    var diagram = '<div class="diagram' + (replay ? " replay" : "") + '">'
+      + '<div class="stagebox"><canvas id="board"></canvas></div>'
+      + '<div class="capline"><button class="capplay" id="play">' + (ui.playing ? "❚❚" : "▶") + "</button>"
+      + '<div><p class="captext"></p><div class="dashes">' + dashes + "</div></div></div></div>"
+      + '<div class="stagetabs">' + STAGES.map(function (s) {
+          return '<button class="stagetab" data-stage="' + s[0] + '" aria-pressed="'
+            + (ui.stage === s[0]) + '">' + s[1] + " <i>" + s[2] + "</i></button>";
+        }).join("") + "</div>"
+      // The tab labels are the app's own words, "3D view 2.5D" included — that
+      // is the point of showing them. This line stops that "3D" being read as
+      // the 3D ENGINE pane. (No "on the right": under 1320px the pane stacks
+      // underneath.)
+      + '<p class="stagenote">All three are camera modes for the 2D board '
+      + "above — the app’s own names, “3D view” included. The real 3D engine "
+      + "is the separate <b>3D ENGINE</b> pane.</p>"
+      // The broadcast presets stay available but out of the way: full-screen
+      // replay only, and only when the tilted camera is the one on screen.
+      + (replay && ui.stage === "tilted"
+        ? '<div class="dircams">' + PRESETS.map(function (p, i) {
+            return '<button class="dircam" data-cam="' + i + '" aria-pressed="' + (i === ui.preset && !ui.autocut) + '">' + p.name + "</button>";
+          }).join("")
+          + '<button class="dircam" data-cam="auto" aria-pressed="' + ui.autocut + '">Auto-cut</button></div>'
+        : "");
+
+    return '<div class="appwrap"><div class="frame">'
+      + '<div class="appback">←</div>'
+      + '<div class="appchips">' + chips + "</div>"
+      + '<h1 class="apptitle">' + h(d.title) + "</h1>"
+      + diagram
+      + '<p class="applabel">HOW IT WORKS</p><div class="appsteps">' + steps(d) + "</div>"
+      + (d.develops.length ? '<p class="applabel">KEY SKILLS</p><div class="skillgrid">' + skills(d) + "</div>" : "")
+      + '<div class="coachtip">' + GLYPH.sports + "<div><b>COACH TIP</b><i>" + h(d.tip) + "</i></div></div>"
+      + adapt(d)
+      + "</div>"
+      // "3D ENGINE", not "3D animation": the tab row 350px to the left says
+      // "3D view 2.5D" (the app's own name for the tilted board) and a reviewer
+      // reading "3D" twice can mark the engine good while looking at the board.
+      + '<div class="pane3d"><div class="paneh">3D engine <em></em></div>'
+      + '<div class="slot3d" id="slot3d"></div>'
+      // Claims only what is true. The board runs on its own clock with phase
+      // beats and the engine runs its own looping timeline; nothing posts
+      // `seek`, so the two are the same drill but not the same instant.
+      // Promising "same moment" made every out-of-phase pair look like a
+      // mismatch. Phase-locking is possible later — `ready` carries `duration`,
+      // so `seek {t: clock.t * duration}` on every board tick would do it.
+      + '<p class="capnote" style="text-align:left">Same drill — do the shapes '
+      + "and the movement match the board? The two run on separate clocks, so "
+      + "they will not be at the same instant.</p></div>"
+      + '<div class="viewtabs">'
+      + '<button class="viewtab" data-view="card" aria-pressed="' + !replay + '">Drill card</button>'
+      + '<button class="viewtab" data-view="replay" aria-pressed="' + replay + '">Full-screen replay</button>'
+      + "</div></div>";
+  }
+
+  // The fix we sent, at the very top of the review card. Without it the only
+  // place our reply exists is buried at the bottom of the note textarea,
+  // which is how a whole round of fixes went unseen.
+  function banner(id, r) {
+    if (!isRecheck(id)) return "";
+    var f = fixedTail(r.note);
+    return '<div class="recheck"><b>FIXED' + (f.date ? " " + h(f.date) : "")
+      + " — please re-check</b>"
+      // the heading already says it, so the fix line's closing plea is dropped here
+      + (f.fix ? "<p>" + h(f.fix.replace(/\s*please re-check( and re-mark)?\.?\s*$/i, "")) + "</p>" : "")
+      + (f.before ? '<p class="was">' + h(f.before) + "</p>" : "")
+      + "</div>";
+  }
+
+  function renderDrill() {
+    var d = DRILLS.filter(function (x) { return x.id === ui.sel; })[0];
+
+    var r = review(d.id) || {};
+
+    // A candidate has no animation at all, so the three animation verdicts
+    // are not asked. They stay null — answering them false would file a bug
+    // against work nobody has done yet, and `statusOf` already knows a
+    // candidate is clear on its text alone.
+    var crit = (CAND[d.id] ? [
+      ["text", "Text reads right", "Instructions, tip and progressions a coach could run from — and the diagram shows it"],
+    ] : [
+      ["text", "Text reads right", "Instructions, tip and progressions a coach could run from"],
+      ["anim", "2D board is good", "The board itself, in any of its three camera modes"],
+      // Named for the pane, not for "3D": all three board camera modes are
+      // labelled 3D-ish too, and this verdict is only about the engine pane.
+      ["anim3d", "3D ENGINE pane is good", "The separate 3D engine pane — players, ball and pace look like real football"],
+      ["match", "They all match", "Board, 3D engine and instructions describe the same drill"]
+    ]).map(function (c) {
+      var v = r[c[0]];
+      return '<div><span class="lab">' + c[1] + "<em>" + c[2] + "</em></span>"
+        + '<span class="yn">'
+        + '<button data-c="' + c[0] + '" data-v="1" aria-pressed="' + (v === true) + '" title="Good">✓</button>'
+        + '<button data-c="' + c[0] + '" data-v="0" aria-pressed="' + (v === false) + '" title="Problem">✗</button>'
+        + "</span></div>";
+    }).join("");
+
+    var stamp = r.by ? "Last noted by " + h(r.by) + (r.at ? " · " + new Date(r.at).toLocaleDateString() : "") : "";
+
+    var pos = visible().findIndex(function (x) { return x.id === ui.sel; });
+
+    var tags = noteTags(r.note);
+    // A candidate has no animation, so the animation tags are dropped rather
+    // than inviting a complaint about something nobody has built. Same
+    // vocabulary, just fewer of it — `grep '[tags:'` keeps working.
+    var tagrow = TAGS.filter(function (t) {
+      return !CAND[d.id] || CAND_TAGS.indexOf(t) >= 0;
+    }).map(function (t) {
+      return '<button class="tagbtn" data-tag="' + h(t) + '" aria-pressed="'
+        + (tags.indexOf(t) >= 0) + '">' + h(t) + "</button>";
+    }).join("");
+
+    return '<main class="main">'
+      + '<div class="dhead"><h1>' + h(d.title) + "</h1>"
+      + '<button class="didbtn" data-copyid="' + h(d.id) + '" title="Click to copy">'
+      + h(d.id) + "</button>"
+      + '<span class="chip lime">' + h(d.topic) + "</span>"
+      + (CAND[d.id] ? '<span class="chip cand" title="Not in the app yet '
+          + '— a candidate drill for you to accept or reject">CANDIDATE</span>' : "")
+      + '<span class="did">' + (pos + 1) + " of " + visible().length + "</span></div>"
+      + '<div class="cols">' + renderCard(d)
+      + '<div class="review"><div class="card">'
+      + banner(d.id, r)
+      + "<h2>Review</h2>"
+      + '<div class="crit">' + crit + "</div>"
+      + '<div class="tags">' + tagrow + "</div>"
+      + '<textarea class="note" id="note" placeholder="What is wrong, or what would make it better?">' + h(noteBody(r.note)) + "</textarea>"
+      + '<p class="stamp">' + stamp + "</p>"
+      + '<div class="acts">'
+      + '<button class="good" id="good">Looks good → Next</button>'
+      + '<button class="skip" id="next">Skip → Next</button>'
+      + "</div>"
+      + '<button class="back" id="prev">← Back to previous</button>'
+      + '<p class="keys"><kbd>Enter</kbd> looks good · <kbd>J</kbd>/<kbd>K</kbd> next, back · '
+      + (CAND[d.id]
+        ? '<kbd>1</kbd> mark good · <kbd>⇧</kbd>+<kbd>1</kbd> flag</p>'
+        : '<kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd> mark good · '
+          + '<kbd>⇧</kbd>+<kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd> flag · '
+          + '<kbd>D</kbd> cycle static / 2D / 2.5D · <kbd>Space</kbd> play</p>')
+      + "</div></div></div></main>";
+  }
+
+  function render() {
+    document.getElementById("root").innerHTML =
+      renderHeader() + '<div class="shell">' + renderList() + renderDrill() + "</div>";
+    setSave(ui.saveState);
+    // The 3D layer survives the innerHTML above; re-aim it at the new slot and
+    // tell it which drill is on screen now.
+    sync3d();
+    paint3d();
+    place3d();
+    // Keep the selected row in view WITHOUT scrolling the window: the list is
+    // a sticky column, and scrollIntoView would drag the whole page with it.
+    var li = document.querySelector('.row[aria-current="true"]');
+    var list = document.querySelector(".list");
+    if (li && list) {
+      var lr = li.getBoundingClientRect(), cr = list.getBoundingClientRect();
+      if (lr.top < cr.top || lr.bottom > cr.bottom) {
+        list.scrollTop += (lr.top - cr.top) - cr.height / 2 + lr.height / 2;
+      }
+    }
+  }
+
+  /* ============ interaction ============ */
+  function select(id) {
+    if (id === ui.sel) return;
+    flushNote();
+    ui.sel = id;
+    clock.t = 0; clock.elapsed = 0; clock.last = 0;
+    clock.phase = 0; clock.phaseWallMs = 0;
+    try { sessionStorage.setItem("tactivo-qa-sel", id); } catch (e) {}
+    render();
+  }
+  function step(dir) {
+    var rows = visible();
+    var i = rows.findIndex(function (d) { return d.id === ui.sel; });
+    if (i < 0) { if (rows.length) select(rows[0].id); return; }
+    var n = rows[(i + dir + rows.length) % rows.length];
+    if (n) select(n.id);
+  }
+  function ensure(id) {
+    if (!state.reviews[id]) {
+      state.reviews[id] = { text: null, anim: null, anim3d: null, match: null, note: "" };
+    }
+    return state.reviews[id];
+  }
+  function toggleTag(tag) {
+    flushNote();                      // the textarea holds the body; keep it
+    var r = ensure(ui.sel);
+    var tags = noteTags(r.note), i = tags.indexOf(tag);
+    if (i >= 0) tags.splice(i, 1); else tags.push(tag);
+    r.note = joinNote(tags, noteBody(r.note));
+    r.by = me || r.by; r.at = Date.now();
+    dirty[ui.sel] = true;
+    queueSave();
+    render();
+  }
+  function mark(crit, val) {
+    // The keyboard offers 1-4 everywhere; on a candidate only 1 means anything.
+    if (CAND[ui.sel] && crit !== "text") return;
+    var r = ensure(ui.sel);
+    r[crit] = r[crit] === val ? null : val;
+    r.by = me || r.by; r.at = Date.now();
+    dirty[ui.sel] = true;
+    queueSave();
+    render();
+  }
+  // One button for the common case: nothing wrong with it, move on.
+  function approve() {
+    flushNote();
+    var r = ensure(ui.sel);
+    r.text = true;
+    if (!CAND[ui.sel]) { r.anim = true; r.anim3d = true; r.match = true; }
+    r.by = me || r.by; r.at = Date.now();
+    dirty[ui.sel] = true;
+    queueSave();
+    step(1);
+  }
+  function flushNote() {
+    var ta = document.getElementById("note");
+    if (!ta) return;
+    var r = review(ui.sel);
+    // The textarea shows the free text only; the tag line is put back on the
+    // front here, so what is stored stays one greppable field.
+    var cur = noteBody(r && r.note);
+    if (ta.value === cur) return;
+    ensure(ui.sel).note = joinNote(noteTags(r && r.note), ta.value);
+    state.reviews[ui.sel].by = me || state.reviews[ui.sel].by;
+    state.reviews[ui.sel].at = Date.now();
+    dirty[ui.sel] = true;
+    queueSave();
+  }
+
+  document.addEventListener("click", function (ev) {
+    var t = ev.target.closest("button");
+    if (!t) return;
+    if (t.classList.contains("row")) return select(t.dataset.id);
+    if (t.classList.contains("pill")) { flushNote(); filterPicked = true; ui.filter = t.dataset.f; return render(); }
+    if (t.dataset.view) { ui.view = t.dataset.view; touched = 0; return render(); }
+    if (t.dataset.stage) { ui.stage = t.dataset.stage; touched = 0; return render(); }
+    if (t.dataset.tag) return toggleTag(t.dataset.tag);
+    if (t.dataset.copyid) return copyId(t);
+    if (t.dataset.cam != null) {
+      if (t.dataset.cam === "auto") ui.autocut = !ui.autocut;
+      else { ui.preset = +t.dataset.cam; ui.autocut = false; }
+      touched = 0;
+      return render();
+    }
+    if (t.dataset.c) return mark(t.dataset.c, t.dataset.v === "1");
+    if (t.id === "play") { ui.playing = !ui.playing; return render(); }
+    if (t.id === "good") return approve();
+    if (t.id === "next") return step(1);
+    if (t.id === "prev") return step(-1);
+    if (t.id === "copy") return copyIssues(t);
+  });
+
+  document.addEventListener("input", function (ev) {
+    if (ev.target.id === "q") { ui.q = ev.target.value; var v = ev.target.selectionStart; render();
+      var q = document.getElementById("q"); if (q) { q.focus(); q.setSelectionRange(v, v); } }
+    if (ev.target.id === "who") {
+      me = ev.target.value;
+      try { localStorage.setItem("tactivo-qa-who", me); } catch (e) {}
+    }
+  });
+  document.addEventListener("change", function (ev) {
+    if (ev.target.id === "note") flushNote();
+  });
+  document.addEventListener("blur", function (ev) {
+    if (ev.target.id === "note") flushNote();
+  }, true);
+
+  document.addEventListener("keydown", function (ev) {
+    var tag = (ev.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea") return;
+    var k = ev.key.toLowerCase();
+    if (ev.key === "Enter") { ev.preventDefault(); approve(); }
+    else if (k === "j") { ev.preventDefault(); step(1); }
+    else if (k === "k") { ev.preventDefault(); step(-1); }
+    else if (k === " ") { ev.preventDefault(); ui.playing = !ui.playing; render(); }
+    else if (k === "d") {
+      // Cycle the stage modes in the order the tabs show them.
+      ev.preventDefault();
+      var at = 0;
+      STAGES.forEach(function (s, i) { if (s[0] === ui.stage) at = i; });
+      ui.stage = STAGES[(at + 1) % STAGES.length][0];
+      touched = 0;
+      render();
+    }
+    else {
+      // Key off the PHYSICAL key, not the character it produces. The flag keys
+      // used to be matched on "!@#$", which is a US layout: on Carl's UK
+      // keyboard Shift+3 is £, so the most-used new shortcut did nothing at
+      // all. ev.code is the same on every layout. The old characters stay as a
+      // fallback for anything that reports no code.
+      if (ev.ctrlKey || ev.metaKey || ev.altKey) return;   // Cmd+1 is the browser's
+      var CRIT = ["text", "anim", "anim3d", "match"];
+      var code = /^(Digit|Numpad)([1-4])$/.exec(ev.code || "");
+      var chr = "1234!@#$".indexOf(ev.key);
+      if (code) {
+        ev.preventDefault();
+        mark(CRIT[+code[2] - 1], !ev.shiftKey);
+      } else if (chr >= 0) {
+        ev.preventDefault();
+        mark(CRIT[chr % 4], chr < 4);
+      }
+    }
+  });
+
+  // Drag to orbit — same feel as the app: 0.3 per px across, 0.22 down,
+  // tilt clamped to 20-72 degrees.
+  document.addEventListener("pointerdown", function (ev) {
+    if (!ev.target.closest("#board")) return;
+    drag = { x: ev.clientX, y: ev.clientY };
+    var mv = function (e) {
+      if (!drag) return;
+      cam.rot += (e.clientX - drag.x) * 0.3;
+      cam.tilt = Math.max(20, Math.min(72, cam.tilt - (e.clientY - drag.y) * 0.22));
+      drag = { x: e.clientX, y: e.clientY };
+      touched = Date.now();
+      draw();
+    };
+    var up2 = function () { drag = null; touched = Date.now(); window.removeEventListener("pointermove", mv); window.removeEventListener("pointerup", up2); };
+    window.addEventListener("pointermove", mv); window.addEventListener("pointerup", up2);
+  });
+
+  function copyId(btn) {
+    var id = btn.dataset.copyid;
+    var done = function () {
+      btn.dataset.copied = "1";
+      setTimeout(function () { delete btn.dataset.copied; }, 1200);
+    };
+    if (navigator.clipboard) navigator.clipboard.writeText(id).then(done, done);
+    else done();
+  }
+
+  function copyIssues(btn) {
+    flushNote();
+    var lines = ["# Tactivo drill QA — open issues", ""];
+    DRILLS.forEach(function (d) {
+      var r = review(d.id);
+      if (!r) return;
+      var bad = [];
+      if (r.text === false) bad.push("text");
+      if (r.anim === false) bad.push("2D board");
+      if (r.anim3d === false) bad.push("3D engine");
+      if (r.match === false) bad.push("mismatch");
+      if (!bad.length && !(r.note || "").trim()) return;
+      lines.push("## " + d.title + "  (" + d.id + ")");
+      if (bad.length) lines.push("Flagged: " + bad.join(", "));
+      if ((r.note || "").trim()) lines.push(r.note.trim());
+      if (r.by) lines.push("— " + r.by);
+      lines.push("");
+    });
+    var text = lines.length > 2 ? lines.join("\n") : "No issues flagged yet.";
+    var done = function () { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy issues"; }, 1600); };
+    if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, done);
+    else done();
+  }
+
+  // Closing a tab gives a publish no time to land, so also save the moment the
+  // tab goes to the background — the common way a review session ends.
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden") { flushNote(); clearTimeout(saveTimer); flush(); }
+  });
+  window.addEventListener("beforeunload", function () { flushNote(); clearTimeout(saveTimer); flush(); });
+  window.addEventListener("resize", function () { draw(); place3d(); });
+  window.addEventListener("scroll", place3d, true);
+
+  /* ============ unlock ============ */
+  function boot(d) {
+    DATA = d;
+    DRILLS = d.drills;
+    SCENES = d.scenes;
+    ICONS = d.icons;
+    DRILLS.forEach(function (x) { if (x.candidate) CAND[x.id] = 1; });
+    // Review order: everything of one kind together, so a reviewer compares
+    // like with like instead of ping-ponging between topics.
+    ORDERED = DRILLS.slice().sort(function (a, b) {
+      return a.category.localeCompare(b.category)
+        || a.topic.localeCompare(b.topic)
+        || a.title.localeCompare(b.title);
+    });
+    ui.sel = ORDERED[0].id;
+    try {
+      var last = sessionStorage.getItem("tactivo-qa-sel");
+      if (last && (SCENES[last] || CAND[last])) ui.sel = last;
+    } catch (e) {}
+    landOnRecheck();
+    mount3d();
+    render();
+    bootPersistence();
+    requestAnimationFrame(frame);
+  }
+
+  var PKEY = "tactivo-qa-pass:" + location.pathname;
+
+  function b64(s) {
+    var bin = atob(s), out = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  function decrypt(pass) {
+    var enc = new TextEncoder();
+    return crypto.subtle.importKey("raw", enc.encode(pass), "PBKDF2", false, ["deriveKey"])
+      .then(function (base) {
+        return crypto.subtle.deriveKey(
+          { name: "PBKDF2", salt: b64(RAW.salt), iterations: RAW.iter, hash: "SHA-256" },
+          base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+      })
+      .then(function (key) {
+        return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(RAW.iv) }, key, b64(RAW.ct));
+      })
+      .then(function (buf) { return JSON.parse(new TextDecoder().decode(buf)); });
+  }
+
+  function gate(msg) {
+    document.getElementById("root").innerHTML =
+      '<div class="lock"><form class="lockcard" id="lockform">'
+      + '<span>Tactivo</span><h1>Drill QA Board</h1>'
+      + "<p>This board is passphrase protected. Ask Carl for it.</p>"
+      + '<input id="pass" type="password" autocomplete="current-password" '
+      + 'placeholder="Passphrase" autofocus>'
+      + '<button type="submit">Unlock</button>'
+      + '<em id="lockerr">' + (msg || "") + "</em>"
+      + "</form></div>";
+    document.getElementById("lockform").addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var v = document.getElementById("pass").value;
+      document.getElementById("lockerr").textContent = "Checking…";
+      tryPass(v, true);
+    });
+  }
+
+  function tryPass(pass, remember) {
+    return decrypt(pass).then(function (d) {
+      if (remember) { try { localStorage.setItem(PKEY, pass); } catch (e) {} }
+      passphrase = pass;
+      boot(d);
+    }).catch(function () {
+      try { localStorage.removeItem(PKEY); } catch (e) {}
+      gate("That passphrase does not open this board.");
+    });
+  }
+
+  function startGate() {
+    if (!RAW.enc) { boot(RAW); return; }
+    var saved = null;
+    try { saved = localStorage.getItem(PKEY); } catch (e) {}
+    if (saved) tryPass(saved, false); else gate("");
+  }
+
+  // The drill corpus is either inlined in the page or, for the slim build,
+  // fetched as one JSON file — encrypted either way, so where it is stored
+  // does not change who can read it.
+  function loadRaw() {
+    var inline = (document.getElementById("drill-data").textContent || "").trim();
+    if (inline) return Promise.resolve(JSON.parse(inline));
+    if (!(CFG && CFG.dataUrl)) return Promise.reject(new Error("no drill data"));
+    return fetch(CFG.dataUrl, { cache: "force-cache" }).then(function (r) {
+      if (!r.ok) throw new Error("drill data " + r.status);
+      return r.json();
+    });
+  }
+
+  document.getElementById("root").innerHTML =
+    '<div class="lock"><div class="lockcard"><span>Tactivo</span>'
+    + "<h1>Drill QA Board</h1><p>Loading the drill library…</p></div></div>";
+
+  loadRaw().then(function (raw) {
+    RAW = raw;
+    startGate();
+  }).catch(function (err) {
+    document.getElementById("root").innerHTML =
+      '<div class="lock"><div class="lockcard"><span>Tactivo</span>'
+      + "<h1>Drill QA Board</h1><p>Could not load the drill library.</p>"
+      + '<em style="color:var(--bad);font-style:normal;font-size:12px">'
+      + String(err.message || err) + "</em></div></div>";
+  });
+})();
+</script>

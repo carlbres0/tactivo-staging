@@ -1,0 +1,126 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.06,
+    3.33
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    5.06,
+    6.67
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.06,
+   3.68
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "d1",
+   "flight": 0.4,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 3.22,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 0.4,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 5.23,
+   "type": "pass",
+   "from": "a1",
+   "to": "d1",
+   "flight": 0.4,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 7.25,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 0.4,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  }
+ ],
+ "duration": 9.77,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Heading is limited by the FA now, so how do you teach it properly?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Pairs four metres apart, one serving underarm, one heading back to their hands.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.37,
+   "text": "Five clean headers climbs a rung. A miss simply repeats the rung.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.6,
+   "text": "The ladder goes chest, then waist, then a bouncing serve, swapping jobs each rung.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.77,
+   "text": "The top rung is heading downward, into a target square on the grass.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.27,
+   "text": "Short sets, soft contact, eyes open, neck firm. Technique only, no goals.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

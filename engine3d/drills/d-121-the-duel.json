@@ -1,0 +1,179 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 15.67,
+  "length": 18
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    9,
+    14.83
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.67,
+    14.83
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9,
+    3.17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.67,
+    3.17
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.83,
+    10.17
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    7.83,
+    12.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.59,
+   10.43
+  ]
+ },
+ "events": [
+  {
+   "t": 1.76,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7.44,
+    11.46
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.76,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.02,
+    12.11
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.92,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    6.8,
+    11.98
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.17,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.15,
+    13.54
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.51,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7.06,
+    12.63
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.76,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.83,
+    15.74
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9.75,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one is the whole session in one box. You against your player, properly.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two small gates at opposite ends. They attack one, you attack the other.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.34,
+   "text": "A real one against one, played properly, tuned to their edge.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.19,
+   "text": "The winner keeps the ball to restart. First to five, then swap ends.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.75,
+   "text": "Later, goals only count after a beaten defender. No toe-pokes from range.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.25,
+   "text": "Lose on purpose sometimes, never twice running. The duel has to stay worth winning.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

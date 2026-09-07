@@ -1,0 +1,238 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 44.3,
+  "length": 35.58
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    35.58
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    35.58
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    22.15,
+    35.58
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    22.15,
+    30.55
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    22.15,
+    15.43
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    23.83,
+    10.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   23.92,
+   10.74
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    23.83,
+    18.79
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    25.51,
+    17.11
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.78,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    16.1,
+    21.48
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.03,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    13.75,
+    25.51
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.24,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    18.12,
+    28.87
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.7,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    15.43,
+    20.47
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.96,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    17.45,
+    28.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    17.45,
+    28.2
+   ],
+   "flight": 0.46,
+   "flightStyle": "ground"
+  },
+  {
+   "t": 10.85,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.09,
+    26.18
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 13.23,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     22.15,
+     18.79
+    ],
+    "w": 40.3,
+    "h": 33.58,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This is the habit that saves penalties, and it's the hardest one to teach.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The penalty area with a full goal and keeper. Attacker receives with the defender goal-side.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.97,
+   "text": "No sliding in. A penalty is worse than a shot from a tight angle.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.26,
+   "text": "Force them wide and delay while the keeper narrows the angle behind you.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.23,
+   "text": "Six repetitions each, keeping score of shots conceded. Let them shoot after one touch.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.73,
+   "text": "Standing up in the box is hard to teach, and it saves more than any tackle.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

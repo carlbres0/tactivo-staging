@@ -1,0 +1,244 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.8,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    26
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.8,
+    26
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.8,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.4,
+    26
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    10.4,
+    21.8
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6.2,
+    16.4
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    10.4,
+    11.6
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    14.6,
+    16.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.41,
+   16.68
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.96,
+    22.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.16,
+   "type": "pass",
+   "from": "d1",
+   "to": "gk",
+   "flight": 0.87
+  },
+  {
+   "t": 7,
+   "type": "pass",
+   "from": "gk",
+   "to": "d1",
+   "flight": 0.68
+  },
+  {
+   "t": 10.63,
+   "type": "pass",
+   "from": "d1",
+   "to": "d2",
+   "flight": 0.64
+  },
+  {
+   "t": 11.15,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    10.4,
+    21.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.88,
+   "type": "pass",
+   "from": "d2",
+   "to": "gk",
+   "flight": 1.02
+  },
+  {
+   "t": 17.87,
+   "type": "pass",
+   "from": "gk",
+   "to": "d2",
+   "flight": 1.02
+  },
+  {
+   "t": 21.84,
+   "type": "pass",
+   "from": "d2",
+   "to": "d3",
+   "flight": 0.64
+  },
+  {
+   "t": 22.02,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    11.84,
+    22.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 24.1,
+   "type": "pass",
+   "from": "d3",
+   "to": "gk",
+   "flight": 0.87
+  },
+  {
+   "t": 28.93,
+   "type": "pass",
+   "from": "gk",
+   "to": "d3",
+   "flight": 0.68
+  },
+  {
+   "t": 33.08,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    10.4,
+    21.8
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 36.08,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Is your keeper's technique still there when their arms are tired? Find out.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Three servers around the goal area, delivering low, chest and high in rotation.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 6.49,
+   "text": "The keeper returns each ball and immediately faces the next one.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 29.59,
+   "text": "Thirty seconds of continuous work, thirty seconds rest, six rounds in total.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 36.08,
+   "text": "Once they're holding up, add a fourth server so the rotation is unpredictable.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 38.58,
+   "text": "Fatigue shows in the feet first. The moment they stop moving, stop the round.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

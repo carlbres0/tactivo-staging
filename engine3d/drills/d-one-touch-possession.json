@@ -1,0 +1,374 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    17,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    16.25,
+    9.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12.5,
+    16.25
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    6.5,
+    16.25
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    2.75,
+    9.5
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    6.5,
+    2.75
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    12.5,
+    2.75
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    11,
+    8
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    8,
+    11.75
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   16.08,
+   9.81
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.25,
+    10.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    11,
+    13.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.77
+  },
+  {
+   "t": 3.01,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.5,
+    13.25
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.08,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    7.25,
+    14.75
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.59,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.6
+  },
+  {
+   "t": 5.34,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    4.25,
+    11
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.46,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.75,
+    12.5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.8,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 0.77
+  },
+  {
+   "t": 6.74,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    5.82,
+    1.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.67,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    4.25,
+    6.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 7.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    3.5,
+    5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 8.05,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    5,
+    1.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.33,
+   "type": "pass",
+   "from": "a4",
+   "to": "a5",
+   "flight": 0.86
+  },
+  {
+   "t": 10.41,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.5,
+    3.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 10.51,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    11,
+    3.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 10.81,
+   "type": "pass",
+   "from": "a5",
+   "to": "a6",
+   "flight": 0.76
+  },
+  {
+   "t": 13.12,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11,
+    6.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 13.52,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    8.75,
+    9.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 13.52,
+   "type": "pass",
+   "from": "a6",
+   "to": "a1",
+   "flight": 0.77
+  },
+  {
+   "t": 15.91,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.77
+  }
+ ],
+ "duration": 19.72,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     9.5,
+     9.5
+    ],
+    "w": 15,
+    "h": 15,
+    "label": "grid",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Six against two, in a fifteen metre grid, and one touch only.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "It's tight on purpose, so there's no touch to fix a bad position.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.73,
+   "text": "Receivers have to move before the ball arrives, or the pass isn't on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.2,
+   "text": "Watch the shift into space just before it lands. That's the habit.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 19.72,
+   "text": "Ninety second rounds. Once they cope, shrink the grid by two metres each round.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 22.22,
+   "text": "It's messy first time, and it shows you every bad angle in your team.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

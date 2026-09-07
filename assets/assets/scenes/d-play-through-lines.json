@@ -1,0 +1,39 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 20, "y": 20, "w": 280, "h": 160},
+  "cones": [[20, 20], [300, 20], [300, 180], [20, 180]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [{"t": 0, "x": 60, "y": 100}, {"t": 1, "x": 60, "y": 100}]},
+    {"team": "a", "label": "2", "kf": [{"t": 0, "x": 100, "y": 100}, {"t": 1, "x": 100, "y": 100}]},
+    {"team": "a", "label": "3", "kf": [{"t": 0, "x": 170, "y": 100}, {"t": 1, "x": 170, "y": 100}]},
+    {"team": "a", "label": "4", "kf": [{"t": 0, "x": 240, "y": 100}, {"t": 1, "x": 240, "y": 100}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 140, "y": 70}, {"t": 0.42, "x": 135, "y": 90}, {"t": 1, "x": 135, "y": 90}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 140, "y": 130}, {"t": 0.42, "x": 135, "y": 110}, {"t": 1, "x": 135, "y": 110}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 200, "y": 70}, {"t": 0.65, "x": 195, "y": 90}, {"t": 1, "x": 195, "y": 90}]},
+    {"team": "d", "label": "x", "kf": [{"t": 0, "x": 200, "y": 130}, {"t": 0.65, "x": 195, "y": 110}, {"t": 1, "x": 195, "y": 110}]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 60, "y": 100}, {"t": 0.1, "x": 60, "y": 100},
+    {"t": 0.18, "x": 100, "y": 100}, {"t": 0.3, "x": 100, "y": 100},
+    {"t": 0.42, "x": 170, "y": 100}, {"t": 0.55, "x": 170, "y": 100},
+    {"t": 0.65, "x": 240, "y": 100}, {"t": 1, "x": 240, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[60, 100], [100, 100]]},
+    {"kind": "pass", "pts": [[100, 100], [170, 100]]},
+    {"kind": "pass", "pts": [[170, 100], [240, 100]]},
+    {"kind": "opp", "pts": [[140, 70], [135, 90]]},
+    {"kind": "opp", "pts": [[200, 70], [195, 90]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Defending team sets in two banks of four and three; attackers build from the back."},
+    {"t": 0.3, "label": "A pass received between the two banks scores — the receiver must face forward."},
+    {"t": 0.42, "label": "That's the point won; if it isn't on, go round and reset instead."},
+    {"t": 0.55, "label": "Play forward beyond the second bank to finish the move."}
+  ],
+  "events": [
+    {"t": 0.36, "x": 140, "y": 100, "label": "BETWEEN LINES"}
+  ]
+}

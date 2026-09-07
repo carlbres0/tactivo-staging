@@ -1,0 +1,67 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [[30, 25], [290, 25], [30, 175], [290, 175], [250, 25], [250, 175]],
+  "goals": [
+    {"x": 290, "y": 100.0, "w": 40, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 120, "y": 90},
+      {"t": 0.15, "x": 120, "y": 90},
+      {"t": 1, "x": 125, "y": 92}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 170, "y": 110},
+      {"t": 0.35, "x": 170, "y": 110},
+      {"t": 1, "x": 175, "y": 112}
+    ]},
+    {"team": "a", "label": "T", "kf": [
+      {"t": 0, "x": 270, "y": 100},
+      {"t": 0.4, "x": 270, "y": 100},
+      {"t": 0.55, "x": 255, "y": 95, "cx": 268, "cy": 112},
+      {"t": 1, "x": 253, "y": 93}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 265, "y": 100},
+      {"t": 0.4, "x": 265, "y": 100},
+      {"t": 0.55, "x": 260, "y": 98},
+      {"t": 1, "x": 258, "y": 100}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 190, "y": 100},
+      {"t": 1, "x": 195, "y": 102}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 120, "y": 90},
+      {"t": 0.15, "x": 170, "y": 110},
+      {"t": 0.2, "x": 170, "y": 110},
+      {"t": 0.35, "x": 270, "y": 100},
+      {"t": 0.4, "x": 270, "y": 100},
+      {"t": 0.55, "x": 255, "y": 95},
+      {"t": 0.7, "x": 283, "y": 90},
+      {"t": 1, "x": 283, "y": 90}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[120, 90], [170, 110]]},
+    {"kind": "pass", "pts": [[170, 110], [270, 100]]},
+    {"kind": "dribble", "curve": true, "pts": [[270, 100], [268, 112], [255, 95]]},
+    {"kind": "shot", "pts": [[255, 95], [283, 90]]},
+    {"kind": "opp", "pts": [[265, 100], [258, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Each team keeps a striker in the far zone, marked tight by one defender."},
+    {"t": 0.35, "label": "Ball goes early into the striker's feet, back to goal."},
+    {"t": 0.4, "label": "A goal only counts if the striker received it exactly like this."},
+    {"t": 0.55, "label": "Turn, set back, or hold it up \u2014 any of the three counts."}
+  ],
+  "events": [
+    {"t": 0.4, "x": 270, "y": 100, "label": "RECEIVED"},
+    {"t": 0.7, "x": 283, "y": 90, "label": "GOAL"}
+  ]
+}

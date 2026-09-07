@@ -1,0 +1,214 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.6,
+  "length": 16
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.6,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8,
+    14
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.6,
+    14
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.8,
+    5.6
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    6.8,
+    10.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.96,
+   5.91
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7.4,
+    9.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.4,
+    6.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.48,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.8,
+    10.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.73,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.8,
+    5.6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.2,
+    9.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.25,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.2,
+    6.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.53,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.8,
+    10.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.78,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.8,
+    5.6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.06,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.8,
+    13.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.31,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.8,
+    2.6
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 11.45,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Before a one v one session, warm the skill and the intent together.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Pairs face each other with a ball each, three metres apart.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.72,
+   "text": "One leads with a move, a step over, a drag back, a feint. The partner copies.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.73,
+   "text": "On your call, both drop the mirror and race through their own end gate.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.45,
+   "text": "Swap the leader every minute. Then give the pair one ball to fight over.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.95,
+   "text": "The mirror warms the skill, and the race warms the intent.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 200, "y": 40, "w": 100, "h": 120},
+  "cones": [[200, 40], [300, 40], [200, 160], [300, 160]],
+  "goals": [
+    {"x": 294, "y": 100.0, "w": 32, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 285, "y": 100},
+      {"t": 0.5, "x": 285, "y": 100},
+      {"t": 0.7, "x": 280, "y": 112},
+      {"t": 0.9, "x": 278, "y": 114},
+      {"t": 1, "x": 278, "y": 114}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 240, "y": 100},
+      {"t": 0.3, "x": 250, "y": 95},
+      {"t": 0.5, "x": 255, "y": 105},
+      {"t": 0.7, "x": 258, "y": 118},
+      {"t": 1, "x": 255, "y": 120}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 225, "y": 95},
+      {"t": 0.3, "x": 245, "y": 90},
+      {"t": 0.5, "x": 260, "y": 110},
+      {"t": 0.7, "x": 270, "y": 125},
+      {"t": 0.85, "x": 270, "y": 125},
+      {"t": 1, "x": 272, "y": 124}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 225, "y": 95},
+      {"t": 0.3, "x": 245, "y": 90},
+      {"t": 0.5, "x": 260, "y": 110},
+      {"t": 0.7, "x": 270, "y": 125},
+      {"t": 0.85, "x": 270, "y": 125},
+      {"t": 0.95, "x": 278, "y": 114},
+      {"t": 1, "x": 278, "y": 114}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[225, 95], [245, 90], [260, 110], [270, 125]]},
+    {"kind": "run", "pts": [[240, 100], [250, 95], [255, 105], [258, 118]]},
+    {"kind": "run", "pts": [[285, 100], [280, 112]]},
+    {"kind": "shot", "pts": [[270, 125], [278, 114]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Attacker receives inside the box with the defender goal-side."},
+    {"t": 0.3, "label": "No sliding \u2014 a penalty is worse than a shot from a tight angle."},
+    {"t": 0.5, "label": "Force the attacker wide and delay; don't dive into the tackle."},
+    {"t": 0.7, "label": "Keeper narrows the angle as the shot comes from a tight, covered spot."}
+  ],
+  "events": [
+    {"t": 0.95, "x": 278, "y": 114, "label": "SAVE"}
+  ]
+}

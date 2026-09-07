@@ -1,0 +1,258 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 44.3,
+  "length": 36.54
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    36.54
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    36.54
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    22.15,
+    36.54
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    19.27,
+    19.27
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    20.71,
+    20.71
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    22.15,
+    22.15
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 4,
+   "start": [
+    26.47,
+    33.09
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 5,
+   "start": [
+    14.09,
+    26.47
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.64,
+    10.64
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    13.51,
+    25.03
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.78,
+   10.96
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    27.04,
+    32.51
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    15.82,
+    25.03
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    16.39,
+    23.59
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    22.15,
+    36.54
+   ]
+  },
+  {
+   "t": 2.54,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    26.47,
+    33.09
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.95,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11.21,
+    11.21
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.21,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    16.97,
+    23.01
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 5.61,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     22.15,
+     19.27
+    ],
+    "w": 40.3,
+    "h": 34.54,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Free kick on the edge of the box, and the wall has seconds to set.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The keeper positions the wall, one player lines it up, everyone else marks.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.68,
+   "text": "The wall holds the line. No jumping sideways, no turning away from the strike.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 3.65,
+   "text": "The rest of the team marks up tight and holds a line for offside.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 5.61,
+   "text": "Once that's sharp, let the attackers play it short without warning.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 8.11,
+   "text": "A slow wall is what concedes these. Practise the speed, not the bravery.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

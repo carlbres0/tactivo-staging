@@ -1,0 +1,46 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 60, "y": 40, "w": 200, "h": 120},
+  "cones": [[60, 40], [260, 40], [60, 160], [260, 160]],
+  "goals": [
+    {"x": 260, "y": 70, "w": 24, "side": "e"},
+    {"x": 260, "y": 130, "w": 24, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 110, "y": 100}, {"t": 0.15, "x": 110, "y": 100},
+      {"t": 0.25, "x": 110, "y": 100},
+      {"t": 0.35, "x": 140, "y": 75, "cx": 118, "cy": 82},
+      {"t": 0.5, "x": 170, "y": 68}, {"t": 0.65, "x": 210, "y": 70},
+      {"t": 0.8, "x": 255, "y": 71}, {"t": 1, "x": 255, "y": 71}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 70, "y": 80}, {"t": 0.25, "x": 70, "y": 80},
+      {"t": 0.3, "x": 70, "y": 80}, {"t": 0.35, "x": 127, "y": 86},
+      {"t": 0.48, "x": 149, "y": 73}, {"t": 0.65, "x": 193, "y": 69},
+      {"t": 0.8, "x": 240, "y": 71}, {"t": 1, "x": 239, "y": 71}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 70, "y": 80}, {"t": 0.15, "x": 70, "y": 80},
+    {"t": 0.25, "x": 110, "y": 100}, {"t": 0.35, "x": 140, "y": 75},
+    {"t": 0.5, "x": 170, "y": 68}, {"t": 0.65, "x": 210, "y": 70},
+    {"t": 0.8, "x": 255, "y": 71}, {"t": 1, "x": 255, "y": 71}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[70, 80], [110, 100]]},
+    {"kind": "dribble", "curve": true, "pts": [[110, 100], [140, 75], [170, 68]]},
+    {"kind": "dribble", "pts": [[170, 68], [255, 71]]},
+    {"kind": "opp", "pts": [[127, 86], [149, 73], [193, 69], [240, 71], [239, 71]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server plays into the attacker, defender arriving fast from behind."},
+    {"t": 0.25, "label": "First touch decides everything — away from the defender, into space."},
+    {"t": 0.5, "label": "Drive at the space you've created; the defender is now chasing."},
+    {"t": 0.8, "label": "Score in either small goal within eight seconds."}
+  ],
+  "events": [
+    {"t": 0.35, "x": 140, "y": 75, "label": "1ST TOUCH"}
+  ]
+}

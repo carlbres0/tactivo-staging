@@ -1,0 +1,36 @@
+{
+  "v": 1,
+  "durationMs": 10000,
+  "area": {"x": 40, "y": 10, "w": 240, "h": 180},
+  "cones": [],
+  "goals": [{"x": 160, "y": 20, "w": 16, "side": "n"}],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 228, "y": 50}, {"t": 1, "x": 228, "y": 50}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 140}, {"t": 0.2, "x": 160, "y": 140},
+      {"t": 0.4, "x": 160, "y": 140}, {"t": 0.56, "x": 150, "y": 126},
+      {"t": 0.72, "x": 146, "y": 120}, {"t": 0.88, "x": 144, "y": 116},
+      {"t": 1, "x": 144, "y": 114}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 222, "y": 56}, {"t": 0.2, "x": 222, "y": 56},
+    {"t": 0.4, "x": 166, "y": 132}, {"t": 0.56, "x": 156, "y": 120},
+    {"t": 0.76, "x": 150, "y": 26}, {"t": 1, "x": 149, "y": 20}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[222, 56], [166, 132]]},
+    {"kind": "shot", "pts": [[156, 120], [150, 26]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Everything today is the other foot: approach, set touch, finish."},
+    {"t": 0.24, "label": "Coach serves easy, and praises the miss that was struck properly."},
+    {"t": 0.56, "label": "Set it with the weak foot, then strike with the weak foot."},
+    {"t": 0.8, "label": "Strong-foot goals count one, weak-foot goals count three — only the threes."}
+  ],
+  "events": [
+    {"t": 0.8, "x": 170, "y": 34, "label": "GOAL — THREE"}
+  ]
+}

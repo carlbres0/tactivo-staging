@@ -1,0 +1,355 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7,
+    11.31
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.94,
+    10.06
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.69,
+    7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.94,
+    3.94
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7,
+    2.69
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.06,
+    3.94
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.31,
+    7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.06,
+    10.06
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.28,
+    7
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    6.58,
+    6.44
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    6.44,
+    7.56
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.63,
+   6.95
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.42,
+    6.55
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    2.95,
+    4.06
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    2.96,
+    9.86
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.59,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    4.65,
+    10.76
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.73,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    4.39,
+    3.05
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.73,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.28,
+    7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.12,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    6.44,
+    7.56
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.21,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.58,
+    6.44
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.95,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.38,
+    10.53
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.71,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7.62,
+    3.47
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.18,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    10.67,
+    3.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.49,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7,
+    1.69
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.49,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.62,
+    10.53
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.6,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.25,
+    3.35
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 13.01,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.38,
+    3.47
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 13.01,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.28,
+    7
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.01,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    6.44,
+    7.56
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 14.87,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.58,
+    6.44
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 15.16,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.53,
+    5.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 17.03,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.69,
+    8.81
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 17.55,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    5.47,
+    7.56
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 20.49,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "A ring of eight numbered cones, a ball each, and your voice doing the work.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everyone starts in the middle of the ring, ball at their feet, waiting.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 9.22,
+   "text": "You call a cone. They dribble out, round it, and come back to the centre.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 20.49,
+   "text": "Change the touch each round. Sole only, weaker foot, outside cuts. Then call two cones together.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 22.99,
+   "text": "The look up between centre and cone is the skill. The feet are the easy part.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

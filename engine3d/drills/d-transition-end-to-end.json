@@ -1,0 +1,259 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.7,
+  "length": 41.74
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    25.7,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.7,
+    40
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    40
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.85,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.85,
+    40
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.85,
+    9.63
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    16.81,
+    40.74
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.85,
+    15.56
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    9.41,
+    20
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.85,
+   9.98
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    17.11,
+    40.15
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    13.56,
+    13.33
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    18.3,
+    31.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.03,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 0.4
+  },
+  {
+   "t": 2.88,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.56,
+    13.33
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.35,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 4.8,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    15.33,
+    24.44
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.06,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    12.37,
+    11.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.95,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.8
+  },
+  {
+   "t": 9.92,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    15.04,
+    26.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.37,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    13.85,
+    40
+   ]
+  },
+  {
+   "t": 13.12,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    18,
+    33.33
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 15.85,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The ball's never dead in this one, so nobody gets a breather.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A normal game, but you serve a new ball the instant possession changes.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.17,
+   "text": "No stoppages at all. The picture flips, and they have to read it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.3,
+   "text": "Win it in your own third and you're attacking, with the runner already going.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.85,
+   "text": "Once they're reading it, serve the new ball behind the defending line.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 18.35,
+   "text": "It's exhausting by design. Three-minute bursts, or the quality falls off a cliff.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

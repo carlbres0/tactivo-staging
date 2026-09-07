@@ -1,0 +1,264 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 23.78,
+  "length": 39
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    21.78,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    21.78,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    21.78,
+    33.2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    33.2
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.41,
+    10.37
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    16.46,
+    19.5
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.33,
+    16.46
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    11.89,
+    35.93
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    11.59,
+    35.02
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    14.93,
+    22.54
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    8.85,
+    17.98
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.52,
+   10.7
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.09,
+    19.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.11,
+    33.96
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    15.24,
+    21.93
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    9.15,
+    19.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.96
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    13.11,
+    11.13
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.78,
+   "type": "pass",
+   "from": "a2",
+   "to": "a4",
+   "flight": 1.42,
+   "flightStyle": "clipped",
+   "loft": 2.47
+  },
+  {
+   "t": 4.63,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    15.54,
+    21.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.81,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.54,
+    20.26
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 8.25,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one rewards the forward pass, and stops one player owning the game.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A target player waiting in the end zone at each end of the pitch.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.98,
+   "text": "Build through midfield, then find the target, who has to control it in the zone.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 4.54,
+   "text": "That's a goal. The target joins the game, and the scorer becomes the new target.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.25,
+   "text": "Once they're comfortable, the pass into the target must be played first time.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.75,
+   "text": "Everyone keeps moving, and nobody gets to sit up front all night.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

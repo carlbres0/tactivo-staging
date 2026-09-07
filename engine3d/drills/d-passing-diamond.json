@@ -1,0 +1,193 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16.19,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    12.78,
+    9.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.09,
+    15.13
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.41,
+    9.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.09,
+    3.88
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.14,
+    10.27
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    7.45,
+    14.36
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.41,
+    9.5
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    8.09,
+    4.88
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   11.88,
+   10.5
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.62
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.84,
+    10.63
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.44,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.57
+  },
+  {
+   "t": 3.68,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.22,
+    10.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.29,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.97,
+    15.59
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.62,
+   "type": "pass",
+   "from": "a3",
+   "to": "a1",
+   "flight": 0.82
+  },
+  {
+   "t": 6.47,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    6.22,
+    9.5
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 9.34,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Four cones in a diamond, two players at each, and one ball.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Fifteen metres a side, and everyone follows their pass to the next cone.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.74,
+   "text": "Every receiver takes an open touch away from the cone before playing on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.94,
+   "text": "On the call of through, the ball cuts across the diamond instead of round it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.34,
+   "text": "Once that's easy, add a one two with the next player before carrying on.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.84,
+   "text": "Ask for a call before every pass, and the receiver gets named, not guessed at.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

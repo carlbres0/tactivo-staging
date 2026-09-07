@@ -1,0 +1,159 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 28,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    26,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    26,
+    24
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    24
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    16,
+    24
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    16,
+    5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    16,
+    10
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   16,
+   5.35
+  ]
+ },
+ "events": [
+  {
+   "t": 2.25,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    16.4,
+    10.4
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.69,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.45,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 3.54,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    15.6,
+    5.6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.75,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    16,
+    24
+   ]
+  }
+ ],
+ "duration": 8.08,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Server, striker, and a ball that never gets to touch the ground.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "An arc in front of one goal, working in pairs, eight of each type.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.42,
+   "text": "The server throws to knee height, and the striker side-foots the volley.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 4.44,
+   "text": "Then a dropping ball on the half-volley. Toe down, ankle locked, body over it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.08,
+   "text": "Once they're clean, serve across the body so they adjust their feet first.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.58,
+   "text": "Contact beats power. A clean half-volley at three-quarter pace beats a scuffed swing.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

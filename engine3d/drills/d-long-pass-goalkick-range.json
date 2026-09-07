@@ -1,0 +1,139 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14.38,
+  "length": 49
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.19,
+    22.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.19,
+    33.15
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.19,
+    43.54
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.19,
+    5.46
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.19,
+   5.81
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.19,
+    22.77
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.85,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.19,
+    5.46
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.54,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    8.06,
+    43.54
+   ],
+   "flight": 3.81,
+   "flightStyle": "ground"
+  },
+  {
+   "t": 13.39,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.19,
+    22.77
+   ],
+   "gait": "sprint"
+  }
+ ],
+ "duration": 19.42,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three target zones, at twenty five, thirty five and forty five metres.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Every player takes three balls at each zone, and keeps their own score.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.91,
+   "text": "Instep for range. Three points for landing in the zone, one for within five metres.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 16.51,
+   "text": "Reset, then laces through it for a driven ball at the longer targets.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 19.42,
+   "text": "Once the ladder's done, roll the ball across the body so it's struck moving.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 21.92,
+   "text": "Keeping score turns a dull technique drill into one they'll ask for.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

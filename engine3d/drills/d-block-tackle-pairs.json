@@ -1,0 +1,322 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.01,
+  "length": 10
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.15,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.15,
+    8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.86,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.86,
+    8
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.07,
+    3.93
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6.07,
+    6.07
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    3.93,
+    3.93
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    3.93,
+    6.07
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.07,
+   5
+  ]
+ },
+ "events": [
+  {
+   "t": 1,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.07,
+    4.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.07,
+    5.3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    3.93,
+    4.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    3.93,
+    5.3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.07,
+    3.93
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.07,
+    6.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    3.93,
+    3.93
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    3.93,
+    6.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.5,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.07,
+    4.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.5,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.07,
+    5.3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.5,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    3.93,
+    4.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.5,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    3.93,
+    5.3
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.68,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 6.68,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.07,
+    6.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.68,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    3.93,
+    3.93
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.68,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    3.93,
+    6.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.28,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    3.93,
+    4.79
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.48,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.07,
+    5.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.48,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    3.93,
+    5.13
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 10.95,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Pairs, four metres apart, one ball between two. All you need for a block tackle.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Set the shape first. Knee bent, ankle locked, opposite arm out for balance.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.53,
+   "text": "On your call, both step in and meet the ball with a firm block.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.76,
+   "text": "Push through it, no swing, weight over the ball. Five controlled reps each.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.95,
+   "text": "Raise the approach speed a notch each round. Last round, the carrier dribbles in slowly.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.45,
+   "text": "A block is a push through, not a swing, and a locked ankle is what wins it.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

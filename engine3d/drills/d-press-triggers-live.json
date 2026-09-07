@@ -1,0 +1,295 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.87,
+  "length": 35
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.87,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.87,
+    35
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    35
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    16.47,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    8.39,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    16.47,
+    35
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    8.39,
+    35
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.77,
+    16.15
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    16.81,
+    12.12
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    7.38,
+    12.12
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.77,
+    21.54
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    16.81,
+    18.85
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.38,
+    18.85
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.49,
+   15.94
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    16.4,
+    12.79
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.1,
+    20.87
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.77,
+    16.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.06,
+    13.46
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "d3",
+   "flight": 0.67
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    12.5,
+    16.83
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.99,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.83,
+    13.01
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5,
+   "type": "tackle",
+   "player": "a3",
+   "from": "d3"
+  },
+  {
+   "t": 5,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.42,
+    17.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.66,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    6.31,
+    13.19
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.66,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    8.39,
+    0
+   ]
+  },
+  {
+   "t": 12.41,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.73,
+    12.12
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 15.04,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one stops your team pressing on hope and starts them pressing on evidence.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A normal possession game, two small goals each end, and one extra rule.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.71,
+   "text": "The defending team holds shape until a trigger. Backward pass, bad touch, or facing their own goal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.02,
+   "text": "Then the nearest player closes down and finishes quickly in either small goal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.04,
+   "text": "Once they read it, let them call the trigger and you stay silent.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.54,
+   "text": "A press without a trigger concedes a point. Harsh, until you watch the shape hold.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

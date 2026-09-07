@@ -1,0 +1,183 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18.29,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14.86,
+    3.43
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.86,
+    20.57
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.43,
+    3.43
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.43,
+    20.57
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.14,
+    12
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12,
+    7.71
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    3.43,
+    6.29
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   3.77,
+   6.21
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.29,
+    16.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.2,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    15.86,
+    20.57
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.2,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    15.86,
+    3.43
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.11,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.57,
+    9.14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.7,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.14,
+    12
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.44,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    10.57,
+    7.71
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 11.81,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Need them switched on in five minutes flat? This does it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "An area with four colours of cone scattered around it.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.72,
+   "text": "They jog inside. On a colour call, sprint to touch that cone and get back.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.27,
+   "text": "Alternate the movement each round. Sprint, side shuffle, backpedal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.81,
+   "text": "Add a ball and let them dribble to the cone. Or call two colours.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.31,
+   "text": "Six to eight calls is plenty. It's a switch on, not a fitness session.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

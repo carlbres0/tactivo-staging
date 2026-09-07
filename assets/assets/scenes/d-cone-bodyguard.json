@@ -1,0 +1,33 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 70.0, "y": 10.0, "w": 180.0, "h": 180.0},
+  "cones": [[160.0, 100.0]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 103.8, "y": 55.0}, {"t": 0.08, "x": 103.8, "y": 55.0}, {"t": 0.3, "x": 108.2, "y": 136.0}, {"t": 0.46, "x": 180.2, "y": 181.0}, {"t": 0.5, "x": 182.5, "y": 183.2}, {"t": 0.64, "x": 191.5, "y": 176.5}, {"t": 1, "x": 200.5, "y": 167.5}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 180.2, "y": 113.5}, {"t": 0.08, "x": 180.2, "y": 113.5}, {"t": 0.3, "x": 155.5, "y": 113.5}, {"t": 0.46, "x": 139.8, "y": 131.5}, {"t": 0.64, "x": 135.2, "y": 136.0}, {"t": 1, "x": 144.2, "y": 127.0}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 112.8, "y": 60.6}, {"t": 0.08, "x": 112.8, "y": 60.6}, {"t": 0.3, "x": 116.1, "y": 138.2}, {"t": 0.46, "x": 176.9, "y": 178.8}, {"t": 0.5, "x": 176.9, "y": 178.8}, {"t": 0.64, "x": 166.8, "y": 111.2}, {"t": 0.76, "x": 164.5, "y": 102.2}, {"t": 1, "x": 164.5, "y": 102.2}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[112.8, 60.6], [116.1, 138.2]]},
+    {"kind": "dribble", "pts": [[116.1, 138.2], [176.9, 178.8]]},
+    {"kind": "shot", "pts": [[176.9, 178.8], [166.8, 111.2]]},
+    {"kind": "opp", "pts": [[180.2, 113.5], [135.2, 136.0]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Threes: one striker with a ball, one bodyguard, one tall cone as the VIP."},
+    {"t": 0.08, "label": "The striker dribbles anywhere and shoots at the VIP."},
+    {"t": 0.3, "label": "The bodyguard shields it with his body \u2014 no tackling at all."},
+    {"t": 0.64, "label": "Knockdown scores the striker; thirty seconds survived scores the bodyguard."}
+  ],
+  "events": [
+    {"t": 0.66, "x": 209.5, "y": 82.0, "label": "VIP DOWN"}
+  ]
+}

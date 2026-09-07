@@ -1,0 +1,164 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.36,
+  "length": 32
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    18.36,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.36,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.91,
+    7.45
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.18,
+    32
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12.91,
+    26.55
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    10.18,
+    21.09
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.75,
+   26.24
+  ]
+ },
+ "events": [
+  {
+   "t": 0.95,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.91,
+    7.45
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 5.06,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.55,
+    25.18
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 9.41,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.4
+  },
+  {
+   "t": 11.43,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    10.18,
+    32
+   ]
+  }
+ ],
+ "duration": 14.38,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "When did your team last miss a chance in the first ten minutes?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One goal, a keeper, a server, and a cone twenty metres out.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.44,
+   "text": "The striker sprints out to the cone, straight back to the serve, then finishes.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.78,
+   "text": "Three finishes in one sequence with no rest, and the strike never changes.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.38,
+   "text": "Once they hold it, add a recovering defender to the third finish each time.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.88,
+   "text": "Most goals are missed in the last twenty minutes. This rehearses exactly that.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

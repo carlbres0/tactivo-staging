@@ -1,0 +1,313 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 21.5,
+  "length": 34
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    19.5,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.5,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.5,
+    10.75
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.5,
+    20.75
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7,
+    20.75
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    7,
+    10.75
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.75,
+    15.75
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    12,
+    13.25
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    9.5,
+    18.25
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.5,
+   11.1
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    7.63,
+    13.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.75,
+    14.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1
+  },
+  {
+   "t": 2.37,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.63,
+    13.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.27,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    8.88,
+    19.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.99,
+   "type": "pass",
+   "from": "a2",
+   "to": "d3",
+   "flight": 0.58
+  },
+  {
+   "t": 4.17,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.13,
+    15.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.73,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8,
+    19.75
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.84,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12,
+    18.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.18,
+   "type": "dribble",
+   "player": "d3",
+   "to": [
+    8.25,
+    17.63
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.18,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    7.25,
+    15.75
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.21,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.65,
+    18.34
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.73,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.75,
+    17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.86,
+   "type": "collect",
+   "player": "a3"
+  },
+  {
+   "t": 8.86,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    6.75,
+    16.38
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.93,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    7,
+    15.75
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 14.66,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three teams of four, and the one that loses the ball becomes the presser.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A thirty by twenty five area. Two teams keep it, the third presses as a unit.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.64,
+   "text": "Switch the ball and the press has to shift its angle to follow.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.8,
+   "text": "The moment it's cut out, the team that lost it presses back. No break.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.66,
+   "text": "Two short water breaks, evenly spaced. Limit the possession teams to two touches.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.16,
+   "text": "The best conditioning drill in football, because nobody notices they're running.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

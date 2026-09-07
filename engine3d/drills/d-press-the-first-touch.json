@@ -1,0 +1,249 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.17,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.83,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.33,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.83,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.33,
+    22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8.25,
+    6.17
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    4.92,
+    15.33
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    7.83,
+    11.17
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    5.33,
+    12.83
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   8.13,
+   6.5
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.97
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7.42,
+    10.83
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.75,
+    6.83
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.23,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.25,
+    6.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.79,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.97
+  },
+  {
+   "t": 5.76,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.58,
+    6
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 6.14,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    4.25,
+    13.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.14,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    5.92,
+    11.17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.71,
+   "type": "pass",
+   "from": "a1",
+   "to": "d1",
+   "flight": 0.4
+  },
+  {
+   "t": 8.56,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.58,
+    7.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.99,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.25,
+    8.83
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.99,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    6.58,
+    1.5
+   ],
+   "flight": 0.45,
+   "flightStyle": "ground"
+  }
+ ],
+ "duration": 13.8,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Four players, one small grid, and the smallest press that exists.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two builders play for either end gate, and two pressers wait passive in the middle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.38,
+   "text": "They hold their shape and read every touch. Nothing happens until something goes wrong.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.28,
+   "text": "A touch bounces loose, so one attacks the ball, one cuts the pass, and they counter.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.8,
+   "text": "Swap every four balls, then give the pressers six seconds or the builders score.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.3,
+   "text": "Never both to the ball. That one rule is the whole lesson, and it scales.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

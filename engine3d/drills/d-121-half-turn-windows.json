@@ -1,0 +1,156 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 16
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    11.6,
+    4.4
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.6,
+    6.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.6,
+    9.2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.6,
+    11.6
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    3.2,
+    8
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8,
+    8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   3.55,
+   8
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.48
+  },
+  {
+   "t": 3.3,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.13,
+    9.87
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.83,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    11.87,
+    10.4
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.68,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    13.07,
+    10.4
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 10.61,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Back to play, ball coming, and no time to ask where to go.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two gates either side, and your player standing with their back to you.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.12,
+   "text": "Serve firmly and point left or right, silently, while the ball is travelling.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7,
+   "text": "They glance over a shoulder, receive half-turned, and carry through that window.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.61,
+   "text": "Eight serves, then swap hands. Later, delay the point until the ball is close.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.11,
+   "text": "The glance before the ball arrives is the whole drill. Two peeks is flying.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

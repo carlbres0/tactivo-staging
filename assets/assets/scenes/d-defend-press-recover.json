@@ -1,0 +1,40 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 40, "y": 30, "w": 240, "h": 140},
+  "cones": [[40, 30], [280, 30], [40, 170], [280, 170]],
+  "goals": [
+    {"x": 280, "y": 55, "w": 20, "side": "e"},
+    {"x": 280, "y": 145, "w": 20, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 220, "y": 100}, {"t": 0.3, "x": 220, "y": 100},
+      {"t": 0.5, "x": 175, "y": 98}, {"t": 0.75, "x": 178, "y": 92},
+      {"t": 0.92, "x": 175, "y": 88}, {"t": 1, "x": 165, "y": 82}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 70, "y": 100}, {"t": 0.3, "x": 70, "y": 100},
+      {"t": 0.55, "x": 140, "y": 100}, {"t": 0.75, "x": 170, "y": 90},
+      {"t": 0.92, "x": 175, "y": 88}, {"t": 1, "x": 180, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 70, "y": 100}, {"t": 0.3, "x": 70, "y": 100},
+    {"t": 0.55, "x": 140, "y": 100}, {"t": 0.75, "x": 170, "y": 90},
+    {"t": 0.92, "x": 175, "y": 88}, {"t": 1, "x": 165, "y": 82}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[70, 100], [140, 100], [170, 90], [175, 88]]},
+    {"kind": "run", "pts": [[220, 100], [175, 98], [178, 92], [175, 88]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Defender holds deep — three attacks are coming, one after another, no rest."},
+    {"t": 0.3, "label": "First attacker drives centrally; defender closes the same way every time."},
+    {"t": 0.55, "label": "Body shape holds under fatigue: low, side-on, patient."},
+    {"t": 0.92, "label": "Delay pays off — the tackle arrives once the touch is loose."}
+  ],
+  "events": [
+    {"t": 0.92, "x": 175, "y": 88, "label": "TACKLE"}
+  ]
+}

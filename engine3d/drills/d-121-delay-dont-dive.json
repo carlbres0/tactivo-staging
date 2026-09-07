@@ -1,0 +1,165 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.6,
+  "length": 22
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8,
+    18.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.6,
+    18.8
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    6.8,
+    5.6
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.8,
+    12.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.84,
+   5.95
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    7.28,
+    9.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.7,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.52,
+    11.48
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.67,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.6,
+    12.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.68,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    5.84,
+    10.4
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.38,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    3.92,
+    11.84
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.38,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    4.16,
+    9.8
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9.71,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Some weeks the bravest thing a defender can do is nothing at all.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A channel with a gate at the end. You have the ball, they defend.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.14,
+   "text": "Attack down the channel. Their only job is delay, goal-side, showing one way.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.57,
+   "text": "Never a lunge. Five seconds unbeaten scores the defender, and you name any dive-in.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.71,
+   "text": "Later, steering you onto your weaker side scores double.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.21,
+   "text": "Defending one against one is patience wearing boots. The tackle is the reward, not the plan.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

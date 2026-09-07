@@ -1,0 +1,120 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 16
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.87,
+    9.87
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    4.27,
+    12.27
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.01,
+   9.55
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    8,
+    6.67
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.93,
+    7.47
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.59,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.33,
+    5.07
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 8.01,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one is the bravest ten seconds in your session plan.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One box, one ball, and you hunting it properly.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.6,
+   "text": "They keep it alive however they can. Shields, turns, escapes, anything.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.25,
+   "text": "Every full ten seconds survived is a point, counted out loud.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.01,
+   "text": "Three rounds, hungrier each time. Then shrink the box and double any shield won off you.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.51,
+   "text": "Ten seconds against a real press feels like a minute, which is the point.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

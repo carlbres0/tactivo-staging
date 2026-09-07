@@ -1,0 +1,231 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24,
+  "length": 24
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    23,
+    12
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    16,
+    22.6
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.4,
+    18.8
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    4.4,
+    5.2
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    16,
+    1.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   22.65,
+   12
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12,
+    15.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.4,
+    13.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    8.4,
+    10.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    12,
+    8.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    15,
+    12
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.25,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    13,
+    17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.25,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    9.6,
+    9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.38,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12,
+    15.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.38,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    8.4,
+    10.2
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 10.2,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Want them practising between sessions? Send them home with one thing to go and do.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Jog a lap, then gather in and stretch through the main muscle groups.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.08,
+   "text": "While they're stretching, set one challenge for the week. Fifty juggles, or ten minutes of wall passes.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.67,
+   "text": "Or one take-on a game. Then get two players to repeat it back to you.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.2,
+   "text": "Finish by naming what the group did well tonight.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.7,
+   "text": "A challenge they can do alone in a garden is the one that actually gets done.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

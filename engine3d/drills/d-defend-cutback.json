@@ -1,0 +1,265 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 44.3,
+  "length": 38.94
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    38.94
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    38.94
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    22.15,
+    38.94
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    23.83,
+    35.58
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    25.51,
+    15.43
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    13.75,
+    23.83
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    33.9,
+    23.83
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    38.94,
+    5.36
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    20.47,
+    10.4
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    12.08,
+    25.51
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    35.58,
+    25.51
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   38.96,
+   5.71
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    21.14,
+    15.43
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    22.15,
+    18.79
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    40.62,
+    33.9
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.77,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 2.39
+  },
+  {
+   "t": 10.62,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    39.95,
+    32.9
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.33,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    21.48,
+    14.76
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 13.78,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    18.79,
+    12.08
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 20.97,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     22.15,
+     20.47
+    ],
+    "w": 40.3,
+    "h": 36.94,
+    "label": "zone",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The cut back is the most dangerous ball in the box, and the least defended.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Wide attackers reach the byline and cut back to a runner on the penalty spot.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 7.34,
+   "text": "One defender always drops off their man to own the cut back zone.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.58,
+   "text": "The others mark near and far post. The cut back gets blocked a stride early.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 20.97,
+   "text": "Once that's comfortable, send two attackers to the edge of the box instead of one.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 23.47,
+   "text": "Somebody has to own that space, or you'll keep conceding the same goal.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

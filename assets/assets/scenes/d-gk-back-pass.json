@@ -1,0 +1,59 @@
+{
+  "v": 1,
+  "durationMs": 9700,
+  "area": {"x": 20, "y": 30, "w": 260, "h": 140},
+  "cones": [[20, 30], [280, 30], [20, 170], [280, 170], [140, 35], [140, 50], [140, 150], [140, 165]],
+  "goals": [
+    {"x": 20, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 50, "y": 100},
+      {"t": 0.2, "x": 50, "y": 100},
+      {"t": 0.32, "x": 48, "y": 112},
+      {"t": 0.45, "x": 58, "y": 108},
+      {"t": 0.7, "x": 58, "y": 108},
+      {"t": 0.85, "x": 58, "y": 108},
+      {"t": 1, "x": 58, "y": 108}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 110, "y": 130},
+      {"t": 0.2, "x": 110, "y": 130},
+      {"t": 0.4, "x": 100, "y": 120},
+      {"t": 1, "x": 100, "y": 120}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 160, "y": 120},
+      {"t": 0.45, "x": 90, "y": 112},
+      {"t": 1, "x": 90, "y": 112}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 110, "y": 130},
+      {"t": 0.2, "x": 110, "y": 130},
+      {"t": 0.32, "x": 48, "y": 112},
+      {"t": 0.45, "x": 58, "y": 108},
+      {"t": 0.7, "x": 58, "y": 108},
+      {"t": 0.85, "x": 58, "y": 108},
+      {"t": 1, "x": 280, "y": 60}
+    ],
+    "air": [[0.85, 1]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[110, 130], [48, 112]]},
+    {"kind": "dribble", "pts": [[48, 112], [58, 108]]},
+    {"kind": "opp", "pts": [[160, 120], [90, 112]]},
+    {"kind": "run", "pts": [[110, 130], [100, 120]]},
+    {"kind": "shot", "pts": [[58, 108], [280, 60]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Back passes arrive at varying pace and angle, forward pressing throughout."},
+    {"t": 0.2, "label": "First touch opens the body \u2014 never straight back in front of goal."},
+    {"t": 0.45, "label": "Press is on: touch away, then find the release before it arrives."},
+    {"t": 0.85, "label": "Clear long down the channel \u2014 twelve reps, alternating the press side."}
+  ],
+  "events": [
+    {"t": 0.85, "x": 120, "y": 90, "label": "CLEAR"}
+  ]
+}

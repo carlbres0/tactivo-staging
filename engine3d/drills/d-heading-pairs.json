@@ -1,0 +1,150 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    5.9,
+    3.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.9,
+    6.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.1,
+    3.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.1,
+    6.5
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    4.1
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5,
+    5.9
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   4.45
+  ]
+ },
+ "events": [
+  {
+   "t": 3.36,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    5.3,
+    5.36
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.88,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.4,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 5.9,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.4
+  },
+  {
+   "t": 6.75,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    5,
+    5.9
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9.03,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Pairs, three metres apart, and nobody jumps.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One player holds the ball out at forehead height for their partner.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.16,
+   "text": "Forehead, eyes open, neck firm, arms out for balance. No jump at all.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.68,
+   "text": "Then a gentle underarm serve from three metres, same technique, five headers each.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.03,
+   "text": "Once that's clean, head it down at a target on the floor between them.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.53,
+   "text": "That's the F A limit for this age, and nobody ever regretted fewer headers.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

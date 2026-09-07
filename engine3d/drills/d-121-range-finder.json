@@ -1,0 +1,139 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14,
+  "length": 44
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    7,
+    27.47
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7,
+   6.35
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "n1",
+   "flight": 2.15
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7,
+    6.53
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.97,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    6.47,
+    31.87
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 10.08,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     7,
+     27.5
+    ],
+    "w": 2.98,
+    "h": 3,
+    "color": "technical",
+    "label": "RING"
+   },
+   {
+    "at": [
+     7,
+     32.5
+    ],
+    "w": 2.98,
+    "h": 3,
+    "color": "tactical",
+    "label": "+5 M BACK"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one gives a long pass a number, and numbers go on the wall.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "You in a three metre ring, fifteen metres down a long channel.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.22,
+   "text": "A driven pass into the ring, and the ring steps back five metres.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.27,
+   "text": "Two misses in a row and it steps in five. That's the range.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.08,
+   "text": "Mark the best with a cone. Later, the ball must arrive below head height.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.58,
+   "text": "The ring measures progress in metres, and metres stick on a wall chart.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

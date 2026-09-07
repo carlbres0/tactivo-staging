@@ -1,0 +1,283 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 12
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    5.14,
+    3.52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.14,
+    4.07
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.14,
+    4.62
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.14,
+    5.17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.38,
+    8.21
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.14,
+    8.62
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.9,
+    8.21
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.14,
+    1.8
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5.14,
+    2.47
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5.14,
+    2.14
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5.14,
+    10.48
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.14,
+   10.48
+  ]
+ },
+ "events": [
+  {
+   "t": 0.88,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.14,
+    3.52
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.45,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    4.14,
+    4.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.11,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.14,
+    4.62
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.78,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    4.14,
+    5.17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.05,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    4.14,
+    3.52
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.05,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    5.14,
+    2.52
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.33,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.14,
+    4.07
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.45,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.83,
+    9.1
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    4.14,
+    4.62
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.22,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.25,
+    2.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.67,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    6.14,
+    5.17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.39,
+   "type": "collect",
+   "player": "a2"
+  },
+  {
+   "t": 16.01,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    3.55,
+    9.15
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 19.02,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The ladder's the excuse. The reaction is what you're actually warming up.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A ladder on the ground, running into a fan of three coloured cones.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.71,
+   "text": "Quick feet through the ladder, one pattern per round.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.46,
+   "text": "As they hit the last rung, call a colour. Sprint through that cone.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 19.02,
+   "text": "Call the colour late, or roll a ball in so the sprint ends dribbling.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 21.52,
+   "text": "They can't drift through it. The call decides everything, so heads stay switched on.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

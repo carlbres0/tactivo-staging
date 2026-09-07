@@ -1,0 +1,40 @@
+{
+    "name": "Tactivo Staging",
+    "short_name": "Staging",
+    "start_url": "/tactivo-staging/",
+    "scope": "/tactivo-staging/",
+    "display": "standalone",
+    "background_color": "#0B0F10",
+    "theme_color": "#0B0F10",
+    "description": "Plan and run football sessions built for your team.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "categories": [
+        "sports",
+        "productivity"
+    ],
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

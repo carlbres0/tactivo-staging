@@ -1,0 +1,73 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 20, "y": 20, "w": 280, "h": 160},
+  "cones": [[20, 20], [300, 20], [20, 180], [300, 180], [113, 20], [113, 180], [207, 20], [207, 180]],
+  "goals": [
+    {"x": 300, "y": 100.0, "w": 40, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 100},
+      {"t": 0.15, "x": 60, "y": 100},
+      {"t": 1, "x": 65, "y": 102}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 150, "y": 100},
+      {"t": 0.25, "x": 150, "y": 100},
+      {"t": 0.4, "x": 150, "y": 100},
+      {"t": 1, "x": 160, "y": 95}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 220, "y": 80},
+      {"t": 0.5, "x": 250, "y": 80},
+      {"t": 0.7, "x": 285, "y": 75},
+      {"t": 1, "x": 285, "y": 75}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 230, "y": 130},
+      {"t": 0.6, "x": 260, "y": 120},
+      {"t": 1, "x": 260, "y": 120}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 105},
+      {"t": 0.25, "x": 165, "y": 100},
+      {"t": 1, "x": 165, "y": 100}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 270, "y": 90},
+      {"t": 0.6, "x": 268, "y": 85},
+      {"t": 1, "x": 268, "y": 85}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 60, "y": 100},
+      {"t": 0.15, "x": 60, "y": 100},
+      {"t": 0.25, "x": 150, "y": 100},
+      {"t": 0.4, "x": 150, "y": 100},
+      {"t": 0.5, "x": 250, "y": 80},
+      {"t": 0.7, "x": 285, "y": 75},
+      {"t": 0.8, "x": 296, "y": 78},
+      {"t": 1, "x": 296, "y": 78}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[60, 100], [150, 100]]},
+    {"kind": "pass", "pts": [[150, 100], [250, 80]]},
+    {"kind": "dribble", "pts": [[250, 80], [285, 75]]},
+    {"kind": "shot", "pts": [[285, 75], [296, 78]]},
+    {"kind": "run", "pts": [[230, 130], [260, 120]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "A goal only counts if the ball was first received in the middle third."},
+    {"t": 0.25, "label": "Build-up must go through the middle \u2014 no long clearance skips it."},
+    {"t": 0.5, "label": "Once received there, the ball can go forward into the final third."},
+    {"t": 0.7, "label": "Players move freely; only the ball's path through the middle is restricted."}
+  ],
+  "events": [
+    {"t": 0.25, "x": 150, "y": 100, "label": "MID THIRD"},
+    {"t": 0.8, "x": 296, "y": 78, "label": "GOAL"}
+  ]
+}

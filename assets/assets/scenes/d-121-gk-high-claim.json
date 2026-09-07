@@ -1,0 +1,205 @@
+{
+  "v": 1,
+  "durationMs": 15000,
+  "area": {
+    "x": 104,
+    "y": 10,
+    "w": 132,
+    "h": 170
+  },
+  "cones": [
+    [
+      190,
+      100
+    ]
+  ],
+  "goals": [
+    {
+      "x": 160,
+      "y": 19,
+      "w": 16,
+      "side": "n"
+    }
+  ],
+  "players": [
+    {
+      "team": "a",
+      "label": "GK",
+      "kf": [
+        {
+          "t": 0,
+          "x": 152,
+          "y": 50
+        },
+        {
+          "t": 0.2,
+          "x": 152,
+          "y": 50
+        },
+        {
+          "t": 0.32,
+          "x": 176,
+          "y": 74
+        },
+        {
+          "t": 0.4,
+          "x": 186,
+          "y": 88
+        },
+        {
+          "t": 0.68,
+          "x": 186,
+          "y": 88
+        },
+        {
+          "t": 0.8,
+          "x": 176,
+          "y": 78
+        },
+        {
+          "t": 1,
+          "x": 172,
+          "y": 74
+        }
+      ]
+    },
+    {
+      "team": "n",
+      "label": "C",
+      "kf": [
+        {
+          "t": 0,
+          "x": 132,
+          "y": 164
+        },
+        {
+          "t": 0.18,
+          "x": 134,
+          "y": 160
+        },
+        {
+          "t": 1,
+          "x": 134,
+          "y": 160
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 132,
+        "y": 164
+      },
+      {
+        "t": 0.2,
+        "x": 132,
+        "y": 164
+      },
+      {
+        "t": 0.5,
+        "x": 186,
+        "y": 86
+      },
+      {
+        "t": 0.68,
+        "x": 186,
+        "y": 88
+      },
+      {
+        "t": 0.86,
+        "x": 134,
+        "y": 160
+      },
+      {
+        "t": 1,
+        "x": 134,
+        "y": 160
+      }
+    ],
+    "air": [
+      [
+        0.2,
+        0.5
+      ]
+    ]
+  },
+  "routes": [
+    {
+      "kind": "run",
+      "pts": [
+        [
+          152,
+          50
+        ],
+        [
+          176,
+          74
+        ],
+        [
+          186,
+          88
+        ]
+      ]
+    },
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          132,
+          164
+        ],
+        [
+          186,
+          86
+        ]
+      ]
+    },
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          186,
+          88
+        ],
+        [
+          134,
+          160
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "The coach lobs serves that drop between the keeper and a cone attacker."
+    },
+    {
+      "t": 0.24,
+      "label": "Attack the drop at its highest point — knee up, arms long."
+    },
+    {
+      "t": 0.48,
+      "label": "Shout 'KEEPER'S' on the way up: the call is technique, not noise."
+    },
+    {
+      "t": 0.7,
+      "label": "A catch above the head scores two, a safe punch one. Eight claims."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.46,
+      "x": 124,
+      "y": 70,
+      "label": "\"KEEPER'S!\""
+    },
+    {
+      "t": 0.56,
+      "x": 222,
+      "y": 96,
+      "label": "CLAIMED"
+    }
+  ]
+}

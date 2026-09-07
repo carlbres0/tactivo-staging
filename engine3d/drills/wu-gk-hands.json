@@ -1,0 +1,165 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 21.45,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    6.36,
+    18.36
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.73,
+    18.36
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    15.09,
+    18.36
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.73,
+    26
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    10.73,
+    20.55
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.73,
+    9.64
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.73,
+   9.99
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "gk",
+   "flight": 1.09
+  },
+  {
+   "t": 6.26,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    12.91,
+    18.36
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.48,
+   "type": "pass",
+   "from": "gk",
+   "to": "d1",
+   "flight": 0.9
+  },
+  {
+   "t": 12.63,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    10.73,
+    20.55
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 14.79,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    15.09,
+    23.82
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 16.42,
+   "type": "pass",
+   "from": "d1",
+   "to": "gk",
+   "flight": 1.48
+  }
+ ],
+ "duration": 22.36,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got a keeper turning up cold? Warm the hands before anything else.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Server and keeper five metres apart, with a line of cones beside them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 6.71,
+   "text": "Catches at the chest, above the head, then rolled to each side.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 22.36,
+   "text": "Then quick feet into a caught volley, and gentle dives from kneeling.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 24.86,
+   "text": "Hands warm before anything hits the ground. Bad first catches set the tone.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

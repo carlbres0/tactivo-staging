@@ -1,0 +1,53 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 60, "y": 40, "w": 220, "h": 120},
+  "cones": [[160, 50], [160, 100], [160, 150]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 70}, {"t": 0.3, "x": 100, "y": 70},
+      {"t": 0.6, "x": 240, "y": 70}, {"t": 1, "x": 190, "y": 70}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 100, "y": 100}, {"t": 0.3, "x": 100, "y": 100},
+      {"t": 0.6, "x": 240, "y": 100}, {"t": 1, "x": 190, "y": 100}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 100, "y": 130}, {"t": 0.3, "x": 100, "y": 130},
+      {"t": 0.6, "x": 240, "y": 130}, {"t": 1, "x": 190, "y": 130}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 220, "y": 70}, {"t": 0.3, "x": 220, "y": 70},
+      {"t": 0.6, "x": 280, "y": 70}, {"t": 1, "x": 90, "y": 70}
+    ]},
+    {"team": "a", "label": "5", "kf": [
+      {"t": 0, "x": 220, "y": 100}, {"t": 0.3, "x": 220, "y": 100},
+      {"t": 0.6, "x": 280, "y": 100}, {"t": 1, "x": 90, "y": 100}
+    ]},
+    {"team": "a", "label": "6", "kf": [
+      {"t": 0, "x": 220, "y": 130}, {"t": 0.3, "x": 220, "y": 130},
+      {"t": 0.6, "x": 280, "y": 130}, {"t": 1, "x": 90, "y": 130}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 100, "y": 70}, {"t": 0.3, "x": 100, "y": 70},
+    {"t": 0.6, "x": 240, "y": 70}, {"t": 1, "x": 190, "y": 70}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[100, 70], [240, 70]]},
+    {"kind": "run", "pts": [[220, 70], [280, 70]]},
+    {"kind": "run", "pts": [[280, 70], [90, 70]]},
+    {"kind": "run", "pts": [[240, 70], [190, 70]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two groups on opposite sides, jogging in their own half."},
+    {"t": 0.3, "label": "Coach calls 'attack' — that group sprints across the line, the other recovers behind it."},
+    {"t": 0.6, "label": "Immediately call 'switch' so both groups reverse roles at pace."},
+    {"t": 0.85, "label": "Six calls, with twenty seconds walking in between."}
+  ],
+  "events": [
+    {"t": 0.3, "x": 160, "y": 100, "label": "ATTACK"},
+    {"t": 0.6, "x": 160, "y": 100, "label": "SWITCH"}
+  ]
+}

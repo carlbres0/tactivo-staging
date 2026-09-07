@@ -1,0 +1,175 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16.27,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    6.8,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    6.53,
+    38
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    11.6,
+    33.47
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   11.43,
+   33.78
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "n1",
+   "at": [
+    6.8,
+    42
+   ]
+  },
+  {
+   "t": 6.61,
+   "type": "shoot",
+   "player": "gk",
+   "at": [
+    6.8,
+    18.53
+   ],
+   "flight": 1.22,
+   "flightStyle": "ground",
+   "style": "throw"
+  },
+  {
+   "t": 7.46,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.93,
+    38.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.39,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    6.53,
+    37.2
+   ],
+   "gait": "sprint"
+  }
+ ],
+ "duration": 12.58,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     6.8,
+     28.5
+    ],
+    "w": 2.98,
+    "h": 3,
+    "color": "technical",
+    "label": "10m"
+   },
+   {
+    "at": [
+     6.8,
+     18.5
+    ],
+    "w": 2.98,
+    "h": 3,
+    "color": "tactical",
+    "label": "20m"
+   },
+   {
+    "at": [
+     6.8,
+     8.5
+    ],
+    "w": 2.98,
+    "h": 3,
+    "color": "physical",
+    "label": "30m"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Where does the ball go three seconds after the save?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Three rings out at ten, twenty and thirty metres, and your keeper in goal.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.76,
+   "text": "Every rep starts with a save, and the ring call comes during it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.55,
+   "text": "Up, and distribute into that ring. Roll, throw or kick to match the distance.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.58,
+   "text": "Nine reps, three a ring. Later, shrink the rings and score only the right technique.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.08,
+   "text": "The save is half a keeper's job. This is the half nobody practises.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

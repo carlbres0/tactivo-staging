@@ -1,0 +1,293 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 22,
+  "length": 34
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    16.4,
+    5.6
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.6,
+    8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.4,
+    10.4
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.6,
+    12.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.4,
+    15.2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.6,
+    17.6
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.4,
+    20
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.6,
+    22.4
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.4,
+    24.8
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.2,
+    4.4
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5,
+    4.4
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    15.5,
+    4
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    9.8,
+    16.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.2,
+   4.75
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    5,
+    27.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    17.4,
+    5.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.2,
+    28.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.7,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    13.6,
+    8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.48,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    17.4,
+    10.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.26,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    13.6,
+    12.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.04,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    17.4,
+    15.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 13.82,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    13.6,
+    17.6
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 16.2,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    17.4,
+    20
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 18.57,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    15.2,
+    24.8
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 22.4,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     9.2,
+     17
+    ],
+    "w": 2.4,
+    "h": 22.8,
+    "color": "technical",
+    "label": "ladder = three"
+   },
+   {
+    "at": [
+     5,
+     17
+    ],
+    "w": 2.4,
+    "h": 22.8,
+    "color": "tactical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one lets a player pick their own level of risk.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A winding snake of cones down the channel, with three straight ladder lanes beside it.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.38,
+   "text": "Dribble the snake for one point, or risk a ladder lane for three.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.92,
+   "text": "A snapper defends each ladder. Lose the ball, jog back and choose again.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 22.4,
+   "text": "Tighten the curves of the snake, and give the ladders a second snapper.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 24.9,
+   "text": "The timid learn the ladder pays, and the wild learn the snake is there.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

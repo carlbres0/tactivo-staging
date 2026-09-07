@@ -1,0 +1,192 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    26
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16,
+    26
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    9,
+    26
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    9.8,
+    24.8
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    7,
+    22
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    11,
+    22
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6,
+    8
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    12,
+    8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.06,
+   8.35
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "d3",
+   "at": [
+    9,
+    26
+   ]
+  },
+  {
+   "t": 7.08,
+   "type": "pass",
+   "from": "gk",
+   "to": "d4",
+   "flight": 1.69
+  },
+  {
+   "t": 11.23,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.2,
+    24.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.72,
+   "type": "shoot",
+   "player": "d4",
+   "at": [
+    9,
+    26
+   ]
+  }
+ ],
+ "duration": 18.8,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Shots through a crowd, because that's how most goals actually arrive.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A goal, a keeper, and two bodies in the six yard box blocking the view.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.88,
+   "text": "Strikes come in from eighteen metres, and the keeper steps to find a sight line.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.54,
+   "text": "Deflections count. The ball stays live until it's dead, so react and save again.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 18.8,
+   "text": "Once they're reading it, let the blockers deflect the ball on purpose.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 21.3,
+   "text": "A step sideways beats a dive nine times in ten, and this proves it.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

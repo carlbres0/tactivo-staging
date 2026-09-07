@@ -1,0 +1,159 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 44.3,
+  "length": 28.87
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    31.11,
+    28.87
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    35.81,
+    19.02
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.7,
+    24.16
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.04,
+   24.1
+  ]
+ },
+ "events": [
+  {
+   "t": 1.68,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    25.28,
+    11.63
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.66,
+   "type": "pass",
+   "from": "a1",
+   "to": "n1",
+   "flight": 1.87,
+   "flightStyle": "clipped",
+   "loft": 4
+  },
+  {
+   "t": 4.51,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.82,
+    21.7
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.15,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    27.52,
+    9.61
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 10.78,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     35.71,
+     19.07
+    ],
+    "w": 5.75,
+    "h": 5.76,
+    "color": "technical",
+    "label": "near post"
+   },
+   {
+    "at": [
+     25.34,
+     11.6
+    ],
+    "w": 5.76,
+    "h": 5.75,
+    "color": "tactical",
+    "label": "spot hoop"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one turns corners into a measured skill instead of a hopeful swing.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two hoops in the box, one near post, one on the penalty spot.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.16,
+   "text": "Stand in one hoop. Every corner from the quadrant has to drop into it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.55,
+   "text": "Move between hoops without warning, so the check comes before every strike.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.78,
+   "text": "Eight corners, then switch to the other foot's side. Later, attack the drop yourself.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.28,
+   "text": "A corner landing where it was meant to is rarer than a goal.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

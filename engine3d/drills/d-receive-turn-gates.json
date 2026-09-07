@@ -1,0 +1,234 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 26.22,
+  "length": 30.78
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.83,
+    12.11
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.83,
+    15.45
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.83,
+    20.45
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.83,
+    23.78
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    15.89,
+    6.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12.56,
+    6.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    15.89,
+    26.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12.56,
+    26.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.94,
+    12.11
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.94,
+    15.45
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.94,
+    20.45
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3.94,
+    23.78
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.22,
+    7.95
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.22,
+    1
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.22,
+   1.35
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.7
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    16.34,
+    2.74
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 3.52,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    14.22,
+    12.11
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.96,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    24.92,
+    13.78
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.15,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    17.56,
+    13.78
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.6,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    20.06,
+    13.78
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 10.96,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.49
+  }
+ ],
+ "duration": 13.57,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Little ones will turn with the ball here without you asking once.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Six cone gates dotted round a twenty metre square, and a ball for each pair.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.39,
+   "text": "The first touch takes you through the gate. Not a stop, then a dribble.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.53,
+   "text": "Turn, inside hook, outside hook or sole roll, then pass through a different gate.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.57,
+   "text": "Change the turn every three minutes, and let the passer follow in to press gently.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.07,
+   "text": "Count gates for the last two minutes, and the touch starts answering a question.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

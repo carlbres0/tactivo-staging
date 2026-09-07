@@ -1,0 +1,198 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 11.69,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    9.69,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.69,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    5.85,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8.15,
+    21.69
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    7.38,
+    20.46
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.35,
+   20.81
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.69,
+    27.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    6.92,
+    26.62
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.46,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.85,
+    30.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.71,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    5.08,
+    28.92
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.07,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    4.31,
+    25.54
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.32,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    3.85,
+    25.08
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 11.4,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5.85,
+     22
+    ],
+    "w": 7.69,
+    "h": 40,
+    "label": "channel",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "One v one out wide, where the touchline does half the defending for you.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A full back defends a winger receiving in the channel, goal behind them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.42,
+   "text": "Show them outside and towards the line, never inside towards goal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.55,
+   "text": "Squeeze them to the touchline. Force them backwards, and the defender's won it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.4,
+   "text": "Once that's comfortable, add a supporting attacker for the overlap.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.9,
+   "text": "A cross delivered counts for the attacker, so coach the angle, not just the direction.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

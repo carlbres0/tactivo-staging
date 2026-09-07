@@ -1,0 +1,54 @@
+{
+  "v": 1,
+  "durationMs": 12000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 40}, {"t": 0.32, "x": 160, "y": 40},
+      {"t": 0.6, "x": 150, "y": 48}, {"t": 1, "x": 144, "y": 54}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 220, "y": 85}, {"t": 0.4, "x": 226, "y": 94},
+      {"t": 0.7, "x": 222, "y": 88}, {"t": 0.84, "x": 220, "y": 85},
+      {"t": 1, "x": 220, "y": 85}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 199, "y": 154}, {"t": 0.32, "x": 199, "y": 154},
+      {"t": 0.6, "x": 206, "y": 144}, {"t": 1, "x": 210, "y": 138}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 121, "y": 154}, {"t": 0.4, "x": 130, "y": 146}, {"t": 1, "x": 136, "y": 140}
+    ]},
+    {"team": "a", "label": "5", "kf": [
+      {"t": 0, "x": 100, "y": 85}, {"t": 0.66, "x": 100, "y": 85},
+      {"t": 0.84, "x": 94, "y": 96}, {"t": 1, "x": 90, "y": 104}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 168, "y": 44}, {"t": 0.12, "x": 168, "y": 44},
+    {"t": 0.32, "x": 207, "y": 150}, {"t": 0.4, "x": 204, "y": 148},
+    {"t": 0.58, "x": 108, "y": 89}, {"t": 0.66, "x": 110, "y": 86},
+    {"t": 0.84, "x": 228, "y": 89}, {"t": 1, "x": 228, "y": 89}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[168, 44], [207, 150]]},
+    {"kind": "pass", "pts": [[204, 148], [108, 89]]},
+    {"kind": "pass", "pts": [[110, 86], [228, 89]]},
+    {"kind": "run", "pts": [[160, 40], [144, 54]]},
+    {"kind": "run", "pts": [[199, 154], [210, 138]]},
+    {"kind": "run", "pts": [[100, 85], [90, 104]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Groups of five or six in a loose circle, one ball ticking between them."},
+    {"t": 0.24, "label": "Pass and move a step — the bomb never sits still."},
+    {"t": 0.52, "label": "Never to your neighbour: it has to skip somebody every time."},
+    {"t": 0.84, "label": "Whistle? Whoever holds it does three toe-taps, then straight back in."}
+  ],
+  "events": [
+    {"t": 0.36, "x": 232, "y": 168, "label": "TICK"},
+    {"t": 0.62, "x": 82, "y": 74, "label": "TICK"},
+    {"t": 0.92, "x": 250, "y": 74, "label": "WHISTLE!"}
+  ]
+}

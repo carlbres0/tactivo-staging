@@ -1,0 +1,48 @@
+{
+  "v": 1,
+  "durationMs": 10500,
+  "area": {"x": 60, "y": 55, "w": 200, "h": 100},
+  "cones": [[60, 55], [260, 55], [60, 155], [260, 155], [260, 88], [260, 122]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "S", "kf": [
+      {"t": 0, "x": 78, "y": 96}, {"t": 0.12, "x": 78, "y": 96},
+      {"t": 0.3, "x": 84, "y": 98}, {"t": 1, "x": 86, "y": 98}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 96}, {"t": 0.12, "x": 100, "y": 96},
+      {"t": 0.3, "x": 138, "y": 98}, {"t": 0.5, "x": 160, "y": 98},
+      {"t": 0.62, "x": 182, "y": 98}, {"t": 0.75, "x": 204, "y": 97},
+      {"t": 0.85, "x": 226, "y": 96}, {"t": 1, "x": 234, "y": 95}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 100, "y": 114}, {"t": 0.12, "x": 100, "y": 114},
+      {"t": 0.3, "x": 140, "y": 111}, {"t": 0.5, "x": 165, "y": 110},
+      {"t": 0.62, "x": 188, "y": 110}, {"t": 0.85, "x": 238, "y": 112},
+      {"t": 0.92, "x": 250, "y": 113}, {"t": 1, "x": 250, "y": 113}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 82, "y": 105}, {"t": 0.12, "x": 82, "y": 105},
+    {"t": 0.38, "x": 172, "y": 105}, {"t": 0.55, "x": 183, "y": 105},
+    {"t": 0.62, "x": 190, "y": 106}, {"t": 0.85, "x": 242, "y": 109},
+    {"t": 0.92, "x": 253, "y": 109}, {"t": 1, "x": 253, "y": 109}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[82, 105], [185, 105]]},
+    {"kind": "run", "pts": [[100, 96], [160, 98], [182, 98]]},
+    {"kind": "opp", "pts": [[100, 114], [165, 110], [188, 110]]},
+    {"kind": "dribble", "pts": [[190, 106], [253, 109]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two players start hip to hip; the server rolls the ball past them into the grid."},
+    {"t": 0.25, "label": "Both chase — the race to the ball is the first duel."},
+    {"t": 0.5, "label": "Shoulder to shoulder: arms in, same height, ball in reach — legal contact only."},
+    {"t": 0.8, "label": "The winner shields, carries, and stops the ball on the far line to score."}
+  ],
+  "events": [
+    {"t": 0.52, "x": 164, "y": 90, "label": "SHOULDER!"},
+    {"t": 0.64, "x": 192, "y": 92, "label": "WON IT!"},
+    {"t": 0.93, "x": 248, "y": 96, "label": "SCORE!"}
+  ]
+}

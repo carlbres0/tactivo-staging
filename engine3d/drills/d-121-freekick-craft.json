@@ -1,0 +1,167 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 12.56,
+  "length": 16
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.6,
+    10.4
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.28,
+    10.4
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    6.28,
+    16
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    5.29,
+    15.01
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    3.32,
+    2.99
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.28,
+   5.79
+  ]
+ },
+ "events": [
+  {
+   "t": 1.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.46,
+    4.96
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.12,
+    5.62
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.27,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 8.72,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    6.28,
+    16
+   ]
+  },
+  {
+   "t": 9.22,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    4.64,
+    14.19
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 10.47,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.61,
+    6.28
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 12.87,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one builds a run-up ritual that survives match-day nerves.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two cones stand in for a wall. You keep goal behind them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.32,
+   "text": "Three spots, centre and both wall edges. Each owns a technique, talked through once.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.3,
+   "text": "Five kicks a spot. Place, breathe, look, strike, and never change that order.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.87,
+   "text": "Once the strike is clean, call a corner as the run-up begins.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.37,
+   "text": "Craft is a curve, not a day, so track it across ten sessions.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

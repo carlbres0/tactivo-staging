@@ -1,0 +1,209 @@
+{
+  "v": 1,
+  "durationMs": 16000,
+  "area": {
+    "x": 20,
+    "y": 30,
+    "w": 200,
+    "h": 140
+  },
+  "cones": [
+    [
+      20,
+      30
+    ],
+    [
+      220,
+      30
+    ],
+    [
+      20,
+      170
+    ],
+    [
+      220,
+      170
+    ]
+  ],
+  "goals": [
+    {
+      "x": 20,
+      "y": 100.0,
+      "w": 30,
+      "side": "w"
+    }
+  ],
+  "players": [
+    {
+      "team": "a",
+      "label": "GK",
+      "kf": [
+        {
+          "t": 0,
+          "x": 34,
+          "y": 100
+        },
+        {
+          "t": 1,
+          "x": 34,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 78,
+          "y": 66
+        },
+        {
+          "t": 1,
+          "x": 78,
+          "y": 66
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "2",
+      "kf": [
+        {
+          "t": 0,
+          "x": 96,
+          "y": 124
+        },
+        {
+          "t": 1,
+          "x": 96,
+          "y": 124
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 78,
+        "y": 66
+      },
+      {
+        "t": 0.06,
+        "x": 78,
+        "y": 66
+      },
+      {
+        "t": 0.18,
+        "x": 38,
+        "y": 100
+      },
+      {
+        "t": 0.38,
+        "x": 38,
+        "y": 100
+      },
+      {
+        "t": 0.5,
+        "x": 96,
+        "y": 124
+      },
+      {
+        "t": 0.6,
+        "x": 96,
+        "y": 124
+      },
+      {
+        "t": 0.72,
+        "x": 28,
+        "y": 88
+      },
+      {
+        "t": 1,
+        "x": 28,
+        "y": 88
+      }
+    ],
+    "air": [
+      [
+        0.06,
+        0.18
+      ]
+    ]
+  },
+  "routes": [
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          78,
+          66
+        ],
+        [
+          38,
+          100
+        ]
+      ]
+    },
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          38,
+          100
+        ],
+        [
+          96,
+          124
+        ]
+      ]
+    },
+    {
+      "kind": "shot",
+      "pts": [
+        [
+          96,
+          124
+        ],
+        [
+          28,
+          88
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Two stations serving fast — one to the hands, one driven at goal."
+    },
+    {
+      "t": 0.18,
+      "label": "Hands behind the line of the ball, elbows in, chest over it."
+    },
+    {
+      "t": 0.38,
+      "label": "Return it first time and reset your feet before the next one."
+    },
+    {
+      "t": 0.72,
+      "label": "Driven low to the corner — get across and hold it."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.18,
+      "x": 38,
+      "y": 100,
+      "label": "HANDS"
+    },
+    {
+      "t": 0.72,
+      "x": 28,
+      "y": 88,
+      "label": "SAVE!"
+    }
+  ]
+}

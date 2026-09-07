@@ -1,0 +1,329 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.42,
+  "length": 35
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22.42,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.42,
+    35
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    35
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.21,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.21,
+    35
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.21,
+    8.75
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    16.58,
+    16.04
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.83,
+    16.04
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    12.21,
+    24.79
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.21,
+    13.13
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    14.4,
+    18.96
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    10.02,
+    18.96
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.39,
+   9.05
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.56,
+    17.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    12.94,
+    20.13
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.85
+  },
+  {
+   "t": 2.22,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.48,
+    10.94
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.67,
+   "type": "pass",
+   "from": "a2",
+   "to": "d3",
+   "flight": 0.55
+  },
+  {
+   "t": 3.67,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    11.48,
+    13.85
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.67,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    13.67,
+    18.23
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.38,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    12.21,
+    22.6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.52,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.94,
+    20.13
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.56,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    10.75,
+    11.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.56,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    9.29,
+    18.23
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.19,
+   "type": "collect",
+   "player": "a2"
+  },
+  {
+   "t": 7.19,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    12.21,
+    21.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.75,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    11.48,
+    24.79
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.64,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    11.48,
+    25.52
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 14.54,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     12.21,
+     17.5
+    ],
+    "w": 20.42,
+    "h": 35,
+    "label": "zone",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Normal game, with one extra rule that makes them value winning the ball back.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A thirty five by thirty area with two small goals at each end.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.36,
+   "text": "Regain the ball within four seconds of losing it and you earn a point.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.27,
+   "text": "The nearest three players press. Everyone else compacts the space behind them.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.54,
+   "text": "Track the regain points separately and read them out at the end. Triple for a quick goal.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.04,
+   "text": "Scoring regains out loud makes them visible, and teams start valuing them within one session.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

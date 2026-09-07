@@ -1,0 +1,244 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.38,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    9.63,
+    7.38
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.13,
+    7.69
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.63,
+    8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.13,
+    8.31
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    7,
+    11.5
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.25,
+    4.63
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    8.25,
+    3.75
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4,
+    11.75
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    7,
+    11.13
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   5.51,
+   4.86
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    8.88,
+    7.81
+   ],
+   "flight": 0.48,
+   "flightStyle": "ground"
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.88,
+    5.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.4,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.38,
+    7.13
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.22,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 5.22,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    7.63,
+    11
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.41,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    7,
+    11.5
+   ]
+  },
+  {
+   "t": 9.4,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    7,
+    11.13
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.97,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    4.88,
+    11.63
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 10.16,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.63,
+    6.38
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.37,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.5,
+    5.75
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 13.39,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    6.25,
+    11
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 15.77,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "One player, one ball, and a wall. That's the whole set up.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The board sits eight metres from goal, with the striker standing side on.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.73,
+   "text": "Strike it firmly in, then finish whatever comes back. Feet adjust before it arrives.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.77,
+   "text": "Change the entry angle every go, then serve two balls so the next arrives early.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 18.27,
+   "text": "The board is unfair on purpose, and scruffy finishes are the ones that count.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

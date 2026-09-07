@@ -1,0 +1,240 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    35.85
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    35.85
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.54,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    15.08,
+    15.85
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12,
+    23.54
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    13.54,
+    38.92
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.54,
+    38.15
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    13.54,
+    26.62
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.95,
+   16.17
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    13.23,
+    27.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.83
+  },
+  {
+   "t": 2.2,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14.77,
+    16.62
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.65,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 1.55
+  },
+  {
+   "t": 5.36,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.69,
+    24.31
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.81,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    14.31,
+    36.62
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.81,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.85,
+    37.38
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 9.12,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    13.54,
+    42
+   ]
+  }
+ ],
+ "duration": 11.99,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Every squad needs someone who can hold it up. This finds out who.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A striker zone at each end, with one striker in it, marked tight.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.2,
+   "text": "The ball goes early into the striker's feet, back to goal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.59,
+   "text": "A goal only counts if they received it exactly like that during the attack.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.99,
+   "text": "Once they're comfortable, the striker has to turn rather than set it back.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 14.49,
+   "text": "Turn, set back, or hold it up. All three count, so nobody's forced into one.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

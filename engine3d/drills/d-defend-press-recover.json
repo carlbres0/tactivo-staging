@@ -1,0 +1,190 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18.58,
+  "length": 27
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    16.58,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.58,
+    27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    27
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.98,
+    27
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    4.6,
+    27
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.29,
+    20.75
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    9.29,
+    5.13
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.29,
+   5.48
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    9.29,
+    12.42
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.5,
+    16.06
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.07,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    10.13,
+    16.38
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.64,
+   "type": "pass",
+   "from": "d1",
+   "to": "a1",
+   "flight": 0.4
+  },
+  {
+   "t": 5.49,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.54,
+    16.06
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.71,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.29,
+    16.58
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 11.37,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "How good is their defending when they're knackered? This finds out fast.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One defender faces three one v ones back to back, with no rest between them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.41,
+   "text": "Each attacker comes from a different angle. Central first, then wide right, then wide left.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.46,
+   "text": "Body shape holds under fatigue. Low, side on, patient, and the tackle waits.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.37,
+   "text": "Once they cope, make it four attacks in a row instead of three.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.87,
+   "text": "The third one is the honest one. That's the defending they'll do at the end.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,303 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8,
+    8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    2.9,
+    2.9
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    7.1,
+    2.9
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5,
+    7.1
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5,
+    4.88
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   3.25,
+   2.9
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    4.52,
+    7.28
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.42
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.48,
+    3.92
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.99,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    5.48,
+    6.92
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.24,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.43
+  },
+  {
+   "t": 3.24,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.12,
+    6.08
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.09,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7.28,
+    3.38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.28,
+   "type": "pass",
+   "from": "a3",
+   "to": "a1",
+   "flight": 0.48
+  },
+  {
+   "t": 5.34,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    4.1,
+    4.4
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.99,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    4.28,
+    3.68
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.1,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    3.77,
+    3.39
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.17,
+   "type": "tackle",
+   "player": "d1",
+   "from": "a1"
+  },
+  {
+   "t": 14.03,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    3.88,
+    4.09
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 14.5,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7.1,
+    2.9
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 14.83,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    3.2,
+    3.2
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 15.53,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5,
+    4.88
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 18.01,
+   "type": "pass",
+   "from": "d1",
+   "to": "a2",
+   "flight": 0.4
+  }
+ ],
+ "duration": 20.53,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5,
+     5
+    ],
+    "w": 6,
+    "h": 6,
+    "label": "grid",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Need a rondo the little ones can actually manage? Three against one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A small grid, three keeping the ball, and one chasing it in the middle.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.64,
+   "text": "The two off the ball always offer two different angles. That's the whole drill.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.78,
+   "text": "Five passes in a row is a point, and they count it out loud.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 20.53,
+   "text": "Once they're comfortable, two touches only for the three in possession.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 23.03,
+   "text": "Give it away and you're the defender, so nobody hides from a loose pass.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

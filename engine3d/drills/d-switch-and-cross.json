@@ -1,0 +1,321 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 32.57,
+  "length": 52
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    30.57,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    30.57,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    16.29,
+    52
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    16.29,
+    25.21
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    25.21,
+    43.07
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.36,
+    43.07
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    18.07,
+    46.64
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    14.5,
+    48.43
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    10.93,
+    44.86
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    26.11,
+    39.5
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    23.43,
+    44.86
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    18.07,
+    48.07
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    14.5,
+    49.86
+   ]
+  },
+  {
+   "id": "d5",
+   "team": "blue",
+   "number": 5,
+   "start": [
+    10.93,
+    46.29
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    16.29,
+    51.29
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   16.13,
+   25.52
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    25.21,
+    40.39
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    22.54,
+    45.75
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 1.89,
+   "flightStyle": "lofted",
+   "loft": 4.39
+  },
+  {
+   "t": 4.71,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    7.36,
+    48.43
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.25,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    15.39,
+    43.96
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.95,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 8.95,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    15.93,
+    46.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.13,
+   "type": "shoot",
+   "player": "a4",
+   "at": [
+    16.29,
+    52
+   ]
+  },
+  {
+   "t": 12.13,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    15.57,
+    45.57
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 15.14,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     16.29,
+     27
+    ],
+    "w": 28.57,
+    "h": 50,
+    "label": "channel",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Crossing into a packed box is a lottery. Move the box first, then cross.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Half a pitch, both wide channels marked, and one goal to attack.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.27,
+   "text": "The attack starts down one side and gets deliberately blocked by two defenders.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.69,
+   "text": "Switch to the far channel, where the winger is one against one, and cross.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.14,
+   "text": "Once they're finding it, the switch has to be a single pass, not a relay.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.64,
+   "text": "The far winger has to be wide already. Width is a decision made much earlier.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

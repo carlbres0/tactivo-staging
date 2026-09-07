@@ -1,0 +1,132 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 34.93,
+  "length": 26.3
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    17.47,
+    26.3
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    16.39,
+    22.79
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    26.25,
+    11.99
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   28.54,
+   13.07
+  ]
+ },
+ "events": [
+  {
+   "t": 1.92,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    27.73,
+    12.53
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.48,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 5.58,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    17.47,
+    26.3
+   ]
+  },
+  {
+   "t": 7.33,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    18.55,
+    7.4
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 14.24,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Six balls round the box edge, you in goal, and a running clock.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "The balls spaced along the arc, your player standing over the first one.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.99,
+   "text": "All six finished, any order, sprinting between them. The clock stops on the last shot.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.68,
+   "text": "Save what you can and call the time out loud.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.24,
+   "text": "Restock together, then race that time. Later, every second ball must go first time.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.74,
+   "text": "Tired legs shoot honestly, so the fifth and sixth balls are the real session.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

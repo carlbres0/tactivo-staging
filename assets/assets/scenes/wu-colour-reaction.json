@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 90, "y": 50, "w": 140, "h": 100},
+  "cones": [[100, 60], [220, 60], [100, 140], [220, 140]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 100}, {"t": 0.4, "x": 160, "y": 100},
+      {"t": 0.55, "x": 220, "y": 60}, {"t": 0.7, "x": 220, "y": 60},
+      {"t": 1, "x": 160, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 130, "y": 80}, {"t": 0.5, "x": 190, "y": 120},
+      {"t": 1, "x": 140, "y": 90}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 120, "y": 140}, {"t": 0.5, "x": 120, "y": 140},
+      {"t": 0.75, "x": 100, "y": 60}, {"t": 1, "x": 130, "y": 90}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 120, "y": 140}, {"t": 0.5, "x": 120, "y": 140},
+    {"t": 0.75, "x": 100, "y": 60}, {"t": 1, "x": 130, "y": 90}
+  ], "air": []},
+  "routes": [
+    {"kind": "run", "pts": [[160, 100], [220, 60]]},
+    {"kind": "run", "pts": [[220, 60], [160, 100]]},
+    {"kind": "run", "pts": [[130, 80], [190, 120]]},
+    {"kind": "dribble", "pts": [[120, 140], [100, 60]]},
+    {"kind": "dribble", "pts": [[100, 60], [130, 90]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Players jog inside the area; on a colour call, sprint to touch that cone and return."},
+    {"t": 0.4, "label": "Alternate the movement: sprint, side-shuffle, backpedal."},
+    {"t": 0.5, "label": "Add a ball each once the group moves well — dribble to the cone instead."},
+    {"t": 0.7, "label": "Six to eight calls, with recovery in between."}
+  ],
+  "events": [
+    {"t": 0.55, "x": 220, "y": 60, "label": "CALLED"}
+  ]
+}

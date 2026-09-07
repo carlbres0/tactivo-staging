@@ -1,0 +1,67 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 200, "y": 40, "w": 100, "h": 120},
+  "cones": [[200, 40], [300, 40], [200, 160], [300, 160]],
+  "goals": [
+    {"x": 294, "y": 100.0, "w": 32, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 245, "y": 78},
+      {"t": 0.25, "x": 248, "y": 80},
+      {"t": 0.35, "x": 220, "y": 95},
+      {"t": 1, "x": 215, "y": 98}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 245, "y": 122},
+      {"t": 0.4, "x": 246, "y": 120},
+      {"t": 1, "x": 246, "y": 120}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 285, "y": 100},
+      {"t": 0.35, "x": 283, "y": 98},
+      {"t": 1, "x": 283, "y": 98}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 50},
+      {"t": 0.25, "x": 170, "y": 50},
+      {"t": 1, "x": 172, "y": 52}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 250, "y": 80},
+      {"t": 0.25, "x": 250, "y": 80},
+      {"t": 0.4, "x": 248, "y": 82},
+      {"t": 1, "x": 248, "y": 82}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 250, "y": 120},
+      {"t": 0.4, "x": 248, "y": 118},
+      {"t": 1, "x": 248, "y": 118}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 170, "y": 50},
+      {"t": 0.05, "x": 170, "y": 50},
+      {"t": 0.25, "x": 250, "y": 80},
+      {"t": 0.35, "x": 220, "y": 95},
+      {"t": 1, "x": 220, "y": 95}
+    ],
+    "air": [[0.05, 0.25]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[170, 50], [250, 80]]},
+    {"kind": "pass", "pts": [[250, 80], [220, 95]]},
+    {"kind": "run", "pts": [[245, 122], [246, 120]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Each defender is assigned one attacker for the whole round \u2014 a pure duel."},
+    {"t": 0.05, "label": "Cross comes in \u2014 ball and marker must both stay in sight, never turn the back."},
+    {"t": 0.25, "label": "First duel won in the air \u2014 tight marking pays off before the ball arrives."},
+    {"t": 0.35, "label": "Cleared well clear of the box while the second marker holds their duel untouched."}
+  ],
+  "events": [
+    {"t": 0.25, "x": 250, "y": 80, "label": "DUEL WON"}
+  ]
+}

@@ -1,0 +1,272 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 27.08,
+  "length": 42
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    27.69
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    27.69
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    14.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    25.08,
+    14.77
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    13.54,
+    42
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    13.54,
+    39.69
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    8.92,
+    35.08
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    18.15,
+    35.08
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.54,
+    32
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    7.38,
+    29.69
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    19.69,
+    29.69
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    12.77,
+    26.62
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.29,
+   39.44
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    17.85,
+    34.31
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    7.38,
+    33.54
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    16.62,
+    32.77
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    12.77,
+    37.38
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "d1",
+   "to": "d2",
+   "flight": 0.65
+  },
+  {
+   "t": 2.02,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.23,
+    34.62
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.21,
+   "type": "pass",
+   "from": "d2",
+   "to": "a4",
+   "flight": 0.45
+  },
+  {
+   "t": 6.27,
+   "type": "shoot",
+   "player": "a4",
+   "at": [
+    13.54,
+    42
+   ]
+  }
+ ],
+ "duration": 9.1,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Keepers and defenders have to play out short. No clearing it long.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A normal match on a pitch split into thirds.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2,
+   "text": "That short pass is the trigger, and the press springs on it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 4.55,
+   "text": "Win it high, score within five seconds, and the goal counts double.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.1,
+   "text": "Later, any goal after a regain counts double, wherever it was won.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 11.6,
+   "text": "The first pass after winning it decides everything. Forward if it's on.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 22,
+  "length": 22
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    20,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    20,
+    20
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    20
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    16.4,
+    7.4
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    16.4,
+    16.4
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5.6,
+    16.4
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    5.6,
+    7.4
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   16.4,
+   7.75
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    11.9,
+    2.9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.9
+  },
+  {
+   "t": 2.05,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.3,
+    7.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.72,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 1.08
+  },
+  {
+   "t": 4.57,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    19.1,
+    11.9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.41,
+   "type": "dribble",
+   "player": "a3",
+   "to": [
+    9.2,
+    9.2
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 11.2,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     11,
+     11
+    ],
+    "w": 18,
+    "h": 18,
+    "label": "square",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Half the group has a ball, half hasn't. Everyone's moving.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A square, no cones inside it, and the whole group circulating.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.12,
+   "text": "Pass to a free player, then sprint away to find new space.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.72,
+   "text": "Build it through. Pass and follow, then a one two, then pass and move away.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.2,
+   "text": "Raise the tempo every two minutes until the first touch is out of their feet.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.7,
+   "text": "Watch the player after they pass. The run they make next is the point.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,270 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 25.25,
+  "length": 39
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    23.25,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    23.25,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.88,
+    34.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.38,
+    34.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.88,
+    34.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.38,
+    34.5
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.63,
+    4.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    17.63,
+    8.25
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    12.63,
+    8.25
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    7.63,
+    8.25
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    20.13,
+    18.25
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.63,
+    11.38
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    14.5,
+    14.5
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    10.75,
+    14.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.84,
+   8.53
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    18.25,
+    17
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    11.38,
+    22
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a3",
+   "to": "a5",
+   "flight": 1.04,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.25,
+    8.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.14,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    15.13,
+    13.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.58,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    18.88,
+    19.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.86,
+   "type": "dribble",
+   "player": "a5",
+   "to": [
+    17.63,
+    34.75
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 10.84,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three ways out of a press. Through it, round it, or over it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A back three and a keeper, against two forwards and a midfielder.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.08,
+   "text": "The press jumps the centre back, and one of the three routes is on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.5,
+   "text": "Clip it over the top to the winger, then carry it through a wide gate.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.84,
+   "text": "Each round you ban one route. Once they cope, ban two and leave one.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.34,
+   "text": "Banning a route is how you teach a habit, instead of a team with one answer.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

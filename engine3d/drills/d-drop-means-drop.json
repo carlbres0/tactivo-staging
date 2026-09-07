@@ -1,0 +1,298 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 19
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    13.67,
+    5.33
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.5,
+    9.5
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    12,
+    12.83
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    9.5,
+    7
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    8.67,
+    11.17
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    6.17,
+    8.67
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    6.17,
+    13.67
+   ]
+  },
+  {
+   "id": "d4",
+   "team": "blue",
+   "number": 4,
+   "start": [
+    5.33,
+    5.33
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   13.44,
+   5.6
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    10.83,
+    13.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    11.5,
+    8.33
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    7.33,
+    12.83
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    6.5,
+    6.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    13.17,
+    9
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.17,
+   "type": "pass",
+   "from": "a1",
+   "to": "d1",
+   "flight": 0.4
+  },
+  {
+   "t": 3.74,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.5,
+    10.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.02,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    12.33,
+    7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.19,
+   "type": "pass",
+   "from": "d1",
+   "to": "d2",
+   "flight": 0.7
+  },
+  {
+   "t": 5.19,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    8.83,
+    12.83
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.19,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    7.33,
+    9.17
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.19,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    7.83,
+    12
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.19,
+   "type": "move",
+   "player": "d4",
+   "to": [
+    7,
+    6.83
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.77,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.17,
+    8.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.04,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    10.83,
+    10
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.05,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.67,
+    11.17
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 10.63,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one teaches counter pressing in the first two seconds, without a word.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Four v four keep-ball in an eighteen metre square, no goals.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.19,
+   "text": "Lose the ball and it is dead the moment the other team touches it.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.38,
+   "text": "Winners restart with a free pass, and five passes after a steal counts double.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.63,
+   "text": "Later the free pass goes, and winners must play under pressure straight away.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 13.13,
+   "text": "The two seconds after losing it is the whole of counter pressing.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

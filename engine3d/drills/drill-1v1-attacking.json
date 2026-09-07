@@ -1,0 +1,202 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14.8,
+  "length": 31.7
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    12.8,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12.8,
+    31.7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    31.7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.4,
+    6.05
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    7.54,
+    31.7
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.4,
+    7.05
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    7.4,
+    15.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.4,
+   7.4
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8.07,
+    14.83
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.4,
+    11.45
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.94,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.1,
+    16.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.41,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.05,
+    15.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.16,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.78,
+    16.18
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.39,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.07,
+    28.33
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.64,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    7.54,
+    31.7
+   ]
+  }
+ ],
+ "duration": 14.4,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The simplest test in football, and still the most useful one you can run.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "An attacker on the ball at the cone, a defender goal-side, a small goal behind.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.76,
+   "text": "Sell the fake with the hips and shoulders, and commit the defender first.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.24,
+   "text": "Beat them, accelerate into the space, and finish first time into the small goal.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.4,
+   "text": "Once they're beating them, ask for the head up earlier and the finish sooner.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.9,
+   "text": "Every rep ends in a decision, and both players get a proper contest.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

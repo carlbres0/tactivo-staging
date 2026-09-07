@@ -1,0 +1,147 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24,
+  "length": 20.33
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    22,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22,
+    20.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    20.33
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12,
+    20.33
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    2.83,
+    5.33
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7,
+    5.33
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   3.18,
+   5.33
+  ]
+ },
+ "events": [
+  {
+   "t": 2.4,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12,
+    9.5
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 4.07,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.01
+  },
+  {
+   "t": 6.7,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    12,
+    20.33
+   ]
+  }
+ ],
+ "duration": 9.87,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "First time finishes look flashy, but they're mostly about arriving late and staying low.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Servers on both flanks deliver cut backs along the floor to the penalty spot.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.95,
+   "text": "The striker waits in the D, then arrives late onto the ball.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.42,
+   "text": "First time only, no touch allowed. Side foot for round one, laces for round two.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.87,
+   "text": "Once they're clean, vary the pace of the cut backs so they adjust the strike.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 12.37,
+   "text": "Body over the ball, follow through low. Leaning back is why they end up high.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

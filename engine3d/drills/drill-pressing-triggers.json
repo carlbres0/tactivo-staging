@@ -1,0 +1,212 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.2,
+  "length": 31
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    18.2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.2,
+    29
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    29
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.1,
+    15.5
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.8,
+    7.4
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.15,
+    20.9
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.7,
+    11.45
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.1,
+   15.5
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    10.1,
+    15.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.45,
+    18.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.4,
+    14.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.39,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 5.39,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.02,
+    16.58
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.39,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.8,
+    20.9
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.39,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    5.38,
+    12.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.84,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    14.15,
+    10.1
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 13.52,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Players press when they feel like it, not when the moment actually says so.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everyone jogging loosely, scanning for the cue you're about to give.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.73,
+   "text": "The trigger is a heavy touch under pressure, and the nearest player springs.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.14,
+   "text": "The others cover the passing lanes, so it gets won as a unit.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.52,
+   "text": "Once they're springing together, recover the shape before the next cue comes.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.02,
+   "text": "Press then reset. The recovery matters as much as the sprint that wins it.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

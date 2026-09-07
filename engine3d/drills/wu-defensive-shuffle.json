@@ -1,0 +1,220 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 12,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    10,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10,
+    12
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    12
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6,
+    7.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.4,
+   1.6
+  ],
+  "static": true
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.6,
+    5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8.4,
+    7.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.67,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    3.6,
+    7.8
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.76,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    3.4,
+    5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.12,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8,
+    7.8
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.31,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.2,
+    5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.48,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7.6,
+    11.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.77,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.6,
+    10.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.4,
+    8.2
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.12,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6,
+    5.2
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 14.99,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Lunging is what gets a defender turned. Warm the low stance up first.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Pairs facing each other in a small grid, no ball yet.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.25,
+   "text": "The attacker moves side to side and the defender mirrors, low and side on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.29,
+   "text": "On a random count the attacker breaks. The defender turns and recovers goal side.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.99,
+   "text": "Swap after thirty seconds, three rounds each. Then give the attacker a ball.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.49,
+   "text": "A defender who's already low doesn't have to lunge.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

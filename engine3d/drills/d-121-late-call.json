@@ -1,0 +1,146 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18.77,
+  "length": 29
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8.81,
+    13.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.51,
+    17.91
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.51,
+    20.18
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.51,
+    6.54
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.51,
+    8.82
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    4.31,
+    13.33
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    5.39,
+    23.58
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   4.66,
+   13.32
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.8,
+    13.16
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.48,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    15.89,
+    7.67
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 13.18,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two coloured gates, a run from fifteen metres, and no idea which one.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A box, two gates at the far end, a decision cone five metres out.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.95,
+   "text": "They dribble at both gates. You call the colour as they reach that cone.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.54,
+   "text": "Adjust and finish through the called gate without slowing. Ten runs a set.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.18,
+   "text": "Later, lie one time in five. The pointed hand beats the word.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 15.68,
+   "text": "The cone creeps closer each week. Match decisions arrive with no cone at all.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

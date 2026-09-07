@@ -1,0 +1,307 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 26.86,
+  "length": 40
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    0
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    24.86,
+    40
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    40
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    20.57,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    6.29,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    20.57,
+    40
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    6.29,
+    40
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    19.86,
+    17.14
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    20.57,
+    22.86
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    18.43,
+    20
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    6.29,
+    17.14
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    19.14,
+    21.43
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    20.57,
+    24.29
+   ]
+  },
+  {
+   "id": "d3",
+   "team": "blue",
+   "number": 3,
+   "start": [
+    6.29,
+    20
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   19.9,
+   17.49
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    19.86,
+    22.14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    19.86,
+    22.86
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.58
+  },
+  {
+   "t": 2.06,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    19.14,
+    20.71
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.4,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.4
+  },
+  {
+   "t": 3.96,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    19.14,
+    21.43
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.96,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    19.86,
+    23.57
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.41,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 1.04,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 6.62,
+   "type": "move",
+   "player": "d3",
+   "to": [
+    6.29,
+    27.14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.07,
+   "type": "dribble",
+   "player": "a4",
+   "to": [
+    6.29,
+    28.57
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.22,
+   "type": "dribble",
+   "player": "a4",
+   "to": [
+    6.29,
+    40
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 17.86,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     13.43,
+     20
+    ],
+    "w": 22.86,
+    "h": 40,
+    "label": "channel",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Football drags everybody towards the ball, and the far winger goes cold. Use that.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A goal in each wide channel, and you can only score where you outnumber them.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5,
+   "text": "Overload the near channel on purpose and draw the defenders across.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.5,
+   "text": "Then switch within two passes, because the far channel is standing empty.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.86,
+   "text": "Once that's landing, switches must skip a line. One clipped ball, no relay.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 20.36,
+   "text": "Draw them in before you play away. A switch from a standing start switches nothing.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

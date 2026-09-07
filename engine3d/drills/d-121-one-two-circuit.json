@@ -1,0 +1,163 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14.5,
+    4.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.5,
+    14.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.5,
+    14.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.5,
+    4.5
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    9.5,
+    9.5
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    12.75,
+    13.75
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.4,
+   13.72
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.17,
+    13.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.62,
+   "type": "pass",
+   "from": "a1",
+   "to": "n1",
+   "flight": 0.41
+  },
+  {
+   "t": 5.65,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.41
+  },
+  {
+   "t": 7.68,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.33,
+    13.33
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.61,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.17,
+    12
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 13.92,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Four cones, one lap, and a one-two off you at every single corner.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A square circuit with you standing in the middle as the wall.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.78,
+   "text": "They dribble cone to cone, and round each corner with a one-two.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.58,
+   "text": "Your return goes into their path, never back to the feet that passed.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.92,
+   "text": "A clean lap scores. Reverse the direction, then race two laps with first-time returns.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.42,
+   "text": "Passing into where a player will be is what teaches them to move afterwards.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

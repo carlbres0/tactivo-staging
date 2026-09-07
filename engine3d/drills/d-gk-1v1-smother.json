@@ -1,0 +1,187 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19.91,
+  "length": 27
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17.91,
+    27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17.91,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    9.95,
+    27
+   ]
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    9.95,
+    25.64
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.5,
+    10.18
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    9.95,
+    3.14
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.95,
+   3.49
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    9.95,
+    15.86
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.51,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    9.95,
+    18.14
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 4.49,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    9.95,
+    16.71
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.56,
+   "type": "tackle",
+   "player": "gk",
+   "from": "d1"
+  },
+  {
+   "t": 11.49,
+   "type": "pass",
+   "from": "gk",
+   "to": "a1",
+   "flight": 0.8
+  }
+ ],
+ "duration": 15.74,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Does your keeper hit the deck too early in a one v one?",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A striker breaks through from twenty five metres against a full goal.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.2,
+   "text": "Three choices. Close, hold, or spread, and the ball decides which.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 12.59,
+   "text": "Close fast while the ball is travelling, then slow and set as they look up.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 15.74,
+   "text": "Once they're reading it, let the striker pass to a supporting attacker instead.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 18.24,
+   "text": "Stay big and stay up. Going to ground early makes the striker's decision for them.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

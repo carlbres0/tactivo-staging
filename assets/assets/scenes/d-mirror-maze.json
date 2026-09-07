@@ -1,0 +1,54 @@
+{
+  "v": 1,
+  "durationMs": 10000,
+  "area": {"x": 25, "y": 10, "w": 270, "h": 180},
+  "cones": [
+    [160, 12], [160, 36],
+    [160, 58], [160, 80], [160, 102], [160, 124], [160, 146],
+    [160, 166], [160, 190]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 100}, {"t": 0.12, "x": 102, "y": 96},
+      {"t": 0.34, "x": 108, "y": 52}, {"t": 0.46, "x": 110, "y": 62},
+      {"t": 0.62, "x": 120, "y": 140}, {"t": 0.84, "x": 160, "y": 178},
+      {"t": 1, "x": 200, "y": 180}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 220, "y": 100}, {"t": 0.16, "x": 218, "y": 94},
+      {"t": 0.4, "x": 214, "y": 58}, {"t": 0.56, "x": 212, "y": 70},
+      {"t": 0.72, "x": 206, "y": 110}, {"t": 1, "x": 196, "y": 150}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 108, "y": 106}, {"t": 0.12, "x": 110, "y": 102},
+    {"t": 0.34, "x": 114, "y": 58}, {"t": 0.46, "x": 116, "y": 68},
+    {"t": 0.62, "x": 126, "y": 146}, {"t": 0.84, "x": 164, "y": 182},
+    {"t": 1, "x": 204, "y": 184}
+  ], "air": []},
+  "balls": [
+    {"kf": [
+      {"t": 0, "x": 228, "y": 104}, {"t": 0.16, "x": 226, "y": 98},
+      {"t": 0.4, "x": 222, "y": 62}, {"t": 0.56, "x": 220, "y": 74},
+      {"t": 0.72, "x": 214, "y": 114}, {"t": 1, "x": 214, "y": 116}
+    ], "air": []}
+  ],
+  "routes": [
+    {"kind": "dribble", "pts": [[108, 106], [114, 58]]},
+    {"kind": "dribble", "pts": [[114, 58], [126, 146]]},
+    {"kind": "dribble", "pts": [[126, 146], [204, 184]]},
+    {"kind": "opp", "pts": [[220, 100], [214, 58]]},
+    {"kind": "opp", "pts": [[214, 58], [196, 150]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Pairs face each other across a line of flat cones, one ball each side."},
+    {"t": 0.2, "label": "The leader dribbles side to side and the shadow must mirror them exactly."},
+    {"t": 0.48, "label": "The feint that sends the shadow the wrong way is the whole game."},
+    {"t": 0.76, "label": "Escape by crossing the line at an open gate — a clean escape is a point."}
+  ],
+  "events": [
+    {"t": 0.5, "x": 92, "y": 96, "label": "FEINT"},
+    {"t": 0.88, "x": 196, "y": 164, "label": "ESCAPE"}
+  ]
+}

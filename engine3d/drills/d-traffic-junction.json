@@ -1,0 +1,179 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 29,
+  "length": 29
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    24.5,
+    14.5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    3.94,
+    11.17
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    14.5,
+    4.5
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    12.83,
+    24.5
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   24.15,
+   14.48
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    25.61,
+    11.44
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    14.5,
+    24.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    12.83,
+    3.39
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    15.61,
+    14.08
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.83,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    2.97,
+    14.5
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 17.31,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     14.5,
+     14.5
+    ],
+    "w": 25,
+    "h": 7.5,
+    "color": "technical"
+   },
+   {
+    "at": [
+     14.5,
+     14.5
+    ],
+    "w": 7.5,
+    "h": 25,
+    "color": "tactical",
+    "label": "the junction"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Want a dribbling game that forces heads up? Send them across each other.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Two channels crossing in the middle like roads at a junction, ball each.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 3.81,
+   "text": "Half travel north to south, half east to west, all at the same time.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 13.5,
+   "text": "No stopping in the junction and no crashes. Ten crossings, then swap.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.31,
+   "text": "Put a traffic warden in the junction who may pinch any loose ball.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 19.81,
+   "text": "Collisions mean heads are down, so shrink the junction rather than slowing them.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

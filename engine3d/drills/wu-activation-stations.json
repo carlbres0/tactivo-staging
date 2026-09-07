@@ -1,0 +1,408 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 19,
+  "length": 29.11
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    17,
+    6.57
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    17,
+    21.57
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    6.57
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    21.57
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    15.29,
+    7.86
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.64,
+    9.14
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    15.29,
+    20.28
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    14.64,
+    19
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    3.71,
+    20.28
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    4.36,
+    19
+   ]
+  },
+  {
+   "id": "a7",
+   "team": "white",
+   "number": 7,
+   "start": [
+    3.71,
+    7.86
+   ]
+  },
+  {
+   "id": "a8",
+   "team": "white",
+   "number": 8,
+   "start": [
+    4.36,
+    9.14
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   15.05,
+   8.12
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.07,
+    20.93
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    3.71,
+    7.86
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    15.29,
+    20.28
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.66,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    4.36,
+    19
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.66,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    15.29,
+    7.86
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.66,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    14.64,
+    19
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.12,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    4.36,
+    9.14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.12,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    14.64,
+    9.14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.99,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    14.86,
+    1
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.99,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    11.11,
+    1.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.99,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    4.68,
+    1.64
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.22,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    7.89,
+    1.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.68,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.71,
+    1.64
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.68,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    3.07,
+    1.64
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 9.14,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    9.5,
+    1.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 9.14,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    6.29,
+    1.64
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 14.13,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    14.86,
+    28.11
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.13,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    4.68,
+    27.89
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.15,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    11.11,
+    27.78
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 14.38,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    7.89,
+    27.57
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 15.23,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    3.07,
+    27.36
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 15.91,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    9.5,
+    27.14
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 17.35,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    6.29,
+    27.03
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 17.88,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    12.71,
+    26.93
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 26.81,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "It's freezing, they're stiff, and kick off is in an hour.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A square with a different exercise waiting at each corner.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 8.04,
+   "text": "Forty seconds on. Glute bridges, lunges with a twist, side planks, calf hops.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 20.38,
+   "text": "Jog the diagonal to the next corner. Two circuits, then skips into strides.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 26.81,
+   "text": "Add a ball, so the jog between corners becomes a dribble.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 29.31,
+   "text": "Muscles woken properly, so the first sprint isn't the first shock.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,212 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 32.85,
+  "length": 54
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    30.85,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    30.85,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    52
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    27.96,
+    5.85
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    25.08,
+    5.85
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    7.77,
+    5.85
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    4.88,
+    5.85
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   27.96,
+   6.2
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    25.08,
+    48.15
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    7.77,
+    48.15
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    4.88,
+    48.15
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    27.96,
+    48.15
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.97,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    18.35,
+    28.92
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.97,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    14.5,
+    25.08
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.97,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    14.5,
+    28.92
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 13.22,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    18.35,
+    25.08
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 24.39,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Struggling to get anything out of them in the circle? Walk them round the pitch instead.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Pairs walk a slow lap together while the heart rate comes down.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 9.76,
+   "text": "Each pair agrees one thing that went well and one thing to work on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 20.73,
+   "text": "Back in the circle, every pair shares their two points. Quick, no lectures.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 24.39,
+   "text": "Finish with hamstring and calf stretches while they're still talking.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 26.89,
+   "text": "Players say more walking side by side than standing in a circle being looked at.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

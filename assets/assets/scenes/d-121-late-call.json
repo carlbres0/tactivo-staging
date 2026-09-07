@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 10, "y": 11.4, "w": 300, "h": 177.3},
+  "cones": [[146, 107], [200.9, 38.6], [228.2, 38.6], [64.5, 38.6], [91.8, 38.6]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 146, "y": 161}, {"t": 0.12, "x": 146, "y": 161},
+      {"t": 0.34, "x": 146, "y": 120}, {"t": 0.46, "x": 144, "y": 104},
+      {"t": 0.62, "x": 124, "y": 84}, {"t": 0.82, "x": 96, "y": 54},
+      {"t": 1, "x": 78, "y": 32}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 269, "y": 148}, {"t": 1, "x": 269, "y": 148}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 146, "y": 153}, {"t": 0.12, "x": 146, "y": 153},
+    {"t": 0.34, "x": 146, "y": 112}, {"t": 0.46, "x": 144, "y": 96},
+    {"t": 0.62, "x": 122, "y": 76}, {"t": 0.82, "x": 94, "y": 46},
+    {"t": 1, "x": 78, "y": 22}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[146, 153], [146, 112], [122, 76], [78, 22]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two coloured gates ahead — the player dribbles at them from fifteen metres."},
+    {"t": 0.3, "label": "Nothing is called until the ball reaches the decision cone, five metres out."},
+    {"t": 0.48, "label": "\"RED!\" — only now. Adjust and finish through the called gate."},
+    {"t": 0.8, "label": "Ten runs without slowing down; the cone creeps closer every week."}
+  ],
+  "events": [
+    {"t": 0.5, "x": 186, "y": 100, "label": "\"RED!\""},
+    {"t": 0.96, "x": 60, "y": 24, "label": "THROUGH"}
+  ]
+}

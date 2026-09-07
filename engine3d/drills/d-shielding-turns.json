@@ -1,0 +1,191 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 12,
+  "length": 12
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    10,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10,
+    10
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    10
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6,
+    6
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5.5,
+    6.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.25,
+   5.75
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7,
+    5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6,
+    6.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.53,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.5,
+    5.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.78,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8,
+    3
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.66,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7,
+    5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.91,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.07,
+    2.37
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 8.18,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     6,
+     6
+    ],
+    "w": 8,
+    "h": 8,
+    "label": "square",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Got players who panic the moment somebody's on their back? Start here.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One attacker keeps the ball inside a small grid against one defender.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 2.45,
+   "text": "Body between ball and defender, arm across, ball on the far foot.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.54,
+   "text": "On the whistle, turn out of the shield and dribble through any side to score.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 8.18,
+   "text": "Once they're winning it easily, shrink the grid so there's less room.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 10.68,
+   "text": "Shielding looks like strength, but it's balance. Low, wide, never square on.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

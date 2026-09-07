@@ -1,0 +1,189 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 15,
+  "length": 17.38
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    15,
+    7.5
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    0,
+    7.5
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    7.5,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    7.5,
+    15
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.5,
+    7.5
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    8.25,
+    5.63
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.54,
+   7.15
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.88,
+    4.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8.25,
+    2.88
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 3.78,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7.63,
+    3.5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.03,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7,
+    4.88
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.38,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.59,
+    6.44
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.15,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7.63,
+    11.25
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.91,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.25,
+    16.88
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 13.78,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Want a one v one that punishes players for being predictable? This is it.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "One attacker, one defender, a small gate on each side of the box. Any of the four counts.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.38,
+   "text": "Drive at one gate to commit the defender, then cut back the other way.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 9.92,
+   "text": "They can't cover all four.",
+   "hold": 1.73,
+   "beat": "action"
+  },
+  {
+   "t": 13.78,
+   "text": "Once they're comfortable, shrink the box, or make it two touches.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 16.28,
+   "text": "It's quick, it's competitive, and every rep ends in a decision.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

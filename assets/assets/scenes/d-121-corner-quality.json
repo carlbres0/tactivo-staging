@@ -1,0 +1,229 @@
+{
+  "v": 1,
+  "durationMs": 14000,
+  "area": {
+    "x": 110,
+    "y": 10,
+    "w": 180,
+    "h": 120
+  },
+  "zones": [
+    {
+      "x": 126.6,
+      "y": 40.9,
+      "w": 25.7,
+      "h": 25.7,
+      "label": "near post"
+    },
+    {
+      "x": 172.9,
+      "y": 74.3,
+      "w": 25.7,
+      "h": 25.7,
+      "label": "spot hoop"
+    }
+  ],
+  "cones": [],
+  "goals": [
+    {
+      "x": 160,
+      "y": 17.7,
+      "w": 16,
+      "side": "n"
+    }
+  ],
+  "players": [
+    {
+      "team": "n",
+      "label": "C",
+      "kf": [
+        {
+          "t": 0,
+          "x": 139,
+          "y": 54
+        },
+        {
+          "t": 0.12,
+          "x": 139,
+          "y": 54
+        },
+        {
+          "t": 0.3,
+          "x": 186,
+          "y": 87
+        },
+        {
+          "t": 0.7,
+          "x": 186,
+          "y": 87
+        },
+        {
+          "t": 0.78,
+          "x": 176,
+          "y": 96
+        },
+        {
+          "t": 1,
+          "x": 172,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 269,
+          "y": 31
+        },
+        {
+          "t": 0.16,
+          "x": 269,
+          "y": 31
+        },
+        {
+          "t": 0.3,
+          "x": 271,
+          "y": 29
+        },
+        {
+          "t": 0.44,
+          "x": 273,
+          "y": 28
+        },
+        {
+          "t": 0.6,
+          "x": 268,
+          "y": 36
+        },
+        {
+          "t": 1,
+          "x": 264,
+          "y": 42
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 276,
+        "y": 23
+      },
+      {
+        "t": 0.34,
+        "x": 276,
+        "y": 23
+      },
+      {
+        "t": 0.58,
+        "x": 186,
+        "y": 87,
+        "cx": 232,
+        "cy": 40
+      },
+      {
+        "t": 0.7,
+        "x": 186,
+        "y": 87
+      },
+      {
+        "t": 0.78,
+        "x": 176,
+        "y": 96
+      },
+      {
+        "t": 1,
+        "x": 176,
+        "y": 96
+      }
+    ],
+    "air": [
+      [
+        0.34,
+        0.58
+      ]
+    ]
+  },
+  "routes": [
+    {
+      "kind": "pass",
+      "curve": true,
+      "pts": [
+        [
+          276,
+          23
+        ],
+        [
+          232,
+          40
+        ],
+        [
+          186,
+          87
+        ]
+      ]
+    },
+    {
+      "kind": "run",
+      "pts": [
+        [
+          139,
+          54
+        ],
+        [
+          186,
+          87
+        ]
+      ]
+    },
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          186,
+          87
+        ],
+        [
+          176,
+          96
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "A hoop at the near post, a hoop on the spot — the coach stands in one."
+    },
+    {
+      "t": 0.2,
+      "label": "He switches hoops without warning: check before every strike."
+    },
+    {
+      "t": 0.4,
+      "label": "Corner from the quadrant — drop it into the hoop he is in."
+    },
+    {
+      "t": 0.7,
+      "label": "His clean first touch scores it. Eight corners, then the other foot."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.28,
+      "x": 150,
+      "y": 34,
+      "label": "HE MOVED"
+    },
+    {
+      "t": 0.6,
+      "x": 206,
+      "y": 78,
+      "label": "IN THE HOOP"
+    }
+  ]
+}

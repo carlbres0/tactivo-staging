@@ -1,0 +1,538 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 21.14,
+  "length": 44
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    19.14,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.14,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.14,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.86,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.57,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    6.29,
+    22
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.86,
+    6.29
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    17.43,
+    16.86
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    4.86,
+    15.14
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    4.86,
+    6.29
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    10.57,
+    10.57
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    14.86,
+    29.86
+   ]
+  },
+  {
+   "id": "a7",
+   "team": "white",
+   "number": 7,
+   "start": [
+    12,
+    33.43
+   ]
+  },
+  {
+   "id": "a8",
+   "team": "white",
+   "number": 8,
+   "start": [
+    15.57,
+    37
+   ]
+  },
+  {
+   "id": "a9",
+   "team": "white",
+   "number": 9,
+   "start": [
+    7,
+    37.71
+   ]
+  },
+  {
+   "id": "a10",
+   "team": "white",
+   "number": 10,
+   "start": [
+    4.86,
+    32.71
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.29,
+    11.29
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    8.43,
+    12.29
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.61,
+   6.54
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    5.43,
+    14.57
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    5.43,
+    7.14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    15.43,
+    29.14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    15.14,
+    37.43
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a9",
+   "to": [
+    7.43,
+    38
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a10",
+   "to": [
+    5.14,
+    32.29
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    10.57,
+    13.43
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    10.86,
+    11.14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    15.43,
+    14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a5",
+   "flight": 0.63
+  },
+  {
+   "t": 4.22,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    16,
+    14.86
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 4.79,
+   "type": "pass",
+   "from": "a5",
+   "to": "d1",
+   "flight": 0.63
+  },
+  {
+   "t": 5.39,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    8.86,
+    17.71
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.04,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    11.43,
+    27.43
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.04,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14,
+    6.29
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.04,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    15.71,
+    14.86
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.04,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    6,
+    13.14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.04,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    6,
+    6.57
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 7.04,
+   "type": "move",
+   "player": "a5",
+   "to": [
+    10,
+    9.71
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.96,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    16,
+    27.14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.96,
+   "type": "move",
+   "player": "a7",
+   "to": [
+    12.86,
+    35.14
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.96,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    14.57,
+    38.86
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.96,
+   "type": "move",
+   "player": "a9",
+   "to": [
+    6,
+    39.71
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.96,
+   "type": "move",
+   "player": "a10",
+   "to": [
+    4.57,
+    30.57
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.96,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    8,
+    32.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10.33,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    6.29,
+    6
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.68,
+   "type": "dribble",
+   "player": "d1",
+   "to": [
+    11.43,
+    33.43
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.02,
+   "type": "move",
+   "player": "a6",
+   "to": [
+    15.43,
+    26.29
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.02,
+   "type": "move",
+   "player": "a8",
+   "to": [
+    14,
+    39.43
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 12.02,
+   "type": "move",
+   "player": "a10",
+   "to": [
+    4,
+    29.71
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 17.86,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two boxes side by side, and only the ball and the defenders ever move.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Five keep it against two in one box, while five more rest in the other.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 4.64,
+   "text": "The two defenders win it, and that turnover is what the whole drill is built on.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 11.79,
+   "text": "They carry it into the far box, and the resting five become the possession five.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 17.86,
+   "text": "Swap the pair every two minutes, then try three defenders so turnovers come faster.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 20.36,
+   "text": "The two seconds after a turnover decide the next minute, and this makes that visible.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

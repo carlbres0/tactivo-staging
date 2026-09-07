@@ -1,0 +1,126 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14,
+  "length": 9.5
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    7,
+    9.5
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    9.17,
+    8.17
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.5,
+    4.42
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   8.97,
+   7.88
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.4,
+   "flightStyle": "clipped",
+   "loft": 1.5
+  },
+  {
+   "t": 3.22,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    7,
+    9.5
+   ]
+  },
+  {
+   "t": 4.97,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.75,
+    4.92
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 7.21,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "This one fixes a leaning strike without you saying a word about technique.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "You beside the goal, ball in your hands, your player eight metres out.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 1.73,
+   "text": "Hand-serve, let it bounce once, and they strike it after that single bounce.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 6.06,
+   "text": "Laces, over the ball, landing on the shooting foot. Five right, five left.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 7.21,
+   "text": "Only goals below your waist count. Later, take the bounce away and volley it.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 9.71,
+   "text": "Leaning back sails it, and sailing it scores nothing. The rule does the coaching.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

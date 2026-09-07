@@ -1,0 +1,212 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 23.53,
+  "length": 54
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    21.53,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    21.53,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.82,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.82,
+    52
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    19.75,
+    5.57
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    17.43,
+    5.57
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    14.93,
+    5.57
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    12.61,
+    5.57
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   19.75,
+   5.92
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    17.43,
+    44.86
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    14.93,
+    44.86
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    12.61,
+    44.86
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    19.75,
+    44.86
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.45,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.68,
+    51.29
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.45,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    2.78,
+    52
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 12.45,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    1.89,
+    51.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 12.45,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    1,
+    52
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 20.85,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three widths of the pitch, then partner stretches. That's your whole cool down.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "Everyone lines up on one touchline, ready to cross the width three times.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 9.38,
+   "text": "Jog the first width, side-step the second, walk the third. The pace drops each time.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 18.77,
+   "text": "Pair up at the far side for hamstring and hip flexor stretches, twenty seconds a side.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 20.85,
+   "text": "Count the kit in while they cool. Cones, bibs and balls before anyone leaves.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 23.35,
+   "text": "The cool down is where the next session gets sold. Trail one thing they'll do.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.15,
+  "length": 39
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    18.15,
+    16.81
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    16.81
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.15,
+    24.88
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    24.88
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    10.08,
+    6.04
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    14.12,
+    28.92
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    10.08,
+    26.23
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.06,
+   6.39
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.4,
+    21.52
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.02,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    9.81,
+    23.54
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.03,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    14.38,
+    32.96
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.25,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.25
+  },
+  {
+   "t": 11.12,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    14.79,
+    36.33
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 14.92,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     10.07,
+     20.85
+    ],
+    "w": 16.15,
+    "h": 8.07,
+    "label": "zone",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Three zones, one passive defender in the middle, and a decision every single run.",
+   "hold": 2.5,
+   "beat": "hook"
+  },
+  {
+   "t": 0,
+   "text": "A thirty five by twenty five area with three cone zones marked out.",
+   "hold": 2.5,
+   "beat": "picture"
+  },
+  {
+   "t": 5.22,
+   "text": "Carry from the first zone into the middle at speed, head up.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 10.15,
+   "text": "If the defender closes, release the pass. If they hold, keep carrying.",
+   "hold": 2.5,
+   "beat": "action"
+  },
+  {
+   "t": 14.92,
+   "text": "Wrong choice and you restart the run. Rotate the defender, then let them go live.",
+   "hold": 2.5,
+   "beat": "progression"
+  },
+  {
+   "t": 17.42,
+   "text": "The head has to come up mid-carry. That's the skill, not the dribbling.",
+   "hold": 2.5,
+   "beat": "why"
+  }
+ ]
+}
