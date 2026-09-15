@@ -1,0 +1,193 @@
+{
+  "v": 1,
+  "durationMs": 16000,
+  "area": {
+    "x": 52,
+    "y": 10,
+    "w": 216,
+    "h": 180
+  },
+  "cones": [
+    [
+      88,
+      46
+    ],
+    [
+      142,
+      64
+    ],
+    [
+      214,
+      55
+    ],
+    [
+      106,
+      136
+    ],
+    [
+      196,
+      145
+    ]
+  ],
+  "goals": [],
+  "players": [
+    {
+      "team": "a",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 124,
+          "y": 100
+        },
+        {
+          "t": 0.24,
+          "x": 142,
+          "y": 66
+        },
+        {
+          "t": 0.34,
+          "x": 142,
+          "y": 66
+        },
+        {
+          "t": 0.6,
+          "x": 106,
+          "y": 136
+        },
+        {
+          "t": 0.7,
+          "x": 106,
+          "y": 136
+        },
+        {
+          "t": 0.94,
+          "x": 196,
+          "y": 145
+        },
+        {
+          "t": 1,
+          "x": 196,
+          "y": 145
+        }
+      ]
+    },
+    {
+      "team": "n",
+      "label": "C",
+      "kf": [
+        {
+          "t": 0,
+          "x": 160,
+          "y": 104
+        },
+        {
+          "t": 0.24,
+          "x": 158,
+          "y": 74
+        },
+        {
+          "t": 0.34,
+          "x": 158,
+          "y": 74
+        },
+        {
+          "t": 0.6,
+          "x": 122,
+          "y": 142
+        },
+        {
+          "t": 0.7,
+          "x": 122,
+          "y": 142
+        },
+        {
+          "t": 0.94,
+          "x": 210,
+          "y": 150
+        },
+        {
+          "t": 1,
+          "x": 210,
+          "y": 150
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 241,
+        "y": 172
+      },
+      {
+        "t": 1,
+        "x": 241,
+        "y": 172
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "run",
+      "pts": [
+        [
+          124,
+          100
+        ],
+        [
+          142,
+          66
+        ],
+        [
+          106,
+          136
+        ],
+        [
+          196,
+          145
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Walk the area together, slowly, collecting the session's cones."
+    },
+    {
+      "t": 0.26,
+      "label": "Every cone collected earns one memory: name a thing you did today."
+    },
+    {
+      "t": 0.62,
+      "label": "Keep walking, keep naming. Kit goes in the bag as you go."
+    },
+    {
+      "t": 0.88,
+      "label": "The last cone is the coach's: one thing he saw you do well."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.3,
+      "x": 158,
+      "y": 52,
+      "label": "A WIN NAMED"
+    },
+    {
+      "t": 0.64,
+      "x": 122,
+      "y": 158,
+      "label": "AND ANOTHER"
+    },
+    {
+      "t": 0.96,
+      "x": 212,
+      "y": 166,
+      "label": "KIT PACKED"
+    }
+  ]
+}

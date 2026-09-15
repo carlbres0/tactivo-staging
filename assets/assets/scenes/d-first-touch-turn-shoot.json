@@ -1,0 +1,57 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 60, "y": 40, "w": 200, "h": 120},
+  "cones": [
+    [60, 40], [260, 40], [60, 160], [260, 160]
+  ],
+  "goals": [
+    {"x": 290, "y": 100, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 90, "y": 140},
+      {"t": 1, "x": 90, "y": 140}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 180, "y": 100},
+      {"t": 0.3, "x": 180, "y": 100},
+      {"t": 0.42, "x": 180, "y": 100},
+      {"t": 0.55, "x": 190, "y": 95},
+      {"t": 0.7, "x": 190, "y": 95},
+      {"t": 1, "x": 190, "y": 95}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 280, "y": 100},
+      {"t": 0.6, "x": 280, "y": 100},
+      {"t": 1, "x": 275, "y": 95}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 90, "y": 140},
+      {"t": 0.2, "x": 90, "y": 140},
+      {"t": 0.35, "x": 180, "y": 100},
+      {"t": 0.42, "x": 180, "y": 100},
+      {"t": 0.55, "x": 195, "y": 92},
+      {"t": 0.6, "x": 195, "y": 92},
+      {"t": 0.78, "x": 280, "y": 98},
+      {"t": 1, "x": 280, "y": 98}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[90, 140], [180, 100]]},
+    {"kind": "dribble", "pts": [[180, 100], [195, 92]]},
+    {"kind": "shot", "pts": [[195, 92], [280, 98]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Striker receives with back to goal, twenty metres out."},
+    {"t": 0.35, "label": "Ball arrives — the turn direction is called as the pass travels."},
+    {"t": 0.42, "label": "One touch to turn across the defender's blind side."},
+    {"t": 0.6, "label": "Second touch is the finish — two touches maximum, start to shot."}
+  ],
+  "events": [
+    {"t": 0.78, "x": 280, "y": 98, "label": "SHOT"}
+  ]
+}

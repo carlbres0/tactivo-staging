@@ -1,0 +1,59 @@
+{
+  "v": 1,
+  "durationMs": 9200,
+  "area": {"x": 20, "y": 30, "w": 220, "h": 140},
+  "cones": [[20, 30], [240, 30], [20, 170], [240, 170]],
+  "goals": [
+    {"x": 20, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "GK", "kf": [
+      {"t": 0, "x": 45, "y": 100},
+      {"t": 0.12, "x": 45, "y": 100},
+      {"t": 0.3, "x": 33, "y": 76},
+      {"t": 0.42, "x": 33, "y": 76},
+      {"t": 0.56, "x": 45, "y": 100},
+      {"t": 0.64, "x": 45, "y": 100},
+      {"t": 0.84, "x": 33, "y": 124},
+      {"t": 1, "x": 33, "y": 124}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 120},
+      {"t": 1, "x": 170, "y": 120}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 150, "y": 50},
+      {"t": 1, "x": 150, "y": 50}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 170, "y": 120},
+      {"t": 0.14, "x": 170, "y": 120},
+      {"t": 0.3, "x": 32, "y": 74},
+      {"t": 0.36, "x": 150, "y": 50},
+      {"t": 0.44, "x": 150, "y": 50},
+      {"t": 0.84, "x": 32, "y": 126},
+      {"t": 1, "x": 32, "y": 126}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "shot", "pts": [[170, 120], [32, 74]]},
+    {"kind": "pass", "pts": [[32, 74], [150, 50]]},
+    {"kind": "shot", "pts": [[150, 50], [32, 126]]},
+    {"kind": "run", "pts": [[45, 100], [33, 76]]},
+    {"kind": "run", "pts": [[33, 76], [45, 100]]},
+    {"kind": "run", "pts": [[45, 100], [33, 124]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "First shot is saved and PARRIED — the recovery decides what's next."},
+    {"t": 0.3, "label": "Parry wide and away from the danger area, never back into the middle."},
+    {"t": 0.56, "label": "Back to the feet, set, and across — the second ball arrives at once."},
+    {"t": 0.84, "label": "Opposite corner, and this one is held — six doubles per set, two sets."}
+  ],
+  "events": [
+    {"t": 0.36, "x": 150, "y": 72, "label": "PARRY"},
+    {"t": 0.84, "x": 32, "y": 126, "label": "SAVE"}
+  ]
+}

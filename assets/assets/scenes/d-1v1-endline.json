@@ -1,0 +1,46 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 40, "y": 60, "w": 250, "h": 80},
+  "cones": [[40, 60], [290, 60], [40, 140], [290, 140]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 50, "y": 100}, {"t": 0.12, "x": 50, "y": 100},
+      {"t": 0.22, "x": 90, "y": 100}, {"t": 0.35, "x": 130, "y": 100},
+      {"t": 0.45, "x": 148, "y": 90},
+      {"t": 0.55, "x": 165, "y": 112, "cx": 152, "cy": 100},
+      {"t": 0.68, "x": 230, "y": 105}, {"t": 0.8, "x": 280, "y": 100},
+      {"t": 1, "x": 280, "y": 100}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 100}, {"t": 0.12, "x": 170, "y": 100},
+      {"t": 0.3, "x": 150, "y": 100}, {"t": 0.45, "x": 150, "y": 95},
+      {"t": 0.6, "x": 168, "y": 118}, {"t": 1, "x": 168, "y": 118}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 170, "y": 100}, {"t": 0.12, "x": 170, "y": 100},
+    {"t": 0.22, "x": 90, "y": 100}, {"t": 0.35, "x": 130, "y": 100},
+    {"t": 0.45, "x": 148, "y": 90}, {"t": 0.55, "x": 165, "y": 112},
+    {"t": 0.68, "x": 230, "y": 105}, {"t": 0.8, "x": 280, "y": 100},
+    {"t": 1, "x": 280, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[170, 100], [90, 100]]},
+    {"kind": "opp", "pts": [[170, 100], [150, 100]]},
+    {"kind": "dribble", "pts": [[90, 100], [130, 100]]},
+    {"kind": "dribble", "curve": true, "pts": [[130, 100], [148, 90], [165, 112]]},
+    {"kind": "dribble", "pts": [[165, 112], [280, 100]]},
+    {"kind": "opp", "pts": [[150, 100], [168, 118]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Defender serves into the attacker's path, then closes down immediately."},
+    {"t": 0.22, "label": "First touch forward — attack the defender head-on, no delay."},
+    {"t": 0.45, "label": "Feint one way to commit the defender, then take the touch beside the body."},
+    {"t": 0.68, "label": "Burst past and stop the ball dead on the end line to score."}
+  ],
+  "events": [
+    {"t": 0.8, "x": 280, "y": 100, "label": "SCORE"}
+  ]
+}

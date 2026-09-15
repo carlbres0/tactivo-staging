@@ -1,0 +1,45 @@
+{
+  "v": 1,
+  "durationMs": 9500,
+  "area": {"x": 40, "y": 30, "w": 240, "h": 140},
+  "cones": [[55, 45], [265, 45], [55, 155], [265, 155]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 50}, {"t": 0.25, "x": 60, "y": 50},
+      {"t": 1, "x": 60, "y": 50}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 260, "y": 50}, {"t": 0.25, "x": 260, "y": 50},
+      {"t": 0.4, "x": 260, "y": 50}, {"t": 1, "x": 260, "y": 50}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 60, "y": 150}, {"t": 0.55, "x": 60, "y": 150},
+      {"t": 0.65, "x": 62, "y": 148}, {"t": 0.8, "x": 62, "y": 148},
+      {"t": 1, "x": 62, "y": 148}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 260, "y": 150}, {"t": 0.8, "x": 260, "y": 150},
+      {"t": 1, "x": 260, "y": 150}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 60, "y": 50}, {"t": 0.15, "x": 60, "y": 50},
+    {"t": 0.25, "x": 260, "y": 50}, {"t": 0.4, "x": 260, "y": 50},
+    {"t": 0.55, "x": 60, "y": 150}, {"t": 0.65, "x": 62, "y": 148},
+    {"t": 0.8, "x": 260, "y": 150}, {"t": 1, "x": 260, "y": 150}
+  ], "air": [[0.4, 0.55]]},
+  "routes": [
+    {"kind": "pass", "pts": [[60, 50], [260, 50]]},
+    {"kind": "pass", "pts": [[260, 50], [60, 150]]},
+    {"kind": "dribble", "pts": [[60, 150], [62, 148]]},
+    {"kind": "pass", "pts": [[62, 148], [260, 150]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Stations at each corner — the ball starts short along one side."},
+    {"t": 0.25, "label": "Short pass along the side sets up the diagonal."},
+    {"t": 0.4, "label": "The diagonal must clear the middle of the area in the air."},
+    {"t": 0.65, "label": "Receiver kills it in one touch — the short pass starts again the other way."}
+  ],
+  "events": []
+}

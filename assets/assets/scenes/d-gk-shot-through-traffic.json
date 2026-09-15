@@ -1,0 +1,263 @@
+{
+  "v": 1,
+  "durationMs": 15000,
+  "area": {
+    "x": 20,
+    "y": 30,
+    "w": 240,
+    "h": 140
+  },
+  "cones": [
+    [
+      20,
+      30
+    ],
+    [
+      260,
+      30
+    ],
+    [
+      20,
+      170
+    ],
+    [
+      260,
+      170
+    ]
+  ],
+  "goals": [
+    {
+      "x": 20,
+      "y": 100.0,
+      "w": 30,
+      "side": "w"
+    }
+  ],
+  "players": [
+    {
+      "team": "a",
+      "label": "GK",
+      "kf": [
+        {
+          "t": 0,
+          "x": 32,
+          "y": 108
+        },
+        {
+          "t": 0.55,
+          "x": 32,
+          "y": 108
+        },
+        {
+          "t": 0.66,
+          "x": 32,
+          "y": 92
+        },
+        {
+          "t": 1,
+          "x": 32,
+          "y": 92
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "x",
+      "kf": [
+        {
+          "t": 0,
+          "x": 60,
+          "y": 80
+        },
+        {
+          "t": 1,
+          "x": 60,
+          "y": 80
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "x",
+      "kf": [
+        {
+          "t": 0,
+          "x": 60,
+          "y": 120
+        },
+        {
+          "t": 1,
+          "x": 60,
+          "y": 120
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 200,
+          "y": 70
+        },
+        {
+          "t": 1,
+          "x": 200,
+          "y": 70
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "2",
+      "kf": [
+        {
+          "t": 0,
+          "x": 200,
+          "y": 130
+        },
+        {
+          "t": 1,
+          "x": 200,
+          "y": 130
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 200,
+        "y": 70
+      },
+      {
+        "t": 0.08,
+        "x": 200,
+        "y": 70
+      },
+      {
+        "t": 0.2,
+        "x": 28,
+        "y": 108
+      },
+      {
+        "t": 0.36,
+        "x": 28,
+        "y": 108
+      },
+      {
+        "t": 0.52,
+        "x": 200,
+        "y": 130
+      },
+      {
+        "t": 0.6,
+        "x": 200,
+        "y": 130
+      },
+      {
+        "t": 0.72,
+        "x": 28,
+        "y": 92
+      },
+      {
+        "t": 1,
+        "x": 28,
+        "y": 92
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "shot",
+      "pts": [
+        [
+          200,
+          70
+        ],
+        [
+          28,
+          108
+        ]
+      ]
+    },
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          28,
+          108
+        ],
+        [
+          200,
+          130
+        ]
+      ]
+    },
+    {
+      "kind": "shot",
+      "pts": [
+        [
+          200,
+          130
+        ],
+        [
+          28,
+          92
+        ]
+      ]
+    },
+    {
+      "kind": "run",
+      "pts": [
+        [
+          32,
+          108
+        ],
+        [
+          32,
+          92
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Shots arrive from 18 metres with bodies blocking the keeper's view."
+    },
+    {
+      "t": 0.1,
+      "label": "Move to find a sight line — never just guess at the strike."
+    },
+    {
+      "t": 0.2,
+      "label": "Hands strong behind the ball: hold it, don't push it back out."
+    },
+    {
+      "t": 0.52,
+      "label": "Return it to the next server and reset before the strike."
+    },
+    {
+      "t": 0.72,
+      "label": "Same again from the other angle — ten shots a set, two sets."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.2,
+      "x": 28,
+      "y": 108,
+      "label": "SAVE!"
+    },
+    {
+      "t": 0.72,
+      "x": 28,
+      "y": 92,
+      "label": "SAVE!"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "v": 1,
+  "durationMs": 21000,
+  "area": {
+    "x": 20,
+    "y": 70,
+    "w": 280,
+    "h": 60
+  },
+  "cones": [
+    [
+      20,
+      70
+    ],
+    [
+      300,
+      70
+    ],
+    [
+      20,
+      130
+    ],
+    [
+      300,
+      130
+    ]
+  ],
+  "goals": [],
+  "players": [
+    {
+      "team": "a",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 40,
+          "y": 80
+        },
+        {
+          "t": 0.7,
+          "x": 260,
+          "y": 80
+        },
+        {
+          "t": 1,
+          "x": 260,
+          "y": 80
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "2",
+      "kf": [
+        {
+          "t": 0,
+          "x": 40,
+          "y": 93
+        },
+        {
+          "t": 0.7,
+          "x": 260,
+          "y": 93
+        },
+        {
+          "t": 1,
+          "x": 260,
+          "y": 93
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "3",
+      "kf": [
+        {
+          "t": 0,
+          "x": 40,
+          "y": 107
+        },
+        {
+          "t": 0.7,
+          "x": 260,
+          "y": 107
+        },
+        {
+          "t": 1,
+          "x": 260,
+          "y": 107
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "4",
+      "kf": [
+        {
+          "t": 0,
+          "x": 40,
+          "y": 120
+        },
+        {
+          "t": 0.7,
+          "x": 260,
+          "y": 120
+        },
+        {
+          "t": 1,
+          "x": 260,
+          "y": 120
+        }
+      ]
+    }
+  ],
+  "ball": null,
+  "routes": [
+    {
+      "kind": "run",
+      "pts": [
+        [
+          40,
+          80
+        ],
+        [
+          260,
+          80
+        ]
+      ]
+    },
+    {
+      "kind": "run",
+      "pts": [
+        [
+          40,
+          93
+        ],
+        [
+          260,
+          93
+        ]
+      ]
+    },
+    {
+      "kind": "run",
+      "pts": [
+        [
+          40,
+          107
+        ],
+        [
+          260,
+          107
+        ]
+      ]
+    },
+    {
+      "kind": "run",
+      "pts": [
+        [
+          40,
+          120
+        ],
+        [
+          260,
+          120
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Three widths: jog, then side-step, then walk — the pace drops with each crossing."
+    },
+    {
+      "t": 0.7,
+      "label": "Arrive at the far side and pair up for partner stretches."
+    },
+    {
+      "t": 0.85,
+      "label": "Hold hamstring and hip-flexor stretches, 20 seconds each side."
+    },
+    {
+      "t": 0.93,
+      "label": "Kit count while everyone cools — cones, bibs, balls all in first."
+    }
+  ]
+}
