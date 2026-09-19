@@ -1,0 +1,36 @@
+{
+  "v": 1,
+  "durationMs": 12000,
+  "area": {"x": 61.8, "y": 12, "w": 196.4, "h": 180},
+  "cones": [[218.9, 164.2], [241.8, 151.1], [78.2, 151.1], [101.1, 164.2], [146.9, 36.5], [173.1, 36.5]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 168}, {"t": 0.14, "x": 160, "y": 168},
+      {"t": 0.32, "x": 88, "y": 156}, {"t": 0.54, "x": 160, "y": 40},
+      {"t": 0.78, "x": 232, "y": 156}, {"t": 1, "x": 246, "y": 176}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 160, "y": 107}, {"t": 1, "x": 160, "y": 107}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 176}, {"t": 0.14, "x": 160, "y": 176},
+    {"t": 0.32, "x": 82, "y": 160}, {"t": 0.54, "x": 160, "y": 32},
+    {"t": 0.78, "x": 238, "y": 160}, {"t": 1, "x": 252, "y": 180}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[160, 176], [82, 160], [160, 32], [238, 160], [252, 180]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Three gates make a wide triangle; the player tours them in a figure of weave."},
+    {"t": 0.2, "label": "Each gate crossed a different way: left foot only, right foot only, sole taps."},
+    {"t": 0.56, "label": "The coach spins the rules every lap — new foot, new gate order."},
+    {"t": 0.84, "label": "Three clean tours, then one for the stopwatch."}
+  ],
+  "events": [
+    {"t": 0.34, "x": 66, "y": 140, "label": "LEFT FOOT"},
+    {"t": 0.56, "x": 174, "y": 24, "label": "RIGHT FOOT"},
+    {"t": 0.82, "x": 240, "y": 140, "label": "SOLES"}
+  ]
+}

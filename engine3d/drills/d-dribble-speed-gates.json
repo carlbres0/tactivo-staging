@@ -1,0 +1,123 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.01,
+  "length": 29
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    5.97,
+    9.69
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.04,
+    9.69
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.97,
+    17.38
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.04,
+    17.38
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.97,
+    25.08
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.04,
+    25.08
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    3.44
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   3.79
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5,
+    27.48
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 10.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Timing against themselves keeps the slowest player in the drill. Never post a leaderboard.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.75,
+   "text": "Dribble the full lane at top speed through all three gates.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6.25,
+   "text": "Time each run. The ball has to be under control at the finish or it doesn't count.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9,
+   "text": "Six runs with full recovery between. Compare each player against their own first time, never each other.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.5,
+   "text": "Too easy, narrower gates. Too hard, wider gates and a shorter lane.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

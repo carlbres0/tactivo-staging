@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "durationMs": 7800,
+  "area": {"x": 190, "y": 40, "w": 110, "h": 120},
+  "cones": [[190, 40], [300, 40], [190, 160], [300, 160]],
+  "goals": [
+    {"x": 300, "y": 100.0, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 295, "y": 150},
+      {"t": 0.3, "x": 295, "y": 150},
+      {"t": 0.5, "x": 292, "y": 148},
+      {"t": 1, "x": 292, "y": 148}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 230, "y": 100},
+      {"t": 0.25, "x": 230, "y": 100},
+      {"t": 0.45, "x": 250, "y": 92, "cx": 238, "cy": 94},
+      {"t": 1, "x": 250, "y": 92}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 295, "y": 150},
+      {"t": 0.3, "x": 295, "y": 150},
+      {"t": 0.45, "x": 250, "y": 92},
+      {"t": 0.55, "x": 296, "y": 88},
+      {"t": 1, "x": 296, "y": 88}
+    ],
+    "air": [[0.3, 0.45]]
+  },
+  "routes": [
+    {"kind": "run", "curve": true, "pts": [[230, 100], [238, 94], [250, 92]]},
+    {"kind": "pass", "pts": [[295, 150], [250, 92]]},
+    {"kind": "shot", "pts": [[250, 92], [296, 88]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Attacker holds the penalty spot; server waits with the ball in hand on the byline."},
+    {"t": 0.3, "label": "Hand-thrown serve loops in from the byline."},
+    {"t": 0.45, "label": "Attack the ball at its highest point \u2014 don't wait underneath it."},
+    {"t": 0.55, "label": "Head down and across goal, forehead through the top half of the ball."}
+  ],
+  "events": [
+    {"t": 0.55, "x": 296, "y": 88, "label": "GOAL"}
+  ]
+}

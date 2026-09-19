@@ -1,0 +1,32 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 130, "y": 70, "w": 60, "h": 60},
+  "cones": [[130, 70], [190, 70], [130, 130], [190, 130]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 100}, {"t": 0.15, "x": 155, "y": 105},
+      {"t": 0.3, "x": 148, "y": 98}, {"t": 0.45, "x": 155, "y": 102},
+      {"t": 0.6, "x": 147, "y": 95}, {"t": 0.75, "x": 160, "y": 90},
+      {"t": 0.9, "x": 172, "y": 82}, {"t": 1, "x": 172, "y": 82}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 150, "y": 100}, {"t": 0.15, "x": 155, "y": 105},
+    {"t": 0.3, "x": 148, "y": 98}, {"t": 0.45, "x": 155, "y": 102},
+    {"t": 0.6, "x": 147, "y": 95}, {"t": 0.75, "x": 160, "y": 90},
+    {"t": 0.9, "x": 172, "y": 82}, {"t": 1, "x": 172, "y": 82}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "curve": true, "pts": [[150, 100], [148, 98], [155, 102]]},
+    {"kind": "dribble", "curve": true, "pts": [[155, 102], [147, 95], [172, 82]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Ball each — 45 seconds per move: toe taps, sole rolls, inside-outside, V-drags."},
+    {"t": 0.45, "label": "Both feet, every move — count touches and beat your own score each round."},
+    {"t": 0.6, "label": "The V-drag pulls the ball behind the body before accelerating away."},
+    {"t": 0.9, "label": "Progression: carry the same moves travelling forward across the box."}
+  ],
+  "events": []
+}

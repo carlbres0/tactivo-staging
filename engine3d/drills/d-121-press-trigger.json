@@ -1,0 +1,144 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 18,
+  "length": 18
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2.62,
+    2.62
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    11.33,
+    8.22
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    3.09,
+    3.56
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   11.5,
+   8.53
+  ]
+ },
+ "events": [
+  {
+   "t": 1.1,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    3.71,
+    4.18
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    12.11,
+    9.62
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.29,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    11.18,
+    10.4
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 5.73,
+   "type": "tackle",
+   "player": "a1",
+   "from": "n1"
+  },
+  {
+   "t": 10.3,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7.6,
+    8.84
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 15.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "They're learning to read a body, not chase a ball. Praise the wait.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.75,
+   "text": "You dribble casually in the box. They watch from a cone.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 7.5,
+   "text": "The moment your touch is heavy or your head drops, go. Sprint and win it.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.5,
+   "text": "Pressing on a good touch loses the point. The trigger is everything.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.75,
+   "text": "Six presses, then your bad touches get better disguised.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 15.5,
+   "text": "Too easy, you escape the first press and they re press in three seconds. Too hard, shout oops.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

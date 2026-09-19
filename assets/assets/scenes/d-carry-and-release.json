@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 40, "w": 260, "h": 120},
+  "cones": [[140, 40], [140, 160], [200, 40], [200, 160]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 100}, {"t": 0.15, "x": 60, "y": 100},
+      {"t": 0.35, "x": 140, "y": 100}, {"t": 0.5, "x": 175, "y": 105},
+      {"t": 0.6, "x": 180, "y": 100}, {"t": 1, "x": 180, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 230, "y": 70}, {"t": 0.5, "x": 230, "y": 70},
+      {"t": 0.6, "x": 230, "y": 70}, {"t": 0.75, "x": 260, "y": 68},
+      {"t": 0.9, "x": 285, "y": 65}, {"t": 1, "x": 285, "y": 65}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 210, "y": 100}, {"t": 0.15, "x": 210, "y": 100},
+      {"t": 0.35, "x": 210, "y": 100}, {"t": 0.5, "x": 190, "y": 102},
+      {"t": 1, "x": 188, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 60, "y": 100}, {"t": 0.15, "x": 60, "y": 100},
+    {"t": 0.35, "x": 140, "y": 100}, {"t": 0.5, "x": 175, "y": 105},
+    {"t": 0.6, "x": 180, "y": 100}, {"t": 0.68, "x": 230, "y": 70},
+    {"t": 0.75, "x": 260, "y": 68}, {"t": 0.9, "x": 285, "y": 65},
+    {"t": 1, "x": 285, "y": 65}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[60, 100], [140, 100]]},
+    {"kind": "dribble", "pts": [[140, 100], [180, 100]]},
+    {"kind": "opp", "pts": [[210, 100], [190, 102]]},
+    {"kind": "pass", "pts": [[180, 100], [230, 70]]},
+    {"kind": "dribble", "pts": [[230, 70], [285, 65]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Carry the ball from the first zone into the middle at speed."},
+    {"t": 0.35, "label": "The defender is passive — read whether they close or hold."},
+    {"t": 0.5, "label": "They close — so release the pass early rather than force the carry."},
+    {"t": 0.68, "label": "Support arrives and carries the ball on into the final zone."}
+  ],
+  "events": [
+    {"t": 0.6, "x": 180, "y": 100, "label": "RELEASE"}
+  ]
+}

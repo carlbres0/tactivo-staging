@@ -1,0 +1,141 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 22.64,
+  "length": 26
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8.49,
+    13.29
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.73,
+    26
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    13.86,
+    20.35
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    16.68,
+    4.26
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   16.62,
+   4.6
+  ]
+ },
+ "events": [
+  {
+   "t": 3,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    9.06,
+    14.99
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 4.96,
+   "type": "pass",
+   "from": "n1",
+   "to": "gk",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 10.48,
+   "type": "pass",
+   "from": "gk",
+   "to": "n1",
+   "flight": 1.32
+  },
+  {
+   "t": 14.63,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    11.04,
+    16.96
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 18,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The shout is technique. A keeper who's claimed it out loud has already won.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.25,
+   "text": "You lob hand serves that drop between the keeper and a cone attacker.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.75,
+   "text": "Attack the drop at its highest point. Knee up, arms long, a loud keeper's on the way.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 12.5,
+   "text": "A catch above the head scores two, a safe punch one. Eight claims, drifting wider.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 18,
+   "text": "Too easy, you become a gentle nuisance underneath, never fouling. Too hard, underarm floaters to the hands.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

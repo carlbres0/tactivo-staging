@@ -1,0 +1,181 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 28.3,
+  "length": 33.16
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    21.44,
+    6.86
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    19.01,
+    14.15
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    20.23,
+    23.87
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.29,
+    9.29
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.07,
+    21.44
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.15,
+    11.72
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    13.61,
+    16.58
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   4.43,
+   27.52
+  ],
+  "static": true
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    18.01,
+    14.15
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    17.66,
+    16.31
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.44,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    10.29,
+    9.29
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.44,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    8.48,
+    11.45
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 11.2,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    9.07,
+    21.44
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.2,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7.4,
+    23.33
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 17,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Ending by naming the wins is how a session gets remembered on Thursday.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.5,
+   "text": "Walk the area together collecting the cones, slowly.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.5,
+   "text": "Each cone earns one memory. They name something they did today.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 15,
+   "text": "The last cone is yours. One thing you saw them do well. Kit packed, session sealed.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 17,
+   "text": "If they're keen, they name the fix as well. If they're tired, you offer the memories.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

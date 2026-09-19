@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 190, "y": 40, "w": 110, "h": 120},
+  "cones": [[190, 40], [300, 40], [190, 160], [300, 160]],
+  "goals": [
+    {"x": 300, "y": 100.0, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 292, "y": 148},
+      {"t": 0.42, "x": 292, "y": 148},
+      {"t": 0.62, "x": 280, "y": 140},
+      {"t": 1, "x": 280, "y": 140}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 225, "y": 118},
+      {"t": 0.3, "x": 225, "y": 118},
+      {"t": 0.58, "x": 248, "y": 104, "cx": 238, "cy": 116},
+      {"t": 1, "x": 252, "y": 102}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 292, "y": 148},
+      {"t": 0.42, "x": 292, "y": 148},
+      {"t": 0.58, "x": 248, "y": 104},
+      {"t": 0.7, "x": 296, "y": 92},
+      {"t": 1, "x": 296, "y": 92}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "run", "curve": true, "pts": [[225, 118], [238, 116], [248, 104]]},
+    {"kind": "pass", "pts": [[292, 148], [248, 104]]},
+    {"kind": "shot", "pts": [[248, 104], [296, 92]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Striker delays in the D while the server drives to the byline."},
+    {"t": 0.42, "label": "Cut-back pulled back along the floor to the penalty spot."},
+    {"t": 0.58, "label": "Arrive late onto the ball — first time, no touch allowed."},
+    {"t": 0.7, "label": "Side-foot placed low; laces for round two."}
+  ],
+  "events": [
+    {"t": 0.7, "x": 296, "y": 92, "label": "GOAL"}
+  ]
+}
