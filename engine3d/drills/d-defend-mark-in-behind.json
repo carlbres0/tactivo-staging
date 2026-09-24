@@ -1,0 +1,182 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 24.19,
+  "length": 37
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.19,
+    37
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    22.19,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    12.1,
+    37
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    10.48,
+    20.85
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    12.1,
+    14.12
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    10.75,
+    20.17
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.02,
+   14.46
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    8.6,
+    29.19
+   ],
+   "flight": 1.55,
+   "flightStyle": "ground"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.6,
+    29.19
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "d2",
+   "to": [
+    8.46,
+    29.6
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.43,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 5.18,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 6.63,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.71,
+    26.23
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 10.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Losing a runner is a head position problem. If they can only see the ball, they're already beaten.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.25,
+   "text": "Attackers make runs in behind from a central server on a random trigger.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8,
+   "text": "Defenders see ball and runner. Never turn your back on either.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9.5,
+   "text": "Track the run all the way, shoulder to shoulder, no grabbing. Ten runs, then swap.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.5,
+   "text": "Too easy, two runners at once so defenders have to talk. Too hard, one runner, announced first.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

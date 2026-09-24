@@ -1,0 +1,156 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 44.3,
+  "length": 38.94
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    42.3,
+    38.94
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    38.94
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    22.15,
+    38.94
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5.36,
+    37.26
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    22.15,
+    15.43
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.57,
+   36.98
+  ]
+ },
+ "events": [
+  {
+   "t": 1.95,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    24.84,
+    22.15
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 3.67,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 2.1,
+   "flightStyle": "lofted",
+   "loft": 5.42
+  },
+  {
+   "t": 4.52,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.03,
+    36.25
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.94,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    22.15,
+    38.94
+   ],
+   "header": true
+  }
+ ],
+ "duration": 9,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Attack the ball at its highest point. Wait under it and it goes straight up, not down.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.75,
+   "text": "Soft hand serves from the byline. The attacker comes from the spot and heads down at goal.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4,
+   "text": "Forehead through the top half of the ball, eyes open, neck braced.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 5,
+   "text": "Five headers each at most, unopposed, then rotate to serving. Stop at any discomfort.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9,
+   "text": "Too easy, a floated cross from the channel. Too hard, catch the header in the hands first.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.67,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8.11,
+    2.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    8.11,
+    7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.56,
+    2.56
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.56,
+    7
+   ]
+  }
+ ],
+ "teams": {
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    5.33,
+    5.06
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.28,
+    3.39
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5.22,
+    5.89
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    3.22,
+    3.39
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.06,
+   3.66
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    5.61,
+    5.61
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.4
+  },
+  {
+   "t": 1.2,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    3.94,
+    4.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 3.22,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    5.89,
+    16.44
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 10.5,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5.34,
+     4.78
+    ],
+    "w": 5.55,
+    "h": 4.44,
+    "label": "box",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Nobody practises the change from tight to open. That transition is where carries are won.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.25,
+   "text": "Three against one keeps the ball inside a tight box.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.75,
+   "text": "On your call, whoever has the ball breaks out and carries it up the open channel.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.25,
+   "text": "The change of gear from tight touches to long strides is the point. Eight goes, rotating the defender.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.5,
+   "text": "Too easy, two defenders inside and one chases the carry. Too hard, name the breakout player in advance.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

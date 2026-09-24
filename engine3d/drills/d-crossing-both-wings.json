@@ -1,0 +1,217 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 34.77,
+  "length": 52
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    32.77,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    32.77,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    31.81,
+    44.31
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.96,
+    44.31
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    17.38,
+    52
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    31.23,
+    30.85
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    19.31,
+    36.62
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    16.42,
+    33.73
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    11.62,
+    33.73
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   31.25,
+   31.2
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    31.81,
+    43.31
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 4.33,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    21.62,
+    45.85
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.33,
+   "type": "move",
+   "player": "a4",
+   "to": [
+    15.85,
+    45.27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.33,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    18.92,
+    43.35
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.62,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    31.23,
+    45.27
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 8.7,
+   "type": "pass",
+   "from": "a1",
+   "to": "a3",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 11.88,
+   "type": "shoot",
+   "player": "a3",
+   "at": [
+    17.38,
+    52
+   ]
+  }
+ ],
+ "duration": 15,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The tiring part is the runs, not the crosses. That's exactly what makes it match real.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 5.25,
+   "text": "Waves alternate left and right without a pause, so the runners reset between deliveries.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 7.5,
+   "text": "Left wing delivers with the left foot, right with the right. Inswing and outswing both.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.25,
+   "text": "Three attackers make the near, central and back post runs every time. Twelve deliveries, then rest.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 15,
+   "text": "Too easy, the second ball comes three seconds after the first. Too hard, a pause between waves.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

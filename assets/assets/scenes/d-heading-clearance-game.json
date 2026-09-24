@@ -1,0 +1,55 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 110, "y": 50, "w": 100, "h": 100},
+  "cones": [
+    [112, 90], [112, 110], [208, 90], [208, 110]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 140, "y": 55},
+      {"t": 1, "x": 140, "y": 55}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 152, "y": 130},
+      {"t": 0.12, "x": 152, "y": 130},
+      {"t": 0.40, "x": 174, "y": 104},
+      {"t": 0.62, "x": 174, "y": 104},
+      {"t": 1, "x": 164, "y": 116}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 196, "y": 118},
+      {"t": 0.12, "x": 196, "y": 118},
+      {"t": 0.38, "x": 180, "y": 99},
+      {"t": 0.62, "x": 180, "y": 99},
+      {"t": 1, "x": 190, "y": 110}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 140, "y": 58},
+      {"t": 0.15, "x": 140, "y": 58},
+      {"t": 0.45, "x": 178, "y": 100},
+      {"t": 0.5, "x": 178, "y": 100},
+      {"t": 0.62, "x": 225, "y": 72},
+      {"t": 1, "x": 225, "y": 72}
+    ],
+    "air": [[0.15, 0.45], [0.5, 0.62]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[140, 58], [178, 100]]},
+    {"kind": "run", "pts": [[152, 130], [174, 104]]},
+    {"kind": "opp", "pts": [[196, 118], [180, 99]]},
+    {"kind": "opp", "pts": [[178, 100], [225, 72]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server floats a serve in; attacker and defender both attack the flight."},
+    {"t": 0.3, "label": "Attack the ball, not the opponent — arms out for balance, not for holding."},
+    {"t": 0.5, "label": "Whoever moves first wins the header — this time it's the defender."},
+    {"t": 0.62, "label": "Clear header away from goal — rotate roles every four serves."}
+  ],
+  "events": [
+    {"t": 0.5, "x": 186, "y": 86, "label": "CONTEST"}
+  ]
+}

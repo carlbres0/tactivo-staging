@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "durationMs": 9500,
+  "area": {"x": 60, "y": 40, "w": 240, "h": 130},
+  "cones": [[70, 40], [290, 40], [70, 170], [290, 170]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 80, "y": 120}, {"t": 0.2, "x": 80, "y": 120},
+      {"t": 0.4, "x": 80, "y": 120}, {"t": 0.68, "x": 80, "y": 120},
+      {"t": 1, "x": 85, "y": 122}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 170, "y": 90}, {"t": 0.2, "x": 170, "y": 90},
+      {"t": 0.3, "x": 168, "y": 93}, {"t": 0.4, "x": 168, "y": 93},
+      {"t": 1, "x": 168, "y": 93}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 150, "y": 150}, {"t": 0.2, "x": 150, "y": 150},
+      {"t": 0.45, "x": 210, "y": 110, "cx": 190, "cy": 130},
+      {"t": 0.68, "x": 270, "y": 60}, {"t": 0.8, "x": 280, "y": 55},
+      {"t": 1, "x": 280, "y": 55}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 80, "y": 120}, {"t": 0.08, "x": 80, "y": 120},
+    {"t": 0.2, "x": 170, "y": 90}, {"t": 0.3, "x": 168, "y": 93},
+    {"t": 0.4, "x": 80, "y": 120}, {"t": 0.55, "x": 80, "y": 120},
+    {"t": 0.68, "x": 270, "y": 60}, {"t": 0.8, "x": 280, "y": 55},
+    {"t": 1, "x": 280, "y": 55}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[80, 120], [170, 90]]},
+    {"kind": "dribble", "pts": [[170, 90], [168, 93]]},
+    {"kind": "pass", "pts": [[168, 93], [80, 120]]},
+    {"kind": "run", "curve": true, "pts": [[150, 150], [190, 130], [270, 60]]},
+    {"kind": "pass", "pts": [[80, 120], [270, 60]]},
+    {"kind": "dribble", "pts": [[270, 60], [280, 55]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Player A has the ball; B is central, C waits wide and deep."},
+    {"t": 0.2, "label": "A plays into B — the instant B receives, C's run begins beyond the line."},
+    {"t": 0.4, "label": "B sets it back first time; C is already accelerating into the gap."},
+    {"t": 0.68, "label": "The third pass goes straight to C, arriving beyond the defence."}
+  ],
+  "events": []
+}

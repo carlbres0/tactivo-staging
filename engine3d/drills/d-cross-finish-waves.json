@@ -1,0 +1,186 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 34.77,
+  "length": 52
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    32.77,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    32.77,
+    52
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    52
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    17.38,
+    52
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    31.81,
+    25.08
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    15.46,
+    34.69
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    10.65,
+    34.69
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   31.79,
+   25.43
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    30.85,
+    45.85
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.6,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    15.08,
+    51.04
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.6,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    21.23,
+    47.77
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.86,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 1.56,
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 12.04,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    17.38,
+    52
+   ]
+  }
+ ],
+ "duration": 15,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     17.39,
+     27
+    ],
+    "w": 30.77,
+    "h": 50,
+    "label": "channel",
+    "color": "technical"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The runs matter more than the cross. Attack the space in front of the defender, not behind.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6,
+   "text": "Two central runners attack the box as the winger carries into the channel and crosses.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9,
+   "text": "The runs split. One attacks the front post, one the back, never the same line.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.75,
+   "text": "Alternate wings every wave. The keeper defends every cross. Finish first time where you can.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 15,
+   "text": "Too easy, two recovering defenders sprint back from halfway. Too hard, cross from a standing ball.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

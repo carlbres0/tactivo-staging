@@ -1,0 +1,33 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 20, "y": 70, "w": 280, "h": 60},
+  "cones": [[160, 90], [160, 110]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 40, "y": 100}, {"t": 1, "x": 40, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 280, "y": 100}, {"t": 1, "x": 280, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 40, "y": 100}, {"t": 0.1, "x": 40, "y": 100},
+    {"t": 0.25, "x": 280, "y": 100}, {"t": 0.35, "x": 280, "y": 100},
+    {"t": 0.5, "x": 40, "y": 100}, {"t": 0.6, "x": 40, "y": 100},
+    {"t": 0.85, "x": 280, "y": 100}, {"t": 1, "x": 280, "y": 100}
+  ], "air": [[0.6, 0.85]]},
+  "routes": [
+    {"kind": "pass", "pts": [[40, 100], [280, 100]]},
+    {"kind": "pass", "pts": [[280, 100], [40, 100]]},
+    {"kind": "pass", "pts": [[40, 100], [280, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Pairs start twenty metres apart and pass along the ground with the inside of the foot."},
+    {"t": 0.1, "label": "Step back five metres every two minutes; switch to the instep as the distance grows."},
+    {"t": 0.35, "label": "The receiver kills the ball with one touch and returns with the second."},
+    {"t": 0.6, "label": "Finish at maximum range, clipped over a cone gate midway."}
+  ],
+  "events": []
+}
