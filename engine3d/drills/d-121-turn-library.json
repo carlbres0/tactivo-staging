@@ -1,0 +1,170 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 17.83,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    10.63,
+    4.31
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.77,
+    8.92
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10.63,
+    13.54
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.85,
+    6.62
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.85,
+    11.23
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    9.58,
+    3.83
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    12.67,
+    16.17
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.28,
+   4.01
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.85,
+    6.62
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.41,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    10.77,
+    8.92
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.48,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.85,
+    11.23
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 10.56,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    9.63,
+    13.54
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 13.35,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.25,
+    15
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 17,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Name each turn as they do it. Owning the words makes the moves theirs to choose.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.5,
+   "text": "Five cones in a wide W, each cone owns a turn. Drag back, Cruyff, chop, cut, stop go.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.5,
+   "text": "Dribble the W performing each cone's own turn, the library in order.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 13.25,
+   "text": "Then you call cones by number in any order. Dribble there, that turn, out.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 17,
+   "text": "Too easy, you shadow at half pace and every turn escapes you. Too hard, walk it twice first.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 16,
+  "length": 25
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    14,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14,
+    22
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    22
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    8,
+    25
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    8,
+    14
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    8,
+    24
+   ],
+   "role": "keeper"
+  }
+ ],
+ "ball": {
+  "start": [
+   4.14,
+   5.32
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.98
+  },
+  {
+   "t": 3.8,
+   "type": "dribble",
+   "player": "a2",
+   "to": [
+    8.8,
+    15.5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.62,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    8,
+    25
+   ]
+  },
+  {
+   "t": 5.62,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    8.5,
+    23.5
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 9,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "One touch to turn, one to finish. Really this is about how good that first touch is.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.25,
+   "text": "Receive with your back to goal, a server behind you.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.25,
+   "text": "As the pass travels, the server calls a side. That's the way you turn.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 5.5,
+   "text": "Turn with the first touch, shoot with the second. Two touches, no more. Eight goes each.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9,
+   "text": "Too easy, a defender follows the striker in. Too hard, three touches and no call.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

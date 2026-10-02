@@ -1,0 +1,124 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 10
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    5
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    2.83,
+    6.89
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.35,
+   5
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    6.72,
+    5
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.98,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.22,
+    7.06
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.32,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.17,
+    3.22
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.04,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.17,
+    4.22
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 11.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Compass work is really a balance drill in disguise. Watch the standing foot.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.25,
+   "text": "They stand on an imaginary compass, ball under the sole.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 5.75,
+   "text": "You call directions. North, east, south west. The ball travels there by sole rolls only.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.75,
+   "text": "Feet dance round the ball, it never leaves the sole. Calls speed up to one every two seconds.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 11.5,
+   "text": "Too easy, point instead of calling so their eyes stay up. Too hard, four directions, called slowly.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

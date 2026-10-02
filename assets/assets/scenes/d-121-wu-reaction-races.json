@@ -1,0 +1,45 @@
+{
+  "v": 1,
+  "durationMs": 10000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [[146.2, 37.7]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 111, "y": 148}, {"t": 0.28, "x": 111, "y": 148},
+      {"t": 0.46, "x": 120, "y": 112}, {"t": 0.7, "x": 132, "y": 72},
+      {"t": 1, "x": 136, "y": 52}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 174, "y": 148}, {"t": 0.28, "x": 174, "y": 148},
+      {"t": 0.48, "x": 170, "y": 116}, {"t": 0.72, "x": 162, "y": 80},
+      {"t": 1, "x": 158, "y": 58}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 119, "y": 152}, {"t": 0.28, "x": 119, "y": 152},
+    {"t": 0.46, "x": 126, "y": 114}, {"t": 0.7, "x": 136, "y": 74},
+    {"t": 1, "x": 142, "y": 50}
+  ], "air": []},
+  "balls": [
+    {"kf": [
+      {"t": 0, "x": 182, "y": 152}, {"t": 0.28, "x": 182, "y": 152},
+      {"t": 0.48, "x": 176, "y": 118}, {"t": 0.72, "x": 168, "y": 82},
+      {"t": 1, "x": 164, "y": 60}
+    ], "air": []}
+  ],
+  "routes": [
+    {"kind": "dribble", "pts": [[119, 152], [126, 114], [142, 50]]},
+    {"kind": "dribble", "pts": [[182, 152], [176, 118], [164, 60]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Player stands over their ball, the coach five metres away holding theirs."},
+    {"t": 0.26, "label": "The signal changes every rep: a clap, a dropped ball, a nod, a word."},
+    {"t": 0.48, "label": "Race to the far cone — false starts hand the point to the coach."},
+    {"t": 0.8, "label": "Best of nine, dribbling the whole way there and back."}
+  ],
+  "events": [
+    {"t": 0.32, "x": 126, "y": 138, "label": "CLAP! — GO"},
+    {"t": 0.94, "x": 92, "y": 58, "label": "PLAYER WINS"}
+  ]
+}

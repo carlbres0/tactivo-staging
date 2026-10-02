@@ -1,0 +1,214 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 12,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    10,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    10,
+    12
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    12
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6,
+    7.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   10.4,
+   1.6
+  ],
+  "static": true
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.6,
+    5
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8.4,
+    7.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 2.67,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    3.6,
+    7.8
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.76,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    3.4,
+    5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.12,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    8,
+    7.8
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 5.31,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    8.2,
+    5
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 7.48,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    7.6,
+    11.7
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 7.77,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6.6,
+    10.6
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 10,
+   "type": "move",
+   "player": "d1",
+   "to": [
+    6.4,
+    8.2
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 11.12,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    6,
+    5.2
+   ],
+   "gait": "run"
+  }
+ ],
+ "duration": 15,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Defending starts in the feet. A defender who's already low doesn't have to lunge.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.25,
+   "text": "Pairs face each other. The attacker moves side to side without a ball, the defender mirrors.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.5,
+   "text": "Stay low, side on, front foot leading, never crossing the feet.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 12.25,
+   "text": "The attacker breaks for the line on a random count. The defender turns and recovers goal side.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 15,
+   "text": "Too easy, give the attacker a ball at walking pace. Too hard, slow it and hold the stance.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

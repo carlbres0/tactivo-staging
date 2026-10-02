@@ -1,0 +1,165 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 13.6,
+  "length": 22
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    8,
+    18.8
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    5.6,
+    18.8
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    6.8,
+    5.6
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    6.8,
+    12.8
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.84,
+   5.95
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    7.28,
+    9.8
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 1.7,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    7.52,
+    11.48
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.67,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    5.6,
+    12.2
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 4.68,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    5.84,
+    10.4
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 6.38,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    3.92,
+    11.84
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 6.38,
+   "type": "dribble",
+   "player": "n1",
+   "to": [
+    4.16,
+    9.8
+   ],
+   "gait": "walk"
+  }
+ ],
+ "duration": 10,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Defending one on one is patience in boots. The tackle is the reward.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.25,
+   "text": "You attack down the channel with the ball. They defend the end gate.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 5,
+   "text": "Their only job is delay. Stay goal side, show one way, never lunge.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6,
+   "text": "Survive five seconds without being beaten and they score.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 7.75,
+   "text": "You name the moment a dive in would have lost it.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10,
+   "text": "Too easy, they steer you onto your weaker side for double. Too hard, half pace, telegraph everything.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

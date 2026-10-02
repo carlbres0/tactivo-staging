@@ -1,0 +1,74 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 40, "w": 110, "h": 120},
+  "cones": [[30, 40], [140, 40], [30, 160], [140, 160]],
+  "goals": [
+    {"x": 26, "y": 100.0, "w": 40, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "k", "kf": [
+      {"t": 0, "x": 40, "y": 100},
+      {"t": 0.35, "x": 40, "y": 100},
+      {"t": 1, "x": 42, "y": 102}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 95, "y": 145},
+      {"t": 1, "x": 96, "y": 143}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 95, "y": 60},
+      {"t": 0.55, "x": 92, "y": 55},
+      {"t": 0.7, "x": 90, "y": 50},
+      {"t": 1, "x": 130, "y": 45}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 70, "y": 100},
+      {"t": 1, "x": 72, "y": 100}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 70, "y": 65},
+      {"t": 1, "x": 71, "y": 66}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 220, "y": 160},
+      {"t": 0.3, "x": 220, "y": 160},
+      {"t": 1, "x": 215, "y": 158}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 95, "y": 145},
+      {"t": 1, "x": 96, "y": 143}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 100, "y": 55},
+      {"t": 0.55, "x": 93, "y": 52},
+      {"t": 0.7, "x": 90, "y": 50},
+      {"t": 1, "x": 95, "y": 55}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 220, "y": 160},
+      {"t": 0.3, "x": 220, "y": 160},
+      {"t": 0.55, "x": 90, "y": 50},
+      {"t": 0.7, "x": 90, "y": 50},
+      {"t": 1, "x": 130, "y": 45}
+    ],
+    "air": [[0.3, 0.55]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[220, 160], [90, 50]]},
+    {"kind": "run", "pts": [[95, 60], [92, 55], [90, 50]]},
+    {"kind": "opp", "pts": [[100, 55], [93, 52], [90, 50]]},
+    {"kind": "pass", "pts": [[90, 50], [130, 45]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Four defenders and the keeper set \u2014 crosses coming from both wings tonight."},
+    {"t": 0.3, "label": "Keeper calls it early: \"keeper's\" or \"away\" before the ball ever arrives."},
+    {"t": 0.55, "label": "Nobody turns to watch the ball \u2014 head on a swivel, marker in sight."},
+    {"t": 0.7, "label": "Attack the cross first; head it clear, high and away from goal."}
+  ],
+  "events": [
+    {"t": 0.7, "x": 90, "y": 50, "label": "CLEARANCE"}
+  ]
+}

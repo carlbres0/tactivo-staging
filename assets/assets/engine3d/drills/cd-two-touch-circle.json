@@ -1,0 +1,192 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 17.5,
+  "length": 17.5
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    15.5,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    15.5,
+    15.5
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    15.5
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    8.75,
+    16.18
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    15.23,
+    12.53
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    15.23,
+    4.97
+   ]
+  },
+  {
+   "id": "a4",
+   "team": "white",
+   "number": 4,
+   "start": [
+    8.75,
+    1.33
+   ]
+  },
+  {
+   "id": "a5",
+   "team": "white",
+   "number": 5,
+   "start": [
+    2.27,
+    4.97
+   ]
+  },
+  {
+   "id": "a6",
+   "team": "white",
+   "number": 6,
+   "start": [
+    2.27,
+    12.53
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.05,
+   16.01
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.74
+  },
+  {
+   "t": 3.56,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.76
+  },
+  {
+   "t": 5.93,
+   "type": "pass",
+   "from": "a3",
+   "to": "a4",
+   "flight": 0.74
+  },
+  {
+   "t": 8.29,
+   "type": "pass",
+   "from": "a4",
+   "to": "a5",
+   "flight": 0.74
+  },
+  {
+   "t": 10.65,
+   "type": "pass",
+   "from": "a5",
+   "to": "a6",
+   "flight": 0.76
+  },
+  {
+   "t": 13.02,
+   "type": "pass",
+   "from": "a6",
+   "to": "a1",
+   "flight": 0.74
+  }
+ ],
+ "duration": 16,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Calm passing to finish on, so they go home happy with their touch.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.5,
+   "text": "Everyone in a circle, passing at walking pace, two touches each.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8,
+   "text": "Call the name of whoever you're passing to.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9,
+   "text": "Gentle and accurate. This is about the touch, not the tempo.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 13.5,
+   "text": "A misplaced pass just restarts the count, no forfeits. Two minutes, then stretches.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 16,
+   "text": "Too easy, run the count higher. Too hard, unlimited touches and a wider circle.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

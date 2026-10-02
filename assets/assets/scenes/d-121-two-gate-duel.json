@@ -1,0 +1,41 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 52, "y": 10, "w": 216, "h": 180},
+  "cones": [[106, 46], [142, 46], [178, 46], [214, 46]],
+  "goals": [],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 160, "y": 68}, {"t": 0.2, "x": 174, "y": 66},
+      {"t": 0.38, "x": 188, "y": 68}, {"t": 0.58, "x": 130, "y": 42},
+      {"t": 0.72, "x": 130, "y": 42}, {"t": 0.9, "x": 134, "y": 46},
+      {"t": 1, "x": 136, "y": 50}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 148}, {"t": 0.18, "x": 160, "y": 148},
+      {"t": 0.42, "x": 152, "y": 140}, {"t": 0.66, "x": 140, "y": 146},
+      {"t": 0.9, "x": 154, "y": 136}, {"t": 1, "x": 156, "y": 134}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 140}, {"t": 0.18, "x": 160, "y": 140},
+    {"t": 0.42, "x": 124, "y": 36}, {"t": 0.58, "x": 124, "y": 36},
+    {"t": 0.72, "x": 126, "y": 40}, {"t": 0.9, "x": 156, "y": 132},
+    {"t": 1, "x": 156, "y": 132}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[160, 140], [124, 36]]},
+    {"kind": "pass", "pts": [[126, 40], [156, 132]]},
+    {"kind": "opp", "pts": [[160, 68], [188, 68], [130, 42], [136, 50]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two gates six metres apart, with the coach loitering between them."},
+    {"t": 0.2, "label": "The player passes through whichever gate the coach is further from."},
+    {"t": 0.5, "label": "The coach drifts constantly; the eyes choose and the foot obeys."},
+    {"t": 0.76, "label": "The ball comes straight back off their pass. Ten passes, a point a gate."}
+  ],
+  "events": [
+    {"t": 0.22, "x": 198, "y": 86, "label": "COACH DRIFTS"},
+    {"t": 0.46, "x": 82, "y": 30, "label": "EMPTIER GATE"}
+  ]
+}

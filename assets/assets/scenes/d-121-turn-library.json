@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 70, "y": 24, "w": 180, "h": 166},
+  "cones": [[97.7, 86.5], [153.1, 72.7], [208.5, 86.5], [125.4, 155.8], [180.8, 155.8]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 92, "y": 99}, {"t": 0.08, "x": 92, "y": 99},
+      {"t": 0.26, "x": 125.4, "y": 163}, {"t": 0.44, "x": 153.1, "y": 81},
+      {"t": 0.62, "x": 180.8, "y": 163}, {"t": 0.8, "x": 208.5, "y": 95},
+      {"t": 0.9, "x": 224, "y": 123}, {"t": 1, "x": 224, "y": 123}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 240, "y": 62}, {"t": 1, "x": 240, "y": 62}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 97.7, "y": 92}, {"t": 0.08, "x": 97.7, "y": 92},
+    {"t": 0.26, "x": 125.4, "y": 155.8}, {"t": 0.44, "x": 153.1, "y": 73.7},
+    {"t": 0.62, "x": 180.8, "y": 155.8}, {"t": 0.8, "x": 208.5, "y": 87.5},
+    {"t": 0.9, "x": 226, "y": 115}, {"t": 1, "x": 226, "y": 115}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[97.7, 92], [125.4, 155.8], [153.1, 73.7], [180.8, 155.8], [208.5, 87.5], [226, 115]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Five cones in a wide W, and each cone owns a turn."},
+    {"t": 0.14, "label": "Drag-back, Cruyff, inside chop, outside cut, stop-go — the library in order."},
+    {"t": 0.5, "label": "Then the coach calls cones by number: dribble there, that turn, and out."},
+    {"t": 0.78, "label": "Two rounds ordered, two rounds called. Name each turn as you do it."}
+  ],
+  "events": [
+    {"t": 0.5, "x": 196, "y": 143, "label": "\"CONE FIVE!\""},
+    {"t": 0.64, "x": 198, "y": 175, "label": "OUTSIDE CUT"}
+  ]
+}

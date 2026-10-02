@@ -1,0 +1,75 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 170, "y": 50, "w": 110, "h": 100},
+  "cones": [[170, 50], [280, 50], [170, 150], [280, 150], [230, 50], [230, 150]],
+  "goals": [
+    {"x": 274, "y": 100.0, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 245, "y": 95},
+      {"t": 0.25, "x": 248, "y": 92},
+      {"t": 0.4, "x": 245, "y": 95},
+      {"t": 1, "x": 245, "y": 95}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 200, "y": 80},
+      {"t": 0.35, "x": 205, "y": 110},
+      {"t": 0.55, "x": 205, "y": 110},
+      {"t": 0.75, "x": 190, "y": 90},
+      {"t": 1, "x": 185, "y": 85}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 200, "y": 120},
+      {"t": 0.4, "x": 205, "y": 118},
+      {"t": 1, "x": 210, "y": 115}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 60},
+      {"t": 0.25, "x": 170, "y": 60},
+      {"t": 1, "x": 172, "y": 62}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 250, "y": 90},
+      {"t": 0.25, "x": 250, "y": 90},
+      {"t": 0.5, "x": 248, "y": 95},
+      {"t": 1, "x": 248, "y": 95}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 255, "y": 120},
+      {"t": 0.35, "x": 230, "y": 115},
+      {"t": 0.6, "x": 215, "y": 112},
+      {"t": 1, "x": 220, "y": 110}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 170, "y": 60},
+      {"t": 0.05, "x": 170, "y": 60},
+      {"t": 0.25, "x": 250, "y": 90},
+      {"t": 0.35, "x": 205, "y": 110},
+      {"t": 0.55, "x": 205, "y": 110},
+      {"t": 0.75, "x": 172, "y": 65},
+      {"t": 1, "x": 172, "y": 65}
+    ],
+    "air": [[0.05, 0.25]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[170, 60], [250, 90]]},
+    {"kind": "pass", "pts": [[250, 90], [205, 110]]},
+    {"kind": "run", "pts": [[200, 80], [205, 110]]},
+    {"kind": "dribble", "pts": [[205, 110], [190, 90]]},
+    {"kind": "opp", "pts": [[255, 120], [215, 112]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Crosses are cleared by the unit; two defenders hold the zone outside the box for this."},
+    {"t": 0.25, "label": "Cross comes in \u2014 the header clears it, but only into the second-ball zone."},
+    {"t": 0.35, "label": "That zone cannot be empty \u2014 the outside defender reacts first."},
+    {"t": 0.55, "label": "Win it and clear it well beyond the zone \u2014 attackers only score off the second ball."}
+  ],
+  "events": [
+    {"t": 0.35, "x": 205, "y": 110, "label": "2ND BALL"},
+    {"t": 0.75, "x": 190, "y": 90, "label": "CLEARED"}
+  ]
+}

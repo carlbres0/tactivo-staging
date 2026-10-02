@@ -1,0 +1,40 @@
+{
+  "v": 1,
+  "durationMs": 10000,
+  "area": {"x": 10, "y": 34.4, "w": 300, "h": 131.2},
+  "cones": [[160, 53.1], [160, 81.2], [160, 109.4], [160, 137.5]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 76, "y": 100}, {"t": 0.14, "x": 76, "y": 100},
+      {"t": 0.26, "x": 76, "y": 100}, {"t": 0.44, "x": 88, "y": 88},
+      {"t": 0.58, "x": 98, "y": 80}, {"t": 0.74, "x": 100, "y": 78},
+      {"t": 1, "x": 100, "y": 78}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 234, "y": 92}, {"t": 0.26, "x": 234, "y": 92},
+      {"t": 0.4, "x": 232, "y": 96}, {"t": 0.58, "x": 228, "y": 86},
+      {"t": 0.78, "x": 222, "y": 74}, {"t": 1, "x": 218, "y": 70}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 86, "y": 104}, {"t": 0.14, "x": 86, "y": 104},
+    {"t": 0.26, "x": 228, "y": 98}, {"t": 0.4, "x": 228, "y": 98},
+    {"t": 0.58, "x": 104, "y": 84}, {"t": 0.74, "x": 104, "y": 84},
+    {"t": 1, "x": 282, "y": 120}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[86, 104], [228, 98]]},
+    {"kind": "pass", "pts": [[228, 98], [104, 84]]},
+    {"kind": "pass", "pts": [[104, 84], [282, 120]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "A line of flat cones is the net; player and coach take a court each."},
+    {"t": 0.2, "label": "Pass the ball over — through — the net, then control and return in two touches."},
+    {"t": 0.5, "label": "The coach plays honestly, and the rally makes a hundred passes feel like none."},
+    {"t": 0.78, "label": "A ball stopping dead, or leaving the court, loses the point. First to seven."}
+  ],
+  "events": [
+    {"t": 0.9, "x": 250, "y": 142, "label": "POINT"}
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [
+    [200, 40], [200, 100], [200, 160]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 70, "y": 100},
+      {"t": 1, "x": 70, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 180, "y": 100},
+      {"t": 0.3, "x": 180, "y": 100},
+      {"t": 0.42, "x": 230, "y": 88},
+      {"t": 0.65, "x": 260, "y": 85},
+      {"t": 1, "x": 290, "y": 80}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 200, "y": 100},
+      {"t": 0.35, "x": 200, "y": 100},
+      {"t": 0.5, "x": 210, "y": 105},
+      {"t": 1, "x": 215, "y": 110}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 70, "y": 100},
+      {"t": 0.3, "x": 70, "y": 100},
+      {"t": 0.42, "x": 230, "y": 88},
+      {"t": 0.65, "x": 270, "y": 82},
+      {"t": 1, "x": 290, "y": 80}
+    ],
+    "air": [[0.3, 0.42]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[70, 100], [270, 82]]},
+    {"kind": "run", "pts": [[180, 100], [230, 88], [290, 80]]},
+    {"kind": "opp", "pts": [[200, 100], [215, 110]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Midfielder on the ball, facing forward; the defensive line holds its shape."},
+    {"t": 0.3, "label": "The moment the striker starts the run, the pass is played — not to feet."},
+    {"t": 0.42, "label": "Weighted so the striker never has to break stride."},
+    {"t": 0.65, "label": "In behind the line — the defender recovers a stride too late."}
+  ],
+  "events": [
+    {"t": 0.42, "x": 200, "y": 92, "label": "RUN"}
+  ]
+}

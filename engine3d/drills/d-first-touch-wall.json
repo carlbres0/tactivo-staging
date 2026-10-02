@@ -1,0 +1,137 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 9.99,
+  "length": 19
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.04,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.04,
+    17
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.95,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.95,
+    17
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    2.68
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5,
+    9.5
+   ]
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    5,
+    16.32
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   3.03
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.68
+  },
+  {
+   "t": 3.5,
+   "type": "pass",
+   "from": "a2",
+   "to": "a3",
+   "flight": 0.68
+  }
+ ],
+ "duration": 6.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Good for fixing the touch that goes nowhere.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 1.75,
+   "text": "One working player stands between two servers.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.75,
+   "text": "The first server passes in, and the touch has to point at the second server.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.75,
+   "text": "Then the pass goes on. Every touch travels towards where the next pass is going.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.75,
+   "text": "Forty five seconds each, then rotate. Three turns apiece.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6.5,
+   "text": "Too easy, servers throw it in at knee and chest height. Too hard, allow two touches.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

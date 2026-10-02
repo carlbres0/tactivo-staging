@@ -1,0 +1,45 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 120, "y": 60, "w": 80, "h": 80},
+  "cones": [
+    [150, 100], [170, 100]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 100},
+      {"t": 0.15, "x": 150, "y": 85},
+      {"t": 0.3, "x": 140, "y": 100, "cx": 135, "cy": 92},
+      {"t": 0.45, "x": 150, "y": 115, "cx": 135, "cy": 108},
+      {"t": 0.6, "x": 160, "y": 100, "cx": 155, "cy": 108},
+      {"t": 0.75, "x": 170, "y": 85, "cx": 175, "cy": 92},
+      {"t": 0.9, "x": 180, "y": 100, "cx": 185, "cy": 108},
+      {"t": 1, "x": 160, "y": 100, "cx": 175, "cy": 100}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 160, "y": 100},
+      {"t": 0.15, "x": 150, "y": 85},
+      {"t": 0.3, "x": 140, "y": 100, "cx": 135, "cy": 92},
+      {"t": 0.45, "x": 150, "y": 115, "cx": 135, "cy": 108},
+      {"t": 0.6, "x": 160, "y": 100, "cx": 155, "cy": 108},
+      {"t": 0.75, "x": 170, "y": 85, "cx": 175, "cy": 92},
+      {"t": 0.9, "x": 180, "y": 100, "cx": 185, "cy": 108},
+      {"t": 1, "x": 160, "y": 100, "cx": 175, "cy": 100}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[160, 100], [150, 85], [140, 100], [150, 115], [160, 100]]},
+    {"kind": "dribble", "pts": [[160, 100], [170, 85], [180, 100], [160, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Figure-eight around two cones, using the inside of both feet."},
+    {"t": 0.3, "label": "Now the outside of both feet — same pattern, different surface."},
+    {"t": 0.6, "label": "Alternate inside-outside through the loop, thirty seconds per pattern."},
+    {"t": 0.85, "label": "Count completed loops and try to beat it next round."}
+  ],
+  "events": []
+}

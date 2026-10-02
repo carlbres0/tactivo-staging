@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 80, "y": 30, "w": 150, "h": 140},
+  "cones": [[160, 50], [110, 150], [210, 150]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 50}, {"t": 0.1, "x": 160, "y": 50},
+      {"t": 0.5, "x": 90, "y": 165, "cx": 70, "cy": 130},
+      {"t": 0.7, "x": 90, "y": 165}, {"t": 0.85, "x": 210, "y": 150},
+      {"t": 1, "x": 210, "y": 150}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 110, "y": 150}, {"t": 0.6, "x": 110, "y": 150},
+      {"t": 1, "x": 120, "y": 140}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 210, "y": 150}, {"t": 0.85, "x": 210, "y": 150},
+      {"t": 1, "x": 165, "y": 55}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 50}, {"t": 0.1, "x": 160, "y": 50},
+    {"t": 0.2, "x": 110, "y": 150}, {"t": 0.6, "x": 110, "y": 150},
+    {"t": 0.7, "x": 90, "y": 165}, {"t": 0.85, "x": 210, "y": 150},
+    {"t": 1, "x": 210, "y": 150}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[160, 50], [110, 150]]},
+    {"kind": "run", "curve": true, "pts": [[160, 50], [70, 130], [90, 165]]},
+    {"kind": "pass", "pts": [[110, 150], [90, 165]]},
+    {"kind": "dribble", "pts": [[90, 165], [210, 150]]},
+    {"kind": "run", "pts": [[210, 150], [165, 55]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Threes work round the triangle: pass, overlap the receiver, take their cone."},
+    {"t": 0.1, "label": "The overlapping run goes outside the receiver and at pace."},
+    {"t": 0.6, "label": "Change direction every two minutes so both feet get work."},
+    {"t": 0.7, "label": "Add a return pass into the overlap once the timing is right."}
+  ],
+  "events": []
+}

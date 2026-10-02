@@ -1,0 +1,208 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {
+    "x": 70,
+    "y": 10,
+    "w": 180,
+    "h": 180
+  },
+  "cones": [
+    [
+      78,
+      182
+    ]
+  ],
+  "goals": [],
+  "players": [
+    {
+      "team": "n",
+      "label": "C",
+      "kf": [
+        {
+          "t": 0,
+          "x": 150,
+          "y": 70
+        },
+        {
+          "t": 0.18,
+          "x": 156,
+          "y": 62
+        },
+        {
+          "t": 0.4,
+          "x": 166,
+          "y": 54
+        },
+        {
+          "t": 0.56,
+          "x": 166,
+          "y": 54
+        },
+        {
+          "t": 1,
+          "x": 166,
+          "y": 54
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 90,
+          "y": 176
+        },
+        {
+          "t": 0.1,
+          "x": 90,
+          "y": 176
+        },
+        {
+          "t": 0.18,
+          "x": 98,
+          "y": 168
+        },
+        {
+          "t": 0.24,
+          "x": 98,
+          "y": 168
+        },
+        {
+          "t": 0.38,
+          "x": 178,
+          "y": 72
+        },
+        {
+          "t": 0.62,
+          "x": 176,
+          "y": 74
+        },
+        {
+          "t": 0.74,
+          "x": 174,
+          "y": 78
+        },
+        {
+          "t": 1,
+          "x": 158,
+          "y": 118
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 150,
+        "y": 78
+      },
+      {
+        "t": 0.18,
+        "x": 158,
+        "y": 68
+      },
+      {
+        "t": 0.4,
+        "x": 168,
+        "y": 60
+      },
+      {
+        "t": 0.56,
+        "x": 176,
+        "y": 74
+      },
+      {
+        "t": 0.72,
+        "x": 176,
+        "y": 76
+      },
+      {
+        "t": 1,
+        "x": 158,
+        "y": 118
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          150,
+          78
+        ],
+        [
+          168,
+          60
+        ],
+        [
+          176,
+          74
+        ]
+      ]
+    },
+    {
+      "kind": "run",
+      "pts": [
+        [
+          98,
+          168
+        ],
+        [
+          178,
+          72
+        ]
+      ]
+    },
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          176,
+          76
+        ],
+        [
+          158,
+          118
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Coach dribbles casually in the box; the player watches from a cone."
+    },
+    {
+      "t": 0.3,
+      "label": "Pressing on a good touch loses the point \u2014 the trigger is everything."
+    },
+    {
+      "t": 0.48,
+      "label": "A heavy touch, and the head drops. GO \u2014 sprint from the cone."
+    },
+    {
+      "t": 0.7,
+      "label": "Poke it off his toe and go. Six presses, then the bad touches get better disguised."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.58,
+      "x": 192,
+      "y": 66,
+      "label": "HEAVY TOUCH"
+    },
+    {
+      "t": 0.76,
+      "x": 192,
+      "y": 90,
+      "label": "WON"
+    }
+  ]
+}

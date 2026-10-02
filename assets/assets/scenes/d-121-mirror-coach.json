@@ -1,0 +1,44 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [],
+  "goals": [],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 136, "y": 92}, {"t": 0.18, "x": 136, "y": 92},
+      {"t": 0.36, "x": 120, "y": 124}, {"t": 0.55, "x": 120, "y": 124},
+      {"t": 0.75, "x": 144, "y": 150}, {"t": 1, "x": 144, "y": 150}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 193, "y": 92}, {"t": 0.24, "x": 193, "y": 92},
+      {"t": 0.42, "x": 177, "y": 124}, {"t": 0.6, "x": 177, "y": 124},
+      {"t": 0.8, "x": 201, "y": 150}, {"t": 1, "x": 201, "y": 150}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 193, "y": 100}, {"t": 0.24, "x": 193, "y": 100},
+    {"t": 0.42, "x": 177, "y": 132}, {"t": 0.6, "x": 177, "y": 132},
+    {"t": 0.8, "x": 201, "y": 158}, {"t": 1, "x": 201, "y": 158}
+  ], "air": []},
+  "balls": [
+    {"kf": [
+      {"t": 0, "x": 136, "y": 100}, {"t": 0.18, "x": 136, "y": 100},
+      {"t": 0.36, "x": 120, "y": 132}, {"t": 0.55, "x": 120, "y": 132},
+      {"t": 0.75, "x": 144, "y": 158}, {"t": 1, "x": 144, "y": 158}
+    ], "air": []}
+  ],
+  "routes": [
+    {"kind": "dribble", "pts": [[136, 100], [120, 132], [144, 158]]},
+    {"kind": "dribble", "pts": [[193, 100], [177, 132], [201, 158]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Coach and player each dribble a ball, three metres apart."},
+    {"t": 0.22, "label": "Whatever the coach does, the player mirrors — stops, turns, taps, tricks."},
+    {"t": 0.58, "label": "Thirty seconds, then swap: the player leads and the coach copies badly."},
+    {"t": 0.84, "label": "Leading and spotting the coach's mistakes are both worth points."}
+  ],
+  "events": [
+    {"t": 0.5, "x": 216, "y": 116, "label": "MIRROR"}
+  ]
+}
