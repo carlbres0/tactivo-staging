@@ -1,0 +1,57 @@
+{
+  "v": 1,
+  "durationMs": 9500,
+  "area": {"x": 25, "y": 45, "w": 180, "h": 110},
+  "zones": [
+    {"x": 26, "y": 58, "w": 8, "h": 84, "label": "WALL"}
+  ],
+  "cones": [
+    [80, 152], [120, 152], [170, 152]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 80, "y": 100},
+      {"t": 0.3, "x": 80, "y": 100},
+      {"t": 0.34, "x": 120, "y": 100},
+      {"t": 0.64, "x": 120, "y": 100},
+      {"t": 0.68, "x": 170, "y": 100},
+      {"t": 1, "x": 170, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 80, "y": 100},
+    {"t": 0.06, "x": 80, "y": 100},
+    {"t": 0.12, "x": 36, "y": 100},
+    {"t": 0.18, "x": 80, "y": 100},
+    {"t": 0.22, "x": 36, "y": 100},
+    {"t": 0.28, "x": 80, "y": 100},
+    {"t": 0.34, "x": 120, "y": 100},
+    {"t": 0.4, "x": 36, "y": 100},
+    {"t": 0.46, "x": 120, "y": 100},
+    {"t": 0.52, "x": 36, "y": 100},
+    {"t": 0.58, "x": 120, "y": 100},
+    {"t": 0.68, "x": 170, "y": 100},
+    {"t": 0.76, "x": 36, "y": 100},
+    {"t": 0.84, "x": 170, "y": 100},
+    {"t": 0.92, "x": 36, "y": 100},
+    {"t": 1, "x": 170, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[80, 100], [36, 100]]},
+    {"kind": "pass", "pts": [[120, 100], [36, 100]]},
+    {"kind": "pass", "pts": [[170, 100], [36, 100]]},
+    {"kind": "run", "pts": [[80, 100], [170, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Mark one: pass the board, take the return with one touch, play it back with the second."},
+    {"t": 0.34, "label": "Twenty clean exchanges, then step back a mark — alternate feet every time."},
+    {"t": 0.68, "label": "Furthest mark: the long return asks for a softer, angled first touch."},
+    {"t": 0.9, "label": "Last set one-touch only — count the longest unbroken run."}
+  ],
+  "events": [
+    {"t": 0.14, "x": 56, "y": 86, "label": "Off the board"},
+    {"t": 0.46, "x": 120, "y": 84, "label": "Alternate feet"},
+    {"t": 0.94, "x": 170, "y": 84, "label": "One touch only"}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 60, "y": 40, "w": 200, "h": 120},
+  "cones": [[60, 40], [260, 40], [60, 160], [260, 160]],
+  "goals": [],
+  "players": [
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 160, "y": 100}, {"t": 0.35, "x": 160, "y": 100},
+      {"t": 0.55, "x": 160, "y": 100}, {"t": 0.6, "x": 168, "y": 108},
+      {"t": 1, "x": 170, "y": 110}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 80}, {"t": 0.3, "x": 105, "y": 82},
+      {"t": 0.55, "x": 160, "y": 100, "cx": 135, "cy": 88},
+      {"t": 0.75, "x": 140, "y": 85}, {"t": 1, "x": 120, "y": 70}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 200, "y": 70}, {"t": 0.3, "x": 195, "y": 75},
+      {"t": 0.55, "x": 185, "y": 90}, {"t": 1, "x": 200, "y": 80}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 130, "y": 140}, {"t": 0.3, "x": 135, "y": 135},
+      {"t": 0.55, "x": 150, "y": 120}, {"t": 1, "x": 140, "y": 135}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 100}, {"t": 0.35, "x": 160, "y": 100},
+    {"t": 0.55, "x": 160, "y": 100}, {"t": 0.75, "x": 140, "y": 85},
+    {"t": 1, "x": 120, "y": 70}
+  ], "air": []},
+  "routes": [
+    {"kind": "run", "curve": true, "pts": [[100, 80], [135, 88], [160, 100]]},
+    {"kind": "dribble", "pts": [[160, 100], [140, 85], [120, 70]]},
+    {"kind": "run", "pts": [[200, 70], [195, 75], [185, 90]]},
+    {"kind": "run", "pts": [[130, 140], [135, 135], [150, 120]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Players jog loosely, scanning for the coach's pressing cue."},
+    {"t": 0.35, "label": "Trigger: a heavy touch under pressure — the nearest player springs."},
+    {"t": 0.55, "label": "Win it as a unit while the other two cover the passing lanes."},
+    {"t": 0.75, "label": "Recover shape immediately — press, then reset the picture."}
+  ],
+  "events": [
+    {"t": 0.35, "x": 160, "y": 100, "label": "TRIGGER"}
+  ]
+}

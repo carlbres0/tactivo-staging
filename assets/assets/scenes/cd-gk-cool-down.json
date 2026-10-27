@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 26, "y": 60, "w": 90, "h": 90},
+  "cones": [[26, 60], [116, 60], [26, 150], [116, 150]],
+  "goals": [
+    {"x": 26, "y": 105.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "GK", "kf": [
+      {"t": 0, "x": 45, "y": 105},
+      {"t": 1, "x": 45, "y": 105}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 105},
+      {"t": 1, "x": 100, "y": 105}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 100, "y": 105},
+      {"t": 0.15, "x": 45, "y": 105},
+      {"t": 0.25, "x": 45, "y": 105},
+      {"t": 0.4, "x": 100, "y": 105},
+      {"t": 0.5, "x": 100, "y": 105},
+      {"t": 0.65, "x": 45, "y": 105},
+      {"t": 0.75, "x": 45, "y": 105},
+      {"t": 0.9, "x": 100, "y": 105},
+      {"t": 1, "x": 100, "y": 105}
+    ],
+    "air": [[0, 0.15], [0.5, 0.65]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[100, 105], [45, 105]]},
+    {"kind": "pass", "pts": [[45, 105], [100, 105]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Ten soft catches at chest height \u2014 keeper and server both stand still."},
+    {"t": 0.15, "label": "Gentle lob in, secure catch, smooth return to the server."},
+    {"t": 0.5, "label": "Shoulder rolls and wrist stretches, then the full lower-body circuit."},
+    {"t": 0.85, "label": "Which save are you happiest with tonight?"}
+  ]
+}

@@ -1,0 +1,147 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 11.69,
+  "length": 29
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    5.85,
+    20.27
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.21,
+    27.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.29,
+    27.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    4.4,
+    27.77
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.48,
+    27.77
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.85,
+    2.96
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.85,
+   3.31
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.85,
+    18.35
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 6.36,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    4.12,
+    20.27
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.3,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    3.15,
+    23.35
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.16,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    3.44,
+    27.77
+   ],
+   "flight": 0.44,
+   "flightStyle": "ground"
+  }
+ ],
+ "duration": 13.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Look up every third touch. That's the rhythm worth naming out loud.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6.75,
+   "text": "Carry the ball down the channel. At the split, you point left or right at the last second.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.25,
+   "text": "Head up at the split point or the call is missed.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 12.25,
+   "text": "Finish with a pass into a target gate at the end of the chosen lane. Eight runs each.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 13.5,
+   "text": "Too easy, show fingers instead of pointing. Too hard, call the direction early and loud.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+  "v": 1,
+  "durationMs": 9500,
+  "area": {"x": 60, "y": 40, "w": 220, "h": 120},
+  "cones": [[60, 40], [280, 40], [60, 160], [280, 160], [100, 102]],
+  "goals": [
+    {"x": 288, "y": 100.0, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 240, "y": 80},
+      {"t": 0.5, "x": 240, "y": 80},
+      {"t": 0.6, "x": 238, "y": 82},
+      {"t": 1, "x": 238, "y": 82}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 200, "y": 100},
+      {"t": 0.1, "x": 200, "y": 100},
+      {"t": 0.35, "x": 100, "y": 102},
+      {"t": 0.55, "x": 205, "y": 95, "cx": 150, "cy": 98},
+      {"t": 0.68, "x": 230, "y": 90},
+      {"t": 1, "x": 230, "y": 90}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 240, "y": 80},
+      {"t": 0.55, "x": 240, "y": 80},
+      {"t": 0.68, "x": 230, "y": 90},
+      {"t": 0.78, "x": 284, "y": 85},
+      {"t": 1, "x": 284, "y": 85}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "run", "pts": [[200, 100], [100, 102]]},
+    {"kind": "run", "curve": true, "pts": [[100, 102], [150, 98], [230, 90]]},
+    {"kind": "pass", "pts": [[240, 80], [230, 90]]},
+    {"kind": "shot", "pts": [[230, 90], [284, 85]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Striker starts beside the server, fresh legs at the top of the sequence."},
+    {"t": 0.1, "label": "Sprint 20 metres out to the cone \u2014 full effort, no cruising."},
+    {"t": 0.55, "label": "Sprint straight back to the serve without recovery."},
+    {"t": 0.68, "label": "Composure over the strike \u2014 the legs are tired, the technique stays the same."}
+  ],
+  "events": [
+    {"t": 0.35, "x": 100, "y": 102, "label": "TURN"},
+    {"t": 0.78, "x": 284, "y": 85, "label": "GOAL"}
+  ]
+}

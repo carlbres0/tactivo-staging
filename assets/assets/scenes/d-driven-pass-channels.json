@@ -1,0 +1,45 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 30, "w": 260, "h": 140},
+  "cones": [
+    [30, 30], [290, 30], [30, 170], [290, 170],
+    [60, 30], [60, 170], [260, 30], [260, 170]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 120, "y": 100}, {"t": 0.25, "x": 120, "y": 100},
+      {"t": 0.85, "x": 120, "y": 100}, {"t": 1, "x": 122, "y": 102}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 170, "y": 110}, {"t": 0.25, "x": 170, "y": 110},
+      {"t": 0.35, "x": 170, "y": 110}, {"t": 1, "x": 170, "y": 110}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 270, "y": 50}, {"t": 0.35, "x": 270, "y": 50},
+      {"t": 0.55, "x": 275, "y": 120}, {"t": 0.68, "x": 275, "y": 120},
+      {"t": 1, "x": 260, "y": 110}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 120, "y": 100}, {"t": 0.15, "x": 120, "y": 100},
+    {"t": 0.25, "x": 170, "y": 110}, {"t": 0.35, "x": 170, "y": 110},
+    {"t": 0.55, "x": 275, "y": 120}, {"t": 0.68, "x": 275, "y": 120},
+    {"t": 0.85, "x": 120, "y": 100}, {"t": 1, "x": 120, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[120, 100], [170, 110]]},
+    {"kind": "run", "curve": true, "pts": [[270, 50], [285, 90], [275, 120]]},
+    {"kind": "pass", "pts": [[170, 110], [275, 120]]},
+    {"kind": "pass", "pts": [[275, 120], [120, 100]]},
+    {"kind": "run", "pts": [[275, 120], [260, 110]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Central players circulate; the wide player starts high in the channel."},
+    {"t": 0.35, "label": "On the trigger, the wide runner accelerates into the space ahead."},
+    {"t": 0.55, "label": "Driven with the laces, low and fast — into the channel, not to feet."},
+    {"t": 0.68, "label": "Wide player controls and returns inside; the sequence restarts the other way."}
+  ],
+  "events": []
+}

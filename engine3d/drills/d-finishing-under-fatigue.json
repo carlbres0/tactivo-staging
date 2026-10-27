@@ -1,0 +1,166 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.36,
+  "length": 32
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    18.36,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    18.36,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    32
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    9.91,
+    7.45
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.18,
+    32
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 2,
+   "start": [
+    12.91,
+    26.55
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 1,
+   "start": [
+    10.18,
+    21.09
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   12.75,
+   26.24
+  ]
+ },
+ "events": [
+  {
+   "t": 0.95,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    10.91,
+    7.45
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 5.06,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.55,
+    25.18
+   ],
+   "gait": "sprint"
+  },
+  {
+   "t": 9.41,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.4
+  },
+  {
+   "t": 11.43,
+   "type": "shoot",
+   "player": "a2",
+   "at": [
+    10.18,
+    32
+   ]
+  }
+ ],
+ "duration": 14.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Goals get missed in the last twenty minutes. This rehearses that.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 1.5,
+   "text": "The striker sprints to a cone, back to the serve, then finishes.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8,
+   "text": "Three finishes in one sequence with no rest between them.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9,
+   "text": "Composure is the point. The strike stays the same however tired the legs are.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10,
+   "text": "Two sequences each, full recovery between.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 14.5,
+   "text": "Too easy, a recovering defender on the third finish. Too hard, two finishes and a shorter sprint.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

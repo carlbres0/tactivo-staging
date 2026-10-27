@@ -1,0 +1,131 @@
+{
+  "v": 1,
+  "durationMs": 20000,
+  "area": {
+    "x": 30,
+    "y": 25,
+    "w": 260,
+    "h": 150
+  },
+  "cones": [
+    [
+      30,
+      25
+    ],
+    [
+      290,
+      25
+    ],
+    [
+      30,
+      175
+    ],
+    [
+      290,
+      175
+    ]
+  ],
+  "goals": [],
+  "players": [
+    {
+      "team": "a",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 50,
+          "y": 40
+        },
+        {
+          "t": 0.8,
+          "x": 170,
+          "y": 40
+        },
+        {
+          "t": 1,
+          "x": 160,
+          "y": 70
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "2",
+      "kf": [
+        {
+          "t": 0,
+          "x": 50,
+          "y": 55
+        },
+        {
+          "t": 0.8,
+          "x": 170,
+          "y": 55
+        },
+        {
+          "t": 1,
+          "x": 175,
+          "y": 78
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "3",
+      "kf": [
+        {
+          "t": 0,
+          "x": 50,
+          "y": 145
+        },
+        {
+          "t": 0.8,
+          "x": 170,
+          "y": 145
+        },
+        {
+          "t": 1,
+          "x": 160,
+          "y": 130
+        }
+      ]
+    },
+    {
+      "team": "a",
+      "label": "4",
+      "kf": [
+        {
+          "t": 0,
+          "x": 50,
+          "y": 160
+        },
+        {
+          "t": 0.8,
+          "x": 170,
+          "y": 160
+        },
+        {
+          "t": 1,
+          "x": 175,
+          "y": 138
+        }
+      ]
+    }
+  ],
+  "ball": null,
+  "routes": [],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Pairs walk a slow lap side by side while the heart rate drops."
+    },
+    {
+      "t": 0.5,
+      "label": "Each pair agrees one thing that went well and one to work on."
+    },
+    {
+      "t": 0.8,
+      "label": "Walk in and share the two points — quick, no lectures."
+    }
+  ]
+}

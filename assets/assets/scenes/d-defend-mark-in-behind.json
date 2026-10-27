@@ -1,0 +1,53 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [[30, 25], [290, 25], [30, 175], [290, 175]],
+  "goals": [
+    {"x": 26, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 88},
+      {"t": 0.4, "x": 150, "y": 88},
+      {"t": 0.75, "x": 92, "y": 76},
+      {"t": 0.9, "x": 88, "y": 74},
+      {"t": 1, "x": 110, "y": 60}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 200, "y": 100},
+      {"t": 0.4, "x": 200, "y": 100},
+      {"t": 1, "x": 202, "y": 102}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 155, "y": 90},
+      {"t": 0.4, "x": 155, "y": 90},
+      {"t": 0.75, "x": 90, "y": 75},
+      {"t": 1, "x": 85, "y": 73}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 200, "y": 100},
+      {"t": 0.4, "x": 200, "y": 100},
+      {"t": 0.9, "x": 88, "y": 74},
+      {"t": 1, "x": 110, "y": 60}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[200, 100], [88, 74]]},
+    {"kind": "opp", "pts": [[155, 90], [90, 75]]},
+    {"kind": "run", "pts": [[150, 88], [92, 76], [88, 74]]},
+    {"kind": "dribble", "pts": [[88, 74], [110, 60]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server holds centrally; defender stays tight, seeing both ball and runner."},
+    {"t": 0.4, "label": "Trigger: the ball is about to go early \u2014 nobody can watch only the man."},
+    {"t": 0.75, "label": "Track the run all the way, shoulder to shoulder, without grabbing."},
+    {"t": 0.9, "label": "Defender gets across first and clears \u2014 the run is beaten, not just followed."}
+  ],
+  "events": [
+    {"t": 0.9, "x": 88, "y": 74, "label": "CLEARANCE"}
+  ]
+}

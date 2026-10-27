@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "durationMs": 8300,
+  "area": {"x": 120, "y": 40, "w": 150, "h": 120},
+  "cones": [[120, 40], [270, 40], [120, 160], [270, 160]],
+  "goals": [
+    {"x": 284, "y": 95, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 60}, {"t": 0.2, "x": 150, "y": 60},
+      {"t": 0.45, "x": 200, "y": 78},
+      {"t": 0.55, "x": 230, "y": 95, "cx": 190, "cy": 65},
+      {"t": 1, "x": 230, "y": 95}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 150, "y": 140}, {"t": 1, "x": 150, "y": 140}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 200, "y": 110}, {"t": 0.45, "x": 200, "y": 110},
+      {"t": 0.6, "x": 206, "y": 114}, {"t": 1, "x": 206, "y": 114}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 200, "y": 110}, {"t": 0.45, "x": 200, "y": 110},
+    {"t": 0.55, "x": 230, "y": 95}, {"t": 0.65, "x": 284, "y": 90},
+    {"t": 1, "x": 284, "y": 90}
+  ], "air": []},
+  "routes": [
+    {"kind": "run", "curve": true, "pts": [[150, 60], [190, 65], [230, 95]]},
+    {"kind": "pass", "pts": [[200, 110], [230, 95]]},
+    {"kind": "shot", "pts": [[230, 95], [284, 90]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two lines flank the central server; the near line attacks in waves of one."},
+    {"t": 0.45, "label": "Firm pass fires into the runner's path — timing the run beats the ball."},
+    {"t": 0.55, "label": "One touch only — meet it early and finish."},
+    {"t": 0.65, "label": "Reset for the next wave; eight per line before swapping sides."}
+  ],
+  "events": [
+    {"t": 0.65, "x": 284, "y": 90, "label": "GOAL"}
+  ]
+}

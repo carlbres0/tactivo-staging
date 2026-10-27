@@ -1,0 +1,61 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 40, "w": 260, "h": 140},
+  "cones": [
+    [30, 50], [30, 170],
+    [295, 85], [295, 115]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 120, "y": 95},
+      {"t": 0.42, "x": 142, "y": 100},
+      {"t": 1, "x": 142, "y": 100}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 50, "y": 110},
+      {"t": 0.2, "x": 50, "y": 110},
+      {"t": 0.42, "x": 150, "y": 105},
+      {"t": 0.68, "x": 150, "y": 105},
+      {"t": 0.78, "x": 220, "y": 85},
+      {"t": 1, "x": 275, "y": 75}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 90, "y": 55},
+      {"t": 0.4, "x": 90, "y": 55},
+      {"t": 0.52, "x": 160, "y": 58},
+      {"t": 0.68, "x": 160, "y": 58},
+      {"t": 1, "x": 165, "y": 60}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 50, "y": 110},
+      {"t": 0.2, "x": 50, "y": 110},
+      {"t": 0.42, "x": 150, "y": 105},
+      {"t": 0.52, "x": 160, "y": 58},
+      {"t": 0.68, "x": 160, "y": 58},
+      {"t": 0.78, "x": 220, "y": 85},
+      {"t": 1, "x": 275, "y": 75}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "dribble", "pts": [[50, 110], [150, 105]]},
+    {"kind": "opp", "pts": [[120, 95], [142, 100]]},
+    {"kind": "pass", "pts": [[150, 105], [160, 58]]},
+    {"kind": "run", "pts": [[150, 105], [220, 85]]},
+    {"kind": "pass", "pts": [[160, 58], [220, 85]]},
+    {"kind": "dribble", "pts": [[220, 85], [275, 75]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Full-back carries forward with the winger ahead and one defender to beat."},
+    {"t": 0.42, "label": "Defender shows across the passing lane — the ball goes inside to the winger."},
+    {"t": 0.68, "label": "The carry itself was the invitation — the full-back overlaps into the space."},
+    {"t": 0.78, "label": "Winger slides it into the overlap — finish near the end gate."}
+  ],
+  "events": [
+    {"t": 0.78, "x": 220, "y": 85, "label": "OVERLAP"}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 50, "y": 70, "w": 220, "h": 60},
+  "cones": [[50, 70], [270, 70], [50, 130], [270, 130]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 100}, {"t": 1, "x": 60, "y": 100}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 160, "y": 100}, {"t": 0.28, "x": 160, "y": 100},
+      {"t": 0.4, "x": 163, "y": 96}, {"t": 0.55, "x": 163, "y": 96},
+      {"t": 0.75, "x": 160, "y": 100}, {"t": 1, "x": 160, "y": 100}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 260, "y": 100}, {"t": 1, "x": 260, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 60, "y": 100}, {"t": 0.15, "x": 60, "y": 100},
+    {"t": 0.28, "x": 160, "y": 100}, {"t": 0.4, "x": 163, "y": 96},
+    {"t": 0.55, "x": 163, "y": 96}, {"t": 0.68, "x": 260, "y": 100},
+    {"t": 1, "x": 260, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[60, 100], [160, 100]]},
+    {"kind": "dribble", "pts": [[160, 100], [163, 96]]},
+    {"kind": "pass", "pts": [[163, 96], [260, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Working player stands between two servers, twelve metres apart."},
+    {"t": 0.28, "label": "Server one plays in — the first touch must point straight at the next pass."},
+    {"t": 0.4, "label": "One touch solves two problems: kill the pace, and open the angle to server two."},
+    {"t": 0.68, "label": "Ball goes to server two. Forty-five seconds work, then rotate — three turns each."}
+  ],
+  "events": []
+}

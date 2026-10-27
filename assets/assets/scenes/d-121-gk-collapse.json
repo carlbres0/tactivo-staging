@@ -1,0 +1,173 @@
+{
+  "v": 1,
+  "durationMs": 14000,
+  "area": {
+    "x": 110,
+    "y": 24,
+    "w": 100,
+    "h": 170
+  },
+  "cones": [],
+  "goals": [
+    {
+      "x": 160,
+      "y": 35.2,
+      "w": 16,
+      "side": "n"
+    }
+  ],
+  "players": [
+    {
+      "team": "a",
+      "label": "GK",
+      "kf": [
+        {
+          "t": 0,
+          "x": 160,
+          "y": 54
+        },
+        {
+          "t": 0.24,
+          "x": 160,
+          "y": 54
+        },
+        {
+          "t": 0.34,
+          "x": 148,
+          "y": 44
+        },
+        {
+          "t": 0.58,
+          "x": 148,
+          "y": 44
+        },
+        {
+          "t": 0.74,
+          "x": 156,
+          "y": 54
+        },
+        {
+          "t": 1,
+          "x": 158,
+          "y": 54
+        }
+      ]
+    },
+    {
+      "team": "n",
+      "label": "C",
+      "kf": [
+        {
+          "t": 0,
+          "x": 160,
+          "y": 172
+        },
+        {
+          "t": 0.14,
+          "x": 158,
+          "y": 168
+        },
+        {
+          "t": 1,
+          "x": 158,
+          "y": 168
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 160,
+        "y": 172
+      },
+      {
+        "t": 0.12,
+        "x": 160,
+        "y": 172
+      },
+      {
+        "t": 0.34,
+        "x": 147,
+        "y": 38
+      },
+      {
+        "t": 0.62,
+        "x": 148,
+        "y": 44
+      },
+      {
+        "t": 0.82,
+        "x": 158,
+        "y": 168
+      },
+      {
+        "t": 1,
+        "x": 158,
+        "y": 168
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "shot",
+      "pts": [
+        [
+          160,
+          172
+        ],
+        [
+          147,
+          38
+        ]
+      ]
+    },
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          148,
+          44
+        ],
+        [
+          158,
+          168
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Keeper starts from the knees; the coach serves firm, a body's width away."
+    },
+    {
+      "t": 0.28,
+      "label": "Collapse: top hand behind the ball, land on the hip, then the shoulder."
+    },
+    {
+      "t": 0.56,
+      "label": "Recover to the knees at once — the next serve is already coming."
+    },
+    {
+      "t": 0.78,
+      "label": "Return it with a throw to his hands. Distribution counts too."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.38,
+      "x": 124,
+      "y": 60,
+      "label": "SAVE"
+    },
+    {
+      "t": 0.66,
+      "x": 190,
+      "y": 64,
+      "label": "RECOVER"
+    }
+  ]
+}

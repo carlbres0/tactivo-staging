@@ -1,0 +1,150 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14.67,
+  "length": 44
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7.33,
+    6
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    4.13,
+    8.67
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7.4,
+   6.34
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    5.2,
+    14.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.93,
+    14
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.32,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    2.8,
+    26.8
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 5.57,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.73,
+    26.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 10.14,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    8.13,
+    35.07
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 11.47,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    4.67,
+    34.8
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 18.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Most players own two gears. Matches are won in the changes between them.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.75,
+   "text": "A long channel. You jog alongside calling gears one to five.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.25,
+   "text": "Gear one is a crawl with tiny touches. Gear five is a sprint, ball driven ahead.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 9.25,
+   "text": "The touch has to match the gear. Big at speed, small at a crawl.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 13.25,
+   "text": "Two lengths, gears shuffled cruelly on the second.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 18.5,
+   "text": "Too easy, gear five ends with a shot. Too hard, three gears, in order.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

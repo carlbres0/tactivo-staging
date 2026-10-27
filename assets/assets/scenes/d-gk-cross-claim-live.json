@@ -1,0 +1,67 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 200, "y": 40, "w": 100, "h": 120},
+  "cones": [[200, 40], [300, 40], [200, 160], [300, 160]],
+  "goals": [
+    {"x": 294, "y": 100.0, "w": 32, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 245, "y": 83},
+      {"t": 0.3, "x": 248, "y": 85},
+      {"t": 1, "x": 250, "y": 86}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 250, "y": 113},
+      {"t": 0.4, "x": 251, "y": 112},
+      {"t": 1, "x": 251, "y": 112}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 283, "y": 98},
+      {"t": 0.2, "x": 280, "y": 95},
+      {"t": 0.35, "x": 260, "y": 90},
+      {"t": 1, "x": 262, "y": 92}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 250, "y": 48},
+      {"t": 0.25, "x": 250, "y": 48},
+      {"t": 1, "x": 252, "y": 50}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 250, "y": 85},
+      {"t": 0.25, "x": 250, "y": 85},
+      {"t": 0.4, "x": 252, "y": 87},
+      {"t": 1, "x": 252, "y": 87}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 255, "y": 115},
+      {"t": 0.4, "x": 253, "y": 113},
+      {"t": 1, "x": 253, "y": 113}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 250, "y": 48},
+      {"t": 0.05, "x": 250, "y": 48},
+      {"t": 0.25, "x": 250, "y": 85},
+      {"t": 0.35, "x": 260, "y": 90},
+      {"t": 1, "x": 260, "y": 90}
+    ],
+    "air": [[0.05, 0.25]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[250, 48], [250, 85]]},
+    {"kind": "run", "pts": [[283, 98], [260, 90]]},
+    {"kind": "run", "pts": [[245, 83], [250, 86]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two attackers and two defenders contest every cross with the keeper live."},
+    {"t": 0.1, "label": "Deliveries mix near post, far post and the six-yard line."},
+    {"t": 0.2, "label": "The keeper's call is binding \u2014 everyone reacts to 'keeper's' or 'away'."},
+    {"t": 0.35, "label": "Keeper comes and claims it clean, ahead of both attackers."}
+  ],
+  "events": [
+    {"t": 0.35, "x": 260, "y": 90, "label": "CLAIMED"}
+  ]
+}

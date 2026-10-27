@@ -1,0 +1,51 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 100, "y": 50, "w": 120, "h": 120},
+  "cones": [
+    [100, 50], [220, 50], [100, 170], [220, 170],
+    [160, 45], [225, 110], [160, 175], [95, 110]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 55}, {"t": 0.28, "x": 160, "y": 55},
+      {"t": 1, "x": 160, "y": 55}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 215, "y": 110}, {"t": 0.7, "x": 215, "y": 110},
+      {"t": 1, "x": 215, "y": 110}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 160, "y": 165}, {"t": 1, "x": 160, "y": 165}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 105, "y": 110}, {"t": 1, "x": 105, "y": 110}
+    ]},
+    {"team": "a", "label": "5", "kf": [
+      {"t": 0, "x": 160, "y": 110}, {"t": 0.28, "x": 160, "y": 110},
+      {"t": 0.4, "x": 163, "y": 113}, {"t": 0.55, "x": 163, "y": 113},
+      {"t": 0.7, "x": 163, "y": 113}, {"t": 1, "x": 163, "y": 113}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 55}, {"t": 0.1, "x": 160, "y": 55},
+    {"t": 0.28, "x": 160, "y": 110}, {"t": 0.4, "x": 163, "y": 113},
+    {"t": 0.55, "x": 163, "y": 113}, {"t": 0.7, "x": 215, "y": 110},
+    {"t": 1, "x": 215, "y": 110}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[160, 55], [160, 110]]},
+    {"kind": "dribble", "pts": [[160, 110], [163, 113]]},
+    {"kind": "pass", "pts": [[163, 113], [215, 110]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Working player receives in the middle from any of four servers."},
+    {"t": 0.1, "label": "As the pass travels, the coach raises a coloured cone behind them."},
+    {"t": 0.4, "label": "Turn out, name the colour out loud, and find the matching server."},
+    {"t": 0.7, "label": "Pass to that server. Forty-five seconds per player, then rotate."}
+  ],
+  "events": [
+    {"t": 0.1, "x": 163, "y": 130, "label": "CUE"}
+  ]
+}

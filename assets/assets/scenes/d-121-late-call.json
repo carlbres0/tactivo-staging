@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "durationMs": 7000,
+  "area": {"x": 10, "y": 26, "w": 300, "h": 164},
+  "cones": [[146, 109], [200.9, 44], [228.2, 44], [64.5, 44], [91.8, 44]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 146, "y": 163}, {"t": 0.1, "x": 146, "y": 163},
+      {"t": 0.3, "x": 144, "y": 114}, {"t": 0.5, "x": 104, "y": 70},
+      {"t": 0.62, "x": 100, "y": 66}, {"t": 1, "x": 130, "y": 108}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 269, "y": 150}, {"t": 1, "x": 269, "y": 150}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 146, "y": 155}, {"t": 0.1, "x": 146, "y": 155},
+    {"t": 0.3, "x": 144, "y": 106}, {"t": 0.5, "x": 104, "y": 62},
+    {"t": 0.62, "x": 78, "y": 30}, {"t": 1, "x": 78, "y": 30}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[146, 155], [144, 106], [104, 62]]},
+    {"kind": "shot", "pts": [[104, 62], [78, 30]]},
+    {"kind": "run", "pts": [[100, 66], [130, 108]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two coloured gates ahead — the player dribbles at them from fifteen metres."},
+    {"t": 0.14, "label": "Nothing is called until the ball reaches the decision cone, five metres out."},
+    {"t": 0.34, "label": "\"RED!\" — only now. Adjust and finish through the called gate."},
+    {"t": 0.66, "label": "Straight back for the next ball; the cone creeps closer every week."}
+  ],
+  "events": [
+    {"t": 0.34, "x": 186, "y": 104, "label": "\"RED!\""},
+    {"t": 0.64, "x": 56, "y": 54, "label": "THROUGH"}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 60, "y": 40, "w": 200, "h": 120},
+  "cones": [[60, 40], [260, 40], [60, 160], [260, 160]],
+  "goals": [
+    {"x": 260, "y": 70, "w": 24, "side": "e"},
+    {"x": 260, "y": 130, "w": 24, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 110, "y": 100}, {"t": 0.15, "x": 110, "y": 100},
+      {"t": 0.25, "x": 110, "y": 100},
+      {"t": 0.35, "x": 140, "y": 75, "cx": 118, "cy": 82},
+      {"t": 0.5, "x": 170, "y": 68}, {"t": 0.65, "x": 210, "y": 70},
+      {"t": 0.8, "x": 255, "y": 71}, {"t": 1, "x": 255, "y": 71}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 185, "y": 95}, {"t": 0.15, "x": 185, "y": 95},
+      {"t": 0.25, "x": 185, "y": 95}, {"t": 0.4, "x": 150, "y": 88},
+      {"t": 0.55, "x": 152, "y": 87}, {"t": 0.72, "x": 190, "y": 76},
+      {"t": 0.88, "x": 230, "y": 73}, {"t": 1, "x": 240, "y": 73}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 185, "y": 95}, {"t": 0.15, "x": 185, "y": 95},
+    {"t": 0.25, "x": 110, "y": 100}, {"t": 0.35, "x": 140, "y": 75},
+    {"t": 0.5, "x": 170, "y": 68}, {"t": 0.65, "x": 210, "y": 70},
+    {"t": 0.8, "x": 255, "y": 71}, {"t": 1, "x": 255, "y": 71}
+  ], "air": []},
+  "routes": [
+    {"kind": "serve", "pts": [[185, 95], [110, 100]]},
+    {"kind": "dribble", "curve": true, "pts": [[110, 100], [140, 75], [170, 68]]},
+    {"kind": "dribble", "pts": [[170, 68], [255, 71]]},
+    {"kind": "opp", "pts": [[185, 95], [150, 88], [190, 76], [230, 73], [240, 73]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "The defender nearest goal serves the attacker in, then comes out to meet him."},
+    {"t": 0.25, "label": "First touch decides everything — away from the defender, into space."},
+    {"t": 0.5, "label": "Drive at the space you've created \u2014 now it is a live one v one."},
+    {"t": 0.8, "label": "Score in either small goal within eight seconds."}
+  ],
+  "events": [
+    {"t": 0.35, "x": 140, "y": 75, "label": "1ST TOUCH"}
+  ]
+}
