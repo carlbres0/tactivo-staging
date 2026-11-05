@@ -1,0 +1,143 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    11,
+    7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7,
+    11
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    3,
+    7
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7,
+    3
+   ]
+  }
+ ],
+ "teams": {
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  },
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    10,
+    4
+   ]
+  },
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7,
+    7
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   9.75,
+   4.25
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 0.42
+  },
+  {
+   "t": 3.24,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    7,
+    4.67
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.48,
+   "type": "pass",
+   "from": "a1",
+   "to": "n1",
+   "flight": 0.4
+  }
+ ],
+ "duration": 8,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Call later and later in the flight. The early decision is the habit to break.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 1.25,
+   "text": "Four cones round the player. Twelve, three, six and nine o'clock.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.25,
+   "text": "You serve from anywhere and call a time as the ball travels.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.25,
+   "text": "First touch takes the ball towards that cone, second touch passes it back.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 5.25,
+   "text": "Ten serves, count the clean ones, beat it next round.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8,
+   "text": "Too easy, serves off the bounce, the call is a colour. Too hard, call first, roll it flat.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

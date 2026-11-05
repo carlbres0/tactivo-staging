@@ -1,0 +1,49 @@
+{
+  "v": 1,
+  "durationMs": 9500,
+  "area": {"x": 80, "y": 24, "w": 160, "h": 160},
+  "cones": [[80, 24], [240, 24], [240, 184], [80, 184]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [{"t": 0, "x": 140, "y": 94}, {"t": 1, "x": 140, "y": 94}]},
+    {"team": "a", "label": "2", "kf": [{"t": 0, "x": 180, "y": 114}, {"t": 1, "x": 180, "y": 114}]},
+    {"team": "a", "label": "3", "kf": [{"t": 0, "x": 95, "y": 39}, {"t": 1, "x": 95, "y": 39}]},
+    {"team": "a", "label": "4", "kf": [{"t": 0, "x": 225, "y": 39}, {"t": 1, "x": 225, "y": 39}]},
+    {"team": "a", "label": "5", "kf": [{"t": 0, "x": 225, "y": 169}, {"t": 1, "x": 225, "y": 169}]},
+    {"team": "a", "label": "6", "kf": [{"t": 0, "x": 95, "y": 169}, {"t": 1, "x": 95, "y": 169}]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 150, "y": 74}, {"t": 0.16, "x": 130, "y": 124},
+      {"t": 0.46, "x": 150, "y": 94}, {"t": 0.64, "x": 160, "y": 109},
+      {"t": 1, "x": 160, "y": 109}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 134}, {"t": 0.16, "x": 190, "y": 94},
+      {"t": 0.46, "x": 175, "y": 64}, {"t": 0.64, "x": 185, "y": 119},
+      {"t": 1, "x": 185, "y": 119}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 140, "y": 94}, {"t": 0.06, "x": 140, "y": 94},
+    {"t": 0.16, "x": 95, "y": 169}, {"t": 0.28, "x": 95, "y": 169},
+    {"t": 0.46, "x": 225, "y": 39}, {"t": 0.56, "x": 225, "y": 39},
+    {"t": 0.64, "x": 180, "y": 114}, {"t": 0.76, "x": 180, "y": 114},
+    {"t": 0.84, "x": 140, "y": 94}, {"t": 1, "x": 140, "y": 94}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[140, 94], [95, 169]]},
+    {"kind": "pass", "pts": [[95, 169], [225, 39]]},
+    {"kind": "pass", "pts": [[225, 39], [180, 114]]},
+    {"kind": "pass", "pts": [[180, 114], [140, 94]]},
+    {"kind": "opp", "pts": [[150, 74], [150, 94]]},
+    {"kind": "opp", "pts": [[170, 134], [185, 119]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two teams battle inside; four neutral corners always play for whoever has the ball."},
+    {"t": 0.16, "label": "Ball goes wide to a corner — two touches only, so it moves fast."},
+    {"t": 0.28, "label": "Corner to the opposite corner through the middle scores the point."},
+    {"t": 0.56, "label": "The far corner lays it back inside and play turns the other way."}
+  ],
+  "events": [
+    {"t": 0.37, "x": 160, "y": 104, "label": "POINT"}
+  ]
+}

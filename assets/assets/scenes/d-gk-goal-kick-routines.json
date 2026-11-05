@@ -1,0 +1,69 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 20, "y": 25, "w": 220, "h": 150},
+  "cones": [[20, 25], [240, 25], [20, 175], [240, 175]],
+  "goals": [
+    {"x": 16, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 40, "y": 100},
+      {"t": 0.2, "x": 40, "y": 100},
+      {"t": 1, "x": 45, "y": 102}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 90, "y": 70},
+      {"t": 0.2, "x": 90, "y": 70},
+      {"t": 0.35, "x": 90, "y": 70},
+      {"t": 0.45, "x": 90, "y": 70},
+      {"t": 1, "x": 92, "y": 72}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 90, "y": 130},
+      {"t": 0.4, "x": 95, "y": 128},
+      {"t": 1, "x": 95, "y": 128}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 140, "y": 50},
+      {"t": 0.45, "x": 140, "y": 50},
+      {"t": 1, "x": 145, "y": 52}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 110, "y": 90},
+      {"t": 0.2, "x": 105, "y": 85},
+      {"t": 0.35, "x": 95, "y": 75},
+      {"t": 1, "x": 100, "y": 78}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 110, "y": 120},
+      {"t": 0.3, "x": 108, "y": 115},
+      {"t": 1, "x": 108, "y": 115}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 40, "y": 100},
+      {"t": 0.1, "x": 40, "y": 100},
+      {"t": 0.2, "x": 90, "y": 70},
+      {"t": 0.35, "x": 90, "y": 70},
+      {"t": 0.45, "x": 140, "y": 50},
+      {"t": 1, "x": 140, "y": 50}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[40, 100], [90, 70]]},
+    {"kind": "opp", "pts": [[110, 90], [95, 75]]},
+    {"kind": "pass", "pts": [[90, 70], [140, 50]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Three routines: short to a split centre-back, wide to a full-back, or long to a target."},
+    {"t": 0.2, "label": "Everyone knows the routine before the whistle \u2014 it's called out loud."},
+    {"t": 0.35, "label": "Two pressing forwards make the short option live \u2014 real pressure on the centre-back."},
+    {"t": 0.45, "label": "Out to the full-back and past the press \u2014 the routine decides it, not panic."}
+  ],
+  "events": [
+    {"t": 0.45, "x": 140, "y": 50, "label": "BEAT PRESS"}
+  ]
+}

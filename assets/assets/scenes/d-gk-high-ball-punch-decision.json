@@ -1,0 +1,44 @@
+{
+  "v": 1,
+  "durationMs": 7500,
+  "area": {"x": 200, "y": 40, "w": 100, "h": 120},
+  "cones": [[200, 40], [300, 40], [200, 160], [300, 160]],
+  "goals": [
+    {"x": 294, "y": 100.0, "w": 32, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 270, "y": 100},
+      {"t": 0.15, "x": 268, "y": 98},
+      {"t": 0.35, "x": 265, "y": 95},
+      {"t": 1, "x": 266, "y": 96}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 200, "y": 50},
+      {"t": 0.35, "x": 200, "y": 50},
+      {"t": 1, "x": 202, "y": 52}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 200, "y": 50},
+      {"t": 0.05, "x": 200, "y": 50},
+      {"t": 0.35, "x": 265, "y": 95},
+      {"t": 1, "x": 265, "y": 95}
+    ],
+    "air": [[0.05, 0.35]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[200, 50], [265, 95]]},
+    {"kind": "run", "pts": [[270, 100], [265, 95]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Deliveries are mixed deliberately: some catchable, some not, some best left."},
+    {"t": 0.15, "label": "The keeper announces the decision before moving \u2014 the call comes first."},
+    {"t": 0.35, "label": "Catch, punch or stay \u2014 this one is caught clean at the highest point."},
+    {"t": 0.5, "label": "Coach reviews it after: was the call right, regardless of the outcome?"}
+  ],
+  "events": [
+    {"t": 0.35, "x": 265, "y": 95, "label": "CAUGHT"}
+  ]
+}

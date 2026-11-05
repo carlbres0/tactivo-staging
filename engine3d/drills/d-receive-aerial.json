@@ -1,0 +1,125 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10,
+  "length": 14
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.22,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    7.22,
+    12
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.78,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.78,
+    12
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5,
+    3.67
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    5,
+    10.33
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   4.02
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "a2",
+   "flight": 0.56,
+   "style": "throw",
+   "flightStyle": "lofted",
+   "loft": 3
+  },
+  {
+   "t": 4.66,
+   "type": "pass",
+   "from": "a2",
+   "to": "a1",
+   "flight": 0.67
+  }
+ ],
+ "duration": 7.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Get the body behind the flight early. Most bad touches are footwork problems, not foot problems.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.5,
+   "text": "The server throws to thigh height, then chest, then over the shoulder.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.5,
+   "text": "The receiver cushions it dead in one touch and returns it along the floor.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6.5,
+   "text": "The receiving surface withdraws on contact. Meet it firmly and it bounces away.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 7.5,
+   "text": "Too easy, take it out of the air away from a passive defender. Too hard, underarm only.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

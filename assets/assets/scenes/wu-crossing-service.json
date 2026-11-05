@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 100, "y": 15, "w": 210, "h": 145},
+  "cones": [[280, 80], [300, 120], [150, 30]],
+  "goals": [
+    {"x": 310, "y": 100, "w": 50, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 30}, {"t": 0.4, "x": 270, "y": 35},
+      {"t": 0.5, "x": 270, "y": 35}, {"t": 1, "x": 275, "y": 40}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 230, "y": 110}, {"t": 0.65, "x": 280, "y": 82},
+      {"t": 1, "x": 280, "y": 82}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 220, "y": 130}, {"t": 0.65, "x": 300, "y": 120},
+      {"t": 1, "x": 300, "y": 120}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 150, "y": 30}, {"t": 0.4, "x": 270, "y": 35},
+    {"t": 0.5, "x": 270, "y": 35}, {"t": 0.65, "x": 280, "y": 82},
+    {"t": 1, "x": 280, "y": 82}
+  ], "air": [[0.5, 0.65]]},
+  "routes": [
+    {"kind": "dribble", "pts": [[150, 30], [270, 35]]},
+    {"kind": "pass", "pts": [[270, 35], [280, 82]]},
+    {"kind": "run", "pts": [[230, 110], [280, 82]]},
+    {"kind": "run", "pts": [[220, 130], [300, 120]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Wide players cross a stationary ball to a cone at the near post, then the back post."},
+    {"t": 0.4, "label": "Build to a rolling ball, then to one carried into the channel first."},
+    {"t": 0.5, "label": "Attackers walk their runs at first, then jog them, then go live."},
+    {"t": 0.65, "label": "Alternate wings so both feet get work."}
+  ],
+  "events": [
+    {"t": 0.5, "x": 270, "y": 35, "label": "CROSS"}
+  ]
+}

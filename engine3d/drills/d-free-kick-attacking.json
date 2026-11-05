@@ -1,0 +1,221 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 28.18,
+  "length": 42.3
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2,
+    42.3
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    26.18,
+    42.3
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    26.18,
+    2
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    11.67,
+    26.18
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    14.09,
+    26.18
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    16.51,
+    26.18
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    14.09,
+    42.3
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    14.09,
+    14.09
+   ]
+  },
+  {
+   "id": "a2",
+   "team": "white",
+   "number": 2,
+   "start": [
+    6.03,
+    20.13
+   ]
+  },
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    14.9,
+    41.09
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "a3",
+   "team": "white",
+   "number": 3,
+   "start": [
+    22.15,
+    20.13
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   14.09,
+   14.44
+  ]
+ },
+ "events": [
+  {
+   "t": 0.8,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.07,
+    28.19
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    14.09,
+    42.3
+   ]
+  },
+  {
+   "t": 2.37,
+   "type": "move",
+   "player": "gk",
+   "to": [
+    16.51,
+    41.49
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 2.37,
+   "type": "move",
+   "player": "a3",
+   "to": [
+    17.11,
+    28.19
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 2.95,
+   "type": "move",
+   "player": "a1",
+   "to": [
+    14.49,
+    13.69
+   ],
+   "gait": "walk"
+  },
+  {
+   "t": 5.76,
+   "type": "move",
+   "player": "a2",
+   "to": [
+    11.67,
+    27.19
+   ],
+   "gait": "jog"
+  }
+ ],
+ "duration": 8.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Two well rehearsed routines beat six half known ones. Pick a small number and drill them.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3,
+   "text": "Three positions. Wide right, central, wide left.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 4.25,
+   "text": "Rehearse three outcomes. A direct strike, a delivery to the back post, and a short routine.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 5.5,
+   "text": "Runners know which of the three is happening before the whistle. Four goes from each position.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.5,
+   "text": "Too easy, a defending unit sets up live against every kick. Too hard, practise the delivery alone.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}
