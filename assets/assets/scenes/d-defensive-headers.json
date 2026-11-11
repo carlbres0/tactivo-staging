@@ -1,0 +1,39 @@
+{
+  "v": 1,
+  "durationMs": 8600,
+  "area": {"x": 40, "y": 30, "w": 150, "h": 140},
+  "cones": [[40, 30], [190, 30], [40, 170], [190, 170], [160, 165], [180, 165]],
+  "goals": [
+    {"x": 40, "y": 100, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 170, "y": 40}, {"t": 0.3, "x": 170, "y": 40},
+      {"t": 0.5, "x": 168, "y": 45}, {"t": 1, "x": 168, "y": 45}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 90, "y": 100}, {"t": 0.3, "x": 90, "y": 100},
+      {"t": 0.5, "x": 110, "y": 85, "cx": 95, "cy": 90},
+      {"t": 1, "x": 110, "y": 85}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 170, "y": 40}, {"t": 0.3, "x": 170, "y": 40},
+    {"t": 0.5, "x": 110, "y": 85}, {"t": 0.65, "x": 170, "y": 160},
+    {"t": 1, "x": 170, "y": 160}
+  ], "air": [[0.3, 0.5], [0.5, 0.65]]},
+  "routes": [
+    {"kind": "opp", "pts": [[170, 40], [110, 85]]},
+    {"kind": "run", "curve": true, "pts": [[90, 100], [95, 90], [110, 85]]},
+    {"kind": "pass", "pts": [[110, 85], [170, 160]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Server holds out wide, ball in hand; defender holds the middle of the box."},
+    {"t": 0.3, "label": "Serve loops in high and long toward the back post."},
+    {"t": 0.5, "label": "Attack the ball on the front foot — don't wait for it to drop."},
+    {"t": 0.65, "label": "Head clear high, long and wide through the marked gate."}
+  ],
+  "events": [
+    {"t": 0.65, "x": 170, "y": 160, "label": "CLEAR"}
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 50, "y": 70, "w": 220, "h": 60},
+  "cones": [[50, 70], [270, 70], [50, 130], [270, 130]],
+  "goals": [
+    {"x": 270, "y": 100, "w": 16, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 78, "y": 100}, {"t": 0.3, "x": 78, "y": 100},
+      {"t": 0.46, "x": 116, "y": 98}, {"t": 0.62, "x": 154, "y": 96},
+      {"t": 0.78, "x": 190, "y": 100}, {"t": 0.86, "x": 198, "y": 104},
+      {"t": 1, "x": 200, "y": 106}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 230, "y": 100}, {"t": 0.08, "x": 230, "y": 100},
+      {"t": 0.34, "x": 168, "y": 100}, {"t": 0.52, "x": 184, "y": 102},
+      {"t": 0.66, "x": 200, "y": 104}, {"t": 0.78, "x": 208, "y": 106},
+      {"t": 0.88, "x": 214, "y": 110}, {"t": 1, "x": 216, "y": 116}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 230, "y": 100}, {"t": 0.08, "x": 230, "y": 100},
+    {"t": 0.22, "x": 80, "y": 100}, {"t": 0.32, "x": 80, "y": 100},
+    {"t": 0.46, "x": 118, "y": 98}, {"t": 0.62, "x": 156, "y": 96},
+    {"t": 0.78, "x": 192, "y": 102}, {"t": 0.88, "x": 212, "y": 110},
+    {"t": 1, "x": 218, "y": 116}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[230, 100], [80, 100]]},
+    {"kind": "dribble", "pts": [[80, 100], [156, 96], [192, 102]]},
+    {"kind": "opp", "pts": [[230, 100], [168, 100], [200, 104], [212, 110]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Defender plays the ball to the attacker and steps up as it travels."},
+    {"t": 0.3, "label": "Arrival: low and side-on, front foot showing the attacker one way."},
+    {"t": 0.5, "label": "Jockey BACKWARDS and delay — eyes on the ball, never turn your back."},
+    {"t": 0.82, "label": "At the channel end the touch is loose: poke it away, clean."}
+  ],
+  "events": [
+    {"t": 0.9, "x": 224, "y": 122, "label": "TACKLE"}
+  ]
+}

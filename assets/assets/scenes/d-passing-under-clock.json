@@ -1,0 +1,49 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 70, "y": 20, "w": 180, "h": 160},
+  "cones": [
+    [160, 90], [172, 100],
+    [160, 140], [172, 150],
+    [230, 40], [254, 40],
+    [60, 170], [84, 170]
+  ],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 50}, {"t": 0.25, "x": 100, "y": 50},
+      {"t": 0.9, "x": 100, "y": 50}, {"t": 1, "x": 100, "y": 50}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 230, "y": 140}, {"t": 0.25, "x": 230, "y": 140},
+      {"t": 0.4, "x": 225, "y": 135}, {"t": 0.65, "x": 225, "y": 135},
+      {"t": 1, "x": 225, "y": 135}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 100, "y": 150}, {"t": 0.65, "x": 100, "y": 150},
+      {"t": 0.75, "x": 105, "y": 145}, {"t": 0.9, "x": 105, "y": 145},
+      {"t": 1, "x": 105, "y": 145}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 100, "y": 50}, {"t": 0.15, "x": 100, "y": 50},
+    {"t": 0.25, "x": 230, "y": 140}, {"t": 0.4, "x": 225, "y": 135},
+    {"t": 0.5, "x": 225, "y": 135}, {"t": 0.65, "x": 100, "y": 150},
+    {"t": 0.75, "x": 105, "y": 145}, {"t": 0.9, "x": 100, "y": 50},
+    {"t": 1, "x": 100, "y": 50}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[100, 50], [230, 140]]},
+    {"kind": "dribble", "pts": [[230, 140], [225, 135]]},
+    {"kind": "pass", "pts": [[225, 135], [100, 150]]},
+    {"kind": "dribble", "pts": [[100, 150], [105, 145]]},
+    {"kind": "pass", "pts": [[105, 145], [100, 50]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Teams of three, one ball — score a point for every gate the ball passes through."},
+    {"t": 0.25, "label": "First pass threads a gate. Remember it — the same gate can't be used twice running."},
+    {"t": 0.65, "label": "Second pass finds a different gate — variety keeps the score climbing."},
+    {"t": 0.9, "label": "Recycle and go again. Ninety-second rounds — beat your own best."}
+  ],
+  "events": []
+}

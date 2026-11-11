@@ -1,0 +1,64 @@
+{
+  "v": 1,
+  "durationMs": 12000,
+  "area": {"x": 10, "y": 24, "w": 300, "h": 176},
+  "zones": [
+    {"x": 70, "y": 84, "w": 24, "h": 24, "label": "chest"},
+    {"x": 145, "y": 129, "w": 24, "h": 24},
+    {"x": 220, "y": 69, "w": 24, "h": 24},
+    {"x": 250, "y": 144, "w": 24, "h": 24}
+  ],
+  "cones": [],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 40, "y": 31.5}, {"t": 0.12, "x": 40, "y": 31.5},
+      {"t": 0.5, "x": 46, "y": 40}, {"t": 1, "x": 52, "y": 48}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 112, "y": 132}, {"t": 0.36, "x": 106, "y": 126},
+      {"t": 0.52, "x": 92, "y": 106}, {"t": 1, "x": 90, "y": 102}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 190, "y": 31.5}, {"t": 0.66, "x": 190, "y": 31.5},
+      {"t": 1, "x": 198, "y": 42}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 252, "y": 114}, {"t": 0.5, "x": 248, "y": 110},
+      {"t": 0.84, "x": 244, "y": 106}, {"t": 1, "x": 234, "y": 84}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 46, "y": 35},
+      {"t": 0.12, "x": 46, "y": 35},
+      {"t": 0.38, "x": 106, "y": 124},
+      {"t": 0.52, "x": 90, "y": 104},
+      {"t": 0.53, "x": 196, "y": 35, "new": true},
+      {"t": 0.66, "x": 196, "y": 35},
+      {"t": 0.86, "x": 246, "y": 108},
+      {"t": 1, "x": 232, "y": 80}
+    ],
+    "air": [[0.14, 0.38], [0.68, 0.86]]
+  },
+  "balls": [
+    {"kf": [{"t": 0, "x": 196, "y": 35}, {"t": 1, "x": 196, "y": 35}]}
+  ],
+  "routes": [
+    {"kind": "throw", "pts": [[46, 35], [106, 124]]},
+    {"kind": "dribble", "pts": [[106, 124], [90, 104]]},
+    {"kind": "throw", "pts": [[196, 35], [246, 108]]},
+    {"kind": "dribble", "pts": [[246, 108], [232, 80]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Pairs on the touchline, a ball each, treasure chests scattered in the channel."},
+    {"t": 0.14, "label": "The thrower throws to their partner's feet or chest — never a kick."},
+    {"t": 0.4, "label": "A clean first touch into any chest banks the treasure."},
+    {"t": 0.6, "label": "The next pair goes with their own ball; each chest banks only once a round."}
+  ],
+  "events": [
+    {"t": 0.4, "x": 106, "y": 124, "label": "CUSHION"},
+    {"t": 0.54, "x": 90, "y": 104, "label": "BANKED"},
+    {"t": 1, "x": 232, "y": 80, "label": "BANKED"}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [[100, 40], [220, 40], [220, 160], [100, 160]],
+  "goals": [],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 160, "y": 100}, {"t": 1, "x": 160, "y": 100}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 211, "y": 61}, {"t": 0.1, "x": 211, "y": 61},
+      {"t": 0.26, "x": 214, "y": 86}, {"t": 0.42, "x": 214, "y": 100},
+      {"t": 0.6, "x": 214, "y": 126}, {"t": 0.78, "x": 212, "y": 150},
+      {"t": 1, "x": 196, "y": 164}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 205, "y": 67}, {"t": 0.1, "x": 205, "y": 67},
+    {"t": 0.26, "x": 208, "y": 92}, {"t": 0.42, "x": 166, "y": 96},
+    {"t": 0.6, "x": 208, "y": 120}, {"t": 0.78, "x": 206, "y": 150},
+    {"t": 1, "x": 190, "y": 164}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[205, 67], [208, 92]]},
+    {"kind": "pass", "pts": [[208, 92], [166, 96]]},
+    {"kind": "pass", "pts": [[166, 96], [208, 120]]},
+    {"kind": "dribble", "pts": [[208, 120], [206, 150], [190, 164]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Four cones make the circuit; the coach stands in the middle as the wall."},
+    {"t": 0.2, "label": "Dribble cone to cone, and round each corner with a one-two off the coach."},
+    {"t": 0.44, "label": "The return arrives into the path, never back to the feet that passed."},
+    {"t": 0.76, "label": "A full lap of clean one-twos scores — then reverse the direction."}
+  ],
+  "events": [
+    {"t": 0.64, "x": 224, "y": 112, "label": "ONE-TWO"}
+  ]
+}

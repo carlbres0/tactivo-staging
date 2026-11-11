@@ -1,0 +1,262 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 11.33,
+  "length": 16
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    2.2,
+    5.67
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.2,
+    8.33
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    2.2,
+    11.67
+   ]
+  }
+ ],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    5.67,
+    5.67
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5.67,
+   5.32
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    5.67,
+    2.73
+   ],
+   "flight": 0.4,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     5.67,
+     5.54
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 2.49,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 3.94,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    5.67,
+    2.73
+   ],
+   "flight": 0.4,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     5.67,
+     5.54
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 5.23,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 6.68,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.67,
+    8.33
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 8.61,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    5.67,
+    2.73
+   ],
+   "flight": 0.56,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     5.67,
+     8.2
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 10.31,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 11.76,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    5.67,
+    2.73
+   ],
+   "flight": 0.56,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     5.67,
+     8.2
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 13.46,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 14.91,
+   "type": "dribble",
+   "player": "a1",
+   "to": [
+    5.67,
+    11.67
+   ],
+   "gait": "run"
+  },
+  {
+   "t": 17.04,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    5.67,
+    2.73
+   ],
+   "flight": 0.89,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     5.67,
+     11.54
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 19.62,
+   "type": "collect",
+   "player": "a1"
+  },
+  {
+   "t": 21.07,
+   "type": "shoot",
+   "player": "a1",
+   "at": [
+    5.67,
+    2.73
+   ],
+   "flight": 0.89,
+   "flightStyle": "ground",
+   "deflect": {
+    "to": [
+     5.67,
+     11.54
+    ],
+    "style": "ground"
+   }
+  },
+  {
+   "t": 23.65,
+   "type": "collect",
+   "player": "a1"
+  }
+ ],
+ "duration": 26,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     5.67,
+     2.34
+    ],
+    "w": 5.6,
+    "h": 0.53,
+    "color": "technical",
+    "label": "WALL"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "No teammate is as honest as a wall. It returns exactly what it was given.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.75,
+   "text": "Pass against the wall, take the return with one touch, play with the second.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 17.75,
+   "text": "Step the distance marks back. Twenty clean exchanges at each before moving.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 23.5,
+   "text": "Alternate feet every exchange. Last set one touch only, count the longest unbroken run.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 26,
+   "text": "Too easy, receive across the body, return with the far foot. Too hard, stop it dead each time.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}

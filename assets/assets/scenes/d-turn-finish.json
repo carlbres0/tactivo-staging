@@ -1,0 +1,52 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 190, "y": 40, "w": 110, "h": 120},
+  "cones": [[190, 40], [300, 40], [190, 160], [300, 160]],
+  "goals": [
+    {"x": 300, "y": 100.0, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 170, "y": 95},
+      {"t": 0.2, "x": 170, "y": 95},
+      {"t": 0.42, "x": 176, "y": 98},
+      {"t": 1, "x": 176, "y": 98}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 230, "y": 95},
+      {"t": 0.2, "x": 230, "y": 95},
+      {"t": 0.32, "x": 225, "y": 95},
+      {"t": 0.5, "x": 233, "y": 87, "cx": 214, "cy": 80},
+      {"t": 0.62, "x": 238, "y": 85},
+      {"t": 1, "x": 238, "y": 85}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 170, "y": 95},
+      {"t": 0.2, "x": 170, "y": 95},
+      {"t": 0.32, "x": 225, "y": 95},
+      {"t": 0.5, "x": 233, "y": 87},
+      {"t": 0.62, "x": 238, "y": 85},
+      {"t": 0.72, "x": 296, "y": 88},
+      {"t": 1, "x": 296, "y": 88}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[170, 95], [225, 95]]},
+    {"kind": "dribble", "curve": true, "pts": [[225, 95], [233, 87], [238, 85]]},
+    {"kind": "shot", "pts": [[238, 85], [296, 88]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Striker holds the penalty spot, back to goal \u2014 server ready to play."},
+    {"t": 0.2, "label": "Serve rolls into feet; scan over the shoulder before it lands."},
+    {"t": 0.5, "label": "Spin away from the marker's side onto the stronger foot."},
+    {"t": 0.62, "label": "Shift the feet and strike inside two touches \u2014 low corner in mind."}
+  ],
+  "events": [
+    {"t": 0.5, "x": 233, "y": 87, "label": "TURN"},
+    {"t": 0.72, "x": 296, "y": 88, "label": "GOAL"}
+  ]
+}

@@ -1,0 +1,120 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 10.01,
+  "length": 8
+ },
+ "equipment": [
+  {
+   "type": "goal",
+   "at": [
+    5,
+    8
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    5,
+    6.94
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    5,
+    2.78
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   5,
+   3.13
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "n1",
+   "at": [
+    5,
+    8
+   ]
+  },
+  {
+   "t": 6.36,
+   "type": "pass",
+   "from": "gk",
+   "to": "n1",
+   "flight": 0.42
+  }
+ ],
+ "duration": 10.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Kneeling first takes the fear out of the fall. Standing saves inherit the shape.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3,
+   "text": "The keeper kneels. You roll firm serves a body's width to either side.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6,
+   "text": "Collapse save, recover to the knees, and the next serve is already coming.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 7,
+   "text": "Six saves a set, then the same set from standing.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 8.25,
+   "text": "Every ball comes back with a throw to your hands. Distribution counts too.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 10.5,
+   "text": "Too easy, bouncing serves and recover to the feet every time. Too hard, softer balls, shorter sets.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}
