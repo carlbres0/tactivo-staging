@@ -1,0 +1,39 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 40, "y": 50, "w": 240, "h": 110},
+  "cones": [[40, 50], [280, 50], [40, 160], [280, 160]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 60, "y": 125},
+      {"t": 0.05, "x": 60, "y": 125},
+      {"t": 0.22, "x": 135, "y": 108},
+      {"t": 0.4, "x": 210, "y": 100},
+      {"t": 1, "x": 210, "y": 100}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 60, "y": 125},
+    {"t": 0.05, "x": 60, "y": 125},
+    {"t": 0.13, "x": 97, "y": 112},
+    {"t": 0.22, "x": 135, "y": 102},
+    {"t": 0.31, "x": 172, "y": 110},
+    {"t": 0.4, "x": 210, "y": 100},
+    {"t": 1, "x": 210, "y": 100}
+  ], "air": [[0.06, 0.38]]},
+  "routes": [
+    {"kind": "dribble", "pts": [[60, 125], [135, 105], [210, 100]], "curve": true}
+  ],
+  "phases": [
+    {"t": 0, "label": "Walking juggle-and-catch — the breathing slows with the pace."},
+    {"t": 0.4, "label": "Hold the big stretches: quads, hamstrings, hips, calves — 30 seconds each."},
+    {"t": 0.72, "label": "Name tonight's one win and one thing to fix — out loud, even alone."},
+    {"t": 0.9, "label": "Set the next session's target, then the ball goes away."}
+  ],
+  "events": [
+    {"t": 0.38, "x": 210, "y": 84, "label": "Catch"},
+    {"t": 0.75, "x": 230, "y": 116, "label": "Win + fix"},
+    {"t": 0.93, "x": 230, "y": 130, "label": "Next target"}
+  ]
+}

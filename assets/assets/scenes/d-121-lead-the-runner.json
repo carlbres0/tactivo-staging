@@ -1,0 +1,38 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 40, "y": 10, "w": 240, "h": 180},
+  "cones": [],
+  "goals": [],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 184, "y": 58}, {"t": 0.14, "x": 192, "y": 64},
+      {"t": 0.34, "x": 212, "y": 84}, {"t": 0.55, "x": 228, "y": 108},
+      {"t": 0.72, "x": 238, "y": 128}, {"t": 1, "x": 250, "y": 154}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 130}, {"t": 0.14, "x": 100, "y": 130},
+      {"t": 0.3, "x": 116, "y": 124}, {"t": 0.44, "x": 128, "y": 120},
+      {"t": 0.72, "x": 136, "y": 117}, {"t": 1, "x": 140, "y": 116}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 107, "y": 133}, {"t": 0.14, "x": 107, "y": 133},
+    {"t": 0.3, "x": 123, "y": 127}, {"t": 0.44, "x": 135, "y": 123},
+    {"t": 0.72, "x": 241, "y": 133}, {"t": 1, "x": 253, "y": 159}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[107, 133], [135, 123]]},
+    {"kind": "pass", "pts": [[135, 123], [241, 133]]},
+    {"kind": "run", "pts": [[184, 58], [212, 84], [250, 154]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Coach jogs arcs and diagonals, changing pace without warning."},
+    {"t": 0.22, "label": "The player dribbles and picks the moment to feed the coach's run."},
+    {"t": 0.46, "label": "Into the path, never at the heels — weighted ahead of the runner."},
+    {"t": 0.78, "label": "A pass taken without breaking stride scores. Ten feeds, then sudden sprints."}
+  ],
+  "events": [
+    {"t": 0.76, "x": 196, "y": 150, "label": "IN STRIDE"}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "v": 1,
+  "durationMs": 11000,
+  "area": {"x": 52, "y": 10, "w": 216, "h": 180},
+  "cones": [[250, 82], [250, 118], [70, 82], [70, 118]],
+  "goals": [],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 178, "y": 100}, {"t": 0.16, "x": 178, "y": 100},
+      {"t": 0.32, "x": 188, "y": 106}, {"t": 0.5, "x": 200, "y": 124},
+      {"t": 0.68, "x": 222, "y": 124}, {"t": 0.84, "x": 240, "y": 110},
+      {"t": 1, "x": 256, "y": 100}
+    ]},
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 214, "y": 100}, {"t": 0.16, "x": 214, "y": 100},
+      {"t": 0.32, "x": 206, "y": 102}, {"t": 0.5, "x": 198, "y": 106},
+      {"t": 0.68, "x": 206, "y": 116}, {"t": 0.84, "x": 216, "y": 112},
+      {"t": 1, "x": 222, "y": 108}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 188, "y": 104}, {"t": 0.16, "x": 188, "y": 104},
+    {"t": 0.32, "x": 196, "y": 110}, {"t": 0.5, "x": 208, "y": 128},
+    {"t": 0.68, "x": 230, "y": 126}, {"t": 0.84, "x": 248, "y": 110},
+    {"t": 1, "x": 264, "y": 100}
+  ], "air": []},
+  "routes": [
+    {"kind": "dribble", "pts": [[188, 104], [208, 128], [248, 110], [264, 100]]},
+    {"kind": "opp", "pts": [[214, 100], [198, 106], [222, 108]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Two small gates at opposite ends — the player attacks one, the coach the other."},
+    {"t": 0.24, "label": "A real 1v1: the coach plays properly, tuned to the player's edge."},
+    {"t": 0.56, "label": "Round the outside and away — the gate is the goal."},
+    {"t": 0.84, "label": "Winner keeps the ball to restart; first to five, then swap ends."}
+  ],
+  "events": [
+    {"t": 0.94, "x": 234, "y": 76, "label": "GATE — 1-0"}
+  ]
+}

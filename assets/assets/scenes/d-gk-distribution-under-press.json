@@ -1,0 +1,62 @@
+{
+  "v": 1,
+  "durationMs": 8000,
+  "area": {"x": 130, "y": 40, "w": 170, "h": 120},
+  "cones": [[130, 40], [300, 40], [130, 160], [300, 160], [150, 50], [170, 50], [150, 150], [170, 150], [130, 95], [130, 115]],
+  "goals": [
+    {"x": 294, "y": 100.0, "w": 32, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 270, "y": 100},
+      {"t": 0.3, "x": 270, "y": 100},
+      {"t": 1, "x": 272, "y": 102}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 160, "y": 55},
+      {"t": 0.4, "x": 162, "y": 57},
+      {"t": 1, "x": 162, "y": 57}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 160, "y": 145},
+      {"t": 0.4, "x": 162, "y": 143},
+      {"t": 1, "x": 162, "y": 143}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 140, "y": 105},
+      {"t": 0.42, "x": 140, "y": 105},
+      {"t": 1, "x": 142, "y": 107}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 200, "y": 100},
+      {"t": 0.14, "x": 200, "y": 100},
+      {"t": 0.4, "x": 245, "y": 100},
+      {"t": 1, "x": 245, "y": 100}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 200, "y": 100},
+      {"t": 0.14, "x": 200, "y": 100},
+      {"t": 0.26, "x": 270, "y": 100},
+      {"t": 0.62, "x": 270, "y": 100},
+      {"t": 0.86, "x": 162, "y": 57},
+      {"t": 1, "x": 162, "y": 57}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[200, 100], [270, 100]]},
+    {"kind": "pass", "pts": [[270, 100], [162, 57]]},
+    {"kind": "opp", "pts": [[200, 100], [245, 100]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Keeper makes the save; the presser closes down immediately."},
+    {"t": 0.2, "label": "Three options: roll wide, throw long, or drive to the far gate."},
+    {"t": 0.3, "label": "Presser closes straight down the middle — the wide throw is on."},
+    {"t": 0.42, "label": "Three outs every rep: roll wide, throw long or drive far — the press picks it."}
+  ],
+  "events": [
+    {"t": 0.62, "x": 270, "y": 100, "label": "RELEASED"}
+  ]
+}

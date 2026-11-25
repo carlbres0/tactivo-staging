@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "durationMs": 10000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [[106, 46], [142, 46], [178, 46], [214, 46]],
+  "goals": [],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 160, "y": 172}, {"t": 1, "x": 160, "y": 172}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 160, "y": 100}, {"t": 0.18, "x": 160, "y": 100},
+      {"t": 0.32, "x": 160, "y": 100}, {"t": 0.48, "x": 170, "y": 96},
+      {"t": 0.66, "x": 186, "y": 74}, {"t": 0.84, "x": 196, "y": 48},
+      {"t": 1, "x": 196, "y": 30}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 160, "y": 164}, {"t": 0.18, "x": 160, "y": 164},
+    {"t": 0.32, "x": 160, "y": 106}, {"t": 0.48, "x": 172, "y": 90},
+    {"t": 0.66, "x": 188, "y": 68}, {"t": 0.84, "x": 196, "y": 42},
+    {"t": 1, "x": 196, "y": 24}
+  ], "air": []},
+  "routes": [
+    {"kind": "pass", "pts": [[160, 164], [160, 106]]},
+    {"kind": "dribble", "pts": [[160, 106], [178, 84], [196, 24]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Player waits between the two windows, back to the coach."},
+    {"t": 0.2, "label": "Coach serves firm and points to a window while the ball is still travelling."},
+    {"t": 0.36, "label": "A glance over the shoulder, then the touch turns the ball on the half-turn."},
+    {"t": 0.66, "label": "Carry through the pointed window — eight serves, then swap the pointing hand."}
+  ],
+  "events": [
+    {"t": 0.88, "x": 214, "y": 36, "label": "THROUGH"}
+  ]
+}

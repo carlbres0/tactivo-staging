@@ -1,0 +1,77 @@
+{
+  "v": 1,
+  "durationMs": 9500,
+  "area": {"x": 30, "y": 40, "w": 110, "h": 120},
+  "cones": [[30, 40], [140, 40], [30, 160], [140, 160]],
+  "goals": [
+    {"x": 26, "y": 100.0, "w": 40, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 32, "y": 195},
+      {"t": 0.3, "x": 32, "y": 195},
+      {"t": 1, "x": 34, "y": 193}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 110, "y": 150},
+      {"t": 0.3, "x": 100, "y": 132},
+      {"t": 1, "x": 105, "y": 135}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 110, "y": 60},
+      {"t": 0.4, "x": 110, "y": 60},
+      {"t": 0.55, "x": 95, "y": 85},
+      {"t": 0.7, "x": 95, "y": 85},
+      {"t": 1, "x": 90, "y": 88}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 150, "y": 100},
+      {"t": 1, "x": 148, "y": 98}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 100, "y": 140},
+      {"t": 0.3, "x": 102, "y": 135},
+      {"t": 1, "x": 105, "y": 138}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 100, "y": 90},
+      {"t": 0.4, "x": 100, "y": 90},
+      {"t": 0.55, "x": 97, "y": 88},
+      {"t": 0.7, "x": 95, "y": 86},
+      {"t": 1, "x": 96, "y": 84}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 40, "y": 100},
+      {"t": 0.7, "x": 38, "y": 95},
+      {"t": 0.85, "x": 33, "y": 93},
+      {"t": 1, "x": 30, "y": 93}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 32, "y": 195},
+      {"t": 0.3, "x": 32, "y": 195},
+      {"t": 0.55, "x": 95, "y": 85},
+      {"t": 0.7, "x": 95, "y": 85},
+      {"t": 1, "x": 30, "y": 92, "cx": 60, "cy": 90}
+    ],
+    "air": [[0.3, 0.55]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[32, 195], [95, 85]]},
+    {"kind": "run", "pts": [[110, 150], [100, 132]]},
+    {"kind": "run", "pts": [[110, 60], [95, 85]]},
+    {"kind": "shot", "curve": true, "pts": [[95, 85], [60, 90], [30, 92]]},
+    {"kind": "opp", "pts": [[100, 140], [105, 138]]},
+    {"kind": "opp", "pts": [[100, 90], [97, 88], [95, 86]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Corner taker shapes up; the near-post run goes early to drag a marker away."},
+    {"t": 0.3, "label": "In-swinger struck toward the back post \u2014 the real target arrives late."},
+    {"t": 0.55, "label": "Back-post runner arrives as the ball does: timing beats marking."},
+    {"t": 0.7, "label": "Header on target \u2014 the screener behind owns the edge for any second ball."}
+  ],
+  "events": [
+    {"t": 0.95, "x": 30, "y": 92, "label": "GOAL"}
+  ]
+}

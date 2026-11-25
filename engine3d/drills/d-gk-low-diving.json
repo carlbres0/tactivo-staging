@@ -1,0 +1,146 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 20.2,
+  "length": 26.3
+ },
+ "equipment": [
+  {
+   "type": "cone",
+   "at": [
+    7.4,
+    24.68
+   ]
+  },
+  {
+   "type": "cone",
+   "at": [
+    12.8,
+    24.68
+   ]
+  },
+  {
+   "type": "goal",
+   "at": [
+    10.1,
+    26.3
+   ],
+   "width": 6.7,
+   "facing": "s"
+  }
+ ],
+ "teams": {
+  "gold": {
+   "kit": {
+    "primary": "#ffb340"
+   }
+  },
+  "blue": {
+   "kit": {
+    "primary": "#7aa2ff"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "gk",
+   "team": "gold",
+   "number": 1,
+   "start": [
+    10.1,
+    24.68
+   ],
+   "role": "keeper"
+  },
+  {
+   "id": "d1",
+   "team": "blue",
+   "number": 1,
+   "start": [
+    6.59,
+    16.58
+   ]
+  },
+  {
+   "id": "d2",
+   "team": "blue",
+   "number": 2,
+   "start": [
+    13.61,
+    16.58
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   6.71,
+   16.91
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "shoot",
+   "player": "d1",
+   "at": [
+    10.1,
+    26.3
+   ]
+  },
+  {
+   "t": 6.64,
+   "type": "pass",
+   "from": "gk",
+   "to": "d2",
+   "flight": 0.88
+  },
+  {
+   "t": 10.47,
+   "type": "shoot",
+   "player": "d2",
+   "at": [
+    10.1,
+    26.3
+   ]
+  }
+ ],
+ "duration": 17.5,
+ "overlays": {
+  "runPaths": "auto"
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "Hands beat the body to the ball. Land first and reach second and you're always late.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 3.25,
+   "text": "Start kneeling, ball rolled to one side. Dive to smother, both hands, top hand behind the ball.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6,
+   "text": "Progress to a squat start, then a standing set position.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 12,
+   "text": "Land on the side, not the front. Hip, shoulder, ball stays pinned. Six each side.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 17.5,
+   "text": "Too easy, firm low serves so the dive is committed. Too hard, stay on the knees all set.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ],
+ "keeper": {
+  "outcome": "save"
+ }
+}

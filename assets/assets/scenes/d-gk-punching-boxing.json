@@ -1,0 +1,54 @@
+{
+  "v": 1,
+  "durationMs": 8800,
+  "area": {"x": 20, "y": 30, "w": 240, "h": 140},
+  "cones": [[20, 30], [260, 30], [20, 170], [260, 170]],
+  "goals": [
+    {"x": 20, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "GK", "kf": [
+      {"t": 0, "x": 34, "y": 96},
+      {"t": 0.2, "x": 34, "y": 96},
+      {"t": 0.42, "x": 78, "y": 84},
+      {"t": 0.5, "x": 78, "y": 84},
+      {"t": 1, "x": 78, "y": 84}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 70, "y": 90},
+      {"t": 1, "x": 70, "y": 90}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 75, "y": 115},
+      {"t": 1, "x": 75, "y": 115}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 60, "y": 36},
+      {"t": 0.15, "x": 56, "y": 44},
+      {"t": 1, "x": 56, "y": 44}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 60, "y": 36},
+      {"t": 0.15, "x": 56, "y": 44},
+      {"t": 0.42, "x": 78, "y": 84},
+      {"t": 0.6, "x": 150, "y": 148},
+      {"t": 1, "x": 150, "y": 148}
+    ],
+    "air": [[0.15, 0.42], [0.42, 0.6]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[56, 44], [78, 84]]},
+    {"kind": "shot", "pts": [[78, 84], [150, 148]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Crosses arrive into a busy box \u2014 catching is not on."},
+    {"t": 0.15, "label": "Two-fisted punch through the middle: high, far and wide."},
+    {"t": 0.42, "label": "One fist only when stretching across the body at full reach."},
+    {"t": 0.65, "label": "Ten serves, mixing catchable and uncatchable \u2014 the choice is live."}
+  ],
+  "events": [
+    {"t": 0.42, "x": 78, "y": 84, "label": "PUNCH"}
+  ]
+}

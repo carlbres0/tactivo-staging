@@ -1,0 +1,59 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 190, "y": 40, "w": 110, "h": 120},
+  "cones": [[190, 40], [300, 40], [190, 160], [300, 160]],
+  "goals": [
+    {"x": 300, "y": 100.0, "w": 36, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 300, "y": 42},
+      {"t": 1, "x": 300, "y": 42}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 230, "y": 130},
+      {"t": 0.3, "x": 230, "y": 130},
+      {"t": 0.55, "x": 255, "y": 95},
+      {"t": 1, "x": 258, "y": 92}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 235, "y": 125},
+      {"t": 0.3, "x": 238, "y": 120},
+      {"t": 0.55, "x": 250, "y": 100},
+      {"t": 1, "x": 248, "y": 98}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 295, "y": 100},
+      {"t": 0.4, "x": 295, "y": 100},
+      {"t": 0.55, "x": 290, "y": 92},
+      {"t": 1, "x": 290, "y": 92}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 300, "y": 42},
+      {"t": 0.2, "x": 300, "y": 42},
+      {"t": 0.5, "x": 256, "y": 94},
+      {"t": 0.6, "x": 256, "y": 94},
+      {"t": 0.75, "x": 300, "y": 95},
+      {"t": 1, "x": 300, "y": 95}
+    ],
+    "air": [[0.2, 0.5], [0.6, 0.75]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[300, 42], [256, 94]]},
+    {"kind": "run", "pts": [[230, 130], [255, 95]]},
+    {"kind": "opp", "pts": [[235, 125], [250, 100]]},
+    {"kind": "shot", "pts": [[256, 94], [300, 95]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Corner delivered to the near post \u2014 attacker starts outside the six-yard box."},
+    {"t": 0.3, "label": "Attacker times the run onto the ball, arriving ahead of the marker."},
+    {"t": 0.5, "label": "Header flicked goalward \u2014 keeper commands the near post."},
+    {"t": 0.75, "label": "Header finds the net \u2014 count it, then rotate for the next delivery."}
+  ],
+  "events": [
+    {"t": 0.75, "x": 300, "y": 95, "label": "GOAL"}
+  ]
+}

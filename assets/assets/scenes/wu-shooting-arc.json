@@ -1,0 +1,54 @@
+{
+  "v": 1,
+  "durationMs": 8500,
+  "area": {"x": 190, "y": 40, "w": 110, "h": 140},
+  "cones": [[230, 55], [210, 100], [230, 145]],
+  "goals": [
+    {"x": 294, "y": 110.0, "w": 30, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 230, "y": 145},
+      {"t": 0.28, "x": 215, "y": 105},
+      {"t": 0.45, "x": 215, "y": 105},
+      {"t": 1, "x": 220, "y": 110}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 245, "y": 90},
+      {"t": 0.18, "x": 245, "y": 90},
+      {"t": 1, "x": 240, "y": 95}
+    ]},
+    {"team": "a", "label": "GK", "kf": [
+      {"t": 0, "x": 280, "y": 100},
+      {"t": 0.45, "x": 280, "y": 100},
+      {"t": 0.6, "x": 288, "y": 90},
+      {"t": 1, "x": 288, "y": 90}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 245, "y": 90},
+      {"t": 0.18, "x": 245, "y": 90},
+      {"t": 0.28, "x": 215, "y": 105},
+      {"t": 0.45, "x": 215, "y": 105},
+      {"t": 0.6, "x": 296, "y": 115},
+      {"t": 1, "x": 296, "y": 115}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "run", "pts": [[230, 145], [215, 105]]},
+    {"kind": "pass", "pts": [[245, 90], [215, 105]]},
+    {"kind": "shot", "pts": [[215, 105], [296, 115]]},
+    {"kind": "run", "pts": [[280, 100], [288, 90]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Round the arc: a server feeds from the side, the striker finishes first time."},
+    {"t": 0.18, "label": "Start at half power into the corners, building to full strike over the round."},
+    {"t": 0.45, "label": "Alternate feet each rotation."},
+    {"t": 0.6, "label": "Keeper starts easy \u2014 this warms them up too."}
+  ],
+  "events": [
+    {"t": 0.6, "x": 296, "y": 115, "label": "GOAL"}
+  ]
+}

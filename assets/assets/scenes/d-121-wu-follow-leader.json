@@ -1,0 +1,49 @@
+{
+  "v": 1,
+  "durationMs": 12000,
+  "area": {"x": 70, "y": 10, "w": 180, "h": 180},
+  "cones": [],
+  "goals": [],
+  "players": [
+    {"team": "n", "label": "C", "kf": [
+      {"t": 0, "x": 166, "y": 58}, {"t": 0.16, "x": 182, "y": 80},
+      {"t": 0.34, "x": 200, "y": 102}, {"t": 0.52, "x": 194, "y": 128},
+      {"t": 0.7, "x": 166, "y": 142}, {"t": 0.86, "x": 136, "y": 134},
+      {"t": 1, "x": 118, "y": 116}
+    ]},
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 148, "y": 40}, {"t": 0.16, "x": 166, "y": 58},
+      {"t": 0.34, "x": 182, "y": 80}, {"t": 0.52, "x": 200, "y": 102},
+      {"t": 0.7, "x": 194, "y": 128}, {"t": 0.86, "x": 166, "y": 142},
+      {"t": 1, "x": 136, "y": 134}
+    ]}
+  ],
+  "ball": {"kf": [
+    {"t": 0, "x": 172, "y": 64}, {"t": 0.16, "x": 188, "y": 86},
+    {"t": 0.34, "x": 204, "y": 108}, {"t": 0.52, "x": 188, "y": 132},
+    {"t": 0.7, "x": 160, "y": 144}, {"t": 0.86, "x": 130, "y": 130},
+    {"t": 1, "x": 112, "y": 112}
+  ], "air": []},
+  "balls": [
+    {"kf": [
+      {"t": 0, "x": 154, "y": 46}, {"t": 0.16, "x": 172, "y": 64},
+      {"t": 0.34, "x": 188, "y": 86}, {"t": 0.52, "x": 206, "y": 108},
+      {"t": 0.7, "x": 200, "y": 134}, {"t": 0.86, "x": 172, "y": 148},
+      {"t": 1, "x": 142, "y": 140}
+    ], "air": []}
+  ],
+  "routes": [
+    {"kind": "dribble", "pts": [[172, 64], [204, 108], [188, 132], [130, 130], [112, 112]]},
+    {"kind": "run", "pts": [[148, 40], [200, 102], [136, 134]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Coach leads a winding dribble anywhere in the area, player two metres behind."},
+    {"t": 0.24, "label": "Every coach move — stops, turns, skips — echoes down the line."},
+    {"t": 0.6, "label": "Sixty seconds, then the player leads and chooses harder moves."},
+    {"t": 0.86, "label": "Two turns each, and the leader picks the finish pose."}
+  ],
+  "events": [
+    {"t": 0.3, "x": 212, "y": 96, "label": "COPY EVERYTHING"},
+    {"t": 0.9, "x": 96, "y": 152, "label": "NOW YOU LEAD"}
+  ]
+}

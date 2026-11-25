@@ -1,0 +1,67 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [[30, 25], [290, 25], [30, 175], [290, 175], [30, 58], [290, 58], [30, 142], [290, 142]],
+  "goals": [
+    {"x": 290, "y": 100.0, "w": 40, "side": "e"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 150, "y": 45},
+      {"t": 0.2, "x": 150, "y": 45},
+      {"t": 0.45, "x": 250, "y": 45},
+      {"t": 1, "x": 252, "y": 47}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 120, "y": 90},
+      {"t": 0.2, "x": 120, "y": 90},
+      {"t": 1, "x": 125, "y": 92}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 240, "y": 110},
+      {"t": 0.55, "x": 270, "y": 90},
+      {"t": 1, "x": 268, "y": 92}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 150, "y": 60},
+      {"t": 1, "x": 155, "y": 62}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 250, "y": 100},
+      {"t": 0.55, "x": 255, "y": 98},
+      {"t": 1, "x": 258, "y": 96}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 120, "y": 90},
+      {"t": 0.2, "x": 150, "y": 45},
+      {"t": 0.24, "x": 150, "y": 45},
+      {"t": 0.45, "x": 250, "y": 45},
+      {"t": 0.5, "x": 250, "y": 45},
+      {"t": 0.62, "x": 270, "y": 90},
+      {"t": 0.66, "x": 270, "y": 90},
+      {"t": 0.75, "x": 283, "y": 88},
+      {"t": 1, "x": 283, "y": 88}
+    ],
+    "air": [[0.5, 0.62]]
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[120, 90], [150, 45]]},
+    {"kind": "dribble", "pts": [[150, 45], [250, 45]]},
+    {"kind": "pass", "pts": [[250, 45], [270, 90]]},
+    {"kind": "run", "pts": [[240, 110], [270, 90]]},
+    {"kind": "shot", "pts": [[270, 90], [283, 88]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "A goal only counts if the attack passed through a wide channel first."},
+    {"t": 0.2, "label": "Wide channels are free zones \u2014 defenders may not enter them."},
+    {"t": 0.45, "label": "Guaranteed run to the byline; no need to even say the word cross."},
+    {"t": 0.62, "label": "Ball came through the channel, so the finish now counts."}
+  ],
+  "events": [
+    {"t": 0.62, "x": 270, "y": 90, "label": "CROSS"},
+    {"t": 0.75, "x": 283, "y": 88, "label": "GOAL"}
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "v": 1,
+  "durationMs": 16000,
+  "area": {
+    "x": 40,
+    "y": 40,
+    "w": 180,
+    "h": 120
+  },
+  "cones": [
+    [
+      52,
+      80
+    ],
+    [
+      52,
+      120
+    ]
+  ],
+  "goals": [
+    {
+      "x": 40,
+      "y": 100.0,
+      "w": 30,
+      "side": "w"
+    }
+  ],
+  "players": [
+    {
+      "team": "a",
+      "label": "GK",
+      "kf": [
+        {
+          "t": 0,
+          "x": 52,
+          "y": 100
+        },
+        {
+          "t": 1,
+          "x": 52,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 112,
+          "y": 74
+        },
+        {
+          "t": 1,
+          "x": 112,
+          "y": 74
+        }
+      ]
+    },
+    {
+      "team": "d",
+      "label": "2",
+      "kf": [
+        {
+          "t": 0,
+          "x": 112,
+          "y": 126
+        },
+        {
+          "t": 1,
+          "x": 112,
+          "y": 126
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 112,
+        "y": 74
+      },
+      {
+        "t": 0.08,
+        "x": 112,
+        "y": 74
+      },
+      {
+        "t": 0.18,
+        "x": 46,
+        "y": 114
+      },
+      {
+        "t": 0.34,
+        "x": 46,
+        "y": 114
+      },
+      {
+        "t": 0.5,
+        "x": 112,
+        "y": 126
+      },
+      {
+        "t": 0.58,
+        "x": 112,
+        "y": 126
+      },
+      {
+        "t": 0.68,
+        "x": 46,
+        "y": 86
+      },
+      {
+        "t": 1,
+        "x": 46,
+        "y": 86
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "shot",
+      "pts": [
+        [
+          112,
+          74
+        ],
+        [
+          46,
+          114
+        ]
+      ]
+    },
+    {
+      "kind": "pass",
+      "pts": [
+        [
+          46,
+          114
+        ],
+        [
+          112,
+          126
+        ]
+      ]
+    },
+    {
+      "kind": "shot",
+      "pts": [
+        [
+          112,
+          126
+        ],
+        [
+          46,
+          86
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "Servers drive low to alternate sides — keeper set on his line."
+    },
+    {
+      "t": 0.18,
+      "label": "Dive to smother: top hand behind the ball, both hands pin it."
+    },
+    {
+      "t": 0.34,
+      "label": "Land on the side — hip, then shoulder — never flat on the front."
+    },
+    {
+      "t": 0.68,
+      "label": "Same again the other way. Six each side, then progress."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.18,
+      "x": 46,
+      "y": 114,
+      "label": "DIVE"
+    },
+    {
+      "t": 0.68,
+      "x": 46,
+      "y": 86,
+      "label": "DIVE"
+    }
+  ]
+}

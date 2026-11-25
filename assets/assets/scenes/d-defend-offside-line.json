@@ -1,0 +1,75 @@
+{
+  "v": 1,
+  "durationMs": 9000,
+  "area": {"x": 30, "y": 25, "w": 260, "h": 150},
+  "cones": [[30, 25], [290, 25], [30, 175], [290, 175]],
+  "goals": [
+    {"x": 26, "y": 100.0, "w": 30, "side": "w"}
+  ],
+  "players": [
+    {"team": "a", "label": "1", "kf": [
+      {"t": 0, "x": 100, "y": 50},
+      {"t": 0.4, "x": 100, "y": 50},
+      {"t": 0.55, "x": 150, "y": 50},
+      {"t": 1, "x": 150, "y": 50}
+    ]},
+    {"team": "a", "label": "2", "kf": [
+      {"t": 0, "x": 100, "y": 90},
+      {"t": 0.4, "x": 100, "y": 90},
+      {"t": 0.55, "x": 150, "y": 90},
+      {"t": 1, "x": 150, "y": 90}
+    ]},
+    {"team": "a", "label": "3", "kf": [
+      {"t": 0, "x": 100, "y": 130},
+      {"t": 0.4, "x": 100, "y": 130},
+      {"t": 0.55, "x": 150, "y": 130},
+      {"t": 1, "x": 150, "y": 130}
+    ]},
+    {"team": "a", "label": "4", "kf": [
+      {"t": 0, "x": 100, "y": 170},
+      {"t": 0.4, "x": 100, "y": 170},
+      {"t": 0.55, "x": 150, "y": 170},
+      {"t": 1, "x": 150, "y": 170}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 200, "y": 110},
+      {"t": 1, "x": 202, "y": 112}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 240, "y": 100},
+      {"t": 0.4, "x": 240, "y": 100},
+      {"t": 0.5, "x": 240, "y": 100},
+      {"t": 1, "x": 240, "y": 100}
+    ]},
+    {"team": "d", "label": "x", "kf": [
+      {"t": 0, "x": 205, "y": 60},
+      {"t": 0.4, "x": 205, "y": 60},
+      {"t": 0.8, "x": 155, "y": 57},
+      {"t": 1, "x": 152, "y": 56}
+    ]}
+  ],
+  "ball": {
+    "kf": [
+      {"t": 0, "x": 200, "y": 110},
+      {"t": 0.4, "x": 200, "y": 110},
+      {"t": 0.5, "x": 240, "y": 100},
+      {"t": 1, "x": 240, "y": 100}
+    ],
+    "air": []
+  },
+  "routes": [
+    {"kind": "pass", "pts": [[200, 110], [240, 100]]},
+    {"kind": "opp", "pts": [[205, 60], [155, 57], [152, 56]]},
+    {"kind": "run", "pts": [[100, 50], [150, 50]]},
+    {"kind": "run", "pts": [[100, 170], [150, 170]]}
+  ],
+  "phases": [
+    {"t": 0, "label": "Back four holds a deep line, watching the ball and the runner together."},
+    {"t": 0.4, "label": "Trigger: the attacker's head goes down \u2014 call it now, everyone steps."},
+    {"t": 0.5, "label": "The whole line jumps as one on the backward pass, not on the runner."},
+    {"t": 0.8, "label": "The run is timed too early \u2014 caught offside when the jump is together."}
+  ],
+  "events": [
+    {"t": 0.4, "x": 200, "y": 110, "label": "TRIGGER"}
+  ]
+}

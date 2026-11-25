@@ -1,0 +1,218 @@
+{
+  "v": 1,
+  "durationMs": 12000,
+  "area": {
+    "x": 70,
+    "y": 10,
+    "w": 180,
+    "h": 180
+  },
+  "cones": [],
+  "goals": [],
+  "players": [
+    {
+      "team": "a",
+      "label": "1",
+      "kf": [
+        {
+          "t": 0,
+          "x": 160,
+          "y": 100
+        },
+        {
+          "t": 0.24,
+          "x": 160,
+          "y": 38
+        },
+        {
+          "t": 0.34,
+          "x": 160,
+          "y": 38
+        },
+        {
+          "t": 0.5,
+          "x": 234,
+          "y": 92
+        },
+        {
+          "t": 0.6,
+          "x": 234,
+          "y": 92
+        },
+        {
+          "t": 0.78,
+          "x": 96,
+          "y": 166
+        },
+        {
+          "t": 0.88,
+          "x": 96,
+          "y": 166
+        },
+        {
+          "t": 1,
+          "x": 132,
+          "y": 130
+        }
+      ]
+    },
+    {
+      "team": "n",
+      "label": "C",
+      "kf": [
+        {
+          "t": 0,
+          "x": 228,
+          "y": 178
+        },
+        {
+          "t": 0.5,
+          "x": 224,
+          "y": 174
+        },
+        {
+          "t": 1,
+          "x": 228,
+          "y": 178
+        }
+      ]
+    }
+  ],
+  "ball": {
+    "kf": [
+      {
+        "t": 0,
+        "x": 160,
+        "y": 100
+      },
+      {
+        "t": 0.24,
+        "x": 160,
+        "y": 38
+      },
+      {
+        "t": 0.34,
+        "x": 160,
+        "y": 38
+      },
+      {
+        "t": 0.5,
+        "x": 234,
+        "y": 92
+      },
+      {
+        "t": 0.6,
+        "x": 234,
+        "y": 92
+      },
+      {
+        "t": 0.78,
+        "x": 96,
+        "y": 166
+      },
+      {
+        "t": 0.88,
+        "x": 96,
+        "y": 166
+      },
+      {
+        "t": 1,
+        "x": 132,
+        "y": 130
+      }
+    ],
+    "air": []
+  },
+  "routes": [
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          160,
+          100
+        ],
+        [
+          160,
+          38
+        ]
+      ]
+    },
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          160,
+          38
+        ],
+        [
+          234,
+          92
+        ]
+      ]
+    },
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          234,
+          92
+        ],
+        [
+          96,
+          166
+        ]
+      ]
+    },
+    {
+      "kind": "dribble",
+      "pts": [
+        [
+          96,
+          166
+        ],
+        [
+          132,
+          130
+        ]
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "t": 0,
+      "label": "The player stands on an imaginary compass, ball under the sole."
+    },
+    {
+      "t": 0.2,
+      "label": "The coach calls a direction and the ball travels there — soles only."
+    },
+    {
+      "t": 0.5,
+      "label": "Feet dance around the ball; it never leaves the sole's reach."
+    },
+    {
+      "t": 0.76,
+      "label": "Speed builds until the calls come every two seconds."
+    }
+  ],
+  "events": [
+    {
+      "t": 0.26,
+      "x": 194,
+      "y": 30,
+      "label": "NORTH"
+    },
+    {
+      "t": 0.52,
+      "x": 246,
+      "y": 72,
+      "label": "EAST"
+    },
+    {
+      "t": 0.8,
+      "x": 88,
+      "y": 142,
+      "label": "SOUTH-WEST"
+    }
+  ]
+}

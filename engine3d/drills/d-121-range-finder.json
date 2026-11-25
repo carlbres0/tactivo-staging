@@ -1,0 +1,143 @@
+{
+ "version": 1,
+ "pitch": {
+  "width": 14,
+  "length": 44
+ },
+ "equipment": [],
+ "teams": {
+  "white": {
+   "kit": {
+    "primary": "#FFFFFF"
+   }
+  },
+  "coach": {
+   "kit": {
+    "primary": "#23272E"
+   }
+  }
+ },
+ "players": [
+  {
+   "id": "a1",
+   "team": "white",
+   "number": 1,
+   "start": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "n1",
+   "team": "coach",
+   "number": 1,
+   "start": [
+    7,
+    27.47
+   ]
+  }
+ ],
+ "ball": {
+  "start": [
+   7,
+   6.35
+  ]
+ },
+ "events": [
+  {
+   "t": 1.2,
+   "type": "pass",
+   "from": "a1",
+   "to": "n1",
+   "flight": 2.15
+  },
+  {
+   "t": 4.97,
+   "type": "pass",
+   "from": "n1",
+   "to": "a1",
+   "flight": 2.15
+  },
+  {
+   "t": 7.28,
+   "type": "move",
+   "player": "n1",
+   "to": [
+    7,
+    32.4
+   ],
+   "gait": "jog"
+  },
+  {
+   "t": 8.73,
+   "type": "pass",
+   "from": "a1",
+   "to": "n1",
+   "flight": 2.64
+  }
+ ],
+ "duration": 13.5,
+ "overlays": {
+  "runPaths": "auto",
+  "zones": [
+   {
+    "at": [
+     7,
+     27.5
+    ],
+    "w": 2.98,
+    "h": 3,
+    "color": "technical",
+    "label": "RING"
+   },
+   {
+    "at": [
+     7,
+     32.5
+    ],
+    "w": 2.98,
+    "h": 3,
+    "color": "tactical",
+    "label": "NEXT RING"
+   }
+  ]
+ },
+ "narration": [
+  {
+   "t": 0,
+   "text": "The walking ring measures progress in metres, and metres stick on a wall chart.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 2.25,
+   "text": "You stand in a target ring some way off.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 6,
+   "text": "A driven pass into the ring. Hit it and you step the ring further back.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 7,
+   "text": "Miss twice in a row and the ring steps closer.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 11,
+   "text": "Find their range, mark it with a cone, beat it next session.",
+   "hold": 2.5,
+   "beat": "take"
+  },
+  {
+   "t": 13.5,
+   "text": "Too easy, the ball must arrive below head height. Too hard, start closer with a wider ring.",
+   "hold": 2.5,
+   "beat": "take"
+  }
+ ]
+}
